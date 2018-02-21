@@ -8,6 +8,8 @@ import { connect } from "react-redux";
 
 class GiftsGrid extends Component {
   render() {
+
+    console.log(this.props.gifts)
     return (
       <div className="photo-grid">
         {this.props.gifts.map((gift, i) => (

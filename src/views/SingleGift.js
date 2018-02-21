@@ -7,8 +7,10 @@ import { connect } from "react-redux";
 class SingleGift extends Component {
   render() {
     const { giftId } = this.props.match.params;
-    const gift = this.props.gifts[giftId - 1];
-
+    const i = this.props.gifts.findIndex((gift) => gift.id === giftId);
+    // const gift = this.props.gifts[giftId - 1];
+    const gift = this.props.gifts[i];
+console.log(this.props.gifts)
     return (
       <div className="single-photo">
         <Link to={`/`} className="button">

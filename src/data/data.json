@@ -11,7 +11,7 @@
         "type": ["animal"]
     },
     {
-        "id": 2,
+        "id": "2",
         "productName": "Underlägg till matskål för husdjur",
         "price": 199,
         "description": "Underlägget är tillverkat av rent silikon och har en snygg, grön nyans. Passar perfekt till Beco Pets alla olika matskålar för både hund och katt. Beco Pets gör alla sina produkter i rena, giftfria och miljövänliga material.",
@@ -23,7 +23,7 @@
         "type": ["animal"]
     },
     {
-        "id": 3,
+        "id": "3",
         "productName": "Giftfritt tuggben",
         "price": 80,
         "description": "Tuggben som är tillverkat i ett unikt naturgummi av risskal. Alla Becos hundleksaker är 100% giftfria, miljövänliga och säkra för din hund. Hunden får rejält tuggmotstånd och benet tål riktigt mycket.",
@@ -35,7 +35,7 @@
         "type": ["animal"]
     },
     {
-        "id": 4,
+        "id": "4",
         "productName": "Ekologisk djurshampo",
         "price": 265,
         "description": "John Masters Organics Lemongrass & Flaxseed Pet Shampoo är ett ekologiskt djurschampo. Utvecklat med rätt pH för att vara perfekt för våra håriga vänner. Lätt att skölja ur. Innehåller 18 ekologiskt certifierade ingrediense.",
@@ -47,7 +47,7 @@
         "type": ["animal"]
     },
     {
-        "id": 5,
+        "id": "5",
         "productName": "Ekologisk djurbalsam",
         "price": 265,
         "description": "John Masters Organics Lemongrass & Flaxseed Pet Conditioner är ett ekologiskt djurbalsam. Utvecklat med rätt pH för att vara perfekt för våra håriga vänner. Lätt att skölja ur. Innehåller 18 ekologiskt certifierade ingrediense.",
@@ -59,7 +59,7 @@
         "type": ["animal"]
     },
     {
-        "id": 6,
+        "id": "6",
         "productName": "Hundbädd",
         "price": 1845,
         "description": "Berlinbaserade CLOUD 7 representerar unika produkter där designfilosofin bygger på den högsta kvalitén under de bästa förhållandena för miljövänlighet och rättvis handel. Sleepy hundbädd är sydd i ekologisk bomullscanvas och stoppad med en mix av latex- granulat och polyester. ",
@@ -71,7 +71,7 @@
         "type": ["animal"]
     },
     {
-        "id": 7,
+        "id": "7",
         "productName": "Kattbädd",
         "price": 295,
         "description": "Mysig och snygg bädd till din katt att ha i hemmet som dessutom är ett bra miljöval. Tillverkad i plysch med beige och brun ring av miljövänlig hampa och den är fylld med miljövänlig supermjuk polyfill. ",
@@ -83,7 +83,7 @@
         "type": ["animal"]
     },
     {
-        "id": 8,
+        "id": "8",
         "productName": "Kattleksak",
         "price": 29,
         "description": "Klassisk kattleksak till katt. Kattleksaker tillverkad i 100% naturmaterial.",
@@ -95,7 +95,7 @@
         "type": ["animal"]
     },
     {
-        "id": 9,
+        "id": "9",
         "productName": "Klösmöbel och lounge för katt",
         "price": 695,
         "description": "Lui klösmöbel är handgjord i Polen med lokal miljövänlig wellpapp och ett certifierat lim, säkert för både djur och människor.",
@@ -107,7 +107,7 @@
         "type": ["animal"]
     },
     {
-        "id": 10,
+        "id": "10",
         "productName": "Hundborste i Trä. Dubbelsidig, Träpiggar & Naturborst",
         "price": 185,
         "description": "En otroligt fin borste för hundarnas päls. Hundborsten är tillverkad i bokträ och har runda träpiggar på ena sidan och en borst av ljust grishår på andra sidan. Ett bra val till hundar med ömtålig skinn eftersom borsten och träpiggarna är skonsamma. Piggarna ger en skön och skonsam massage i hundens päls. Passar bra till hundar med både kort och lång päls. Skaftet har ett sött motiv av en hund och ett hål så man enkelt kan hänga upp borsten när den inte används. Ett miljövänligt och vackert alternativ till hundborstar i plast.",
@@ -119,7 +119,7 @@
         "type": ["animal"]
     },
     {
-        "id": 11,
+        "id": "11",
         "productName": "Ekologiska Tass & Hudsalva",
         "price": 110,
         "description": "Salvan tillverkas för hand och innehåller 100 % ekologiska och naturliga råvaror för att vårda och skydda din hunds tassar.  Vi tillsätter ingen parfym, inga parabener och inget vatten.",
@@ -131,7 +131,7 @@
         "type": ["animal"]
     },
     {
-        "id": 12,
+        "id": "12",
         "productName": "Hundmatskål",
         "price": 79,
         "description": "Becobowl är en snygg beige eko-vänlig hundmatskål gjord av växtfibrer från bambu och ris. Snäll mot djur och natur och samtidigt snygg i hemmet. Hundmatskålen går att köra i diskmaskin och materialet är komposterbart när man använt skålen färdigt.",
@@ -143,7 +143,7 @@
         "type": ["animal"]
     },
     {
-        "id": 13,
+        "id": "13",
         "productName": "Kattmatskål",
         "price": 55,
         "description": "Becobowl är en snygg beige eko-vänlig kattmatskål gjord av växtfibrer från bambu och ris. Snäll mot djur och natur och samtidigt snygg i hemmet. Kattmatskålen går att köra i diskmaskin och materialet är komposterbart när man använt skålen färdigt.",
@@ -155,7 +155,7 @@
         "type": ["animal"]
     },
     {
-        "id": 14,
+        "id": "14",
         "productName": "Eltandborste med Musik",
         "price": 229,
         "description": "Med Jack N 'Jills eltandborste med musik blir tandborstningen till en rolig dagsrutin. Handtaget till tandborsten är tillverkat av ABS-plast som är fritt från BPA, PVC och ftalater. Själva borsthuvudet har en extra mjuk nylonborst som passar bra till små känsliga munnar.",
@@ -167,7 +167,7 @@
         "type": ["kid"]
     },
     {
-        "id": 15,
+        "id": "15",
         "productName": "Yrkes team",
         "price": 139,
         "description": "Ett härligt yrkes team bestånden av 4 st figurer i trä.Vridbara ben så att man kan få figurerna att sitta eller stå. Figurern är gjorda av trä ifrån gummiträd som inte längre går att använda för att utvinna gummi ifrån samt. Träet är ej behandlat med några kemikalier. Målade och lackade med organiskt vattenbaserade färger utan tungmetaller, bly eller andra gifter.",
@@ -179,7 +179,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 16,
+        "id": "16",
         "productName": "Noaks ark",
         "price": 405,
         "description": "Fantastisk robust Noaks Ark med 8 par djur, sammanlagt 16 stycken djur samt 1 gubbe och en gumma. Figurern är gjorda av trä ifrån gummiträd som inte längre går att använda för att utvinna gummi ifrån samt. Träet är ej behandlat med några kemikalier. Målade och lackade med organiskt vattenbaserade färger utan tungmetaller, bly eller andra gifter.",
@@ -191,7 +191,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 17,
+        "id": "17",
         "productName": "Camping",
         "price": 205,
         "description": "Ett härligt campingset där man kan grilla sin egenfisk över öppen eld eller varför inte spela gitarr framför lägerelden. Figurern är gjorda av trä ifrån gummiträd som inte längre går att använda för att utvinna gummi ifrån samt. Träet är ej behandlat med några kemikalier. Målade och lackade med organiskt vattenbaserade färger utan tungmetaller, bly eller andra gifter.",
@@ -203,7 +203,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 18,
+        "id": "18",
         "productName": "Gympapåse",
         "price": 149,
         "description": "Franska Coq en Pâte är väldigt miljömedvetna och gör alla sina textilprodukter i ekologisk bomull (GOTS/Global Organic Textile Standard). Även trycket är miljövänligt (certifierat av franska Imprim’vert).Tillverkad i Indien under etiska riktlinjer.",
@@ -215,7 +215,7 @@
         "type": ["kid", "youth"]
     },
     {
-        "id": 19,
+        "id": "19",
         "productName": "Vattenfärger",
         "price": 52,
         "description": "Fina vattenfärger som ger bra med färg och innehåller enbart naturliga färgämnen ifrån växtriket. Med följer 6 st olika färger.",
@@ -227,7 +227,7 @@
         "type": ["kid", "youth", "adult"]
     },
     {
-        "id": 20,
+        "id": "20",
         "productName": "Alfabet klossar",
         "price": 369,
         "description": "Klossar med hela alfabetet  (engelska) perfekt att öva på både stora och små bokstäver, skriva sitt namn eller varför inte bygga torn med. Tillverkad av FSC-certifierat trä, målad med giftfria färger. De omålade delarna är inoljade med naturlig och giftfri linolja.",
@@ -239,7 +239,7 @@
         "type": ["kid"]
     },
     {
-        "id": 21,
+        "id": "21",
         "productName": "Nappflaska",
         "price": 149,
         "description": "Fin och giftfri glasflaska med silikonhölje tillverkad av svenska EcoViking.",
@@ -251,7 +251,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 22,
+        "id": "22",
         "productName": "Haklapp Apa",
         "price": 159,
         "description": "Söt haklapp med glad apa ifrån danska Franck and Fischer. Tillverkad av 100% ekologisk bomull, acrylatcoating.",
@@ -263,7 +263,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 23,
+        "id": "23",
         "productName": "Giftfria tuschpennor",
         "price": 49,
         "description": "Giftfria tuschpennor med smalt stift: Filtpennor med 2 mm runt stift, perfekt för de lite större barnen.",
@@ -275,7 +275,7 @@
         "type": ["kid", "youth"]
     },
     {
-        "id": 24,
+        "id": "24",
         "productName": "Ritblock A3, 50 ark",
         "price": 54,
         "description": "Ett ritblock med FSC-märkt papper från svenska skogar. Ritblocket är tillverkat i Stockholm med minsta möjliga miljöpåverkan.",
@@ -287,7 +287,7 @@
         "type": ["kid", "youth"]
     },
     {
-        "id": 25,
+        "id": "25",
         "productName": "Ritblock A4, 100 ark",
         "price": 49,
         "description": "Ett ritblock med FSC-märkt papper från svenska skogar. Ritblocket är tillverkat i Stockholm med minsta möjliga miljöpåverkan.",
@@ -299,7 +299,7 @@
         "type": ["kid", "youth"]
     },
     {
-        "id": 25,
+        "id": "142",
         "productName": "Hoppelina ABC Målarbok",
         "price": 79,
         "description": "Boken tillverkas i ett miljövänligt och kraftigare papper. På varje sida finns en rolig bild tillsammans med en stor och en liten bokstav som man kan färglägga.",
@@ -311,7 +311,7 @@
         "type": ["kid"]
     },
     {
-        "id": 26,
+        "id": "26",
         "productName": "Hoppelina Siffror Målarbok",
         "price": 79,
         "description": "Miljömärkt målarbok med siffror och fina bilder att räkna och färglägga.",
@@ -323,7 +323,7 @@
         "type": ["kid"]
     },
     {
-        "id": 27,
+        "id": "27",
         "productName": "Bivaxkritor i Träask",
         "price": 209,
         "description": "Vaxkritor tillverkade av bivax i tolv olika vackra, klara färger som täcker bra. Går bra att rita eller skriva med på de flesta underlag, fungerar bra på både släta och skrovliga ytor och är perfekt för nybörjare. Dessa kritor är långa och passar bra till lite större barn.",
@@ -335,7 +335,7 @@
         "type": ["kid"]
     },
     {
-        "id": 28,
+        "id": "28",
         "productName": "Fingerfärg Eco Unicorn",
         "price": 215,
         "description": "Härlig fingerfärg i sex fina färger. Röd, orange, gul, grön, blå och lila. Fingerfärgen från Ökonorm är fri från kemikalier och är ofarlig för barn. Den innehåller naturlig livsmedelsfärg, naturliga färgpigment, renad krita och är laktosfri (ej glutenfri).",
@@ -347,7 +347,7 @@
         "type": ["kid"]
     },
     {
-        "id": 29,
+        "id": "29",
         "productName": "Trädgårdsset Barn",
         "price": 95,
         "description": "Ett fint trädgårdsset i trä och plåt för barn. Perfekt för den lilla trädgårdsmästaren som vill påta på i sin trädgård. Setet består av en kratta och två olika spadar. Tillverkad inom EU av ett litet familjeföretag med lång erfarenhet av att tillverka produkter som barn verkligen tycker om och som dessutom är naturtrogna och pedagogiska.",
@@ -359,7 +359,7 @@
         "type": ["kid"]
     },
     {
-        "id": 30,
+        "id": "30",
         "productName": "Spade i Plåt & Trä Barn",
         "price": 95,
         "description": "En fin och lekvänlig spade tillverkad i plåt och trä. Tillverkad inom EU av ett litet familjeföretag med lång erfarenhet av att tillverka produkter som barn verkligen tycker om och som dessutom är naturtrogna och pedagogiska.",
@@ -371,7 +371,7 @@
         "type": ["kid"]
     },
     {
-        "id": 31,
+        "id": "31",
         "productName": "Hink",
         "price": 94,
         "description": "Denna gedigna hink, i plåt med handtag i trä, passar utmärkt för att samla sand, kottar eller löv i. Tillverkad inom EU av ett litet familjeföretag med lång erfarenhet av att tillverka produkter som barn verkligen tycker om och som dessutom är naturtrogna och pedagogiska.",
@@ -383,7 +383,7 @@
         "type": ["kid"]
     },
     {
-        "id": 32,
+        "id": "32",
         "productName": "Ekologiskt planteringsset",
         "price": 135,
         "description": "Fina ekologiska planteringsredskap och ekologiska krukor för barn. Fyra krukor av PlanWood®, en blomspade och en handkratta ingår.",
@@ -395,7 +395,7 @@
         "type": ["kid"]
     },
     {
-        "id": 33,
+        "id": "33",
         "productName": "Ekologisk Snuttefilt",
         "price": 59,
         "description": "Fabelab Muslin Cloth är en underbar snuttefilt som passar till bebisar och barn. Snuttefilten är tillverkad i tunn ekologisk GOTS-certifierad bomullsmuslin och är färgad med giftminimerade färger.",
@@ -407,7 +407,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 33,
+        "id": "143",
         "productName": "Bordsunderlägg med tallrik av silikon",
         "price": 298,
         "description": "Bordsunderlägg och barntallrik av silikon som är livsmedelsgodkänd och fri från BPA och ftalater. Tallriken har höga, raka, stabila kanter som hindrar maten att sprätta iväg. Kan maskindiskas.",
@@ -419,7 +419,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 34,
+        "id": "34",
         "productName": "Ekologisk trävagn",
         "price": 639,
         "description": "Ekologisk vagn av trä, perfekt att både leka med och förvara leksakerna i. Dras i ett rep av bomull. Det går också att bygga ett tåg med hjälp av flera vagnar och kör runt med dockor och mjukdjur.",
@@ -431,7 +431,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 35,
+        "id": "35",
         "productName": "Ekologisk trumma",
         "price": 575,
         "description": "Ekologiskt instrument för barn som också kan användas som pall. En rejäl ekologisk trätrumma som fått sin inspiration från Cajon-musikens handtrumma. fjäder på insidan om skapar ljud likt en virveltrumma.",
@@ -443,7 +443,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 36,
+        "id": "36",
         "productName": "Ekologisk & Naturlig Ansiktsfärg",
         "price": 155,
         "description": "Ansiktsfärgen från Natural Earth Paint innehåller 70% ekologiskt certifierade ingredienser. De övriga ingredisenserna är ocertifierade men noga kontrollerade. Denna ler och mineralbaserade ansikts och kroppsfärg liknar de ursprungliga kroppsfärgerna som användes av människor för tusentals år sedan.",
@@ -455,7 +455,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 37,
+        "id": "37",
         "productName": "Barnens laboratorium för grön energi",
         "price": 249,
         "description": "Med det här experimentkitet kan du bygga både en vindgenerator, en handdriven lykta och en klocka som drivs av potatisbatteri. Spännande, miljösmart och kreativ sysselsättning som är kul att pyssla med tillsammans.",
@@ -467,7 +467,7 @@
         "type": ["kid"]
     },
     {
-        "id": 38,
+        "id": "38",
         "productName": "Ekologisk Necessär/Väska",
         "price": 450,
         "description": "Franska Coq en Pâte är väldigt miljömedvetna och gör alla sina textilprodukter i ekologisk bomull (GOTS/Global Organic Textile Standard). Även trycket är miljövänligt (certifierat av franska Imprim'vert).",
@@ -479,7 +479,7 @@
         "type": ["kid", "youth", "adult"]
     },
     {
-        "id": 39,
+        "id": "39",
         "productName": "Ekologisk Necessär/Väska",
         "price": 450,
         "description": "Franska Coq en Pâte är väldigt miljömedvetna och gör alla sina textilprodukter i ekologisk bomull (GOTS/Global Organic Textile Standard). Även trycket är miljövänligt (certifierat av franska Imprim'vert).",
@@ -491,7 +491,7 @@
         "type": ["kid", "youth", "adult"]
     },
     {
-        "id": 40,
+        "id": "40",
         "productName": "Ekologisk Solhatt",
         "price": 185,
         "description": "Franska Coq en Pâte är väldigt miljömedvetna och gör alla sina textilprodukter i ekologisk bomull (GOTS/Global Organic Textile Standard). Även trycket är miljövänligt (certifierat av franska Imprim'vert).",
@@ -503,7 +503,7 @@
         "type": ["kid", "toddler"]
     },
     {
-        "id": 41,
+        "id": "41",
         "productName": "Ekologisk Ryggsäck",
         "price": 450,
         "description": "Franska Coq en Pâte är väldigt miljömedvetna och gör alla sina textilprodukter i ekologisk bomull (GOTS/Global Organic Textile Standard). Även trycket är miljövänligt (certifierat av franska Imprim'vert).",
@@ -515,7 +515,7 @@
         "type": ["kid", "toddler"]
     },
     {
-        "id": 42,
+        "id": "42",
         "productName": "Ekologisk Strandset",
         "price": 225,
         "description": "Franska Coq en Pâte är supermiljömedvetna. Material: 100% Algoblend ® (bruna alger + polypropylen). Algerna som har gått åt att tillverka denna produkt är från Bretagne, Frankrike. Sitter i en snygg förpackning av återvunnet papper.",
@@ -527,7 +527,7 @@
         "type": ["kid", "toddler"]
     },
     {
-        "id": 43,
+        "id": "43",
         "productName": "Klossar av återvunnen plast",
         "price": 249,
         "description": "Greentoys är de första leksakerna i världen som är gjorda av återvunnen plast, närmare bestämt amerikanska mjölkförpackningar.",
@@ -539,7 +539,7 @@
         "type": ["kid", "toddler"]
     },
     {
-        "id": 44,
+        "id": "44",
         "productName": "Miljöns mysterier - bok",
         "price": 123,
         "description": "Vart åker bajset när vi spolar? Varför blommar det i havet? Hur lång sladd behöver elbilen? En bok om grodor, sopor och klimat. Boken är aktuell och förklarar såväl vad klimat är som att vissa hoppas kunna styra vädret och framkalla regn. Men också om rostade gräshoppor är svaret på hur vi ska fördela maten rättvist över jordklotet. Eller varför det blir algblomning i havet.",
@@ -551,7 +551,7 @@
         "type": ["kid", "adult", "youth"]
     },
     {
-        "id": 45,
+        "id": "45",
         "productName": "Vävram",
         "price": 249,
         "description": "Vävram med påbörjad väv, kam och två metallskenor. Här kan fantasin flöda och fina mönster kan produceras i denna lilla vävram. FSC certifierat trä, oljat med naturlig olja. Tillverkad inom EU. Spillträ från leksakstillverkningen används bland annat för att värma fabriken.",
@@ -563,7 +563,7 @@
         "type": ["kid", "adult", "youth"]
     },
     {
-        "id": 46,
+        "id": "46",
         "productName": "Crayon Rocks 8 färger i vit ekopåse",
         "price": 89,
         "description": "Fantastiskt fina kritor formade som små stenar. Lätt att hålla i och kul att rita med. Ger mycket färg. En mycket fin produkt av hög kvalitet. Hjälper barnen att utveckla finmotoriken och få korrekt penngrepp. Tillverkade i USA av koscher sojavax som odlats i USA utan bekämpningsmedel. Sojavaxet färgas sedan med naturliga mineralpigment för att skapa vackra färger som är kul att rita med. En helt giftfri produkt som därmed inte innehåller ohälsosamma kemikalier som kan skada ditt barn. Kritornas påse är av ekologiskt odlad bomull.",
@@ -575,7 +575,7 @@
         "type": ["kid"]
     },
     {
-        "id": 47,
+        "id": "47",
         "productName": "Hjälp vår jord! - bok",
         "price": 78,
         "description": "En rolig bok om Charlie och Lola – storebror och lillasyster. Lola vill slänga alla sina grejer för hon vill inte ha ett stökigt rum! Men varför inte återvinna i stället! För om man samlar 100 stycken av alla möjliga återanvändbara grejer så kan man vinna ett alldeles eget träd att plantera. Det vill Charlie och Lola, så de börjar samla – tillsammans med de andra barnen! Ja, hela skolan börjar med återvinning.",
@@ -587,7 +587,7 @@
         "type": ["kid"]
     },
     {
-        "id": 48,
+        "id": "48",
         "productName": "Verktygslåda",
         "price": 261,
         "description": "Verktygslåda full med verktyg av 100% miljövänlig återvunnen plast från populära märket Green Toys. Innehåller hela 15 delar: verktygslåda, hammare, såg, två skruvmejslar, skiftnyckel, avbitartång samt muttrar, bultar, spikar m.m. Det finns även praktiska hål i verktygslådan så att du kan skruva eller koppla saker dit.",
@@ -599,7 +599,7 @@
         "type": ["kid"]
     },
     {
-        "id": 49,
+        "id": "49",
         "productName": "NUTE Ekologisk Te i träask, 45st",
         "price": 299,
         "description": "Stilren träask i björk som innehåller 45 stycken tepåsar i olika smaker. Passar perfekt för den som är nyfiken på NUTE och vill testa på sortimentet. Den naturliga träasken och de balanserade teblandningarna ger en vacker och smakfull kombination mellan den gamla tetradtionen och en modern livsstil och är en perfekt present att ge bort.",
@@ -611,7 +611,7 @@
         "type": ["adult"]
     },
     {
-        "id": 50,
+        "id": "50",
         "productName": "Ekologisk Peppar, tre sorter",
         "price": 99,
         "description": "Ekologisk pepparblandning från ADD:WISE. Blandningen består av svartpeppar, vitpeppar och rosépeppar. Dessa hela pepparkorn passar bra när du ska fylla på din kvarn.",
@@ -623,7 +623,7 @@
         "type": ["adult"]
     },
     {
-        "id": 51,
+        "id": "51",
         "productName": "Saltkvarn med havssalt & ekologiska chiliflakes",
         "price": 119,
         "description": "Saltkvarn med havssalt, ekologiska chiliflakes, ringblomma och rosa blåklint - en fantastisk blandning. Praktiskt förpackat i en kvarn som är fin att ha ståendes framme i köket eller ge bort som present.",
@@ -635,7 +635,7 @@
         "type": ["adult"]
     },
     {
-        "id": 52,
+        "id": "52",
         "productName": "Ekologisk tygbok",
         "price": 249,
         "description": "En fin tygbok att lyssna till, leka med och kika på. Tygboken kommer från Frank & Fischer och är gjord av ekologisk bomull.",
@@ -647,7 +647,7 @@
         "type": ["toddler"]
     },
     {
-        "id": 53,
+        "id": "53",
         "productName": "Ekologisk pekbok av trä",
         "price": 159,
         "description": "Ekologisk pekbok av trä från PlanToys. På sista sidan sitter en spegel - där ser ni vem det är som kör bilen på sidan framför! Tillverkat av trä från gummiträd och målad med trygga färger.",
@@ -659,7 +659,7 @@
         "type": ["toddler"]
     },
     {
-        "id": 54,
+        "id": "54",
         "productName": "Min skog - bok",
         "price": 79,
         "description": "Med fina illustrationer i trevliga mjuka färger inbjuder denna naturpekbok till att titta på det som finns i skogen. Korta texter och tydliga bilder lämnar utrymme att fundera kring det som händer på marken och i träden. En trevlig, miljövänlig naturbilderbok för de minsta, tryckt med miljövänliga färger på miljövänlig papp.",
@@ -671,7 +671,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 55,
+        "id": "55",
         "productName": "Min trädgård - bok",
         "price": 79,
         "description": "Med fina illustrationer i trevliga mjuka färger inbjuder denna naturpekbok till att titta på det som finns i trädgården. Korta texter och tydliga bilder lämnar utrymme att fundera kring det som händer på marken och i träden. En trevlig, miljövänlig naturbilderbok för de minsta, tryckt med miljövänliga färger på miljövänlig papp.",
@@ -683,7 +683,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 56,
+        "id": "56",
         "productName": "Mitt hav - bok",
         "price": 84,
         "description": "Sälen, Måsen och Krabban visar havet och stranden som är deras hem. Vi får möta andra djur som finns i vattnet och på stranden och ser även några växter.En miljövänlig bok, tryckt med ekologiska färger på återvunnet, oblekt papper.",
@@ -695,7 +695,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 57,
+        "id": "57",
         "productName": "Eco-friendly skivspelare",
         "price": 2743,
         "description": "House of Marley strävar efter skapa högkvalitativa produkter på det mest etiska och miljövänliga sättet. Alla House of Marleys produkter och förpackningar är tillverkade av miljövänliga och förnyelsebara material såsom organisk bomull, återvunna plaster, återvinningsbara metaller, bambu och FSC-certifierat trä. Företaget stöder även 1Love, en stiftelse som arbetar för unga människor, vår planet och fred.",
@@ -707,7 +707,7 @@
         "type": ["youth", "adult"]
     },
     {
-        "id": 58,
+        "id": "58",
         "productName": "Eco-friendly bluetooth högtalare",
         "price": 737,
         "description": "House of Marley strävar efter skapa högkvalitativa produkter på det mest etiska och miljövänliga sättet. Alla House of Marleys produkter och förpackningar är tillverkade av miljövänliga och förnyelsebara material såsom organisk bomull, återvunna plaster, återvinningsbara metaller, bambu och FSC-certifierat trä. Företaget stöder även 1Love, en stiftelse som arbetar för unga människor, vår planet och fred.",
@@ -719,7 +719,7 @@
         "type": ["youth", "adult"]
     },
     {
-        "id": 59,
+        "id": "59",
         "productName": "Eco-friendly in-ear hörlurar",
         "price": 246,
         "description": "House of Marley strävar efter skapa högkvalitativa produkter på det mest etiska och miljövänliga sättet. Alla House of Marleys produkter och förpackningar är tillverkade av miljövänliga och förnyelsebara material såsom organisk bomull, återvunna plaster, återvinningsbara metaller, bambu och FSC-certifierat trä. Företaget stöder även 1Love, en stiftelse som arbetar för unga människor, vår planet och fred.",
@@ -731,7 +731,7 @@
         "type": ["youth", "adult"]
     },
     {
-        "id": 60,
+        "id": "60",
         "productName": "Fair-Trade - Mobil",
         "price": 99,
         "description": "Nepal är känt för sin handpappers-tillverkning. Många små företag skapar angelägen sysselsättning på landsbygden. Det handgjorda pappret görs av barken från en buske, som lokalt kallas Lokta. Daphne Cannabina, som den också heter, växer på södra sluttningarna av Nepals Himalaya mellan 1600-4000 m.",
@@ -743,7 +743,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 61,
+        "id": "61",
         "productName": "Fair-Trade - Fingerdockor, 3-pack",
         "price": 125,
         "description": "De fina handtovade fingerdockorna görs helt för hand i Nepals högland.",
@@ -755,7 +755,7 @@
         "type": ["toddler"]
     },
     {
-        "id": 62,
+        "id": "62",
         "productName": "Fair-Trade - Elefant",
         "price": 149,
         "description": "Elefanterna är handsydda i indisk bomull och tryckta med blocktryck, där tryckformarna snidats ut för hand ur ett trästycke. Arbetet med att göra dessa fantastiska djur innebär en viktig inkomstkälla för kvinnorna i producentgruppen Hubli i södra Indien, som förutom skälig lön också får fri sjukvård och pension. Varje litet djur har sytts med omtanke om både människa och miljö och är ett bra exempel på hur hantverksmässig produktion på rättvisa villkor stärker kvinnor och skapar en tro på framtiden.",
@@ -767,7 +767,7 @@
         "type": ["kid", "youth", "adult"]
     },
     {
-        "id": 63,
+        "id": "63",
         "productName": "Geopussel Världen",
         "price": 179,
         "description": "Geopussel är tillverkat av rejäl och hållbar återvunnen kartong. Det är ett stort och färgrikt pussel för alla åldrar, som har tilldelats priser såsom Smart Play och Smart Toy från den internationella organisationen Dr. Toy.",
@@ -779,7 +779,7 @@
         "type": ["kid", "adult", "youth"]
     },
     {
-        "id": 64,
+        "id": "64",
         "productName": "Ekologiskt Kitchen-Kit",
         "price": 204,
         "description": "Fyll på skafferiet och köp 'Kitchen-kit!' från populära märket Vitaprana! Paketet innehåller väl sammansatta produkter av hög kvalitet fyllt med nyttigheter.",
@@ -791,7 +791,7 @@
         "type": ["adult", "youth"]
     },
     {
-        "id": 65,
+        "id": "65",
         "productName": "Ekologiskt Veggiebuljong",
         "price": 39,
         "description": "Renée Voltaires Veggiebuljong är en ekologisk grönsaksbuljong för dig som vill undvika tillsatt socker.",
@@ -803,7 +803,7 @@
         "type": ["adult", "youth"]
     },
     {
-        "id": 66,
+        "id": "66",
         "productName": "Giftfri ”Ett rent liv utan tillsatser” - bok",
         "price": 239,
         "description": "Boken innehåller massvis av tips och lösningar för hela familjen, från hemmets innersta vrår till utlandsresan, trädgården och hur man bör tänka kring elektronik. Författarna lägger starkt fokus på moderna produkter inom till exempel hygien, skönhet, läkemedel, kläder, tatueringar och leksaker. Här finns gott om inspiration för alla, både för nybörjaren och för den som intresserat sig för en giftfri livsstil länge. Författarna är båda drivna bloggare och inspiratörer med fokus på kost och hälsa, och har tidigare skrivit flera böcker kring dessa ämnen.",
@@ -815,7 +815,7 @@
         "type": ["adult", "youth"]
     },
     {
-        "id": 67,
+        "id": "67",
         "productName": "Naturligt och ekovänligt folie - 3-p S/M/L",
         "price": 229,
         "description": "Bee´s Wrap är ett naturligt, ekovänligt och plastfritt alternativ till plastfolie och aluminiumfolie. Äntligen finns det ett alternativ! Bee s Wrap är tillverkad av ekologisk bomullsmuslin, bivax, jojobaolja och kåda. Denna kombination ger en följbar och förseglande folie som kan användas om och om igen.",
@@ -827,7 +827,7 @@
         "type": ["adult", "youth"]
     },
     {
-        "id": 68,
+        "id": "68",
         "productName": "Plastbantakit: Skärbräda & Köksredskap",
         "price": 488,
         "description": "Plastbanta ditt kök eller ge bort ett fint plastbantningskit till någon som du tycker om. Ekologisk bambu är lätt och starkare än trä och samtidigt naturligt fläckresistent och antibakteriell. Köksredskapen är tillverkad av ett massivt stycke certifierad ekologiskt odlad bambu och inoljad med en livsmedelssäker olja.",
@@ -839,7 +839,7 @@
         "type": ["adult"]
     },
     {
-        "id": 69,
+        "id": "69",
         "productName": "Plastbantakit: Skärbräda & Köksredskap",
         "price": 488,
         "description": "Plastbanta ditt kök eller ge bort ett fint plastbantningskit till någon som du tycker om. Ekologisk bambu är lätt och starkare än trä och samtidigt naturligt fläckresistent och antibakteriell. Köksredskapen är tillverkad av ett massivt stycke certifierad ekologiskt odlad bambu och inoljad med en livsmedelssäker olja.",
@@ -851,7 +851,7 @@
         "type": ["adult"]
     },
     {
-        "id": 70,
+        "id": "70",
         "productName": "Plastbantningskit: Köksredskap i Bambu",
         "price": 243,
         "description": "Det här är ett kit för dig som vill börja lite smått och rensa ut plasten i köket eller för dig som redan rensat ut mycket men behöver komplettera. Ekologisk bambu är lätt och starkare än trä och samtidigt naturligt fläckresistent och antibakteriell. Köksredskapen är tillverkad av ett massivt stycke certifierad ekologiskt odlad bambu och inoljad med en livsmedelssäker olja.",
@@ -863,7 +863,7 @@
         "type": ["adult"]
     },
     {
-        "id": 71,
+        "id": "71",
         "productName": "Durkslag av bambufibrer",
         "price": 149,
         "description": "Här är ett riktigt stort och rejält durkslag av miljösmarta bambufibrer. Smart, praktiskt och snyggt.",
@@ -875,7 +875,7 @@
         "type": ["adult"]
     },
     {
-        "id": 72,
+        "id": "72",
         "productName": "4st bambuskålar",
         "price": 395,
         "description": "4-pack skålar/bunkar av miljösmart bambufibrer. Garanterat blir de här bunkarna din bästa vän i köket.",
@@ -887,7 +887,7 @@
         "type": ["adult"]
     },
     {
-        "id": 73,
+        "id": "73",
         "productName": "Salladsbestick av bambufibrer",
         "price": 99,
         "description": "Finfina salladsbestick av rejält och miljövänligt material – bambufibrer och majsstärkelse. Finns i flera härliga färger.",
@@ -899,7 +899,7 @@
         "type": ["adult"]
     },
     {
-        "id": 74,
+        "id": "74",
         "productName": "Lev mer på mindre - bok",
         "price": 243,
         "description": "En bok full av recept, inspiration och praktiska tips kring matlagning, trädgårdsodling och liv för både djur och människa.",
@@ -911,7 +911,7 @@
         "type": ["adult"]
     },
     {
-        "id": 75,
+        "id": "75",
         "productName": "Rå matglädje: veganskt, lyxigt och jäkligt gott - bok",
         "price": 206,
         "description": "I boken Rå matglädje bjuder Erika Frost in oss i sin härliga raw food- och veganvärld, fylld av mat i alla regnbågens färger. Det är en mat som är oprocessad, fri från gluten, mejeri och raffinerat socker.",
@@ -923,7 +923,7 @@
         "type": ["adult"]
     },
     {
-        "id": 76,
+        "id": "76",
         "productName": "Dessertrevolution - bok",
         "price": 219,
         "description": "Joel Lindqvist fann en passion och ett kall i desserten. Med inspiration från naturen skapar han desserter med stort hjärt­a och skarp hjärna. Hans signum är okonventionella ingredienser och en tonvikt på ekologiska och fräscha råvaror.",
@@ -935,7 +935,7 @@
         "type": ["adult"]
     },
     {
-        "id": 77,
+        "id": "77",
         "productName": "Skörd : 41 grönsaker 810 recept från Ekolådan - bok",
         "price": 216,
         "description": "Varje grönsak presenteras med recept, praktiska tips på förvaring, när grönsaken är som godast, vad som passar ihop med vad och vad som är gott att äta till de färdiga rätterna.",
@@ -947,7 +947,7 @@
         "type": ["adult"]
     },
     {
-        "id": 78,
+        "id": "78",
         "productName": "Det vilda köket - bok",
         "price": 106,
         "description": "Att äta lindblad, kirskål och skogsviol är inte konstigare än att äta rucola och gräslök, dessutom är det helt gratis och garanterat ekologiskt. I den här kokboken visar örtspecialisten Lisen Sundgren vägen till sina favoriter bland allt det ätbara från naturen, och kocken Rune Kalf-Hansen har skapat recept där det vilda får en naturlig plats i soppor, sallader, grytor, röror, oljor, efterrätter och mycket mer.",
@@ -959,7 +959,7 @@
         "type": ["adult"]
     },
     {
-        "id": 79,
+        "id": "79",
         "productName": "Naturkokboken: från skogspromenaden till tallriken - bok",
         "price": 172,
         "description": "Det plockas svamp och vilda växter till matlagningen som aldrig förr. Naturliga, ekologiska och traditionella råvaror är det som gäller just nu, både på stjärnkrogar och kvartersrestauranger.",
@@ -971,7 +971,7 @@
         "type": ["adult"]
     },
     {
-        "id": 80,
+        "id": "80",
         "productName": "Mosa, mixa, mumsa: ekologisk barnmat - bok",
         "price": 142,
         "description": "Vilken typ av mat kan jag ge mitt barn? Vad kan mitt barn äta från 6 månaders ålder? Hur lagar jag enkel, nyttig och balanserad mat till små barn? Hur kan vi ge dem mat som är både god och hälsosam? Vad är fördelarna med ekologisk mat? Kan man frysa in maten? Det är säkert många föräldrar som ställer sig sådana här frågor. Så gjorde även Caroline och Pernilla när de började laga mosmat till sina barn.",
@@ -983,7 +983,7 @@
         "type": ["adult", "toddler"]
     },
     {
-        "id": 81,
+        "id": "81",
         "productName": "Mera vego: mat för hela familjen - bok",
         "price": 142,
         "description": "I Mera vego finns 60 familjeanpassade vegetariska recept, indelade i kapitel som baserar sig på tillagningstid. Här finns rätter som tar max 20 minuter att laga en stressig torsdag efter jobbet. Men också vardagsrecept, för alla som kan tänka sig att lägga en dryg halvtimme på middagen. Och helgrätter, som kräver lite mer, men som blir desto lyxigare. Dessutom får du recept på vegetarisk plockmat, bra mellanmål, goda efterrätter och mängder av praktiska tips.",
@@ -995,7 +995,7 @@
         "type": ["adult"]
     },
     {
-        "id": 82,
+        "id": "82",
         "productName": "Fair-Trade Grytlapp",
         "price": 142,
         "description": "De handflätade grytlapparna är till-verkade av återvunna Sarityger. De varierar därför i färg och alla grytlappar är olika.",
@@ -1007,7 +1007,7 @@
         "type": ["adult"]
     },
     {
-        "id": 83,
+        "id": "83",
         "productName": "3-pack barntallrikar",
         "price": 129,
         "description": "Klassiska barntallrikar med indelning i fack, som gör det lätt att lägga upp en aptitretande måltid. De är gjorda av återvunna mjölkförpackningar, och produkterna är testade på alla sätt för att garantera ditt barns säkerhet. Plasten är helt fri från skadliga ämnen som BPA och ftalater.",
@@ -1019,7 +1019,7 @@
         "type": ["toddler", "kid"]
     },
     {
-        "id": 84,
+        "id": "84",
         "productName": "3-pack mugg",
         "price": 119,
         "description": "Rejäla muggar som är lätta att greppa. Bra till maten, för slurken, på picnicen eller barnkalaset. Muggarna kommer i trepack i olika glada färger och är tillverkade av miljövänlig och säker plast från återvunna mjölkdunkar.",
@@ -1031,7 +1031,7 @@
         "type": ["toddler", "kid", "adult", "youth"]
     },
     {
-        "id": 85,
+        "id": "85",
         "productName": "Presentkit till köket - Handduk + Disktrasa",
         "price": 349,
         "description": "Det här är ett underbart presentkit med en bubbbel handduk och en disktrasa för köket. En vacker present att ge bort eller behålla själv. Tillverkad av 100% lin och färgad med GOTS-certifierade färger. Växbo Lins produkter är märkta med Naturskyddsföreningens miljömärkning Bra Miljöval. Uppfyller Naturskyddsföreningens miljökriterier för textil. Rang B, bra beredning.",
@@ -1043,7 +1043,7 @@
         "type": ["adult"]
     },
     {
-        "id": 86,
+        "id": "86",
         "productName": "Förvaringsbox, liten",
         "price": 249,
         "description": "Snygg, ekologisk förvaringsbox. Tillverkad av ekologisk bomull förstärkt med kartong i sidorna för att göra den stadig. När den inte används kan den fällas ihop och förvaras platt.",
@@ -1055,7 +1055,7 @@
         "type": ["adult", "youth"]
     },
     {
-        "id": 87,
+        "id": "87",
         "productName": "Förvaringsbox, stor",
         "price": 299,
         "description": "Snygg, ekologisk förvaringsbox. Tillverkad av ekologisk bomull förstärkt med kartong i sidorna för att göra den stadig. När den inte används kan den fällas ihop och förvaras platt.",
@@ -1067,7 +1067,7 @@
         "type": ["adult", "youth"]
     },
     {
-        "id": 86,
+        "id": "86",
         "productName": "Förvaringskorg, liten",
         "price": 255,
         "description": "Fin förvaringskorg i mörktgrått med en glad apa, perfekt till leksaksförvaring men även som förvaringskorg för vantar och mössor eller varför inte som en rolig blöjförvaring till badrummet. 100% ekologisk bomullscanvas, tryck i giftfria färger.",
@@ -1079,7 +1079,7 @@
         "type": ["adult", "kid", "toddler"]
     },
     {
-        "id": 87,
+        "id": "87",
         "productName": "Förvaringskorg, stor",
         "price": 439,
         "description": "Stor elegant och rymlig förvaringskorg för leksaker och lek, alternativt som en fin tvättkorg. 100% ekologisk bomullscanvas, tryck i giftfria färger.",
@@ -1091,7 +1091,7 @@
         "type": ["adult", "kid", "toddler"]
     },
     {
-        "id": 88,
+        "id": "88",
         "productName": "Fair-Trade - Ekorre",
         "price": 285,
         "description": "Ekorre virkad av ekologiskt bomullsgarn, stoppad med ekologisk bomull, färgad med giftfria färger. Peppa är en kollektion handgjorda dockor och mjukisdjur för alla åldrar. Peppa produkter är handgjorda i Indien även Fair Trade organisation och är enbart tillverkade av naturmaterial. Peppa är tillverkade i enlighet med ÖKO-Tex 100 standarden, är CE-märkta och endast giftfria färger används vid tillverkning.",
@@ -1737,68 +1737,68 @@
         "personality": ["practical", "orderly", "active"],
         "material": ["glass", "silicone"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 301,
         "productName": "Ekobomull Cloth Cecilie",
         "price": 205,
         "description": "En nordisk version av den japanska Furoshiki, ett tygstycke med många olika användningsområden. Du kan ha det till bordet som en duk, knyt den till en väska eller använda för paketinslagning!",
         "src": "https://d25lcx2ne1mt2n.cloudfront.net/234206/22374146-TaxNN.jpg",
         "href": "https://www.echoofgothenburg.se/store/p/0/ekobomull-cloth-cecilie-667942",
-        "interest": ["home", "storage", "travel" ],
+        "interest": ["home", "storage", "travel"],
         "personality": ["orderly", "practical", "creative"],
         "material": ["cotton"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 302,
         "productName": "Fabelab Swaddle Ekologisk Scarf/Filt - Honey/Gul",
         "price": 249,
         "description": "FABELAB designar innovativa och mjuka produkter för dagligt bruk på ett ansvarsfullt sätt. Deras produkter är estetiskt tilltalande med funktioner som stimulerar barnets sinnen och utvecklar deras fantasi. Fabelab älskar enkelheten av former och mönster som kan tolkas individuellt.",
         "src": "http://www.laplandecostore.se/shop/thumbnails/shop/35694/art94/h5476/120475476-origpic-c225d7.png",
         "href": "http://www.laplandecostore.se/varumarken/fabelab/fabelab-swaddle-ekologisk-scarffilt-honeygul.html",
-        "interest": ["home", "outdoor", "travel" ],
+        "interest": ["home", "outdoor", "travel"],
         "personality": ["practical", "creative"],
         "material": ["cotton"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 303,
         "productName": "Tek Glestandad Kam i Trä - Orange",
         "price": 119,
         "description": "En mycket fin handgjord kam i FSC-certifierat askträ från Italienska märket Tek. Kammen har stora tänder med glest mellanrum och passar speciellt bra för den som har tjockt, lockigt eller krulligt hår. Eftersom kammen är tillverkad av trä så fungerar den antistatiskt och gör håret mindre statiskt än med en kam i plast. Den glestandade kammen är behandlad med bivax och linfröolja och är färgad med en giftfri vattenbaserad växtfärg. En liten och smidig kam som passar bra att ha med sig i handväskan eller på resan.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h8212/155488212-origpic-18a36e.png",
         "href": "http://www.laplandecostore.se/badrum/for-barn-bebisar/tek-glestandad-kam-i-tra-orange.html",
-        "interest": ["home", "travel" ],
+        "interest": ["home", "travel"],
         "personality": ["practical", "orderly"],
         "material": ["wood"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 304,
         "productName": "Deodorant Unisex c/o Gerd - 60 ml",
         "price": 169,
         "description": "Care of Gerds Deodorant är en antiperspirant som håller dig torr och bevarar den fräscha känslan hela dagen. Motverkar effektivt odör utan att irritera huden. Tillverkad i Jokkmokk, Lappland. Ekologisk.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h1705/16731705-origpic-7a4080.png",
         "href": "http://www.laplandecostore.se/hudvard/kropp/eco-deodorant-co-gerd-60-ml.html",
-        "interest": ["home", "travel", "health" ],
+        "interest": ["home", "travel", "health"],
         "personality": ["active", "caring"],
         "material": ["glass", "other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 305,
         "productName": "KeepJar Ekologisk Nätpåse med Dragsko GOTS Bomull - S, 1 st",
         "price": 49,
         "description": "En praktisk nätpåse från KeepJar som passar till frukt, grönsaker och andra småsaker. Ta med dig en återanvändbar och tvättbar nätpåse i ekologisk GOTS certifierad bomull nästa gång du handlar istället för att ta en påse av plast i affären. Nätpåsen är lätt att se igenom vilket gör att kassapersonalen lätt kan avgöra innehållet i kassan.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h4658/144894658-origpic-47b1f5.png",
         "href": "http://www.laplandecostore.se/ekologiska-tygpasar/keepjar-ekologisk-natpase-med-dragsko-gots-bomull-s-1-st.html",
-        "interest": ["home", "travel", "recycling", "orderly" ],
+        "interest": ["home", "travel", "recycling", "orderly"],
         "personality": ["orderly", "practical"],
         "material": ["cotton"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 306,
         "productName": "Tunn Tygkasse i Ekologisk Bomull - Långt Handtag",
         "price": 29,
@@ -1809,8 +1809,8 @@
         "personality": ["orderly", "practical"],
         "material": ["cotton"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 307,
         "productName": "Tunn Tygkasse i Ekologisk Bomull - Kort Handtag",
         "price": 28,
@@ -1821,8 +1821,8 @@
         "personality": ["orderly", "practical"],
         "material": ["cotton"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 308,
         "productName": "Shoppingkasse i Canvastyg - Ekologisk Bomull, GOTS",
         "price": 109,
@@ -1833,8 +1833,8 @@
         "personality": ["orderly", "practical"],
         "material": ["cotton"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 309,
         "productName": "Nätpåse med Dragsko - Ekologisk GOTS Bomull, Medium",
         "price": 55,
@@ -1845,8 +1845,8 @@
         "personality": ["orderly", "practical"],
         "material": ["cotton"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 310,
         "productName": "Tekula i Rostfritt Stål - Ø 4,5 cm",
         "price": 21,
@@ -1857,8 +1857,8 @@
         "personality": ["orderly", "practical", "epicurean"],
         "material": ["stainless"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 311,
         "productName": "Humble Brush Tandborste i Bambu - Barn, Gul - Ultrasoft",
         "price": 29,
@@ -1869,8 +1869,8 @@
         "personality": ["orderly", "practical"],
         "material": ["bambu", "other"],
         "type": ["kid"]
-        },
-        {
+    },
+    {
         "id": 312,
         "productName": "Humble Brush Tandborste i Bambu - Vuxen, 5-pack - Multi",
         "price": 159,
@@ -1881,8 +1881,8 @@
         "personality": ["orderly", "practical"],
         "material": ["bambu", "other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 313,
         "productName": "Tandborstmugg Biologiskt Nedbrytbar - Bunny",
         "price": 69,
@@ -1893,8 +1893,8 @@
         "personality": ["orderly", "practical"],
         "material": ["bambu", "other"],
         "type": ["kid", "youth"]
-        },
-        {
+    },
+    {
         "id": 314,
         "productName": "Skrivbordsset i kork",
         "price": 1480,
@@ -1905,8 +1905,8 @@
         "personality": ["orderly", "practical"],
         "material": ["other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 315,
         "productName": "Våfflad stort badlakan",
         "price": 665,
@@ -1917,8 +1917,8 @@
         "personality": ["practical", "active", "epicurean"],
         "material": ["cotton"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 316,
         "productName": "Trådlöst tangentbord med datormus av bambu",
         "price": 599,
@@ -1929,8 +1929,8 @@
         "personality": ["practical", "creative"],
         "material": ["bambu", "other"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 317,
         "productName": "Trådlös datormus av bambu",
         "price": 349,
@@ -1941,8 +1941,8 @@
         "personality": ["practical", "creative"],
         "material": ["bambu", "other"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 318,
         "productName": "Stor skål av bambufibrer",
         "price": 149,
@@ -1953,8 +1953,8 @@
         "personality": ["orderly", "practical"],
         "material": ["bambu", "other"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 319,
         "productName": "Korkskal till mobil",
         "price": 199,
@@ -1965,8 +1965,8 @@
         "personality": ["orderly", "practical", "creative"],
         "material": ["cork", "other"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 320,
         "productName": "Miljövänliga skal till mobil",
         "price": 319,
@@ -1977,8 +1977,8 @@
         "personality": ["orderly", "practical", "creative"],
         "material": ["other"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 321,
         "productName": "Yogablock 23 x 12 x 7,5 cm kork",
         "price": 125,
@@ -1989,8 +1989,8 @@
         "personality": ["active"],
         "material": ["cork"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 322,
         "productName": "Yoga wheel, Cork",
         "price": 799,
@@ -2001,8 +2001,8 @@
         "personality": ["active"],
         "material": ["cork"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 323,
         "productName": "KCA Mönstrade strumpor 4-pack",
         "price": 250,
@@ -2013,8 +2013,8 @@
         "personality": ["active", "practical"],
         "material": ["cotton", "other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 324,
         "productName": "HIRSCH NATUR Ullsockor - Svarta",
         "price": 200,
@@ -2025,8 +2025,8 @@
         "personality": ["active", "practical"],
         "material": ["wool"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 325,
         "productName": "Anteckningsblock, Miljövänligt",
         "price": 18,
@@ -2037,8 +2037,8 @@
         "personality": ["creative", "orderly", "practical"],
         "material": ["paper", "other"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 326,
         "productName": "Glassformar Rostfritt Stål - 6 st + Ställning, Paddle Style",
         "price": 399,
@@ -2049,8 +2049,8 @@
         "personality": ["creative", "epicurean"],
         "material": ["stainless", "bambu", "silicone"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 327,
         "productName": "BiBo - Bihotellet natur",
         "price": 499,
@@ -2061,8 +2061,8 @@
         "personality": ["caring", "active"],
         "material": ["wood"],
         "type": ["youth", "adult", "animal"]
-        },
-        {
+    },
+    {
         "id": 328,
         "productName": "Såsburk Rostfritt stål - 5 cm | 45 ml - 3-pack",
         "price": 169,
@@ -2073,8 +2073,8 @@
         "personality": ["practical", "orderly", "active"],
         "material": ["stainless"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 329,
         "productName": "Såsburk Rostfritt stål - 5 cm | 45 ml",
         "price": 59,
@@ -2085,8 +2085,8 @@
         "personality": ["practical", "orderly", "active"],
         "material": ["stainless"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 330,
         "productName": "Kinaschack",
         "price": 595,
@@ -2097,8 +2097,8 @@
         "personality": ["creative", "active"],
         "material": ["wood"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 331,
         "productName": "Fiaspel",
         "price": 595,
@@ -2109,8 +2109,8 @@
         "personality": ["creative", "active"],
         "material": ["wood"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 332,
         "productName": "3D-Pussel bambu Dubbel-knut",
         "price": 50,
@@ -2121,8 +2121,8 @@
         "personality": ["creative", "active"],
         "material": ["bambu"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 333,
         "productName": "3D-Pussel bambu Kors",
         "price": 50,
@@ -2133,8 +2133,8 @@
         "personality": ["creative", "active"],
         "material": ["bambu"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 334,
         "productName": "Bygg pyramiden",
         "price": 119,
@@ -2145,8 +2145,8 @@
         "personality": ["creative", "active"],
         "material": ["wood"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 335,
         "productName": "Luffarschack",
         "price": 119,
@@ -2157,8 +2157,8 @@
         "personality": ["creative", "active"],
         "material": ["wood"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 336,
         "productName": "Kalaha",
         "price": 129,
@@ -2169,8 +2169,8 @@
         "personality": ["creative", "active"],
         "material": ["wood"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 337,
         "productName": "Träknopp, liten, beige",
         "price": 99,
@@ -2181,8 +2181,8 @@
         "personality": ["orderly", "creative"],
         "material": ["wood"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 338,
         "productName": "Fairphone mobil",
         "price": 5238,
@@ -2193,8 +2193,8 @@
         "personality": ["active", "practical", "caring", "orderly"],
         "material": ["recycled", "other"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 339,
         "productName": "Så kan jag ta hand om jorden : en bok med flikar att vika ut av Emma Brownjohn",
         "price": 120,
@@ -2205,8 +2205,8 @@
         "personality": ["creative", "caring", "orderly"],
         "material": ["paper"],
         "type": ["kid"]
-        },
-        {
+    },
+    {
         "id": 340,
         "productName": "Cykla, panta och rädda en isbjörn av Jörn Spolander",
         "price": 107,
@@ -2217,8 +2217,8 @@
         "personality": ["creative", "caring", "orderly"],
         "material": ["paper"],
         "type": ["kid"]
-        },
-        {
+    },
+    {
         "id": 341,
         "productName": "Recycled Home av Mark Bailey, Sally Bailey",
         "price": 208,
@@ -2229,8 +2229,8 @@
         "personality": ["creative", "caring", "orderly", "active"],
         "material": ["paper"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 342,
         "productName": "Så sparar du pengar och hjälper miljön! : Sophie Hedenstiernas smarta tips av Sophie Hedenstierna",
         "price": 208,
@@ -2241,8 +2241,8 @@
         "personality": ["creative", "caring", "orderly"],
         "material": ["paper"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 343,
         "productName": "Stora boken om bin av Piotr Socha",
         "price": 204,
@@ -2253,8 +2253,8 @@
         "personality": ["creative", "caring", "orderly"],
         "material": ["paper"],
         "type": ["youth", "adult", "animal"]
-        },
-        {
+    },
+    {
         "id": 344,
         "productName": "Bisyssla : Bin, biodling och biprodukter av Joachim Petterson",
         "price": 229,
@@ -2265,8 +2265,8 @@
         "personality": ["creative", "caring", "orderly"],
         "material": ["paper"],
         "type": ["youth", "adult", "animal"]
-        },
-        {
+    },
+    {
         "id": 345,
         "productName": "PINQPONQ Brik - Vivid Monochrome, magväska",
         "price": 400,
@@ -2277,8 +2277,8 @@
         "personality": ["practical", "orderly"],
         "material": ["other"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 346,
         "productName": "ELVIS & KRESSE Billfold Credit - Yellow",
         "price": 750,
@@ -2289,8 +2289,8 @@
         "personality": ["practical", "orderly"],
         "material": ["other", "recycled"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 347,
         "productName": "Nappflaska med naturgumminapp och isgrönt silikonfodral",
         "price": 159,
@@ -2301,8 +2301,8 @@
         "personality": ["practical"],
         "material": ["glass", "active"],
         "type": ["toddler", "kid"]
-        },
-        {
+    },
+    {
         "id": 348,
         "productName": "ZEN Corda Ekologisk Lakritsrem - 60 g",
         "price": 25,
@@ -2313,8 +2313,8 @@
         "personality": ["epicurean"],
         "material": ["liquorice"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 349,
         "productName": "Ekologiskt Gelegodis Hey Yum! - Love Spring!, 100 g",
         "price": 29,
@@ -2325,8 +2325,8 @@
         "personality": ["epicurean"],
         "material": ["sugar", "other"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 350,
         "productName": "Ekorrens Ekologiska Mörk Choklad | Salty Licorice - 85 g",
         "price": 29,
@@ -2337,8 +2337,8 @@
         "personality": ["epicurean"],
         "material": ["liquorice", "chocolate"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 351,
         "productName": "ZEN Pietre Ekologiskt Lakritsgodis Stenar - 100 g",
         "price": 39,
@@ -2349,8 +2349,8 @@
         "personality": ["epicurean"],
         "material": ["liquorice"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 352,
         "productName": "Vivani Kids Chocolate Ekologisk - Mjölkchoklad med Mjölkfyllning, 100 g",
         "price": 29,
@@ -2361,8 +2361,8 @@
         "personality": ["epicurean"],
         "material": ["chocolate"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 353,
         "productName": "Ekologiska Remmar Jordgubb Candy Tree - Glutenfri, 75 g",
         "price": 29,
@@ -2373,8 +2373,8 @@
         "personality": ["epicurean"],
         "material": ["other"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 354,
         "productName": "Ekologisk Hasselnötskola Candy Tree - 75 g",
         "price": 29,
@@ -2385,8 +2385,8 @@
         "personality": ["epicurean"],
         "material": ["other"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 355,
         "productName": "Like my Bike - Ekorrens Ekologiska, 65 g",
         "price": 25,
@@ -2397,8 +2397,8 @@
         "personality": ["epicurean"],
         "material": ["other"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 356,
         "productName": "Söt Ekologisk Lakrits Handmade",
         "price": 65,
@@ -2409,8 +2409,8 @@
         "personality": ["epicurean"],
         "material": ["liquorice"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 357,
         "productName": "AFRO Låda",
         "price": 55,
@@ -2421,8 +2421,8 @@
         "personality": ["practical", "orderly"],
         "material": ["paper", "cotton"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 358,
         "productName": "MIRA MAYA Börs",
         "price": 125,
@@ -2433,8 +2433,8 @@
         "personality": ["practical", "orderly"],
         "material": ["cotton"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 359,
         "productName": "Sauna Birch Scrub - c/o Gerd, 30 ml",
         "price": 49,
@@ -2445,8 +2445,8 @@
         "personality": ["active"],
         "material": ["other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 360,
         "productName": "Natural Toothpaste The Humble Co. - Fresh Mint With Fluoride, 75 ml",
         "price": 36,
@@ -2457,8 +2457,8 @@
         "personality": ["active"],
         "material": ["other"],
         "type": ["kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 361,
         "productName": "Luffakudde - Malin i Ratan",
         "price": 30,
@@ -2469,8 +2469,8 @@
         "personality": ["active"],
         "material": ["other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 362,
         "productName": "Ekologisk Handgjord Tvål på Hamparep - Ringblomma & Citrus, 160 g",
         "price": 165,
@@ -2481,8 +2481,8 @@
         "personality": ["active"],
         "material": ["other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 363,
         "productName": "Ekologisk Handgjord Tvål, Loelle - Argan Soap, 75 g",
         "price": 41,
@@ -2493,8 +2493,8 @@
         "personality": ["active"],
         "material": ["other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 364,
         "productName": "Presentkit, For Him - Weleda",
         "price": 289,
@@ -2505,8 +2505,8 @@
         "personality": ["active"],
         "material": ["other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 365,
         "productName": "Presentkit, Citrus Every Day Box - Weleda",
         "price": 389,
@@ -2517,8 +2517,8 @@
         "personality": ["active"],
         "material": ["other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 366,
         "productName": "Weleda Kids Shampoo & Body Wash - Happy Orange, 150 ml",
         "price": 69,
@@ -2529,8 +2529,8 @@
         "personality": ["active"],
         "material": ["other"],
         "type": ["kid"]
-        },
-        {
+    },
+    {
         "id": 367,
         "productName": "Ekologisk Spatvål Ekendahls, Aktivt Kol & Tea Tree - Fet och oren hy",
         "price": 125,
@@ -2541,8 +2541,8 @@
         "personality": ["active"],
         "material": ["other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 368,
         "productName": "Presenkit, Arnica Sport - Weleda",
         "price": 179,
@@ -2553,8 +2553,8 @@
         "personality": ["active"],
         "material": ["other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 369,
         "productName": "Luffa Tvåldyna Loofah Soap Cushion - Oval",
         "price": 45,
@@ -2565,8 +2565,8 @@
         "personality": ["active"],
         "material": ["other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 370,
         "productName": "Ekologiskt Hårvax Nea of Sweden",
         "price": 159,
@@ -2577,8 +2577,8 @@
         "personality": ["active"],
         "material": ["other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 371,
         "productName": "Organic Sugar Soap Lemongrass Lime Dr. Bronner’s",
         "price": 159,
@@ -2589,8 +2589,8 @@
         "personality": ["active"],
         "material": ["other"],
         "type": ["youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 372,
         "productName": "Gåvoshop - Presenter som räddar liv",
         "price": 100,
@@ -2601,8 +2601,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 373,
         "productName": "Läkarmissionen - Gåvogram",
         "price": 100,
@@ -2613,8 +2613,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 374,
         "productName": "Erikshjälpen - Flickors rätt till utbildning",
         "price": 100,
@@ -2625,8 +2625,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 375,
         "productName": "Ung Cancer - Gåvokort",
         "price": 100,
@@ -2637,8 +2637,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 376,
         "productName": "WWF - Ge en gratulationsgåva",
         "price": 100,
@@ -2649,8 +2649,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 377,
         "productName": "Vi Skogen - Ge en gåva",
         "price": 100,
@@ -2661,8 +2661,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 378,
         "productName": "ActionAid - Ge en gåva",
         "price": 100,
@@ -2673,8 +2673,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 379,
         "productName": "Cancerfonden - Ge en gåva",
         "price": 100,
@@ -2685,8 +2685,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 380,
         "productName": "Majblomman - Ge en gåva",
         "price": 100,
@@ -2697,8 +2697,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 381,
         "productName": "Läkare utan gränser - Ge en gåva",
         "price": 100,
@@ -2709,8 +2709,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 382,
         "productName": "Plan International - Ge en gåva",
         "price": 100,
@@ -2721,8 +2721,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 383,
         "productName": "Djurens rätt - Ge en gåva",
         "price": 100,
@@ -2733,8 +2733,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult", "animal"]
-        },
-        {
+    },
+    {
         "id": 384,
         "productName": "Djurrättsalliansen - Ge en gåva",
         "price": 100,
@@ -2745,8 +2745,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult", "animal"]
-        },
-        {
+    },
+    {
         "id": 385,
         "productName": "Barnfonden - Ge en gåva",
         "price": 100,
@@ -2757,8 +2757,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 386,
         "productName": "Rädda Barnen - Ge en gåva",
         "price": 100,
@@ -2769,8 +2769,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 387,
         "productName": "SOS Barnbyar - Ge en gåva",
         "price": 100,
@@ -2781,8 +2781,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 388,
         "productName": "Naturskyddsföreningen - Ge en gåva",
         "price": 100,
@@ -2793,8 +2793,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 389,
         "productName": "Stadsmissionen - Presenter för en mänskligare stad",
         "price": 100,
@@ -2805,8 +2805,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 390,
         "productName": "WaterAid - Gåvoshop",
         "price": 100,
@@ -2817,8 +2817,8 @@
         "personality": ["caring"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
+    },
+    {
         "id": 391,
         "productName": "Ekodirekt - Stockholm",
         "price": 100,
@@ -2829,9 +2829,9 @@
         "personality": ["epicurean"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        },
-        {
-        "id": 392,
+    },
+    {
+        "id": "392",
         "productName": "Ekodirekt - Stockholm",
         "price": 100,
         "description": "Presentkort att ge bort som födelsedagspresent, uppskattning till dina anställda eller till din partner som en överraskning!",
@@ -2841,5 +2841,5 @@
         "personality": ["epicurean"],
         "material": ["giftcard"],
         "type": ["toddler", "kid", "youth", "adult"]
-        }
+    }
 ]
