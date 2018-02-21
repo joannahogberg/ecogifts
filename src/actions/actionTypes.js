@@ -1,0 +1,2 @@
+export const REQUESTED_GIFT = 'REQUESTED_GIFT';
+export const RECEIVED_GIFTS = 'RECEIVED_GIFTS';
