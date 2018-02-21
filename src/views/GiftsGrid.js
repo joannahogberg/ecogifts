@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import PropTypes from "prop-types";
 import Gift from "../components/Gift";
+import { showCategory } from '../actions/actionCreators';
 
 // import { push } from 'react-router-redux'
 // import { bindActionCreators } from 'redux'
@@ -11,6 +12,12 @@ class GiftsGrid extends Component {
 
     return (
       <div className="photo-grid">
+
+      <button onClick={() => this.props.showCategory("home")}>Show Category 1</button>
+      <button onClick={() => this.props.showCategory("animal")}>Show Category 2</button>
+
+            
+
         {this.props.gifts.map((gift, i) => (
           <Gift {...this.props} key={i} i={i} gift={gift} />
         ))}
@@ -40,13 +47,26 @@ const mapStateToProps = state => ({
   gifts: state.gifts
 });
 
-//   const mapDispatchToProps = dispatch => bindActionCreators({
-//     changePage: () => push('/')
-//   }, dispatch)
+function mapDispatchToProps(dispatch) {
+  return {
+    showCategory: gift => dispatch(showCategory())
+  };
+}
 
-//   export default connect(
-//     mapStateToProps,
-//     mapDispatchToProps
-//   )(GiftsGrid)
 
-export default connect(mapStateToProps)(GiftsGrid);
+
+// function mapDispatchToProps(dispatch) {
+//   return {
+//     actions: {
+//       todoActions: bindActionCreators(todoActions, dispatch),
+//       counterActions: bindActionCreators(counterActions, dispatch)
+//     }
+//   };
+// }
+
+  export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(GiftsGrid)
+
+// export default connect(mapStateToProps)(GiftsGrid);

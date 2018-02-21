@@ -8,3 +8,10 @@ export const showGift = (gift) => {
       gift
     }
   }
+
+  export const showCategory = () => {
+    // console.log(category)
+  return {
+    type: 'SHOW_CATEGORY'
+  }
+}
