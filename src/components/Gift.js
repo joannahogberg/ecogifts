@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ChevronsRight } from "react-feather";
-import { showGift } from "../actions/actionCreators";
+// import { showGift } from "../actions/actionCreators";
 // import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
 
@@ -15,18 +15,17 @@ class Gift extends Component {
       <figure className="grid-figure">
         <div className="grid-photo-wrap">
           <Link to={`/view/${gift.id}`}>
-            <img
+            {/* <img
               src={gift.src}
               alt={gift.productName}
               className="grid-photo"
               style={{ width: "100px" }}
-            />
+            /> */}
           </Link>
         </div>
         <figcaption>
           <h2>{gift.productName}</h2>
           <div className="control-buttons">
-            {/* <button onClick={() => this.props.showGift(gift)}>Go to about page via redux</button> */}
             <Link to={`/view/${gift.id}`} className="button">
               Mer info
             </Link>
@@ -46,10 +45,10 @@ function mapStateToProps(state, props) {
   };
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    showGift: gift => dispatch(showGift(gift))
-  };
-}
+// function mapDispatchToProps(dispatch) {
+//   return {
+//     showGift: gift => dispatch(showGift(gift))
+//   };
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Gift);
+export default connect(mapStateToProps)(Gift);

@@ -7,4 +7,11 @@ export const showGift = (gift) => {
       type: 'REQUESTED_GIFT',
       gift
     }
+}
+
+export const filterByCategory = (category) => {
+  return {
+    type: 'FILTERED_BY_CATEGORY',
+    category
   }
+}
