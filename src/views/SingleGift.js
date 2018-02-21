@@ -1,22 +1,16 @@
 import React, { Component } from "react";
 import { ChevronsLeft, ChevronsRight } from "react-feather";
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 class SingleGift extends Component {
   render() {
     const { giftId } = this.props.match.params;
-    const i = this.props.gifts.findIndex((gift) => gift.id === giftId);
-    // const gift = this.props.gifts[giftId - 1];
-    const gift = this.props.gifts[i];
-console.log(this.props.gifts)
-    return (
-      <div className="single-photo">
-        <Link to={`/`} className="button">
-          <ChevronsLeft color="grey" size={24} />
-        </Link>
-        <figure className="grid-figure">
+    const gift = this.props.gifts.filter(gift => gift.id + "" === giftId);
+    let giftToRender = gift.map(gift => {
+      return (
+        <figure key={gift.id} className="grid-figure">
           <div className="grid-photo-wrap">
             <img
               src={gift.src}
@@ -35,10 +29,35 @@ console.log(this.props.gifts)
             </div>
           </figcaption>
         </figure>
+      );
+    });
+    return (
+      <div className="single-photo">
+        <Link to={`/`} className="button">
+          <ChevronsLeft color="grey" size={24} />
+        </Link>
+        {giftToRender}
       </div>
     );
   }
 }
+
+SingleGift.propTypes = {
+  gifts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      productName: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+      description: PropTypes.string.isRequired,
+      src: PropTypes.string.isRequired,
+      href: PropTypes.string.isRequired,
+      interest: PropTypes.array.isRequired,
+      personality: PropTypes.array.isRequired,
+      material: PropTypes.array.isRequired,
+      type: PropTypes.array.isRequired
+    })
+  )
+};
 
 const mapStateToProps = state => ({
   gifts: state.gifts
