@@ -1,2 +1,2 @@
 export const REQUESTED_GIFT = 'REQUESTED_GIFT';
-export const RECEIVED_GIFTS = 'RECEIVED_GIFTS';
+export const SHOW_CATEGORY = 'SHOW_CATEGORY';
