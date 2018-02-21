@@ -7,11 +7,11 @@ export const showGift = (gift) => {
       type: 'REQUESTED_GIFT',
       gift
     }
-  }
+}
 
-  export const showCategory = () => {
-    // console.log(category)
+export const filterByCategory = (category) => {
   return {
-    type: 'SHOW_CATEGORY'
+    type: 'FILTERED_BY_CATEGORY',
+    category
   }
 }

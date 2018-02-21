@@ -1,23 +1,31 @@
 import React, { Component } from "react";
 // import PropTypes from "prop-types";
 import Gift from "../components/Gift";
-import { showCategory } from '../actions/actionCreators';
+import { filterByCategory } from "../actions/actionCreators";
 
 // import { push } from 'react-router-redux'
 // import { bindActionCreators } from 'redux'
 import { connect } from "react-redux";
 
 class GiftsGrid extends Component {
-  render() {
 
+  state = {
+    category: "",
+  };
+
+  onClick = category => {
+    alert(category)
+    this.setState({ category});
+  };
+
+
+  render() {
     return (
       <div className="photo-grid">
-
-      <button onClick={() => this.props.showCategory("home")}>HOME</button>
-      <button onClick={() => this.props.showCategory("animal")}>ANIMAL</button>
-
-            
-
+<button onClick={() => this.props.filterByCategory("home")}>HOME</button>
+<button onClick={() => this.props.filterByCategory("fair-trade")}>FAIR-TRADE</button>
+<button onClick={() => this.props.filterByCategory("outdoor")}>OUTDOOR</button>
+{/* <button onClick={() => this.onClick("animal")}>Test2</button> */}
         {this.props.gifts.map((gift, i) => (
           <Gift {...this.props} key={i} i={i} gift={gift} />
         ))}
@@ -49,20 +57,9 @@ const mapStateToProps = state => ({
 
 function mapDispatchToProps(dispatch) {
   return {
-    showCategory: category => dispatch(showCategory(category))
+    filterByCategory: category => dispatch(filterByCategory(category))
   };
 }
-
-
-
-// function mapDispatchToProps(dispatch) {
-//   return {
-//     actions: {
-//       todoActions: bindActionCreators(todoActions, dispatch),
-//       counterActions: bindActionCreators(counterActions, dispatch)
-//     }
-//   };
-// }
 
   export default connect(
     mapStateToProps,
