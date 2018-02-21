@@ -9,6 +9,9 @@ class SingleGift extends Component {
     const { giftId } = this.props.match.params;
     const gift = this.props.gifts[giftId - 1];
 
+    const id = this.props.gifts[0].id;
+    console.log(id);
+
     return (
       <div className="single-photo">
         <Link to={`/`} className="button">
