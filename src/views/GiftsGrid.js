@@ -13,8 +13,8 @@ class GiftsGrid extends Component {
     return (
       <div className="photo-grid">
 
-      <button onClick={() => this.props.showCategory("home")}>Show Category 1</button>
-      <button onClick={() => this.props.showCategory("animal")}>Show Category 2</button>
+      <button onClick={() => this.props.showCategory("home")}>HOME</button>
+      <button onClick={() => this.props.showCategory("animal")}>ANIMAL</button>
 
             
 
@@ -49,7 +49,7 @@ const mapStateToProps = state => ({
 
 function mapDispatchToProps(dispatch) {
   return {
-    showCategory: gift => dispatch(showCategory())
+    showCategory: category => dispatch(showCategory(category))
   };
 }
 
