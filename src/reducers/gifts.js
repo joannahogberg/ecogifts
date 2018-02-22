@@ -1,7 +1,7 @@
 import initialState from './initialState';
 
 export default function gifts(state = initialState.gifts, action){
-    console.log(state)
+ //   console.log(state)
     switch (action.type) {
         case 'REQUESTED_GIFT':
   
@@ -17,7 +17,9 @@ export default function gifts(state = initialState.gifts, action){
           .map(gift => {
             return gift;
           }, 0);
-
+        case 'FILTERED_BY_FORM':
+          console.log("form")
+          break
         default:
             return state;
     }
