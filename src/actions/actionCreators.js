@@ -15,3 +15,10 @@ export const filterByCategory = (category) => {
     category
   }
 }
+
+export const filteredByInterest = (interest) => {
+  return {
+    type: 'FILTERED_BY_CATEGORY',
+    interest
+  };
+}

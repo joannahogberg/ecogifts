@@ -1,7 +1,7 @@
 import initialState from './initialState';
 
 export default function gifts(state = initialState.gifts, action){
-    console.log(state)
+    // console.log(state)
     switch (action.type) {
         case 'REQUESTED_GIFT':
   

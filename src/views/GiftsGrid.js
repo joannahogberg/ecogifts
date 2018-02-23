@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import PropTypes from "prop-types";
 import Gift from "../components/Gift";
+
 import { filterByCategory } from "../actions/actionCreators";
 
 // import { push } from 'react-router-redux'
@@ -25,6 +26,8 @@ class GiftsGrid extends Component {
 <button onClick={() => this.props.filterByCategory("home")}>HOME</button>
 <button onClick={() => this.props.filterByCategory("fair-trade")}>FAIR-TRADE</button>
 <button onClick={() => this.props.filterByCategory("outdoor")}>OUTDOOR</button>
+
+
 {/* <button onClick={() => this.onClick("animal")}>Test2</button> */}
         {this.props.gifts.map((gift, i) => (
           <Gift {...this.props} key={i} i={i} gift={gift} />
