@@ -1,7 +1,7 @@
 import initialState from './initialState';
 
 export default function gifts(state = initialState.gifts, action){
- //   console.log(state)
+
     switch (action.type) {
         case 'REQUESTED_GIFT':
   
@@ -17,10 +17,24 @@ export default function gifts(state = initialState.gifts, action){
           .map(gift => {
             return gift;
           }, 0);
-        case 'FILTERED_BY_FORM':
-          console.log("form")
-          break
+        case '@@redux-form/SET_SUBMIT_SUCCEEDED':
+   
+console.log(action)
+        return state.filter(gift => 
+          gift.interest.some(interest => interest === "fair-trade")
+        )
+        .map(gift => {
+          return gift;
+        }, 0);
+        // return Object.assign({}, state, {
+        
+        //   test: [
+        //     action.test
+        //   ]
+        // })
+    
         default:
             return state;
+        
     }
 };
