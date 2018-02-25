@@ -4,36 +4,32 @@ import thunk from 'redux-thunk'
 import createHistory from 'history/createBrowserHistory'
 import rootReducer from '../reducers/index';
 
-import gifts from '../data/gifts';
-
 export const history = createHistory()
 
-const initialState = {
-    gifts
-}
+const initialState = {}
 const enhancers = []
 const middleware = [
-  thunk,
-  routerMiddleware(history)
+    thunk,
+    routerMiddleware(history)
 ]
 
 if (process.env.NODE_ENV === 'development') {
-  const devToolsExtension = window.devToolsExtension
+    const devToolsExtension = window.devToolsExtension
 
-  if (typeof devToolsExtension === 'function') {
-    enhancers.push(devToolsExtension())
-  }
+    if (typeof devToolsExtension === 'function') {
+        enhancers.push(devToolsExtension())
+    }
 }
 
 const composedEnhancers = compose(
-  applyMiddleware(...middleware),
-  ...enhancers
+    applyMiddleware(...middleware),
+    ...enhancers
 )
 
 const store = createStore(
-  rootReducer,
-  initialState,
-  composedEnhancers
+    rootReducer,
+    initialState,
+    composedEnhancers
 )
 
 export default store

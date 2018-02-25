@@ -17,21 +17,16 @@ export default function gifts(state = initialState.gifts, action){
           .map(gift => {
             return gift;
           }, 0);
-        case '@@redux-form/SET_SUBMIT_SUCCEEDED':
+        case 'FILTER_BY_FORM':
+       
+        console.log(action.valueArrs)
    
-console.log(action)
-        return state.filter(gift => 
-          gift.interest.some(interest => interest === "fair-trade")
-        )
-        .map(gift => {
-          return gift;
-        }, 0);
-        // return Object.assign({}, state, {
-        
-        //   test: [
-        //     action.test
-        //   ]
-        // })
+                return state.filter(gift => 
+                  gift.interest.some(interest => interest === "fair-trade")
+                )
+                .map(gift => {
+                  return gift;
+                }, 0);
     
         default:
             return state;
