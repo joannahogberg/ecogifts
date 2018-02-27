@@ -16,13 +16,6 @@ export const filterByCategory = (category) => {
   }
 }
 
-<<<<<<< HEAD
-export const filteredByInterest = (interest) => {
-  return {
-    type: 'FILTERED_BY_CATEGORY',
-    interest
-  };
-=======
 // export const renderGiftsByForm = () => {
 //     console.log("action form")
 //     return {
@@ -63,5 +56,4 @@ export function renderGiftsByForm(data) {
       console.log(data)
         return dispatch(typeSomething(data))
     }
->>>>>>> 367a0eae19b0dcd5c9fd612d74521a0c06c0224f
 }

@@ -21,7 +21,7 @@ class Main extends Component {
           <Link to="/gift-form">Sök present</Link>
         </h1>
 
-        <FormContainer />
+        {/* <FormContainer /> */}
         <br />
         <Route exact path="/" component={GiftsGrid} />
         <Route path="/view/:giftId" component={SingleGift} />
