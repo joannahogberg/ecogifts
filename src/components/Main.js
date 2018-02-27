@@ -5,6 +5,7 @@ import GiftsGrid from '../views/GiftsGrid'
 import SingleGift from '../views/SingleGift'
 import GiftFormContainer from '../views/GiftFormContainer'
 import { connect } from 'react-redux';
+import SearchBar from './SearchBar/index';
 
 
 class Main extends Component {
@@ -15,6 +16,7 @@ class Main extends Component {
         <h1>
           <Link to="/" onClick={()=>this.props.renderRandom()}>ecoGifts</Link>
           <Link to="/gift-form">Sök present</Link>
+  <SearchBar />
         </h1>
         <Route exact path="/" component={GiftsGrid} />
         <Route path="/view/:giftId" component={SingleGift} />
@@ -24,7 +26,7 @@ class Main extends Component {
   }
 }
 
-function mapStateToProps(state, props) {
+function mapStateToProps(state) {
   return {
       gifts: state.gifts
   };

@@ -95,6 +95,14 @@ export default function gifts(state = initialState.gifts, action) {
 
       return newState4;
 
+    case types.SEARCH:
+      const { value } = action;
+      state = initialState.gifts;
+      const newVal = value.toLowerCase();
+      return state.filter(gift =>
+        gift.productName.toLowerCase().includes(newVal)
+      );
+
     default:
       return state;
   }

@@ -28,6 +28,14 @@ export function renderRandom() {
   };
 }
 
+export function search(value) {
+  console.log(value)
+  return {
+    type: types.SEARCH, 
+    value
+  };
+}
+
 
 
 
