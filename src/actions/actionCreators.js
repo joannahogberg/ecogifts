@@ -1,6 +1,4 @@
 import * as types from './actionTypes';
-// import _ from 'lodash';
-// import {reset} from 'redux-form';
 
 export const showGift = (gift) => {
     return {
@@ -9,15 +7,15 @@ export const showGift = (gift) => {
     }
 }
 
-export const filterByCategory = (category) => {
+export const filterByCategory = (category, filter) => {
   return {
     type: types.FILTERED_BY_CATEGORY,
     category
   }
 }
+  
 
 export function renderGiftsByForm(valueArrs) {
-  console.log(valueArrs);
   return {
     type: types.FILTER_BY_FORM,
     valueArrs
@@ -25,12 +23,12 @@ export function renderGiftsByForm(valueArrs) {
 }
 
 export function renderRandom() {
-  console.log("hello");
   return {
     type: types.RENDER_RANDOM
-   
   };
 }
+
+
 
 
 

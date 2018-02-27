@@ -3,25 +3,16 @@ import * as types from "../actions//actionTypes";
 
 export default function gifts(state = initialState.gifts, action) {
 
+  console.log(action.type);
   switch (action.type) {
     case types.RENDER_RANDOM:
-  
-    state = initialState.gifts;
-    return state
-    .filter(gift =>
-      gift.interest.some(interest => interest === "health")
-    )
-    .map(gift => {
-      return gift;
-    }, 0);
-    case types.INIT:
-    return state
-    .filter(gift =>
-      gift.interest.some(interest => interest === "games")
-    )
-    .map(gift => {
-      return gift;
-    }, 0);
+      state = initialState.gifts;
+      const randomGifts = [];
+      for (var i = 0; i < 20; i++) {
+        randomGifts[i] = state[Math.floor(Math.random() * state.length)];
+      }
+
+      return randomGifts;
 
     case types.REQUESTED_GIFT:
       return state.filter(i => i.id === action.gift.id);
@@ -39,11 +30,12 @@ export default function gifts(state = initialState.gifts, action) {
         }, 0);
 
     case types.FILTER_BY_FORM:
+      state = initialState.gifts;
 
       let newState1;
       // check array does not exist, is not an array, or is empty
       if (action.valueArrs.interestsArr.length === 0) {
-        newState1 = initialState.gifts;
+        newState1 = state;
       } else {
         newState1 = state
           .filter(gift =>
@@ -101,9 +93,7 @@ export default function gifts(state = initialState.gifts, action) {
           }, 0);
       }
 
-      state = newState4;
-
-      return state;
+      return newState4;
 
     default:
       return state;

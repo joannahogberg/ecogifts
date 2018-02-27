@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
 import { Link, Route } from 'react-router-dom'
 import { renderRandom } from "../actions/actionCreators";
 import GiftsGrid from '../views/GiftsGrid'
@@ -10,16 +9,10 @@ import { connect } from 'react-redux';
 
 class Main extends Component {
 
-  handleClick=()=>{
-    renderRandom()
-console.log(this.props)
-
-  }
   render() {
     return (
       <main>
         <h1>
-          {/* <Link to="/" onClick={()=>this.handleClick()}>ecoGifts</Link> */}
           <Link to="/" onClick={()=>this.props.renderRandom()}>ecoGifts</Link>
           <Link to="/gift-form">Sök present</Link>
         </h1>
@@ -30,8 +23,6 @@ console.log(this.props)
     );
   }
 }
-
-// export default Main;
 
 function mapStateToProps(state, props) {
   return {
