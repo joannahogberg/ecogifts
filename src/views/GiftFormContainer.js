@@ -35,11 +35,11 @@ class GiftFormContainer extends Component {
       const interestsArr = values.interests ? this.returnTrueChecked(values.interests) : [];
       const personalityArr = values.personality ? this.returnTrueChecked(values.personality) : [];
       const materialArr = values.material ? this.returnTrueChecked(values.material) : [];
-      const typeArr = values.type ? this.returnTrueChecked(values.type)  : [];
-      valueArrs = { interestsArr: interestsArr, personalityArr: personalityArr, materialArr: materialArr, typeArr: typeArr };
+      const receiverArr = values.receiver ? this.returnTrueChecked(values.receiver)  : [];
+      valueArrs = { interestsArr: interestsArr, personalityArr: personalityArr, materialArr: materialArr, receiverArr: receiverArr };
     }
     else{
-      valueArrs = { interestsArr: [], personalityArr: [], materialArr: [], typeArr: [] };
+      valueArrs = { interestsArr: [], personalityArr: [], materialArr: [], receiverArr: [] };
     }
 
  

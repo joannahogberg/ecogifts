@@ -22,13 +22,13 @@ const materialOptions = [{id: 1, label: "Återanvänt", value:"recycled"}, {id: 
 {id: 13, label:"Glas", value:"glass"}, {id: 14, label: "Övriga material", value:"other"},
     {id: 15, label: "Kork", value:"cork"}, {id: 16, label: "Gåvobevis & Presentkort", value:"giftcard"}, {id: 17, label: "Lakrits", value:"liquorice"}, {id: 18, label: "Choklad", value:"chocolate"}]
 
-const typeOptions = [{id: 1, label: "Bebis", value: "toddler"}, {id: 2, label:"Barn", value:"kid"}, {id: 3, label: "Ungdom", value:"youth"}, {id:4, label: "Vuxen", value:"adult"}, {id: 5, label: "Hund el Katt", value:"animal"}]
+const receiverOptions = [{id: 1, label: "Bebis", value: "toddler"}, {id: 2, label:"Barn", value:"kid"}, {id: 3, label: "Ungdom", value:"youth"}, {id:4, label: "Vuxen", value:"adult"}, {id: 5, label: "Hund el Katt", value:"animal"}]
 
 
 const GiftForm = ({
   renderGiftsByForm,
   onSubmit,
-  fields: { interests, personality, material, type },
+  fields: { interests, personality, material, receiver },
   handleSubmit
 }) => {
 
@@ -37,7 +37,7 @@ return <form onSubmit={handleSubmit(onSubmit)}>
        <MultiCheckboxField options={interestsOptions} name="interests" />
        <MultiCheckboxField options={personalityOptions} name="personality" />
        <MultiCheckboxField options={materialOptions} name="material" />
-       <MultiCheckboxField options={typeOptions} name="type" />
+       <MultiCheckboxField options={receiverOptions} name="receiver" />
       <button type="submit" className="submit-form-btn">
         Submit
       </button>
@@ -47,5 +47,5 @@ return <form onSubmit={handleSubmit(onSubmit)}>
 
 export default reduxForm({
   form: 'giftform',
-  fields: ['interests', 'personality', 'material', 'type'], 
+  fields: ['interests', 'personality', 'material', 'receiver'], 
 })(GiftForm)

@@ -2,7 +2,7 @@ import initialState from './initialState';
 import * as types from '../actions//actionTypes';
 
 export default function gifts(state = initialState.gifts, action){
-
+console.log(action.type)
     switch (action.type) {
       case types.REQUESTED_GIFT:
         return state.filter(i => i.id === action.gift.id);
@@ -21,12 +21,14 @@ export default function gifts(state = initialState.gifts, action){
 
       case types.FILTER_BY_FORM:
 
-      state = initialState.gifts;
+      console.log(action.valueArrs.receiverArr)
+
+      // state = initialState.gifts;
 
         let newState1;
         // check array does not exist, is not an array, or is empty
         if (action.valueArrs.interestsArr.length === 0) {
-          newState1 = state;
+          newState1 = initialState.gifts;
         } else {
           newState1 = state
             .filter(gift =>
@@ -38,7 +40,8 @@ export default function gifts(state = initialState.gifts, action){
               return gift;
             }, 0);
         }
-
+    
+        console.log(newState1)
         let newState2;
 
         if (action.valueArrs.personalityArr.length === 0) {
@@ -54,6 +57,7 @@ export default function gifts(state = initialState.gifts, action){
               return gift;
             }, 0);
         }
+        console.log(newState2)
         let newState3;
 
         if (action.valueArrs.materialArr.length === 0) {
@@ -71,13 +75,13 @@ export default function gifts(state = initialState.gifts, action){
         }
 
         let newState4;
-        if (action.valueArrs.typeArr.length === 0) {
+        if (action.valueArrs.receiverArr.length === 0) {
           newState4 = newState3;
         } else {
-          newState3 = newState3
+          newState4 = newState3
             .filter(gift =>
-              gift.type.some(type =>
-                action.valueArrs.typeArr.includes(type)
+              gift.receiver.some(receiver =>
+                action.valueArrs.receiverArr.includes(receiver)
               )
             )
             .map(gift => {
@@ -85,7 +89,6 @@ export default function gifts(state = initialState.gifts, action){
             }, 0);
         }
 
-        console.log(newState4);
 
         state = newState4;
 

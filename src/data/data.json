@@ -8,7 +8,7 @@
         "interest": ["animals", "outdoor"],
         "personality": ["active"],
         "material": ["sugar"],
-        "type": ["animal"]
+        "receiver": ["animal"]
     },
     {
         "id": "2",
@@ -20,7 +20,7 @@
         "interest": ["animals", "home"],
         "personality": ["practical", "orderly"],
         "material": ["silicone"],
-        "type": ["animal"]
+        "receiver": ["animal"]
     },
     {
         "id": "3",
@@ -32,7 +32,7 @@
         "interest": ["animals", "toys"],
         "personality": ["caring"],
         "material": ["rubber"],
-        "type": ["animal"]
+        "receiver": ["animal"]
     },
     {
         "id": "4",
@@ -44,7 +44,7 @@
         "interest": ["animals"],
         "personality": ["caring"],
         "material": ["other"],
-        "type": ["animal"]
+        "receiver": ["animal"]
     },
     {
         "id": "5",
@@ -56,7 +56,7 @@
         "interest": ["animals"],
         "personality": ["caring"],
         "material": ["other"],
-        "type": ["animal"]
+        "receiver": ["animal"]
     },
     {
         "id": "6",
@@ -68,7 +68,7 @@
         "interest": ["animals", "home"],
         "personality": ["caring"],
         "material": ["cotton"],
-        "type": ["animal"]
+        "receiver": ["animal"]
     },
     {
         "id": "7",
@@ -80,7 +80,7 @@
         "interest": ["animals", "home"],
         "personality": ["caring"],
         "material": ["cotton"],
-        "type": ["animal"]
+        "receiver": ["animal"]
     },
     {
         "id": "8",
@@ -92,7 +92,7 @@
         "interest": ["animals", "home"],
         "personality": ["caring"],
         "material": ["cotton"],
-        "type": ["animal"]
+        "receiver": ["animal"]
     },
     {
         "id": "9",
@@ -104,7 +104,7 @@
         "interest": ["animals", "home"],
         "personality": ["caring"],
         "material": ["cardboard"],
-        "type": ["animal"]
+        "receiver": ["animal"]
     },
     {
         "id": "10",
@@ -116,7 +116,7 @@
         "interest": ["animals"],
         "personality": ["caring"],
         "material": ["wood"],
-        "type": ["animal"]
+        "receiver": ["animal"]
     },
     {
         "id": "11",
@@ -128,7 +128,7 @@
         "interest": ["animals"],
         "personality": ["caring"],
         "material": ["wood"],
-        "type": ["animal"]
+        "receiver": ["animal"]
     },
     {
         "id": "12",
@@ -140,7 +140,7 @@
         "interest": ["animals"],
         "personality": ["caring"],
         "material": ["bambu"],
-        "type": ["animal"]
+        "receiver": ["animal"]
     },
     {
         "id": "13",
@@ -152,7 +152,7 @@
         "interest": ["animals"],
         "personality": ["caring"],
         "material": ["bambu"],
-        "type": ["animal"]
+        "receiver": ["animal"]
     },
     {
         "id": "14",
@@ -164,7 +164,7 @@
         "interest": ["health", "technology"],
         "personality": ["caring"],
         "material": ["plastic"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "15",
@@ -176,7 +176,7 @@
         "interest": ["toys", "environment"],
         "personality": ["caring"],
         "material": ["wood"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "16",
@@ -188,7 +188,7 @@
         "interest": ["toys", "environment"],
         "personality": ["caring"],
         "material": ["wood"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "17",
@@ -200,7 +200,7 @@
         "interest": ["toys", "environment"],
         "personality": ["caring"],
         "material": ["wood"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "18",
@@ -212,7 +212,7 @@
         "interest": ["toys", "environment", "storage", "outdoor", "travel"],
         "personality": ["practical", "orderly"],
         "material": ["cotton"],
-        "type": ["kid", "youth"]
+        "receiver": ["kid", "youth"]
     },
     {
         "id": "19",
@@ -224,7 +224,7 @@
         "interest": ["toys", "environment"],
         "personality": ["creative"],
         "material": ["other"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "20",
@@ -236,7 +236,7 @@
         "interest": ["toys", "environment", "games"],
         "personality": ["creative"],
         "material": ["wood"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "21",
@@ -248,7 +248,7 @@
         "interest": ["home", "outdoor", "travel"],
         "personality": ["caring", "practical"],
         "material": ["silicone", "glass"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "22",
@@ -260,7 +260,7 @@
         "interest": ["home", "travel"],
         "personality": ["caring", "practical"],
         "material": ["cotton"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "23",
@@ -272,7 +272,7 @@
         "interest": ["home", "toys"],
         "personality": ["creative"],
         "material": ["other"],
-        "type": ["kid", "youth"]
+        "receiver": ["kid", "youth"]
     },
     {
         "id": "24",
@@ -284,7 +284,7 @@
         "interest": ["home", "toys"],
         "personality": ["creative"],
         "material": ["paper"],
-        "type": ["kid", "youth"]
+        "receiver": ["kid", "youth"]
     },
     {
         "id": "25",
@@ -296,7 +296,7 @@
         "interest": ["home", "toys"],
         "personality": ["creative"],
         "material": ["paper"],
-        "type": ["kid", "youth"]
+        "receiver": ["kid", "youth"]
     },
     {
         "id": "142",
@@ -308,7 +308,7 @@
         "interest": ["home", "toys"],
         "personality": ["creative"],
         "material": ["paper"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "26",
@@ -320,7 +320,7 @@
         "interest": ["home", "toys"],
         "personality": ["creative"],
         "material": ["paper"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "27",
@@ -332,7 +332,7 @@
         "interest": ["home", "toys"],
         "personality": ["creative"],
         "material": ["other"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "28",
@@ -344,7 +344,7 @@
         "interest": ["home", "toys"],
         "personality": ["creative"],
         "material": ["other"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "29",
@@ -356,7 +356,7 @@
         "interest": ["home", "toys", "gardening"],
         "personality": ["creative", "active"],
         "material": ["wood"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "30",
@@ -368,7 +368,7 @@
         "interest": ["home", "toys", "gardening"],
         "personality": ["creative", "active"],
         "material": ["wood"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "31",
@@ -380,7 +380,7 @@
         "interest": ["home", "toys", "gardening"],
         "personality": ["creative", "active"],
         "material": ["wood"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "32",
@@ -392,7 +392,7 @@
         "interest": ["home", "toys", "gardening"],
         "personality": ["creative", "active"],
         "material": ["wood"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "33",
@@ -404,7 +404,7 @@
         "interest": ["home", "toys"],
         "personality": ["caring"],
         "material": ["cotton"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "143",
@@ -416,7 +416,7 @@
         "interest": ["home"],
         "personality": ["caring", "practical"],
         "material": ["silicone"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "34",
@@ -428,7 +428,7 @@
         "interest": ["home", "toys"],
         "personality": ["caring", "practical"],
         "material": ["wood"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "35",
@@ -440,7 +440,7 @@
         "interest": ["home", "toys"],
         "personality": ["creative", "active"],
         "material": ["wood"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "36",
@@ -452,7 +452,7 @@
         "interest": ["toys"],
         "personality": ["creative", "practical", "active"],
         "material": ["other"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "37",
@@ -464,7 +464,7 @@
         "interest": ["toys", "environment"],
         "personality": ["creative", "caring"],
         "material": ["other"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "38",
@@ -476,7 +476,7 @@
         "interest": ["toys", "travel", "home", "storage"],
         "personality": ["active", "practical"],
         "material": ["cotton"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "39",
@@ -488,7 +488,7 @@
         "interest": ["toys", "travel", "home", "storage"],
         "personality": ["active", "practical"],
         "material": ["cotton"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "40",
@@ -500,7 +500,7 @@
         "interest": ["travel", "home", "storage"],
         "personality": ["active", "practical"],
         "material": ["cotton"],
-        "type": ["kid", "toddler"]
+        "receiver": ["kid", "toddler"]
     },
     {
         "id": "41",
@@ -512,7 +512,7 @@
         "interest": ["travel", "home", "storage"],
         "personality": ["active", "practical"],
         "material": ["cotton"],
-        "type": ["kid", "toddler"]
+        "receiver": ["kid", "toddler"]
     },
     {
         "id": "42",
@@ -524,7 +524,7 @@
         "interest": ["travel", "home", "toys", "gardening"],
         "personality": ["active", "practical"],
         "material": ["other"],
-        "type": ["kid", "toddler"]
+        "receiver": ["kid", "toddler"]
     },
     {
         "id": "43",
@@ -536,7 +536,7 @@
         "interest": ["home", "toys"],
         "personality": ["active", "practical", "creative"],
         "material": ["recycled", "plastic"],
-        "type": ["kid", "toddler"]
+        "receiver": ["kid", "toddler"]
     },
     {
         "id": "44",
@@ -548,7 +548,7 @@
         "interest": ["home", "toys", "books"],
         "personality": ["active", "caring", "creative"],
         "material": ["other"],
-        "type": ["kid", "adult", "youth"]
+        "receiver": ["kid", "adult", "youth"]
     },
     {
         "id": "45",
@@ -560,7 +560,7 @@
         "interest": ["home", "toys"],
         "personality": ["active", "caring", "creative"],
         "material": ["wood"],
-        "type": ["kid", "adult", "youth"]
+        "receiver": ["kid", "adult", "youth"]
     },
     {
         "id": "46",
@@ -572,7 +572,7 @@
         "interest": ["home", "toys"],
         "personality": ["active", "caring", "creative"],
         "material": ["other"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "47",
@@ -584,7 +584,7 @@
         "interest": ["home", "toys", "books"],
         "personality": ["active", "caring", "creative"],
         "material": ["paper"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "48",
@@ -596,7 +596,7 @@
         "interest": ["home", "toys"],
         "personality": ["active", "caring", "creative"],
         "material": ["recycled"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "49",
@@ -608,7 +608,7 @@
         "interest": ["home", "health", "cooking"],
         "personality": ["epicurean"],
         "material": ["other"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "50",
@@ -620,7 +620,7 @@
         "interest": ["home", "cooking"],
         "personality": ["epicurean"],
         "material": ["other"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "51",
@@ -632,7 +632,7 @@
         "interest": ["home", "cooking"],
         "personality": ["epicurean"],
         "material": [],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "52",
@@ -644,7 +644,7 @@
         "interest": ["home", "toys", "books"],
         "personality": ["caring"],
         "material": ["cotton"],
-        "type": ["toddler"]
+        "receiver": ["toddler"]
     },
     {
         "id": "53",
@@ -656,7 +656,7 @@
         "interest": ["home", "toys", "books"],
         "personality": ["caring"],
         "material": ["wood"],
-        "type": ["toddler"]
+        "receiver": ["toddler"]
     },
     {
         "id": "54",
@@ -668,7 +668,7 @@
         "interest": ["home", "toys", "books"],
         "personality": ["caring"],
         "material": ["paper"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "55",
@@ -680,7 +680,7 @@
         "interest": ["home", "toys", "books"],
         "personality": ["caring"],
         "material": ["paper"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "56",
@@ -692,7 +692,7 @@
         "interest": ["home", "toys", "books"],
         "personality": ["caring"],
         "material": ["wood"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "57",
@@ -704,7 +704,7 @@
         "interest": ["home", "music", "technology"],
         "personality": ["creative", "epicurean"],
         "material": ["bambu"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "58",
@@ -716,7 +716,7 @@
         "interest": ["home", "music", "technology"],
         "personality": ["creative", "epicurean"],
         "material": ["bambu"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "59",
@@ -728,7 +728,7 @@
         "interest": ["home", "music", "technology"],
         "personality": ["creative", "epicurean"],
         "material": ["bambu"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "60",
@@ -740,7 +740,7 @@
         "interest": ["home", "toys", "fair-trade"],
         "personality": ["caring"],
         "material": ["paper"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "61",
@@ -752,7 +752,7 @@
         "interest": ["home", "toys", "fair-trade"],
         "personality": ["caring"],
         "material": ["wool"],
-        "type": ["toddler"]
+        "receiver": ["toddler"]
     },
     {
         "id": "62",
@@ -764,7 +764,7 @@
         "interest": ["home", "toys", "fair-trade"],
         "personality": ["caring"],
         "material": ["cotton"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "63",
@@ -776,7 +776,7 @@
         "interest": ["home", "toys", "recycling", "environment"],
         "personality": ["creative", "epicurean"],
         "material": ["recycled", "cardboard"],
-        "type": ["kid", "adult", "youth"]
+        "receiver": ["kid", "adult", "youth"]
     },
     {
         "id": "64",
@@ -788,7 +788,7 @@
         "interest": ["home", "cooking"],
         "personality": ["epicurean"],
         "material": ["other"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "65",
@@ -800,7 +800,7 @@
         "interest": ["home", "cooking"],
         "personality": ["epicurean"],
         "material": ["other"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "66",
@@ -812,7 +812,7 @@
         "interest": ["home", "cooking", "travel", "health"],
         "personality": ["epicurean", "creative", "practical"],
         "material": ["other"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "67",
@@ -824,7 +824,7 @@
         "interest": ["home", "cooking", "travel", "outdoor"],
         "personality": ["epicurean", "active", "practical", "orderly"],
         "material": ["cotton"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "68",
@@ -836,7 +836,7 @@
         "interest": ["home", "cooking"],
         "personality": ["epicurean", "practical", "orderly"],
         "material": ["bambu"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "69",
@@ -848,7 +848,7 @@
         "interest": ["home", "cooking"],
         "personality": ["epicurean", "practical", "orderly"],
         "material": ["bambu"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "70",
@@ -860,7 +860,7 @@
         "interest": ["home", "cooking"],
         "personality": ["epicurean", "practical", "orderly"],
         "material": ["bambu"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "71",
@@ -872,7 +872,7 @@
         "interest": ["home", "cooking"],
         "personality": ["epicurean", "practical", "orderly"],
         "material": ["bambu"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "72",
@@ -884,7 +884,7 @@
         "interest": ["home", "cooking"],
         "personality": ["epicurean", "practical", "orderly"],
         "material": ["bambu"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "73",
@@ -896,7 +896,7 @@
         "interest": ["home", "cooking"],
         "personality": ["epicurean", "practical", "orderly"],
         "material": ["bambu"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "74",
@@ -908,7 +908,7 @@
         "interest": ["home", "cooking", "environment", "gardening", "books"],
         "personality": ["epicurean", "practical", "orderly", "active"],
         "material": ["other"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "75",
@@ -920,7 +920,7 @@
         "interest": ["home", "cooking", "health", "books"],
         "personality": ["epicurean"],
         "material": ["other"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "76",
@@ -932,7 +932,7 @@
         "interest": ["home", "cooking", "books"],
         "personality": ["epicurean"],
         "material": ["other"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "77",
@@ -944,7 +944,7 @@
         "interest": ["home", "cooking", "books"],
         "personality": ["epicurean"],
         "material": ["other"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "78",
@@ -956,7 +956,7 @@
         "interest": ["home", "cooking", "outdoor", "nature", "books"],
         "personality": ["epicurean", "active"],
         "material": ["other"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "79",
@@ -968,7 +968,7 @@
         "interest": ["home", "cooking", "outdoor", "nature", "books"],
         "personality": ["epicurean", "active"],
         "material": ["other"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "80",
@@ -980,7 +980,7 @@
         "interest": ["home", "cooking", "books"],
         "personality": ["epicurean", "caring"],
         "material": ["other"],
-        "type": ["adult", "toddler"]
+        "receiver": ["adult", "toddler"]
     },
     {
         "id": "81",
@@ -992,7 +992,7 @@
         "interest": ["home", "cooking", "books"],
         "personality": ["epicurean", "caring"],
         "material": ["other"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "82",
@@ -1004,7 +1004,7 @@
         "interest": ["home", "cooking", "fair-trade", "recycling"],
         "personality": ["epicurean", "caring"],
         "material": ["recycled"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "83",
@@ -1016,7 +1016,7 @@
         "interest": ["home", "cooking", "recycling"],
         "personality": ["epicurean", "caring", "practical", "orderly"],
         "material": ["recycled"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "84",
@@ -1028,7 +1028,7 @@
         "interest": ["home", "cooking", "recycling"],
         "personality": ["epicurean", "caring", "practical", "orderly"],
         "material": ["recycled"],
-        "type": ["toddler", "kid", "adult", "youth"]
+        "receiver": ["toddler", "kid", "adult", "youth"]
     },
     {
         "id": "85",
@@ -1040,7 +1040,7 @@
         "interest": ["home", "cooking"],
         "personality": ["epicurean", "practical", "orderly"],
         "material": ["other"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "86",
@@ -1052,7 +1052,7 @@
         "interest": ["home", "storage"],
         "personality": ["practical", "orderly"],
         "material": ["cardboard", "cotton"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "87",
@@ -1064,7 +1064,7 @@
         "interest": ["home", "storage"],
         "personality": ["practical", "orderly"],
         "material": ["cardboard", "cotton"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "86",
@@ -1076,7 +1076,7 @@
         "interest": ["home", "storage", "toys"],
         "personality": ["practical", "orderly"],
         "material": ["cotton"],
-        "type": ["adult", "kid", "toddler"]
+        "receiver": ["adult", "kid", "toddler"]
     },
     {
         "id": "87",
@@ -1088,7 +1088,7 @@
         "interest": ["home", "storage", "toys"],
         "personality": ["practical", "orderly"],
         "material": ["cotton"],
-        "type": ["adult", "kid", "toddler"]
+        "receiver": ["adult", "kid", "toddler"]
     },
     {
         "id": "88",
@@ -1100,7 +1100,7 @@
         "interest": ["home", "toys", "fair-trade"],
         "personality": ["caring"],
         "material": ["cotton"],
-        "type": ["adult", "kid", "toddler"]
+        "receiver": ["adult", "kid", "toddler"]
     },
     {
         "id": "90",
@@ -1112,7 +1112,7 @@
         "interest": ["home", "toys", "recycling"],
         "personality": ["creative"],
         "material": ["cardboard", "recycled"],
-        "type": ["adult", "kid", "youth"]
+        "receiver": ["adult", "kid", "youth"]
     },
     {
         "id": "91",
@@ -1124,7 +1124,7 @@
         "interest": ["home"],
         "personality": ["epicurean"],
         "material": ["other"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "92",
@@ -1136,7 +1136,7 @@
         "interest": ["home", "storage"],
         "personality": ["orderly", "practical"],
         "material": ["cotton"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "93",
@@ -1148,7 +1148,7 @@
         "interest": ["home", "travel", "storage"],
         "personality": ["orderly", "practical", "creative"],
         "material": ["cotton"],
-        "type": ["adult", "youth", "kid"]
+        "receiver": ["adult", "youth", "kid"]
     },
     {
         "id": "94",
@@ -1160,7 +1160,7 @@
         "interest": ["home"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["cotton"],
-        "type": ["toddler"]
+        "receiver": ["toddler"]
     },
     {
         "id": "95",
@@ -1172,7 +1172,7 @@
         "interest": ["home"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["cotton"],
-        "type": ["adult", "youth", "kid"]
+        "receiver": ["adult", "youth", "kid"]
     },
     {
         "id": "96",
@@ -1184,7 +1184,7 @@
         "interest": ["home"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["cotton"],
-        "type": ["adult", "kid"]
+        "receiver": ["adult", "kid"]
     },
     {
         "id": "97",
@@ -1196,7 +1196,7 @@
         "interest": ["home", "storage", "recycling"],
         "personality": ["orderly", "practical"],
         "material": ["recycled"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "98",
@@ -1208,7 +1208,7 @@
         "interest": ["home", "storage", "recycling"],
         "personality": ["orderly", "practical"],
         "material": ["recycled"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "99",
@@ -1220,7 +1220,7 @@
         "interest": ["home", "storage", "recycling"],
         "personality": ["orderly", "practical"],
         "material": ["recycled"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "100",
@@ -1232,7 +1232,7 @@
         "interest": ["home", "storage", "recycling"],
         "personality": ["orderly", "practical"],
         "material": ["recycled"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "101",
@@ -1244,7 +1244,7 @@
         "interest": ["home", "gardening", "fair-trade"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["other"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "102",
@@ -1256,7 +1256,7 @@
         "interest": ["home", "fair-trade", "storage"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["other"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "103",
@@ -1268,7 +1268,7 @@
         "interest": ["home", "fair-trade", "storage"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["other"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "104",
@@ -1280,7 +1280,7 @@
         "interest": ["home", "fair-trade", "storage"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["other"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "105",
@@ -1292,7 +1292,7 @@
         "interest": ["home", "fair-trade", "storage"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["other"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "106",
@@ -1304,7 +1304,7 @@
         "interest": ["home", "fair-trade", "storage"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["other"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "106",
@@ -1316,7 +1316,7 @@
         "interest": ["home", "fair-trade", "cooking"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["other"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "107",
@@ -1328,7 +1328,7 @@
         "interest": ["home", "fair-trade", "cooking"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["other"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "108",
@@ -1340,7 +1340,7 @@
         "interest": ["home", "fair-trade", "storage"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["other"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "109",
@@ -1352,7 +1352,7 @@
         "interest": ["home", "fair-trade"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["cotton"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "110",
@@ -1364,7 +1364,7 @@
         "interest": ["home", "fair-trade"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["other"],
-        "type": ["adult", "youth", "kid"]
+        "receiver": ["adult", "youth", "kid"]
     },
     {
         "id": "111",
@@ -1376,7 +1376,7 @@
         "interest": ["home", "fair-trade"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["other"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "112",
@@ -1388,7 +1388,7 @@
         "interest": ["home", "fair-trade"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["wood"],
-        "type": ["adult", "youth", "kid"]
+        "receiver": ["adult", "youth", "kid"]
     },
     {
         "id": "113",
@@ -1400,7 +1400,7 @@
         "interest": ["home", "fair-trade"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["wood"],
-        "type": ["adult", "youth", "kid"]
+        "receiver": ["adult", "youth", "kid"]
     },
     {
         "id": "114",
@@ -1412,7 +1412,7 @@
         "interest": ["home", "fair-trade"],
         "personality": ["orderly", "practical", "caring"],
         "material": ["wood"],
-        "type": ["adult", "youth", "kid"]
+        "receiver": ["adult", "youth", "kid"]
     },
     {
         "id": "115",
@@ -1424,7 +1424,7 @@
         "interest": ["nature", "outdoor", "travel"],
         "personality": ["practical", "active"],
         "material": ["stainless", "bambu", "silicone"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "116",
@@ -1436,7 +1436,7 @@
         "interest": ["nature", "outdoor", "travel"],
         "personality": ["practical", "active"],
         "material": ["bambu", "cork"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "117",
@@ -1448,7 +1448,7 @@
         "interest": ["nature", "outdoor", "travel", "home"],
         "personality": ["practical", "active"],
         "material": ["bambu"],
-        "type": ["adult", "toddler", "kid"]
+        "receiver": ["adult", "toddler", "kid"]
     },
     {
         "id": "118",
@@ -1460,7 +1460,7 @@
         "interest": ["nature", "outdoor", "travel"],
         "personality": ["practical", "active"],
         "material": ["stainless"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "119",
@@ -1472,7 +1472,7 @@
         "interest": ["nature", "outdoor", "travel", "cooking", "storage"],
         "personality": ["practical", "active"],
         "material": ["stainless", "silicone"],
-        "type": ["adult", "youth", "kid"]
+        "receiver": ["adult", "youth", "kid"]
     },
     {
         "id": "120",
@@ -1484,7 +1484,7 @@
         "interest": ["nature", "outdoor", "travel", "cooking", "storage"],
         "personality": ["practical", "active"],
         "material": ["stainless", "silicone"],
-        "type": ["adult", "youth", "kid"]
+        "receiver": ["adult", "youth", "kid"]
     },
     {
         "id": "121",
@@ -1496,7 +1496,7 @@
         "interest": ["nature", "outdoor", "travel"],
         "personality": ["active", "epicurean"],
         "material": ["giftcard"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "122",
@@ -1508,7 +1508,7 @@
         "interest": ["nature", "outdoor", "travel"],
         "personality": ["active", "epicurean"],
         "material": ["giftcard"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "123",
@@ -1520,7 +1520,7 @@
         "interest": ["nature", "outdoor", "travel"],
         "personality": ["active", "epicurean"],
         "material": ["giftcard"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "124",
@@ -1532,7 +1532,7 @@
         "interest": ["nature", "outdoor", "travel"],
         "personality": ["active", "epicurean"],
         "material": ["giftcard"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "125",
@@ -1544,7 +1544,7 @@
         "interest": ["books"],
         "personality": ["caring"],
         "material": ["other"],
-        "type": ["adult", "kid"]
+        "receiver": ["adult", "kid"]
     },
     {
         "id": "126",
@@ -1556,7 +1556,7 @@
         "interest": ["books"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "127",
@@ -1568,7 +1568,7 @@
         "interest": ["candy", "home", "outdoor"],
         "personality": ["caring", "active"],
         "material": ["other"],
-        "type": ["animal"]
+        "receiver": ["animal"]
     },
     {
         "id": "128",
@@ -1580,7 +1580,7 @@
         "interest": ["home", "gardening", "animals"],
         "personality": ["caring"],
         "material": ["wood"],
-        "type": ["adult", "youth"]
+        "receiver": ["adult", "youth"]
     },
     {
         "id": "129",
@@ -1592,7 +1592,7 @@
         "interest": ["home", "gardening", "environment"],
         "personality": ["caring", "active", "epicurean"],
         "material": ["other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "130",
@@ -1604,7 +1604,7 @@
         "interest": ["home", "gardening", "animals"],
         "personality": ["caring", "active", "epicurean"],
         "material": ["wood"],
-        "type": ["animal", "adult", "youth"]
+        "receiver": ["animal", "adult", "youth"]
     },
     {
         "id": "131",
@@ -1616,7 +1616,7 @@
         "interest": ["home", "outdoor", "nature"],
         "personality": ["active"],
         "material": ["wool", "cotton"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "132",
@@ -1628,7 +1628,7 @@
         "interest": ["home"],
         "personality": ["epicurean"],
         "material": ["cotton"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "133",
@@ -1640,7 +1640,7 @@
         "interest": ["home"],
         "personality": ["epicurean"],
         "material": ["cotton"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "134",
@@ -1652,7 +1652,7 @@
         "interest": ["outdoor", "nature"],
         "personality": ["epicurean", "active"],
         "material": ["wood"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "135",
@@ -1664,7 +1664,7 @@
         "interest": ["outdoor", "nature", "gardening", "animals"],
         "personality": ["epicurean", "active"],
         "material": ["wood"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "136",
@@ -1676,7 +1676,7 @@
         "interest": ["outdoor", "home", "storage"],
         "personality": ["practical", "orderly"],
         "material": ["cotton"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "137",
@@ -1688,7 +1688,7 @@
         "interest": ["outdoor", "home", "storage"],
         "personality": ["practical", "orderly"],
         "material": ["cotton"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "138",
@@ -1700,7 +1700,7 @@
         "interest": ["outdoor", "home", "storage"],
         "personality": ["practical", "orderly"],
         "material": ["wood"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "139",
@@ -1712,7 +1712,7 @@
         "interest": ["home"],
         "personality": ["practical", "orderly"],
         "material": ["other"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "140",
@@ -1724,7 +1724,7 @@
         "interest": ["home"],
         "personality": ["practical", "orderly"],
         "material": ["other"],
-        "type": ["adult"]
+        "receiver": ["adult"]
     },
     {
         "id": "300",
@@ -1736,7 +1736,7 @@
         "interest": ["home", "storage", "travel"],
         "personality": ["practical", "orderly", "active"],
         "material": ["glass", "silicone"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "301",
@@ -1748,7 +1748,7 @@
         "interest": ["home", "storage", "travel"],
         "personality": ["orderly", "practical", "creative"],
         "material": ["cotton"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "302",
@@ -1760,7 +1760,7 @@
         "interest": ["home", "outdoor", "travel"],
         "personality": ["practical", "creative"],
         "material": ["cotton"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "303",
@@ -1772,7 +1772,7 @@
         "interest": ["home", "travel"],
         "personality": ["practical", "orderly"],
         "material": ["wood"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "304",
@@ -1784,7 +1784,7 @@
         "interest": ["home", "travel", "health"],
         "personality": ["active", "caring"],
         "material": ["glass", "other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "305",
@@ -1796,7 +1796,7 @@
         "interest": ["home", "travel", "recycling", "orderly"],
         "personality": ["orderly", "practical"],
         "material": ["cotton"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "306",
@@ -1808,7 +1808,7 @@
         "interest": ["home", "travel", "cooking"],
         "personality": ["orderly", "practical"],
         "material": ["cotton"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "307",
@@ -1820,7 +1820,7 @@
         "interest": ["home", "travel", "cooking"],
         "personality": ["orderly", "practical"],
         "material": ["cotton"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "308",
@@ -1832,7 +1832,7 @@
         "interest": ["home", "travel", "cooking"],
         "personality": ["orderly", "practical"],
         "material": ["cotton"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "309",
@@ -1844,7 +1844,7 @@
         "interest": ["home", "travel", "cooking"],
         "personality": ["orderly", "practical"],
         "material": ["cotton"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "310",
@@ -1856,7 +1856,7 @@
         "interest": ["home", "cooking"],
         "personality": ["orderly", "practical", "epicurean"],
         "material": ["stainless"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "311",
@@ -1868,7 +1868,7 @@
         "interest": ["home", "health"],
         "personality": ["orderly", "practical"],
         "material": ["bambu", "other"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "312",
@@ -1880,7 +1880,7 @@
         "interest": ["home", "health"],
         "personality": ["orderly", "practical"],
         "material": ["bambu", "other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "313",
@@ -1892,7 +1892,7 @@
         "interest": ["home", "health"],
         "personality": ["orderly", "practical"],
         "material": ["bambu", "other"],
-        "type": ["kid", "youth"]
+        "receiver": ["kid", "youth"]
     },
     {
         "id": "314",
@@ -1904,7 +1904,7 @@
         "interest": ["home", "storage"],
         "personality": ["orderly", "practical"],
         "material": ["other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "315",
@@ -1916,7 +1916,7 @@
         "interest": ["home", "travel", "health"],
         "personality": ["practical", "active", "epicurean"],
         "material": ["cotton"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "316",
@@ -1928,7 +1928,7 @@
         "interest": ["home", "recycling", "technology"],
         "personality": ["practical", "creative"],
         "material": ["bambu", "other"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "317",
@@ -1940,7 +1940,7 @@
         "interest": ["home", "recycling", "technology"],
         "personality": ["practical", "creative"],
         "material": ["bambu", "other"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "318",
@@ -1952,7 +1952,7 @@
         "interest": ["home", "storage", "cooking"],
         "personality": ["orderly", "practical"],
         "material": ["bambu", "other"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "319",
@@ -1964,7 +1964,7 @@
         "interest": ["home", "storage", "technology"],
         "personality": ["orderly", "practical", "creative"],
         "material": ["cork", "other"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "320",
@@ -1976,7 +1976,7 @@
         "interest": ["home", "storage", "technology"],
         "personality": ["orderly", "practical", "creative"],
         "material": ["other"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "321",
@@ -1988,7 +1988,7 @@
         "interest": ["home", "health"],
         "personality": ["active"],
         "material": ["cork"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "322",
@@ -2000,7 +2000,7 @@
         "interest": ["home", "health"],
         "personality": ["active"],
         "material": ["cork"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "323",
@@ -2012,7 +2012,7 @@
         "interest": ["home", "travel", "outdoor"],
         "personality": ["active", "practical"],
         "material": ["cotton", "other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "324",
@@ -2024,7 +2024,7 @@
         "interest": ["home", "travel", "outdoor"],
         "personality": ["active", "practical"],
         "material": ["wool"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "325",
@@ -2036,7 +2036,7 @@
         "interest": ["home", "travel", "books", "recycling"],
         "personality": ["creative", "orderly", "practical"],
         "material": ["paper", "other"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "326",
@@ -2048,7 +2048,7 @@
         "interest": ["home", "cooking", "candy"],
         "personality": ["creative", "epicurean"],
         "material": ["stainless", "bambu", "silicone"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "327",
@@ -2060,7 +2060,7 @@
         "interest": ["nature", "animals", "outdoor", "environment"],
         "personality": ["caring", "active"],
         "material": ["wood"],
-        "type": ["youth", "adult", "animal"]
+        "receiver": ["youth", "adult", "animal"]
     },
     {
         "id": "328",
@@ -2072,7 +2072,7 @@
         "interest": ["home", "cooking", "storage", "outdoor"],
         "personality": ["practical", "orderly", "active"],
         "material": ["stainless"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "329",
@@ -2084,7 +2084,7 @@
         "interest": ["home", "cooking", "storage", "outdoor"],
         "personality": ["practical", "orderly", "active"],
         "material": ["stainless"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "330",
@@ -2096,7 +2096,7 @@
         "interest": ["home", "games", "toys"],
         "personality": ["creative", "active"],
         "material": ["wood"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "331",
@@ -2108,7 +2108,7 @@
         "interest": ["home", "games", "toys"],
         "personality": ["creative", "active"],
         "material": ["wood"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "332",
@@ -2120,7 +2120,7 @@
         "interest": ["home", "games", "toys"],
         "personality": ["creative", "active"],
         "material": ["bambu"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "333",
@@ -2132,7 +2132,7 @@
         "interest": ["home", "games", "toys"],
         "personality": ["creative", "active"],
         "material": ["bambu"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "334",
@@ -2144,7 +2144,7 @@
         "interest": ["home", "games", "toys"],
         "personality": ["creative", "active"],
         "material": ["wood"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "335",
@@ -2156,7 +2156,7 @@
         "interest": ["home", "games", "toys"],
         "personality": ["creative", "active"],
         "material": ["wood"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "336",
@@ -2168,7 +2168,7 @@
         "interest": ["games", "toys", "outdoor"],
         "personality": ["creative", "active"],
         "material": ["wood"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "337",
@@ -2180,7 +2180,7 @@
         "interest": ["home"],
         "personality": ["orderly", "creative"],
         "material": ["wood"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "338",
@@ -2192,7 +2192,7 @@
         "interest": ["home", "technology", "games", "recycling"],
         "personality": ["active", "practical", "caring", "orderly"],
         "material": ["recycled", "other"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "339",
@@ -2204,7 +2204,7 @@
         "interest": ["books", "environment"],
         "personality": ["creative", "caring", "orderly"],
         "material": ["paper"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "340",
@@ -2216,7 +2216,7 @@
         "interest": ["books", "environment"],
         "personality": ["creative", "caring", "orderly"],
         "material": ["paper"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "341",
@@ -2228,7 +2228,7 @@
         "interest": ["books", "home", "environment", "recycling", "storage"],
         "personality": ["creative", "caring", "orderly", "active"],
         "material": ["paper"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "342",
@@ -2240,7 +2240,7 @@
         "interest": ["books", "environment", "nature"],
         "personality": ["creative", "caring", "orderly"],
         "material": ["paper"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "343",
@@ -2252,7 +2252,7 @@
         "interest": ["books", "environment", "nature", "outdoor", "animals"],
         "personality": ["creative", "caring", "orderly"],
         "material": ["paper"],
-        "type": ["youth", "adult", "animal"]
+        "receiver": ["youth", "adult", "animal"]
     },
     {
         "id": "344",
@@ -2264,7 +2264,7 @@
         "interest": ["books", "environment", "nature", "outdoor", "animals"],
         "personality": ["creative", "caring", "orderly"],
         "material": ["paper"],
-        "type": ["youth", "adult", "animal"]
+        "receiver": ["youth", "adult", "animal"]
     },
     {
         "id": "345",
@@ -2276,7 +2276,7 @@
         "interest": ["home", "travel", "storage", "recycled"],
         "personality": ["practical", "orderly"],
         "material": ["other"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "346",
@@ -2288,7 +2288,7 @@
         "interest": ["home", "travel", "storage", "recycling"],
         "personality": ["practical", "orderly"],
         "material": ["other", "recycled"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "347",
@@ -2300,7 +2300,7 @@
         "interest": ["home", "travel", "recycling", "cooking"],
         "personality": ["practical"],
         "material": ["glass", "active"],
-        "type": ["toddler", "kid"]
+        "receiver": ["toddler", "kid"]
     },
     {
         "id": "348",
@@ -2312,7 +2312,7 @@
         "interest": ["home", "candy"],
         "personality": ["epicurean"],
         "material": ["liquorice"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "349",
@@ -2324,7 +2324,7 @@
         "interest": ["home", "candy"],
         "personality": ["epicurean"],
         "material": ["sugar", "other"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "350",
@@ -2336,7 +2336,7 @@
         "interest": ["home", "candy"],
         "personality": ["epicurean"],
         "material": ["liquorice", "chocolate"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "351",
@@ -2348,7 +2348,7 @@
         "interest": ["home", "candy"],
         "personality": ["epicurean"],
         "material": ["liquorice"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "352",
@@ -2360,7 +2360,7 @@
         "interest": ["home", "candy"],
         "personality": ["epicurean"],
         "material": ["chocolate"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "353",
@@ -2372,7 +2372,7 @@
         "interest": ["home", "candy"],
         "personality": ["epicurean"],
         "material": ["other"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "354",
@@ -2384,7 +2384,7 @@
         "interest": ["home", "candy"],
         "personality": ["epicurean"],
         "material": ["other"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "355",
@@ -2396,7 +2396,7 @@
         "interest": ["home", "candy"],
         "personality": ["epicurean"],
         "material": ["other"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "356",
@@ -2408,7 +2408,7 @@
         "interest": ["home", "candy"],
         "personality": ["epicurean"],
         "material": ["liquorice"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "357",
@@ -2420,7 +2420,7 @@
         "interest": ["home", "fair-trade", "storage"],
         "personality": ["practical", "orderly"],
         "material": ["paper", "cotton"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "358",
@@ -2432,7 +2432,7 @@
         "interest": ["home", "fair-trade", "storage", "travel"],
         "personality": ["practical", "orderly"],
         "material": ["cotton"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "359",
@@ -2444,7 +2444,7 @@
         "interest": ["home", "health", "travel"],
         "personality": ["active"],
         "material": ["other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "360",
@@ -2456,7 +2456,7 @@
         "interest": ["home", "health", "travel"],
         "personality": ["active"],
         "material": ["other"],
-        "type": ["kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "361",
@@ -2468,7 +2468,7 @@
         "interest": ["home", "health", "storage"],
         "personality": ["active"],
         "material": ["other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "362",
@@ -2480,7 +2480,7 @@
         "interest": ["home", "health"],
         "personality": ["active"],
         "material": ["other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "363",
@@ -2492,7 +2492,7 @@
         "interest": ["home", "health"],
         "personality": ["active"],
         "material": ["other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "364",
@@ -2504,7 +2504,7 @@
         "interest": ["home", "health"],
         "personality": ["active"],
         "material": ["other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "365",
@@ -2516,7 +2516,7 @@
         "interest": ["home", "health"],
         "personality": ["active"],
         "material": ["other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "366",
@@ -2528,7 +2528,7 @@
         "interest": ["home", "health"],
         "personality": ["active"],
         "material": ["other"],
-        "type": ["kid"]
+        "receiver": ["kid"]
     },
     {
         "id": "367",
@@ -2540,7 +2540,7 @@
         "interest": ["home", "health"],
         "personality": ["active"],
         "material": ["other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "368",
@@ -2552,7 +2552,7 @@
         "interest": ["home", "health"],
         "personality": ["active"],
         "material": ["other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "369",
@@ -2564,7 +2564,7 @@
         "interest": ["home", "health"],
         "personality": ["active"],
         "material": ["other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "370",
@@ -2576,7 +2576,7 @@
         "interest": ["home", "health"],
         "personality": ["active"],
         "material": ["other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "371",
@@ -2588,7 +2588,7 @@
         "interest": ["home", "health"],
         "personality": ["active"],
         "material": ["other"],
-        "type": ["youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "372",
@@ -2600,7 +2600,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "373",
@@ -2612,7 +2612,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "374",
@@ -2624,7 +2624,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "375",
@@ -2636,7 +2636,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "376",
@@ -2648,7 +2648,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "377",
@@ -2660,7 +2660,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "378",
@@ -2672,7 +2672,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "379",
@@ -2684,7 +2684,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "380",
@@ -2696,7 +2696,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "381",
@@ -2708,7 +2708,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "382",
@@ -2720,7 +2720,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "383",
@@ -2732,7 +2732,7 @@
         "interest": ["charity", "animals"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult", "animal"]
+        "receiver": ["toddler", "kid", "youth", "adult", "animal"]
     },
     {
         "id": "384",
@@ -2744,7 +2744,7 @@
         "interest": ["charity", "animals"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult", "animal"]
+        "receiver": ["toddler", "kid", "youth", "adult", "animal"]
     },
     {
         "id": "385",
@@ -2756,7 +2756,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "386",
@@ -2768,7 +2768,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "387",
@@ -2780,7 +2780,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "388",
@@ -2792,7 +2792,7 @@
         "interest": ["charity", "nature"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "389",
@@ -2804,7 +2804,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "390",
@@ -2816,7 +2816,7 @@
         "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "391",
@@ -2828,7 +2828,7 @@
         "interest": ["health", "cooking"],
         "personality": ["epicurean"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
         "id": "392",
@@ -2840,6 +2840,6 @@
         "interest": ["health", "cooking"],
         "personality": ["epicurean"],
         "material": ["giftcard"],
-        "type": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["toddler", "kid", "youth", "adult"]
     }
 ]
