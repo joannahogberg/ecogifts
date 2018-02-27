@@ -1,13 +1,9 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import GiftForm from '../components/GiftForm/index';
-import SubmitFormBtn from '../components/SubmitFormBtn/index';
 import { Redirect } from 'react-router-dom'
 import _ from 'lodash';
 
-
-
-//TEST
 import { renderGiftsByForm } from "../actions/actionCreators";
 
 class GiftFormContainer extends Component {
@@ -42,10 +38,9 @@ class GiftFormContainer extends Component {
       valueArrs = { interestsArr: [], personalityArr: [], materialArr: [], receiverArr: [] };
     }
 
- 
-    this.setState({ fireRedirect: true })
-  console.log( valueArrs)
-  dispatch(renderGiftsByForm(valueArrs));
+    this.setState({ fireRedirect: true },function(){
+      dispatch(renderGiftsByForm(valueArrs)); // dispatches an action
+  });
   }
 
   render() {
@@ -61,17 +56,8 @@ class GiftFormContainer extends Component {
       </div>
     )
   }
-  }
-
-
-  // const mapDispatchToProps = dispatch => {
-  //   return {
-  //     renderGiftsByForm: () => dispatch(renderGiftsByForm())
-  //   }
-  // }
-
+}
 
 export default connect(
-  // () => ({}),
-  // mapDispatchToProps
+
 )(GiftFormContainer);

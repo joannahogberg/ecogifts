@@ -1,3 +1,4 @@
 export const REQUESTED_GIFT = 'REQUESTED_GIFT';
 export const FILTERED_BY_CATEGORY = 'FILTERED_BY_CATEGORY';
 export const FILTER_BY_FORM = 'FILTER_BY_FORM';
+export const INIT = '@@INIT';

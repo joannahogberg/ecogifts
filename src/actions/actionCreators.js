@@ -1,6 +1,6 @@
 import * as types from './actionTypes';
-import _ from 'lodash';
-import {reset} from 'redux-form';
+// import _ from 'lodash';
+// import {reset} from 'redux-form';
 
 export const showGift = (gift) => {
     return {
@@ -16,23 +16,13 @@ export const filterByCategory = (category) => {
   }
 }
 
-// export function returnTrueChecked(obj){
-//   var trues = _(obj).reduce(function(trues, v, k) {
-//     if(v === true)
-//         trues.push(k);
-//     return trues;
-// }, [ ]);
-// return trues;
-
-// }
-
-  export function renderGiftsByForm(valueArrs) {
-    console.log(valueArrs)
-    return {
-      type: types.FILTER_BY_FORM,
-      valueArrs
-    }
-  }
+export function renderGiftsByForm(valueArrs) {
+  console.log(valueArrs);
+  return {
+    type: types.FILTER_BY_FORM,
+    valueArrs
+  };
+}
 
 
 
