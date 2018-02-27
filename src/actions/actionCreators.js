@@ -24,6 +24,14 @@ export function renderGiftsByForm(valueArrs) {
   };
 }
 
+export function renderRandom() {
+  console.log("hello");
+  return {
+    type: types.RENDER_RANDOM
+   
+  };
+}
+
 
 
 

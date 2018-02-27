@@ -2,9 +2,18 @@ import initialState from "./initialState";
 import * as types from "../actions//actionTypes";
 
 export default function gifts(state = initialState.gifts, action) {
-console.log(action.type)
-  switch (action.type) {
 
+  switch (action.type) {
+    case types.RENDER_RANDOM:
+  
+    state = initialState.gifts;
+    return state
+    .filter(gift =>
+      gift.interest.some(interest => interest === "health")
+    )
+    .map(gift => {
+      return gift;
+    }, 0);
     case types.INIT:
     return state
     .filter(gift =>
