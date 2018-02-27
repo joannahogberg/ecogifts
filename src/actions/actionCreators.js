@@ -1,8 +1,9 @@
 // import * as types from './actionTypes';
 // import data from '../data/data';
+import _ from 'lodash';
 
 export const showGift = (gift) => {
-     // console.log(gift)
+
     return {
       type: 'REQUESTED_GIFT',
       gift
@@ -16,44 +17,40 @@ export const filterByCategory = (category) => {
   }
 }
 
-// export const renderGiftsByForm = () => {
-//     console.log("action form")
-//     return {
-//       type: '@@redux-form/SET_SUBMIT_SUCCEEDED'
-//     }
-//   }
+export function returnTrueChecked(obj){
+  var trues = _(obj).reduce(function(trues, v, k) {
+    if(v === true)
+        trues.push(k);
+    return trues;
+}, [ ]);
+return trues;
 
-
-// export function renderGiftsByForm() {
-
-
-//     return (dispatch, getState) => {
-//       const form = getState().form;
-//       console.log(form)
-//       const checkboxArrays = {
-//         interests: form.giftform.interests.value,
-//         personality: form.giftform.personality.value,
-//         material: form.giftform.material.value,
-//         type: form.giftform.type.value
-//       };
-//       dispatch({
-//         type: '@@redux-form/SET_SUBMIT_SUCCEEDED',
-//         checkboxArrays
-//       });
-//     }
-//   }
-
-  function typeSomething(data){
-    return {
-        type: "FORMDATA",
-        value: data
-    }
 }
 
-export function renderGiftsByForm(data) {
-  
+  export function renderGiftsByForm() {
     return (dispatch, getState) => {
-      console.log(data)
-        return dispatch(typeSomething(data))
-    }
-}
+      const form = getState().form;
+      console.log(form.giftform.values)
+      let valueArrs;
+      if(form.giftform.values){
+        const interestsArr = form.giftform.values.interests ? returnTrueChecked(form.giftform.values.interests) : [];
+        const personalityArr = form.giftform.values.personality ? returnTrueChecked(form.giftform.values.personality) : [];
+        const materialArr = form.giftform.values.material ? returnTrueChecked(form.giftform.values.material) : [];
+        const typeArr = form.giftform.values.type ? returnTrueChecked(form.giftform.values.type)  : [];
+        valueArrs = { interestsArr: interestsArr, personalityArr: personalityArr, materialArr: materialArr, typeArr: typeArr };
+      }
+      else{
+        valueArrs = { interestsArr: [], personalityArr: [], materialArr: [], typeArr: [] };
+      }
+  
+console.log(valueArrs)
+      dispatch({ 
+        type: "FILTER_BY_FORM",
+        valueArrs
+      });
+    };
+  }
+
+
+
+

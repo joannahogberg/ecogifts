@@ -8,22 +8,23 @@ class GiftFormContainer extends Component {
 
   handleSubmit = (values) => {
     // Do something with the form values
-    console.log(values);
+  console.log(values)
   }
 
   render() {
     return (
-      // <GiftForm {...this.props} onSubmit={renderGiftsByForm} />
-      <GiftForm {...this.props} onSubmit={renderGiftsByForm} />
+      <GiftForm {...this.props} />
     )
   }
   }
-  
 
 
-const mapDispatchToProps = (dispatch) => ({
-  renderGiftsByForm: () => dispatch(renderGiftsByForm()),
-});
+  const mapDispatchToProps = dispatch => {
+    return {
+      renderGiftsByForm: () => dispatch(renderGiftsByForm())
+    }
+  }
+
 
 export default connect(
   () => ({}),
