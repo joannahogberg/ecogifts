@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 
 class Checkbox extends Component {
  
-   handleChange(event, id) {
+   handleChange(event) {
         const {input} = this.props;
         const {onChange} = input;
         if (event.target.checked) {
@@ -15,7 +15,7 @@ class Checkbox extends Component {
     }
 
   render() {
-    const { input} = this.props
+    const { input } = this.props
 
     return <input type="checkbox" onChange={event => this.handleChange(event)} />;
   }

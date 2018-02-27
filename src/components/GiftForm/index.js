@@ -1,6 +1,8 @@
 import React from 'react';
-import { reduxForm, FormSection } from 'redux-form'
+import { reduxForm } from 'redux-form'
 import MultiCheckboxField from '../MultiCheckboxField';
+
+// import { renderGiftsByForm } from "../../actions/actionCreators";
 
 const interestsOptions = [{id: 1, label: "Hälsa", value: "health"}, {id: 2, label: "Inredning", value: "home"}, {id: 3, label: "Trädgårdsarbete", value:"gardening"}, {id: 4, label: "Spel", value: "games"}, {id: 6, label: "Resa", value:"travel"}, 
 {id: 7, label: "Matlagning", value:"cooking"}, {id: 8, label: "Välgörenhet", value: "charity"}, {id: 9, label: "Natur", value:"nature"},
@@ -20,38 +22,22 @@ const materialOptions = [{id: 1, label: "Återanvänt", value:"recycled"}, {id: 
 {id: 13, label:"Glas", value:"glass"}, {id: 14, label: "Övriga material", value:"other"},
     {id: 15, label: "Kork", value:"cork"}, {id: 16, label: "Gåvobevis & Presentkort", value:"giftcard"}, {id: 17, label: "Lakrits", value:"liquorice"}, {id: 18, label: "Choklad", value:"chocolate"}]
 
-const typeOptions = [{id: 1, label: "Bebis", value: "toddler"}, {id: 2, label:"Barn", value:"kid"}, {id: 3, label: "Ungdom", value:"youth"}, {id:4, label: "Vuxen", value:"adult"}, {id: 5, label: "Hund el Katt", value:"animal"}]
+const receiverOptions = [{id: 1, label: "Bebis", value: "toddler"}, {id: 2, label:"Barn", value:"kid"}, {id: 3, label: "Ungdom", value:"youth"}, {id:4, label: "Vuxen", value:"adult"}, {id: 5, label: "Hund el Katt", value:"animal"}]
 
 
 const GiftForm = ({
   renderGiftsByForm,
-  fields: { interests, personality, material, type },
+  onSubmit,
+  fields: { interests, personality, material, receiver },
   handleSubmit
 }) => {
 
-  return <form onSubmit={handleSubmit(renderGiftsByForm)}>
-      {/* <FormSection name="interests">
-        <label>Intressen</label>
-        <MultiCheckboxField options={interestsOptions} name="interests" />
-      </FormSection>
-
-      <FormSection name="personality">
-        <label>Personlighet</label>
-        <MultiCheckboxField options={personalityOptions}  />
-      </FormSection>
-      <FormSection name="material">
-        <label>Tillverkat av</label>
-        <MultiCheckboxField options={materialOptions} />
-      </FormSection>
-      <FormSection name="type">
-        <label>Presenten är till en</label>
-        <MultiCheckboxField options={typeOptions}  />
-      </FormSection> */}
+// return <form onSubmit={handleSubmit(renderGiftsByForm)}>
+return <form onSubmit={handleSubmit(onSubmit)}>
        <MultiCheckboxField options={interestsOptions} name="interests" />
        <MultiCheckboxField options={personalityOptions} name="personality" />
        <MultiCheckboxField options={materialOptions} name="material" />
-       <MultiCheckboxField options={typeOptions} name="type" />
-
+       <MultiCheckboxField options={receiverOptions} name="receiver" />
       <button type="submit" className="submit-form-btn">
         Submit
       </button>
@@ -61,6 +47,5 @@ const GiftForm = ({
 
 export default reduxForm({
   form: 'giftform',
-  fields: ['interests', 'personality', 'material', 'type']
-  
+  fields: ['interests', 'personality', 'material', 'receiver'], 
 })(GiftForm)
