@@ -115,3 +115,11 @@ export default function gifts(state = initialState.gifts, action) {
         gift.productName.toLowerCase().includes(newVal)
       );
     
+      case types.SAVE_TO_LOCALSTORAGE:
+console.log(action.type)
+      return {
+          
+     
+      }
+    }
+  }

@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 const composedEnhancers = compose(
-    applyMiddleware(...middleware, save()),
+    applyMiddleware(...middleware),
     ...enhancers
 )
 // const persistedState = loadState();
@@ -31,9 +31,8 @@ const composedEnhancers = compose(
 const store = createStore(
     rootReducer,
     initialState,
-    // persistedState,
-    composedEnhancers,
-    load()
+    composedEnhancers
+ 
 )
 
 store.dispatch(renderRandom())
