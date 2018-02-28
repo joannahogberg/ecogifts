@@ -12,20 +12,19 @@ class MultiCheckboxField extends Component {
     const checkboxes = options.map(option => {
       return (
         <label key={option.id}>
-          {option.label}
-          <Field
+          {option.label}<Field
             name={option.value}
             component={Checkbox}
             type="checkbox"
             {...props}
-          />
-        </label>
+          /> 
+        </label> 
       );
     });
 
       return <FormSection name={name}>
-         {checkboxes} 
-         </FormSection>
+          {checkboxes} 
+        </FormSection>
   }
 }
 

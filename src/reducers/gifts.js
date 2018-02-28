@@ -4,15 +4,29 @@ import * as types from "../actions//actionTypes";
  
 export default function gifts(state = initialState.gifts, action) {
 console.log(action.type)
+
   switch (action.type) {
-    case types.INIT:
+    
+    case types.RENDER_RANDOM:
+    state = initialState.gifts;
+    console.log(state)
     return state
     .filter(gift =>
-      gift.interest.some(interest => interest === "games")
+      gift.interest.some(interest => interest === "health")
     )
     .map(gift => {
       return gift;
     }, 0);
+
+    // case types.INIT:
+    // console.log(action.type, "this is INIT")
+    // return state
+    // .filter(gift =>
+    //   gift.interest.some(interest => interest === "games")
+    // )
+    // .map(gift => {
+    //   return gift;
+    // }, 0);
 
     case types.REQUESTED_GIFT:
       return state.filter(i => i.id === action.gift.id);
@@ -31,13 +45,14 @@ console.log(action.type)
 
     case types.FILTER_BY_FORM:
 
-      let newState1;
+    state = initialState.gifts;   
+    let newState1;
+
       // check array does not exist, is not an array, or is empty
       if (action.valueArrs.interestsArr.length === 0) {
         newState1 = initialState.gifts;
       } else {
-        newState1 = state
-          .filter(gift =>
+        newState1 = state.filter(gift =>
             gift.interest.some(interest =>
               action.valueArrs.interestsArr.includes(interest)
             )

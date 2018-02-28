@@ -1,6 +1,7 @@
 import React from 'react';
 import { reduxForm } from 'redux-form'
 import MultiCheckboxField from '../MultiCheckboxField';
+import './index.css';
 
 // import { renderGiftsByForm } from "../../actions/actionCreators";
 

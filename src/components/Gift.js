@@ -9,7 +9,7 @@ import { connect } from "react-redux";
 class Gift extends Component {
   render() {
     const { gift } = this.props;
-
+console.log(this.props.gift.id)
     return (
       <figure className="grid-figure">
         <div className="grid-photo-wrap">

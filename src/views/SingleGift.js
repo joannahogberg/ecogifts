@@ -6,8 +6,12 @@ import { connect } from "react-redux";
 
 class SingleGift extends Component {
   render() {
-    const { giftId } = this.props.match.params;
-    const gift = this.props.gifts.filter(gift => gift.id + "" === giftId);
+    
+    const { gift_Id } = this.props.match.params;
+    console.log(this.props.match.params)
+    
+    const gift = this.props.gifts.filter(gift => gift.id + "" === gift_Id);
+    console.log(gift)
     let giftToRender = gift.map(gift => {
       return (
         <figure key={gift.id} className="grid-figure">

@@ -2,6 +2,8 @@ import * as types from './actionTypes';
 // import _ from 'lodash';
 // import {reset} from 'redux-form';
 
+
+
 export const showGift = (gift) => {
     return {
       type: 'REQUESTED_GIFT',
@@ -24,7 +26,12 @@ export function renderGiftsByForm(valueArrs) {
   };
 }
 
-
+export const renderRandom = () => {
+  console.log("Hello renderRandom")
+  return {
+    type: types.RENDER_RANDOM
+  }
+}
 
 
 
