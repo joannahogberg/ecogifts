@@ -1,0 +1,29 @@
+@import '../../styles/library';
+.wrapper {
+    font-size: 62.5%;
+    background: $white;
+    letter-spacing: 0.05em;
+    font-family: $textFont;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    @include flexbox;
+    @include flex-direction(column);
+}
+
+main {
+    font-size: 1.6em;
+    @include flexbox;
+    @include flex-direction(column);
+    @include breakpoint(medium) {
+        @include flex-direction(row);
+        @include justify-content(space-between);
+    }
+}
+
+.container {
+    width: 100%;
+    @include breakpoint(medium) {
+        @include calc( width, '100% - 150px')
+    }
+}

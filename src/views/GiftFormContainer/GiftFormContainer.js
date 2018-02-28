@@ -48,7 +48,7 @@ class GiftFormContainer extends Component {
     const { fireRedirect } = this.state;
 
     return (
-      <div className="container form">
+      <div className="form-container">
       <p>Här kan du göra ett avancerat sök av presenttips utifrån intressen, personlighet, material eller om presenten skall vara till en vuxen eller kanske ett husdjur :) </p>
       <GiftForm {...this.props} onSubmit={this.handleSubmit}/>
       {fireRedirect && (

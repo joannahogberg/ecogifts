@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { filterByCategory} from "../../actions/actionCreators";
 import { connect } from "react-redux";
+import './buttongroup.css';
 
 class ButtonGroup extends Component {
   render() {

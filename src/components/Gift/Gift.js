@@ -24,11 +24,11 @@ class Gift extends Component {
         <figcaption>
           <h2>{gift.productName}</h2>
           <p>{price}kr</p>
-          <div className="control-buttons">
-            <Link to={`/view/${gift.id}`} className="button" gift={gift}>
+          <div className="control-btns">
+            <Link to={`/view/${gift.id}`} className="btn-link" >
               Mer info
             </Link>
-            <a href={gift.href} target="_blank" className="button">
+            <a href={gift.href} target="_blank" className="btn-link">
               Gå till butik <ChevronsRight color="grey" size={24} />
             </a>
           </div>

@@ -6,13 +6,17 @@ import ButtonGroup from "../../components/ButtonGroup/ButtonGroup";
 import SearchBar from '../../components/SearchBar/SearchBar';
 // import { filterByCategory} from "../../actions/actionCreators";
 import { connect } from "react-redux";
+import './giftsgrid.css';
+
 
 class GiftsGrid extends Component {
   render() {
     return (
-      <div className="container">
-        <Link to="/gift-form">Sök present</Link>
+      <div className="gifts-grid">
+      <div className="search-goup">
+        <Link to="/gift-form">PRESENTTIPSGENERATOR</Link>
         <SearchBar />
+        </div>
         <ButtonGroup />
         <div className="gifts-grid">
           {this.props.gifts.map((gift, i) => (

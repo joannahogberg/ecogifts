@@ -5,20 +5,13 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { addGiftToList } from "../../actions/actionCreators";
 import * as types from "../../actions//actionTypes";
-import GiftsList from '../../components/GiftsList/GiftsList';
+
 
 class SingleGift extends Component {
 
-  
-
-
-  render() {
-    
+  render() {    
     const { giftId } = this.props.match.params;
-    // console.log(this.props.match.params)
-    
     const gift = this.props.gifts.filter(gift => gift.id + "" === giftId);
-    // console.log(gift)
     let giftToRender = gift.map(gift => {
       const price = gift.material.includes("giftcard") ? "Från " + gift.price : gift.price;
       return (
@@ -39,8 +32,8 @@ class SingleGift extends Component {
             {/* <button onClick={() => saveToLocalStorage(gift.id)}>SPARA</button> */}
             
             <button onClick={() => this.props.addGiftToList(gift)}>SPARA</button> 
-            <div className="control-buttons">
-              <a href={gift.href} target="_blank" className="button">
+            <div className="control-btns">
+              <a href={gift.href} target="_blank" className="btn-link">
                 Gå till butik <ChevronsRight color="grey" size={24} />
               </a>
             </div>
@@ -49,12 +42,11 @@ class SingleGift extends Component {
       );
     });
     return (
-      <div className="single-photo">
-        <Link to={`/`} className="button">
+      <div className="single-gift">
+        <Link to={`/`} className="btn-link">
           <ChevronsLeft color="grey" size={24} />
         </Link>
         {giftToRender}
-        <GiftsList />
       </div>
     );
   }

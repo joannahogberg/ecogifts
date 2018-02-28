@@ -1,0 +1,9 @@
+@import '../../styles/library';
+.search-input {
+    outline: none;
+    padding: 0.3em 0.5em;
+    @include placeholder {
+        font-family: $linkFont;
+        font-size: 1.2em;
+    }
+}
