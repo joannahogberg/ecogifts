@@ -37,11 +37,10 @@ export function search(value) {
     value
   };
 }
-
-
-
-
-
-
-
-
+  export function addGiftToList(gift){
+    console.log("ActionCreator", gift)
+    return {
+      type: types.ADD_GIFT_TO_LIST,
+      gift: gift
+    }
+  }

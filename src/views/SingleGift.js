@@ -3,15 +3,22 @@ import { ChevronsLeft, ChevronsRight } from "react-feather";
 import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import { addGiftToList } from "../actions/actionCreators";
+import * as types from "../actions//actionTypes";
+import GiftsList from '../components/GiftsList/GiftsList';
 
 class SingleGift extends Component {
+
+  
+
+
   render() {
     
-    const { gift_Id } = this.props.match.params;
-    console.log(this.props.match.params)
+    const { giftId } = this.props.match.params;
+    // console.log(this.props.match.params)
     
-    const gift = this.props.gifts.filter(gift => gift.id + "" === gift_Id);
-    console.log(gift)
+    const gift = this.props.gifts.filter(gift => gift.id + "" === giftId);
+    // console.log(gift)
     let giftToRender = gift.map(gift => {
       return (
         <figure key={gift.id} className="grid-figure">
@@ -26,6 +33,10 @@ class SingleGift extends Component {
           <figcaption>
             <h2>{gift.productName}</h2>
             <p>{gift.description}</p>
+            
+            {/* <button onClick={() => saveToLocalStorage(gift.id)}>SPARA</button> */}
+            
+            <button onClick={() => this.props.addGiftToList(gift)}>SPARA</button> 
             <div className="control-buttons">
               <a href={gift.href} target="_blank" className="button">
                 Gå till butik <ChevronsRight color="grey" size={24} />
@@ -41,6 +52,7 @@ class SingleGift extends Component {
           <ChevronsLeft color="grey" size={24} />
         </Link>
         {giftToRender}
+        <GiftsList />
       </div>
     );
   }
@@ -49,16 +61,16 @@ class SingleGift extends Component {
 SingleGift.propTypes = {
   gifts: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       productName: PropTypes.string.isRequired,
       price: PropTypes.number.isRequired,
       description: PropTypes.string.isRequired,
       src: PropTypes.string.isRequired,
-      href: PropTypes.string.isRequired,
-      interest: PropTypes.array.isRequired,
-      personality: PropTypes.array.isRequired,
-      material: PropTypes.array.isRequired,
-      type: PropTypes.array.isRequired
+      href: PropTypes.string.isRequired
+      // interest: PropTypes.array.isRequired,
+      // personality: PropTypes.array.isRequired,
+      // material: PropTypes.array.isRequired,
+      // reciever: PropTypes.array.isRequired
     })
   )
 };
@@ -67,4 +79,23 @@ const mapStateToProps = state => ({
   gifts: state.gifts
 });
 
-export default connect(mapStateToProps)(SingleGift);
+const mapDispatchToProps = dispatch => {
+  // onClick:
+  // // return {
+  // //   saveToLocalStorage: (id) => dispatch(saveToLocalStorage(id))
+  // // }
+
+  return {
+    addGiftToList: (gift) => dispatch(addGiftToList(gift))
+    // dispatch,
+    // onClick: (gift) => dispatch(addGiftToList(gift))
+    // onClick: (gift) => dispatch(addGiftToList({type: types.ADD_GIFT_TO_LIST, gift}))
+  };
+};
+
+  
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(SingleGift);
+
+

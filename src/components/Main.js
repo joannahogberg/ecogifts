@@ -24,7 +24,7 @@ class Main extends Component {
         <br />
 
         <Route exact path="/" component={GiftsGrid} />
-        <Route path="/view/:gift_Id" component={SingleGift} />
+        <Route path="/view/:giftId" component={SingleGift} />
         <Route path="/gift-form" component={GiftFormContainer} />
       </main>
     );

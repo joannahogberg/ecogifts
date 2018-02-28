@@ -6,7 +6,7 @@ import {search} from '../../actions/actionCreators';
 class SearchBar extends Component {
   render() {
     const {search, value} = this.props;
-console.log(value)
+// console.log(value)
     return (
         <input
           className="form-control"
