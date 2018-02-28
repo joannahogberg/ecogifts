@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { ChevronsRight } from "react-feather";
-// import { showGift } from "../actions/actionCreators";
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
 
 import { connect } from "react-redux";
@@ -9,7 +8,7 @@ import { connect } from "react-redux";
 class Gift extends Component {
   render() {
     const { gift } = this.props;
-// console.log(this.props.gift.id)
+    const price = gift.material.includes("giftcard") ? "Från " + gift.price : gift.price;
     return (
       <figure className="grid-figure">
         <div className="grid-photo-wrap">
@@ -24,8 +23,9 @@ class Gift extends Component {
         </div>
         <figcaption>
           <h2>{gift.productName}</h2>
+          <p>{price}kr</p>
           <div className="control-buttons">
-            <Link to={`/view/${gift.id}`} className="button">
+            <Link to={`/view/${gift.id}`} className="button" gift={gift}>
               Mer info
             </Link>
             <a href={gift.href} target="_blank" className="button">
@@ -38,16 +38,28 @@ class Gift extends Component {
   }
 }
 
+
+Gift.propTypes = {
+  gifts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      productName: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+      description: PropTypes.string.isRequired,
+      src: PropTypes.string.isRequired,
+      href: PropTypes.string.isRequired,
+      interest: PropTypes.array.isRequired,
+      personality: PropTypes.array.isRequired,
+      material: PropTypes.array.isRequired,
+      receiver: PropTypes.array.isRequired
+    })
+  )
+};
+
 function mapStateToProps(state, props) {
   return {
     gifts: state.gifts
   };
 }
-
-// function mapDispatchToProps(dispatch) {
-//   return {
-//     showGift: gift => dispatch(showGift(gift))
-//   };
-// }
 
 export default connect(mapStateToProps)(Gift);

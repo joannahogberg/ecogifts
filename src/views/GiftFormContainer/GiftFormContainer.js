@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import GiftForm from '../components/GiftForm/index';
+import GiftForm from '../../components/GiftForm/GiftForm';
 import { Redirect } from 'react-router-dom'
 import _ from 'lodash';
 
-import { renderGiftsByForm } from "../actions/actionCreators";
+import { renderGiftsByForm } from "../../actions/actionCreators";
 
 class GiftFormContainer extends Component {
 
@@ -48,7 +48,8 @@ class GiftFormContainer extends Component {
     const { fireRedirect } = this.state;
 
     return (
-      <div>
+      <div className="container form">
+      <p>Här kan du göra ett avancerat sök av presenttips utifrån intressen, personlighet, material eller om presenten skall vara till en vuxen eller kanske ett husdjur :) </p>
       <GiftForm {...this.props} onSubmit={this.handleSubmit}/>
       {fireRedirect && (
         <Redirect to={from || '/'}/>
