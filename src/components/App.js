@@ -1,14 +1,13 @@
 import{ bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import * as actionCreators from '../actions/actionCreators.js';
-import Main from './Main';
+import Main from './Main/Main';
 
 function mapStateToProps(state){
     return{
         gifts: state.gifts
     }
 }
-
 function mapDispachToProps(dispatch){
     return bindActionCreators(actionCreators, dispatch)
 }

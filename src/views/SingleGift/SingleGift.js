@@ -9,6 +9,7 @@ class SingleGift extends Component {
     const { giftId } = this.props.match.params;
     const gift = this.props.gifts.filter(gift => gift.id + "" === giftId);
     let giftToRender = gift.map(gift => {
+      const price = gift.material.includes("giftcard") ? "Från " + gift.price : gift.price;
       return (
         <figure key={gift.id} className="grid-figure">
           <div className="grid-photo-wrap">
@@ -21,6 +22,7 @@ class SingleGift extends Component {
           </div>
           <figcaption>
             <h2>{gift.productName}</h2>
+            <p>{price}kr</p>
             <p>{gift.description}</p>
             <div className="control-buttons">
               <a href={gift.href} target="_blank" className="button">
@@ -45,7 +47,7 @@ class SingleGift extends Component {
 SingleGift.propTypes = {
   gifts: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       productName: PropTypes.string.isRequired,
       price: PropTypes.number.isRequired,
       description: PropTypes.string.isRequired,
@@ -54,7 +56,7 @@ SingleGift.propTypes = {
       interest: PropTypes.array.isRequired,
       personality: PropTypes.array.isRequired,
       material: PropTypes.array.isRequired,
-      type: PropTypes.array.isRequired
+      receiver: PropTypes.array.isRequired
     })
   )
 };

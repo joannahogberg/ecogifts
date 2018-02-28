@@ -1920,7 +1920,7 @@
     },
     {
         "id": "316",
-        "productName": "Trådlöst tangentbord med datormus av bambu",
+        "productName": "Trådlöst Tangentbord med datormus av bambu",
         "price": 599,
         "description": "Trådlöst multimedia tangentbord med engelsk tangentbordsuppsättning (saknar å,ä,ö) med tillhörande datormus. Handgjort av bambu. Tangentbordet är tillverkat av spillvirke från golvtillverkare, som annars skulle ha förbränts.",
         "src": "https://shopcdn.textalk.se/shop/3815/art15/h3972/154343972-origpic-335ab4.jpg",
@@ -1932,7 +1932,7 @@
     },
     {
         "id": "317",
-        "productName": "Trådlös datormus av bambu",
+        "productName": "Trådlös Datormus av bambu",
         "price": 349,
         "description": "Surfa trådlöst med denna urläckra handgjorda mus av bambu. Utrustad med 3 knappar (2 stora knappar + knapp på rullhjulet). Kopplas enkelt till din dator i USB porten med tillhörande sändare (2,4 GHz). Fungerar både på PC och Mac datorer.",
         "src": "https://shopcdn.textalk.se/shop/3815/art15/h3422/154343422-origpic-d1fb12.jpg",
@@ -1956,7 +1956,7 @@
     },
     {
         "id": "319",
-        "productName": "Korkskal till mobil",
+        "productName": "Mobilskal i kork",
         "price": 199,
         "description": "Skalen designas för hand, ett för ett, i en hemlig liten verkstad i Västerbotten. Kork är ett fantastiskt alternativ. Det värmer vid kalla dagar och svalkar vid varma. Skalet har en mjuk & naturlig känsla i handen.",
         "src": "http://dittskal.nu/wp-content/uploads/2017/05/Please-Guide-Me-iphone-6-plus.jpg",
@@ -1968,7 +1968,7 @@
     },
     {
         "id": "320",
-        "productName": "Miljövänliga skal till mobil",
+        "productName": "Komposterbart Mobilskal",
         "price": 319,
         "description": "Ett skal från Pela som är helt gjort på växter! Nedbrytbart i komposterbar miljö på endast 6 månader! Varför ha ett oljebaserat skal som håller i 300 år när man i snitt byter mobil efter 18 månader?",
         "src": "http://dittskal.nu/wp-content/uploads/2016/04/svart.jpg",
@@ -2011,7 +2011,7 @@
         "href": "http://www.adisgladis.se/knowledge-cotton-apparel-4-pack-organic-socks-sverige?blockid=1&catid=116",
         "interest": ["home", "travel", "outdoor"],
         "personality": ["active", "practical"],
-        "material": ["cotton", "other"],
+        "material": ["cotton"],
         "receiver": ["youth", "adult"]
     },
     {
@@ -2036,11 +2036,11 @@
         "interest": ["home", "travel", "books", "recycling"],
         "personality": ["creative", "orderly", "practical"],
         "material": ["paper", "other"],
-        "receiver": ["kid", "youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "326",
-        "productName": "Glassformar Rostfritt Stål - 6 st + Ställning, Paddle Style",
+        "productName": "Glassformar Rostfritt Stål",
         "price": 399,
         "description": "Nya platta glassformar i Rostfritt stål med Bambupinnar. Nu kan ni tillverka hemgjord glass och njuta lite mer då den tillverkas helt giftfritt. Glassen fryser snabbt i formen och ställningen är konstruerad så att en glass i taget kan tas bort, ätas och fyllas på. Glassen är lätt att ta loss ur formarna och lossas enkelt genom att man sköljer formen under ljummet vatten en liten stund eller värmer den i handen. Det smarta locket fungerar som ett spillskydd när man äter glassen och får gärna sitta kvar. Formen är lätt att rengöra och bambupinnarna går att återanvända.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h1934/29401934-origpic-d0f6e1.png",
@@ -2060,7 +2060,7 @@
         "interest": ["nature", "animals", "outdoor", "environment"],
         "personality": ["caring", "active"],
         "material": ["wood"],
-        "receiver": ["youth", "adult", "animal"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "328",
@@ -2072,7 +2072,7 @@
         "interest": ["home", "cooking", "storage", "outdoor"],
         "personality": ["practical", "orderly", "active"],
         "material": ["stainless"],
-        "receiver": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "329",
@@ -2084,7 +2084,7 @@
         "interest": ["home", "cooking", "storage", "outdoor"],
         "personality": ["practical", "orderly", "active"],
         "material": ["stainless"],
-        "receiver": ["toddler", "kid", "youth", "adult"]
+        "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "330",
@@ -2117,7 +2117,7 @@
         "description": "Slipa tankeknölarna! Kan du plocka isär och sätta ihop knuten igen?Kräver mycker mer tankekraft än man kan ana!Perfekt som underhållning till sig själv eller som en gåva.Levereras i presentförpackning.Svårighetsgrad: 4/5",
         "src": "https://www.hobbex.se/bilder/artiklar/807761.jpg",
         "href": "http://fyndmarknaden.nu/produkt/3d-pussel-bambu-dubbel-knut/",
-        "interest": ["home", "games", "toys"],
+        "interest": ["games", "toys"],
         "personality": ["creative", "active"],
         "material": ["bambu"],
         "receiver": ["kid", "youth", "adult"]
@@ -2129,14 +2129,14 @@
         "description": "Trevligt bambupussel sätter test på de små grå.Kan du ta isär delarna och sätta ihop dem igen?Levereras i fin presentförpackning.Svårighetsgrad: 5/5",
         "src": "https://www.hobbex.se/bilder/artiklar/807762.jpg",
         "href": "http://fyndmarknaden.nu/produkt/3d-pussel-bambu-kors/",
-        "interest": ["home", "games", "toys"],
+        "interest": ["games", "toys"],
         "personality": ["creative", "active"],
         "material": ["bambu"],
         "receiver": ["kid", "youth", "adult"]
     },
     {
         "id": "334",
-        "productName": "Bygg pyramiden",
+        "productName": "Pyramiden",
         "price": 119,
         "description": "Hjärngympa för de mellanstora barnen, och vuxna naturligtvis. Klura ut hur du bygger en pyramid av ett antal kulor som sitter ihop i olika former. Lösningen finns i ett förslutet kuvert. Handgjord i Sverige av svenskt trä och behandlad med linolja.",
         "src": "https://shopcdn.textalk.se/shop/3815/art15/h4287/2394287-origpic-5f3083.jpg",
@@ -2165,7 +2165,7 @@
         "description": "Ett klassisk spel för två spelare. Flytta de 72 kulorna mellan skålarna, den som vid spelets slut har flest kulor i sin egen skål vinner.",
         "src": "https://www.ahlens.se/INTERSHOP/static/WFS/Ahlens-AhlensSE-Site/-/Ahlens/sv_SE/PDPMegazoomMobil/17APB8RO4M_44449668_front.jpg",
         "href": "https://www.ahlens.se/Inredning/spel-pussel-66579/ahlens-kalaha-44449668/?nosto=ah-recommendations",
-        "interest": ["games", "toys", "outdoor"],
+        "interest": ["games", "toys", "home"],
         "personality": ["creative", "active"],
         "material": ["wood"],
         "receiver": ["kid", "youth", "adult"]
@@ -2184,7 +2184,7 @@
     },
     {
         "id": "338",
-        "productName": "Fairphone mobil",
+        "productName": "Fairphone mobiltelefon",
         "price": 5238,
         "description": "The world’s first ethical, modular phone, now with a 12MP camera",
         "src": "https://www.fairphone.com/wp-content/uploads/2016/06/new_homepage-1024x1024.png",
@@ -2252,7 +2252,7 @@
         "interest": ["books", "environment", "nature", "outdoor", "animals"],
         "personality": ["creative", "caring", "orderly"],
         "material": ["paper"],
-        "receiver": ["youth", "adult", "animal"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "344",
@@ -2264,7 +2264,7 @@
         "interest": ["books", "environment", "nature", "outdoor", "animals"],
         "personality": ["creative", "caring", "orderly"],
         "material": ["paper"],
-        "receiver": ["youth", "adult", "animal"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "345",
@@ -2275,8 +2275,8 @@
         "href": "http://www.adisgladis.se/pinqponq-brik-vivid-monochrome-hip-bag?blockid=8&catid=147",
         "interest": ["home", "travel", "storage", "recycled"],
         "personality": ["practical", "orderly"],
-        "material": ["other"],
-        "receiver": ["kid", "youth", "adult"]
+        "material": ["other", "recycled"],
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "346",
@@ -2288,11 +2288,11 @@
         "interest": ["home", "travel", "storage", "recycling"],
         "personality": ["practical", "orderly"],
         "material": ["other", "recycled"],
-        "receiver": ["kid", "youth", "adult"]
+        "receiver": ["youth", "adult"]
     },
     {
         "id": "347",
-        "productName": "Nappflaska med naturgumminapp och isgrönt silikonfodral",
+        "productName": "Nappflaska med naturgumminapp och silikonfodral",
         "price": 159,
         "description": "Gör din egen nappflaska från en urdiskad barnmatsburk! Med det här setét har du allt du behöver – barnmatsburken tillsätter du själv! Tänk på att köpa en standardbarnmatsburk, de har en diameter på 58 m.m. Märken som Änglamark™, Nestlé™ och Holle™ har standardbarmmatsburkar till sin barnmat.",
         "src": "https://imgix.ttcdn.co/i/product/original/0/107999-bcf17571f84549e2b70743ddfa64db3a.jpeg",
@@ -2309,7 +2309,7 @@
         "description": "ZEN cordas mjuka ekologiska lakritsrem har en god och söt smak som är lätt att njuta av. Den långa godisremmen är sötad med rörsocker för en rundare sötma och passar perfekt som lördagsgodis till både stora och små! Klipp gärna remmen i bitar till mindre barn.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h1002/120711002-origpic-3276a5.png",
         "href": "http://www.laplandecostore.se/mat-dryck/godis/zen-corda-ekologisk-lakritsrem-60-g.html",
-        "interest": ["home", "candy"],
+        "interest": ["candy"],
         "personality": ["epicurean"],
         "material": ["liquorice"],
         "receiver": ["kid", "youth", "adult"]
@@ -2321,7 +2321,7 @@
         "description": "Love Spring från Hey Yum! är mjuka veganska gelégodisar med fantastiskt god smak. De är helt utan gelatin och har en marmeladig mjuk konsistens. Med smak av goda frukter och bär som apelsin, lingon, hallon, svartvinbär och jordgubbar.",
         "src": "http://www.laplandecostore.se/shop/thumbnails/shop/35694/art94/h1184/119031184-origpic-57ae84.png",
         "href": "http://www.laplandecostore.se/mat-dryck/godis/ekologiskt-gelegodis-hey-yum-love-spring-100-g.html",
-        "interest": ["home", "candy"],
+        "interest": ["candy"],
         "personality": ["epicurean"],
         "material": ["sugar", "other"],
         "receiver": ["kid", "youth", "adult"]
@@ -2333,7 +2333,7 @@
         "description": "Ekorrens Ekologiska Dark Chocolate & Salty Licorice är en riktigt smarrig chokladkaka för finsmakaren. Chokladen är ekologisk, KRAV-märkt och Fairtrade-märkt, samt klimatkompenserad från böna till butik.",
         "src": "http://www.laplandecostore.se/shop/thumbnails/shop/35694/art94/h0190/112430190-origpic-88eea1.png",
         "href": "http://www.laplandecostore.se/varumarken/ekorrens-ekologiska/ekorrens-ekologiska-mork-choklad-salty-licorice-85-g.html",
-        "interest": ["home", "candy"],
+        "interest": ["candy"],
         "personality": ["epicurean"],
         "material": ["liquorice", "chocolate"],
         "receiver": ["kid", "youth", "adult"]
@@ -2345,7 +2345,7 @@
         "description": "ZEN pietre är ett mjukt ekologiskt lakritsgodis med en ganska mild lakritssmak. Godisbitarna som är vackra och liknar stenar passar bra som dekoration vid matbordet eller på kalaset.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h9394/104159394-origpic-863481.jpg",
         "href": "http://www.laplandecostore.se/mat-dryck/godis/zen-pietre-ekologiskt-lakritsgodis-stenar-100-g.html",
-        "interest": ["home", "candy"],
+        "interest": ["candy"],
         "personality": ["epicurean"],
         "material": ["liquorice"],
         "receiver": ["kid", "youth", "adult"]
@@ -2357,7 +2357,7 @@
         "description": "Barnsligt god mjölkchoklad med en krämig mjölkfyllning. Chokladen blir lätt omtyckt av både stora och små eftersom den smälter i munnen på ett underbart sätt. Påminner mycket om den populära chokladen i ett ägg med överraskning i.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h6421/91246421-origpic-016ca7.jpg",
         "href": "http://www.laplandecostore.se/mat-dryck/godis/vivani-kids-chocolate-ekologisk-mjolkchoklad-med-mjolkfyllning-1.html",
-        "interest": ["home", "candy"],
+        "interest": ["candy"],
         "personality": ["epicurean"],
         "material": ["chocolate"],
         "receiver": ["kid", "youth", "adult"]
@@ -2369,7 +2369,7 @@
         "description": "Candy Trees ekologiska godisremmar har en mild smak från ekologisk fruktjuice och passar bra till barn. Remmarna är sötade med majssirap och är inte så söta. De är ekologiska, glutenfria, mjölkfria, vegetariska och utan tillsatser, färgämnen samt gelatin.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h2075/45342075-origpic-798393.jpg",
         "href": "http://www.laplandecostore.se/mat-dryck/godis/ekologiska-remmar-jordgubb-candy-tree-glutenfri-75-g.html",
-        "interest": ["home", "candy"],
+        "interest": ["candy"],
         "personality": ["epicurean"],
         "material": ["other"],
         "receiver": ["kid", "youth", "adult"]
@@ -2381,7 +2381,7 @@
         "description": "Candy Trees ekologiska hasselnötskola har en mild smak av hasselnöt (15%) och passar bra till både barn och vuxna. Kolan är sötad med majssirap och är inte så söt. Den är ekologiska kolan är helt utan tillsatser, färgämnen samt gelatin.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h0493/35630493-origpic-56148c.png",
         "href": "http://www.laplandecostore.se/mat-dryck/godis/ekologisk-hasselnotskola-candy-tree-75-g.html",
-        "interest": ["home", "candy"],
+        "interest": ["candy"],
         "personality": ["epicurean"],
         "material": ["other"],
         "receiver": ["kid", "youth", "adult"]
@@ -2429,7 +2429,7 @@
         "description": "Här möter svensk design Mayafolkets hantverk. De randiga börsarna skapar arbetstillfällen för ursprungs-befolkningen samtidigt som den unika vävkonsten får en möjlighet att överleva. Inspiration till ränder och färger kommer ofta från Mayafolkets traditionella dräkter. HANDMADE & FAIR TRADE",
         "src": "http://www.afroart.se/pub_images/large/MIRAMAYA_bors.jpg",
         "href": "http://www.afroart.se/webshop/accessoarer/borsarnecessarer/bors-mira-maya",
-        "interest": ["home", "fair-trade", "storage", "travel"],
+        "interest": ["fair-trade", "storage", "travel"],
         "personality": ["practical", "orderly"],
         "material": ["cotton"],
         "receiver": ["kid", "youth", "adult"]
@@ -2441,7 +2441,7 @@
         "description": "c/o Gerds Sauna Birch Scrub är en krämig och härlig bastuskrubb som renar både kropp och själ. Skrubben rengör huden effektivt från döda hudceller. Sheasmör och olivolja värkar mjukgörande för huden och ger en len och ren känsla.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h5106/155095106-origpic-428da3.jpg",
         "href": "http://www.laplandecostore.se/hudvard/kropp/sauna-birch-scrub-co-gerd-30-ml.html",
-        "interest": ["home", "health", "travel"],
+        "interest": ["health", "travel"],
         "personality": ["active"],
         "material": ["other"],
         "receiver": ["youth", "adult"]
@@ -2454,7 +2454,7 @@
         "src": "http://www.laplandecostore.se/shop/35694/art94/h1002/135831002-origpic-b90e86.png",
         "href": "http://www.laplandecostore.se/hygien/tandborstar/natural-toothpaste-the-humble-co-fresh-mint-with-fluoride-75-ml.html",
         "interest": ["home", "health", "travel"],
-        "personality": ["active"],
+        "personality": ["caring"],
         "material": ["other"],
         "receiver": ["kid", "youth", "adult"]
     },
@@ -2465,7 +2465,7 @@
         "description": "En luffakudde är ett naturligt tvålfat som tar tillvara på all tvål och låter ingenting komma till spillo. Tack vare det trådiga och luftiga materialet låter den tvålen rinna av och torka upp ordentligt mellan användningarna. Tvålvattnet som samlas i luffakudden kan återanvändas för att rengöra handfatet, diskbänken eller på lättare fläckar i dusch och badkar. Kan även användas för att skrubba kroppen med. Luffakudden passar bra till en liten tvål.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h5262/154785262-origpic-2f9a75.jpg",
         "href": "http://www.laplandecostore.se/badrum/luffakudde-malin-i-ratan.html",
-        "interest": ["home", "health", "storage"],
+        "interest": ["home", "health"],
         "personality": ["active"],
         "material": ["other"],
         "receiver": ["youth", "adult"]
@@ -2501,7 +2501,7 @@
         "description": "Ett fint presentkit från Weleda som innehåller 1 st Men Aktiv-Duschgel, 1 st Moisture Cream for Men och 1st Men 24H Roll-On Deodorant. Kitet kommer i en praktisk påse med dragsko och blir en fin present att ge bort till sonen, pappa, farfar/morfar eller till en kär vän.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h2054/153402054-origpic-9624b5.png",
         "href": "http://www.laplandecostore.se/varumarken/weleda/presentkit-for-him-weleda.html",
-        "interest": ["home", "health"],
+        "interest": ["health"],
         "personality": ["active"],
         "material": ["other"],
         "receiver": ["youth", "adult"]
@@ -2513,8 +2513,8 @@
         "description": "Ett fint presentkit från Weleda som innehåller 1 st Citrus Creamy Body Wash, 1 st Citrus Hydrating Body Lotion, Citrus Hand and Nail Cream och 1 st Citrus 24H Roll-On Deodorant. Kitet kommer i en dekorativ förpackning med ett vackert grönt band runtom och blir en fin present att ge bort.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h6446/153396446-origpic-b2d659.png",
         "href": "http://www.laplandecostore.se/varumarken/weleda/presentkit-citrus-every-day-box-weleda.html",
-        "interest": ["home", "health"],
-        "personality": ["active"],
+        "interest": ["health"],
+        "personality": ["active", "epicurean"],
         "material": ["other"],
         "receiver": ["youth", "adult"]
     },
@@ -2525,7 +2525,7 @@
         "description": "Weleda Kids Shampoo and Body Wash är ett schampo och duschcreme i ett som gör duschrutinen till en enkel uppgift för barnet. Duschkrämen innehåller vårdande sesamolja, samt kokos och sockertensider som skapar ett mjukt och fluffigt lödder. Samtliga av Weledas Kids Shampoo and Body Wash är dermatologiskt testade på mycket känslig hud och kan användas av barn från ca 3 - 10 år.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h5814/148905814-origpic-99bc09.png",
         "href": "http://www.laplandecostore.se/varumarken/weleda/weleda-kids-shampoo-body-wash-happy-orange-150-ml.html",
-        "interest": ["home", "health"],
+        "interest": ["health"],
         "personality": ["active"],
         "material": ["other"],
         "receiver": ["kid"]
@@ -2537,7 +2537,7 @@
         "description": "Den här salttvålen från Ekendahls passar de flesta men är särskilt lämpad för den feta, orena och acnebenägna huden. Salttvålen är hård och fast i dess konsistens och den ger ett lotionsliknande sparsamt lödder som gör att den räcker länge. Vill man använda tvålen till ansiktet vilket den är fin till, bör man helst varva med Ekendahls rengöringsolja. Kommer fint förpackad med pappetikett runtom.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h2204/132062204-origpic-f2798f.png",
         "href": "http://www.laplandecostore.se/hudvard/ansikte/ekologisk-spatval-ekendahls-aktivt-kol-tea-tree-fet-och-oren-hy.html",
-        "interest": ["home", "health"],
+        "interest": ["health"],
         "personality": ["active"],
         "material": ["other"],
         "receiver": ["youth", "adult"]
@@ -2549,7 +2549,7 @@
         "description": "Ett presenkit från Weleda som innehåller en Arnica Massage Oil och en Arnica Sport Duschgel. Kitet kommer i en fin förpackning.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h1470/129431470-origpic-ab817e.png",
         "href": "http://www.laplandecostore.se/varumarken/weleda/arnica-sports-shower-gel-weleda-200-ml-1.html",
-        "interest": ["home", "health"],
+        "interest": ["health"],
         "personality": ["active"],
         "material": ["other"],
         "receiver": ["youth", "adult"]
@@ -2561,7 +2561,7 @@
         "description": "En oval tvåldyna tillverkad av luffa låter ingen tvål komma till spillo. Tvåldynan fyller två bra funktioner, den håller din handtvål i gott skick genom att absorbera rester av tvålen och vattnet som blir kvar på tvålen efter tvätt. Tvålvattnet som samlas i dynans botten kan återanvändas när man rengör handfatet, diskbänken eller lättare fläckar i dusch och badkar. Se till att blötlägga tvåldynan ordentligt innan första användning för då antar dynan sin optimala form.",
         "src": "http://www.laplandecostore.se/shop/35694/art94/h4085/47414085-origpic-5a1d0c.jpg",
         "href": "http://www.laplandecostore.se/badrum/luffa-tvaldyna-loofah-soap-cushion-oval.html",
-        "interest": ["home", "health"],
+        "interest": ["health"],
         "personality": ["active"],
         "material": ["other"],
         "receiver": ["youth", "adult"]
@@ -2573,14 +2573,14 @@
         "description": "Ekologiskt hårvax med endast naturliga ingredienser. Bas av sheasmör, sesamolja, bivax och solrosvax. Sheasmöret, vaxerna och de vegetabiliska oljorna skyddar håret mot uttorkning och ger håret glans för lätt till medium stadga. Passar bäst till kort hår men går även fint i det längre hårets toppar för glans och styling. Ingen doft tillsatt.",
         "src": "https://www.clearlife.se/bilder/artiklar/zoom/20995_1.jpg",
         "href": "https://www.clearlife.se/sv/artiklar/ekologiskt-harvax.html",
-        "interest": ["home", "health"],
+        "interest": ["health"],
         "personality": ["active"],
         "material": ["other"],
         "receiver": ["youth", "adult"]
     },
     {
         "id": "371",
-        "productName": "Organic Sugar Soap Lemongrass Lime Dr. Bronner’s",
+        "productName": "Ekologisk Tvål Lemongrass Lime ",
         "price": 159,
         "description": "Dr. Bronner’s Sugar Soap Lemongrass Lime är en lyxig men mild tvål som tar hand om dina händer och kropp på bästa sätt! Med dess organiska shikakai-kärna från det asiatiska trädet Acacia Concinna lämnas dina händer fantastiskt mjuka och återfuktade. Med ett lätt, härligt lödder och med en otroligt skonsam formula blir din kropp och dina händer rena! Innehåller inga syntetiska rengöringsmedel eller konserveringsmedel.",
         "src": "https://www.jordklok.se/images/2.80516/dr-bronners-organic-sugar-soap-lemongrass-lime.jpeg",
@@ -2592,7 +2592,7 @@
     },
     {
         "id": "372",
-        "productName": "Gåvoshop - Presenter som räddar liv",
+        "productName": "Röda Korset Gåvoshop - Gåvobevis",
         "price": 100,
         "description": "Här hittar du gåvorna som räddar liv och ger hopp! När du köper gåvoprodukter får du ett personligt gåvobevis som blir en fin julklapp, fars dag-present, dopgåva, namngivningspresent, examenspresent, bröllopspresent, en gåva på alla hjärtans dag eller en födelsedagspresent.",
         "src": "https://stod.redcross.se/Root/Images/product_photos/julkit_familj_ny.jpg",
@@ -2604,7 +2604,7 @@
     },
     {
         "id": "373",
-        "productName": "Läkarmissionen - Gåvogram",
+        "productName": "Läkarmissionen - Gåvobevis",
         "price": 100,
         "description": "Nästa gång du ska köpa en present till någon du vill fira, skicka ett gåvogram från Läkarmissionen! Din gåva kommer att komma till nytta i något av våra projekt som hjälper utsatta människor att förändra sin framtid, eller som akut nödhjälp i en katastrofsituation, och skapar därmed glädje hos fler än mottagaren av gåvogrammet.",
         "src": "https://www.lakarmissionen.se/media/298775/tre_gavokort.jpg",
@@ -2616,7 +2616,7 @@
     },
     {
         "id": "374",
-        "productName": "Erikshjälpen - Flickors rätt till utbildning",
+        "productName": "Erikshjälpen, Flickors rätt till utbildning - Gåvobevis",
         "price": 100,
         "description": "Loisa är skolflicka istället för fru. Och efter att hon fått lära sig om sina rättigheter är hon med och förändrar samhället runt omkring sig, bland annat genom att hjälpa fler flickor att förstå sina rättigheter. Ge din gåva och bidra till att fler flickor får gå kvar i skolan och välja sin egen framtid.",
         "src": "https://erikshjalpen.se/wp-content/uploads/2017/11/EvaLouise_topp-hero-600x400.jpg",
@@ -2628,7 +2628,7 @@
     },
     {
         "id": "375",
-        "productName": "Ung Cancer - Gåvokort",
+        "productName": "Ung Cancer - Gåvobevis",
         "price": 100,
         "description": "Gåvokortet är en perfekt födelsedagspresent, julklapp eller bröllopspresent. Tack vare era gåvor kan vi tillsammans förbättra unga vuxna cancerdrabbades levnadssituation.",
         "src": "https://shop.ungcancer.se/pub_images/large/donationsexempel_162.jpg",
@@ -2640,7 +2640,7 @@
     },
     {
         "id": "376",
-        "productName": "WWF - Ge en gratulationsgåva",
+        "productName": "WWF - GGåvobevis",
         "price": 100,
         "description": "Uppmärksamma högtidsdagar med en gåva till WWF. Ett telegram är en garanterat uppskattad gåva vid exempelvis dop, bröllop, examina och födelsedagar. Du kan själv välja motiv samt vad som skall stå på telegrammet. Vi skickar telegrammet till valfri adress inom 5 arbetsdagar.",
         "src": "https://www.wwf.se/insamlingsportal/source.php?id=1498265&image_constraints=374x206",
@@ -2652,7 +2652,7 @@
     },
     {
         "id": "377",
-        "productName": "Vi Skogen - Ge en gåva",
+        "productName": "Vi Skogen - Gåvobevis",
         "price": 100,
         "description": "Plantera träd som tar människor ur fattigdom. Ett träd kostar bara 20 kr och några små trädplantor kan göra en hel familj självförsörjande. Träden ger mat, ren luft, skugga, byggmaterial och inkomster. Tillsammans kan vi förbättra miljön och rädda människoliv!",
         "src": "https://viskogen.se/wp-content/themes/ViSkogen-Web/img/logo.png",
@@ -2664,7 +2664,7 @@
     },
     {
         "id": "378",
-        "productName": "ActionAid - Ge en gåva",
+        "productName": "ActionAid - Gåvobevis",
         "price": 100,
         "description": "I vissa länder missar flickor upp till 50 skoldagar varje år. Det vill vi förändra. Ge bort Mensskyddet och stärk flickors rätt till utbildning.",
         "src": "https://www.presentermotfattigdom.se/wp-content/uploads/2017/11/Mensskyddet-1024x683.jpg",
@@ -2676,7 +2676,7 @@
     },
     {
         "id": "379",
-        "productName": "Cancerfonden - Ge en gåva",
+        "productName": "Cancerfonden - Gåvobevis",
         "price": 100,
         "description": "Din gåva ger oss möjlighet att finansiera den främsta cancerforskningen i Sverige. Med din hjälp kan vi komma ännu ett steg närmare vår vision – att besegra cancer.",
         "src": "https://res.cloudinary.com/cancerfonden/image/upload/c_fill,fl_progressive,q_80,w_800/v1518169576/heroimgs/rtiy6i2jbe95vifbqoui.jpg",
@@ -2688,7 +2688,7 @@
     },
     {
         "id": "380",
-        "productName": "Majblomman - Ge en gåva",
+        "productName": "Majblomman - Gåvobevis",
         "price": 100,
         "description": "Majoriteten av Majblommans pengar går direkt till behövande barn och kan bekosta sommarlovsaktiviteter, vinterkläder, fritidsaktiviteter och mycket annat.",
         "src": "http://www.majblomman.se/Documents/111.png",
@@ -2700,7 +2700,7 @@
     },
     {
         "id": "381",
-        "productName": "Läkare utan gränser - Ge en gåva",
+        "productName": "Läkare utan gränser - Gåvobevis",
         "price": 100,
         "description": "På den här sidan kan ni skänka pengar på olika sätt. Ni kan också skapa ett eget gåvobevis att ge bort till någon ni tycker om, med bilder från fältuppdrag. Vill ni stödja oss med en företagsgåva hittar ni våra företagspaket här.",
         "src": "https://lakareutangranser.se/sites/default/files/styles/full_large_x2/public/media/msf136459-undernaring.jpg",
@@ -2712,7 +2712,7 @@
     },
     {
         "id": "382",
-        "productName": "Plan International - Ge en gåva",
+        "productName": "Plan International - Gåvobevis",
         "price": 100,
         "description": "Bekämpa fattigdom. Stärk barns rättigheter. Få ett gåvobevis som du skriver ut och ger bort.",
         "src": "https://plansverige.org/wp-content/uploads/2017/07/201506-khm-15_580x580.jpg",
@@ -2724,7 +2724,7 @@
     },
     {
         "id": "383",
-        "productName": "Djurens rätt - Ge en gåva",
+        "productName": "Djurens rätt - Gåvobevis",
         "price": 100,
         "description": "Din gåva är viktig! Djurens Rätt är beroende av frivilligt stöd för att kunna hjälpa djuren. Det är alla medlemmar och gåvogivare som är Djurens Rätt.",
         "src": "https://www.djurensratt.se/sites/default/files/styles/billboard_xlarge_x2/public/media/2017-03/gift.png",
@@ -2736,7 +2736,7 @@
     },
     {
         "id": "384",
-        "productName": "Djurrättsalliansen - Ge en gåva",
+        "productName": "Djurrättsalliansen - Gåvobevis",
         "price": 100,
         "description": "Din gåva till Djurrättsalliansen gör skillnad och hjälper oss att hjälpa djuren. En gåva till Djurrättsalliansen innebär en röst för djuren. En kraftfull och effektiv röst som med din hjälp försvarar djuren och bygger en framtid där djuren behandlas med respekt.",
         "src": "https://djurrattsalliansen.se/wp-content/uploads/2017/07/Bunny-Cute-Animal-800x960-600x500.jpg",
@@ -2748,7 +2748,7 @@
     },
     {
         "id": "385",
-        "productName": "Barnfonden - Ge en gåva",
+        "productName": "Barnfonden - Gåvobevis",
         "price": 100,
         "description": "Vi levererar solcellslampor, kycklingar och skolböcker till behövande barn och familjer – och du får ett fint gåvokort att ge bort eller mejla till någon du tycker om.",
         "src": "https://barnfonden.se/wp-content/uploads/2017/11/gavoshop__gk_aarathi_040.jpg",
@@ -2760,7 +2760,7 @@
     },
     {
         "id": "386",
-        "productName": "Rädda Barnen - Ge en gåva",
+        "productName": "Rädda Barnen - Gåvobevis",
         "price": 100,
         "description": "Vi använder din gåva till barn där behoven är som störst och där våra experter bedömer att de gör mest nytta för barnen. Istället för tillfälliga lösningar som ger tillfälliga resultat jobbar vi för att lösa problem för gott, och göra världen till en tryggare plats för barnen.",
         "src": "https://www.raddabarnen.se/imagevault/publishedmedia/3k2kdgu1vdjgg25t2igv/RS116223_Somaliland_beskuren_b.jpg",
@@ -2772,7 +2772,7 @@
     },
     {
         "id": "387",
-        "productName": "SOS Barnbyar - Ge en gåva",
+        "productName": "SOS Barnbyar - Gåvobevis",
         "price": 100,
         "description": "Handla livsviktiga presenter i vår gåvoshop. Stöd vårt arbete för att inte ett enda barn ska växa upp ensamt genom att ge bort en långsiktig insats som gåva. Välj att få ditt gåvobevis som ett digitalt eller tryckt gåvokort.",
         "src": "https://sos-barnbyar.se/app/uploads/2017/03/Ecuador_Pedernales_2_1241_Girl_Jens_Honore_beskuren-768x517.jpg",
@@ -2784,24 +2784,12 @@
     },
     {
         "id": "388",
-        "productName": "Naturskyddsföreningen - Ge en gåva",
+        "productName": "Naturskyddsföreningen - Gåvobevis",
         "price": 100,
         "description": "Stöd Naturskyddsföreningens arbete med en gåva. Din hjälp är ovärderlig. Varje gåva räknas.",
         "src": "https://s3-eu-west-1.amazonaws.com/www.naturskyddsforeningen.se/images/Produktbild_jordbruk_738x332.2e16d0ba.fill-736x330.jpg",
         "href": "https://www.naturskyddsforeningen.se/vad-du-kan-gora/butiken/gavor/",
         "interest": ["charity", "nature"],
-        "personality": ["caring"],
-        "material": ["giftcard"],
-        "receiver": ["toddler", "kid", "youth", "adult"]
-    },
-    {
-        "id": "389",
-        "productName": "Stadsmissionen - Presenter för en mänskligare stad",
-        "price": 100,
-        "description": "Letar du efter en present? Genom att köpa något av våra gåvobevis bidrar du till att fler kan göra sådant som de flesta av oss tar för givet. Som att kunna byta till ett par rena strumpor varje dag.",
-        "src": "https://www.stadsmissionen.se/sites/default/files/styles/product_full/public/products/Stockholmsg%C3%A5va-Matkassen.png?itok=Hf0ng2_7",
-        "href": "https://www.stadsmissionen.se/gavoshop",
-        "interest": ["charity"],
         "personality": ["caring"],
         "material": ["giftcard"],
         "receiver": ["toddler", "kid", "youth", "adult"]
@@ -2820,7 +2808,7 @@
     },
     {
         "id": "391",
-        "productName": "Ekodirekt - Stockholm",
+        "productName": "Presentkort - Ekodirekt, Stockholm",
         "price": 100,
         "description": "Presentkort att ge bort som födelsedagspresent, uppskattning till dina anställda eller till din partner som en överraskning!",
         "src": "https://static.wixstatic.com/media/82b029_56611b7c6c024b4a97d653e6ea2ea65e~mv2.jpg",
@@ -2828,17 +2816,41 @@
         "interest": ["health", "cooking"],
         "personality": ["epicurean"],
         "material": ["giftcard"],
+        "receiver": ["adult"]
+    },
+    {
+        "id": "400",
+        "productName": "Fritidsaktivitet, Stadsmissionen - Gåvobevis",
+        "price": 1000,
+        "description": "Varje år hjälper vi föräldrar som är i behov av ekonomiskt stöd. Genom vår fondverksamhet ger vi bidrag till alltifrån kläder och skor till hyra och möbler. Men ofta handlar ansökningar om något så viktigt som att kunna bekosta en fritidsaktivitet till sina barn. Den här gåvan bidrar till att vi kan fortsätta med allt detta.",
+        "src": "https://www.stadsmissionen.se/sites/default/files/styles/product_full/public/products/Stockholmsgåva-Fritidsaktivitet.png?itok=ddlvCP9o",
+        "href": "https://www.stadsmissionen.se/produkt/fritidsaktivitet",
+        "interest": ["charity"],
+        "personality": ["caring"],
+        "material": ["giftcard"],
         "receiver": ["toddler", "kid", "youth", "adult"]
     },
     {
-        "id": "392",
-        "productName": "Ekodirekt - Stockholm",
-        "price": 100,
-        "description": "Presentkort att ge bort som födelsedagspresent, uppskattning till dina anställda eller till din partner som en överraskning!",
-        "src": "https://static.wixstatic.com/media/82b029_56611b7c6c024b4a97d653e6ea2ea65e~mv2.jpg",
-        "href": "https://www.ekodirekt.se/ekologisktpresentkort",
-        "interest": ["health", "cooking"],
-        "personality": ["epicurean"],
+        "id": "401",
+        "productName": "Blöjor och välling, Stadsmissionen - Gåvobevis",
+        "price": 200,
+        "description": "Varje dag hjälper Stockholms Stadsmission barnfamiljer med sådant som de flesta av oss tar för givet. Som blöjor och välling till de minsta. Den här gåvan bidrar till att vi kan fortsätta med detta.",
+        "src": "https://www.stadsmissionen.se/sites/default/files/styles/product_full/public/products/Stockholmsgåva-Välling-Blöjor.png?itok=pytuaTzR",
+        "href": "https://www.stadsmissionen.se/produkt/blojor-och-valling",
+        "interest": ["charity"],
+        "personality": ["caring"],
+        "material": ["giftcard"],
+        "receiver": ["toddler", "kid", "youth", "adult"]
+    },
+    {
+        "id": "402",
+        "productName": "Blöjor och välling, Stadsmissionen - Gåvobevis",
+        "price": 300,
+        "description": "I våra verksamheter ger vi stöd till människor i nöd. Vi arbetar långsiktigt med rådgivning, nätverksarbete och aktiviteter som ger nya krafter. Varje vecka delar vi även ut värdecheckar så att föräldrar har råd att handla mat till sina barn. Den här gåvan bidrar till att vi kan fortsätta med allt detta.",
+        "src": "https://www.stadsmissionen.se/sites/default/files/styles/product_full/public/products/Stockholmsgåva-Matkassen.png?itok=Hf0ng2_7",
+        "href": "https://www.stadsmissionen.se/produkt/matkassen",
+        "interest": ["charity"],
+        "personality": ["caring"],
         "material": ["giftcard"],
         "receiver": ["toddler", "kid", "youth", "adult"]
     }
