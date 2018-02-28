@@ -3,9 +3,8 @@ import { routerMiddleware } from 'react-router-redux'
 import thunk from 'redux-thunk'
 import createHistory from 'history/createBrowserHistory'
 import rootReducer from '../reducers/index';
-//import { autoRehydrate} from 'redux-presist'
-// import { loadState, saveState } from './localstorage';
-import { save, load } from "redux-localstorage-simple"
+import { renderRandom } from "../actions/actionCreators";
+
 export const history = createHistory()
 
 const initialState = {}
@@ -37,5 +36,6 @@ const store = createStore(
     load()
 )
 
+store.dispatch(renderRandom())
 
 export default store

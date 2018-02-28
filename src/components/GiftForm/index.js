@@ -3,8 +3,6 @@ import { reduxForm } from 'redux-form'
 import MultiCheckboxField from '../MultiCheckboxField';
 import './index.css';
 
-// import { renderGiftsByForm } from "../../actions/actionCreators";
-
 const interestsOptions = [{id: 1, label: "Hälsa", value: "health"}, {id: 2, label: "Inredning", value: "home"}, {id: 3, label: "Trädgårdsarbete", value:"gardening"}, {id: 4, label: "Spel", value: "games"}, {id: 6, label: "Resa", value:"travel"}, 
 {id: 7, label: "Matlagning", value:"cooking"}, {id: 8, label: "Välgörenhet", value: "charity"}, {id: 9, label: "Natur", value:"nature"},
 {id: 10, label: "Djur", value:"animals"}, {id: 11, label: "Miljö", value:"environment"}, 
@@ -33,7 +31,6 @@ const GiftForm = ({
   handleSubmit
 }) => {
 
-// return <form onSubmit={handleSubmit(renderGiftsByForm)}>
 return <form onSubmit={handleSubmit(onSubmit)}>
        <MultiCheckboxField options={interestsOptions} name="interests" />
        <MultiCheckboxField options={personalityOptions} name="personality" />

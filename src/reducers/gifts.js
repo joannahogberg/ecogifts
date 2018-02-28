@@ -3,20 +3,17 @@ import * as types from "../actions//actionTypes";
 
  
 export default function gifts(state = initialState.gifts, action) {
-console.log(action.type)
 
+  console.log(action.type);
   switch (action.type) {
-    
     case types.RENDER_RANDOM:
-    state = initialState.gifts;
-    console.log(state)
-    return state
-    .filter(gift =>
-      gift.interest.some(interest => interest === "health")
-    )
-    .map(gift => {
-      return gift;
-    }, 0);
+      state = initialState.gifts;
+      const randomGifts = [];
+      for (var i = 0; i < 20; i++) {
+        randomGifts[i] = state[Math.floor(Math.random() * state.length)];
+      }
+
+      return randomGifts;
 
     // case types.INIT:
     // console.log(action.type, "this is INIT")
@@ -44,13 +41,14 @@ console.log(action.type)
         }, 0);
 
     case types.FILTER_BY_FORM:
+      state = initialState.gifts;
 
     state = initialState.gifts;   
     let newState1;
 
       // check array does not exist, is not an array, or is empty
       if (action.valueArrs.interestsArr.length === 0) {
-        newState1 = initialState.gifts;
+        newState1 = state;
       } else {
         newState1 = state.filter(gift =>
             gift.interest.some(interest =>
@@ -107,13 +105,13 @@ console.log(action.type)
           }, 0);
       }
 
-      state = newState4;
+      return newState4;
 
-      return state;
+    case types.SEARCH:
+      const { value } = action;
+      state = initialState.gifts;
+      const newVal = value.toLowerCase();
+      return state.filter(gift =>
+        gift.productName.toLowerCase().includes(newVal)
+      );
     
-        default:
-            return state;
-        
-    }
-};
-
