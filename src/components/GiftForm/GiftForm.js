@@ -1,9 +1,10 @@
 import React from 'react';
 import { reduxForm } from 'redux-form'
-import MultiCheckboxField from '../MultiCheckboxField';
-import './index.css';
+import MultiCheckboxField from '../MultiCheckboxField/MultiCheckboxField';
+import PropTypes from 'prop-types'
 
-const interestsOptions = [{id: 1, label: "Hälsa", value: "health"}, {id: 2, label: "Inredning", value: "home"}, {id: 3, label: "Trädgårdsarbete", value:"gardening"}, {id: 4, label: "Spel", value: "games"}, {id: 6, label: "Resa", value:"travel"}, 
+
+const interestsOptions = [{id: 1, label: "Kropsvård", value: "health"}, {id: 2, label: "Inredning", value: "home"}, {id: 3, label: "Trädgårdsarbete", value:"gardening"}, {id: 4, label: "Spel", value: "games"}, {id: 6, label: "Resor", value:"travel"}, 
 {id: 7, label: "Matlagning", value:"cooking"}, {id: 8, label: "Välgörenhet", value: "charity"}, {id: 9, label: "Natur", value:"nature"},
 {id: 10, label: "Djur", value:"animals"}, {id: 11, label: "Miljö", value:"environment"}, 
 {id: 12, label: "Friluftsliv", value:"outdoor"}, {id: 13, label: "Förvaring", value:"storage"}, 
@@ -25,16 +26,18 @@ const receiverOptions = [{id: 1, label: "Bebis", value: "toddler"}, {id: 2, labe
 
 
 const GiftForm = ({
-  renderGiftsByForm,
   onSubmit,
-  fields: { interests, personality, material, receiver },
   handleSubmit
 }) => {
-
+console.log(handleSubmit)
 return <form onSubmit={handleSubmit(onSubmit)}>
+        <label htmlFor="interests">Intressen:</label>
        <MultiCheckboxField options={interestsOptions} name="interests" />
+       <label htmlFor="personality">Personlighet</label>
        <MultiCheckboxField options={personalityOptions} name="personality" />
+       <label htmlFor="material">Tillverkad av</label>
        <MultiCheckboxField options={materialOptions} name="material" />
+       <label htmlFor="receiver">Presenten skall vara till en:</label>
        <MultiCheckboxField options={receiverOptions} name="receiver" />
       <button type="submit" className="submit-form-btn">
         Submit
@@ -42,6 +45,11 @@ return <form onSubmit={handleSubmit(onSubmit)}>
     </form>;
 };
 
+GiftForm.propTypes = {
+  handleSubmit: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+  fields: PropTypes.array.isRequired
+};
 
 export default reduxForm({
   form: 'giftform',

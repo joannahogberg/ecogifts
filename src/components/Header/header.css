@@ -1,0 +1,15 @@
+/* Sass variables*/
+/*------------- Heading mixins*/
+/*------------- Breakpoints mixin*/
+/*------------- Flexbox mixins*/
+/*------------- Flexbox center mixin*/
+@font-face {
+  font-family: 'Mona-Free';
+  src: local("MyFont"), url("../../fonts/Mona-Free.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.logo-link {
+  font-family: 'Mona-Free';
+  letter-spacing: 0.05em;
+  font-size: 2em; }

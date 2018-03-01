@@ -1,0 +1,6 @@
+@import '../../styles/library';
+.search-goup {
+    @include flexbox;
+    @include flex-direction(row);
+    @include justify-content(space-between);
+}

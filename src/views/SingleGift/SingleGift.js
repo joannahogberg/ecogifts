@@ -3,9 +3,8 @@ import { ChevronsLeft, ChevronsRight } from "react-feather";
 import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { addGiftToList } from "../actions/actionCreators";
-import * as types from "../actions//actionTypes";
-import GiftsList from '../components/GiftsList/GiftsList';
+import { addGiftToList } from "../../actions/actionCreators";
+import * as types from "../../actions//actionTypes";
 
 class SingleGift extends Component {
 
@@ -34,14 +33,11 @@ class SingleGift extends Component {
 
   }
 
-  render() {
-    
+  render() {    
     const { giftId } = this.props.match.params;
-    // console.log(this.props.match.params)
-    
     const gift = this.props.gifts.filter(gift => gift.id + "" === giftId);
-    // console.log(gift)
     let giftToRender = gift.map(gift => {
+      const price = gift.material.includes("giftcard") ? "Från " + gift.price : gift.price;
       return (
         <figure key={gift.id} className="grid-figure">
           <div className="grid-photo-wrap">
@@ -54,6 +50,7 @@ class SingleGift extends Component {
           </div>
           <figcaption>
             <h2>{gift.productName}</h2>
+            <p>{price}kr</p>
             <p>{gift.description}</p>
             
             {/* <button onClick={() => saveToLocalStorage(gift.id)}>SPARA</button> */}
@@ -69,12 +66,11 @@ class SingleGift extends Component {
       );
     });
     return (
-      <div className="single-photo">
-        <Link to={`/`} className="button">
+      <div className="single-gift">
+        <Link to={`/`} className="btn-link">
           <ChevronsLeft color="grey" size={24} />
         </Link>
         {giftToRender}
-        <GiftsList />
       </div>
     );
   }
@@ -88,11 +84,11 @@ SingleGift.propTypes = {
       price: PropTypes.number.isRequired,
       description: PropTypes.string.isRequired,
       src: PropTypes.string.isRequired,
-      href: PropTypes.string.isRequired
-      // interest: PropTypes.array.isRequired,
-      // personality: PropTypes.array.isRequired,
-      // material: PropTypes.array.isRequired,
-      // reciever: PropTypes.array.isRequired
+      href: PropTypes.string.isRequired,
+      interest: PropTypes.array.isRequired,
+      personality: PropTypes.array.isRequired,
+      material: PropTypes.array.isRequired,
+      receiver: PropTypes.array.isRequired
     })
   )
 };

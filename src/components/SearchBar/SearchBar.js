@@ -2,24 +2,30 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {search} from '../../actions/actionCreators';
+import PropTypes from 'prop-types'
+import './searchbar.css';
 
 class SearchBar extends Component {
   render() {
-    const {search, value} = this.props;
-// console.log(value)
+    const {search } = this.props;
     return (
         <input
-          className="form-control"
+          className="search-input"
           placeholder = "Sök present"
           onChange={(e) => search(e.target.value)}
-          value={value} />
+          />
     );
   }
 } 
+SearchBar.defaultsProps = {
+    placeholder: "Sök present",
+    search: () => {}
+  };
 
-// function mapStateToProps({works}) {
-//   return {value: works.value};
-// }
+SearchBar.propTypes = {
+    placeholder: PropTypes.string,
+    search: PropTypes.func.isRequired
+  };
 
 function mapStateToProps(state) {
     return {

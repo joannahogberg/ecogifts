@@ -1,0 +1,24 @@
+@import '../../styles/library';
+.side-bar {
+    ul {
+        list-style: none;
+        font-size: 0.8em;
+        li {
+            display: block;
+            margin: 0 0 0.5em;
+            svg {
+                display: inline;
+                vertical-align: middle;
+                margin: 0 0.5em 0 0;
+                stroke: $red;
+            }
+            .btn-link {
+                text-decoration: none;
+                color: $black;
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+}

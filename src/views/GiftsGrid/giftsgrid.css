@@ -1,0 +1,20 @@
+/* Sass variables*/
+/*------------- Heading mixins*/
+/*------------- Breakpoints mixin*/
+/*------------- Flexbox mixins*/
+/*------------- Flexbox center mixin*/
+.search-goup {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: space-between; }

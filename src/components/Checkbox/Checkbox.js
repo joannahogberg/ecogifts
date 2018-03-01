@@ -1,10 +1,12 @@
 
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 class Checkbox extends Component {
  
-   handleChange(event, id) {
-        const {input} = this.props;   
+   handleChange(event) {
+        const {input} = this.props;
+        console.log(input)
         const {onChange} = input;
 
         if (event.target.checked) {
@@ -20,5 +22,9 @@ class Checkbox extends Component {
     return <input type="checkbox" onChange={event => this.handleChange(event)} />;
   }
 }
+
+  Checkbox.propTypes = {
+      input: PropTypes.object.isRequired,
+  };
 
 export default Checkbox;

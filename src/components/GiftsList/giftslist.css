@@ -1,0 +1,21 @@
+/* Sass variables*/
+/*------------- Heading mixins*/
+/*------------- Breakpoints mixin*/
+/*------------- Flexbox mixins*/
+/*------------- Flexbox center mixin*/
+.side-bar ul {
+  list-style: none;
+  font-size: 0.8em; }
+  .side-bar ul li {
+    display: block;
+    margin: 0 0 0.5em; }
+    .side-bar ul li svg {
+      display: inline;
+      vertical-align: middle;
+      margin: 0 0.5em 0 0;
+      stroke: #AB535B; }
+    .side-bar ul li .btn-link {
+      text-decoration: none;
+      color: #030303; }
+      .side-bar ul li .btn-link:hover {
+        color: #AB535B; }
