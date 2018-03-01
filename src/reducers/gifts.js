@@ -100,8 +100,16 @@ export default function gifts(state = initialState.gifts, action) {
       state = initialState.gifts;
       const newVal = value.toLowerCase();
       return state.filter(gift =>
-        gift.productName.toLowerCase().includes(newVal)
-      );
+        gift.productName.toLowerCase().includes(newVal));
+      
+
+
+        
+        case "FETCH_REQUEST":
+      return state;
+    case "FETCH_SUCCESS": 
+      return {...state, posts: action.payload};
+
 
     default:
       return state;
