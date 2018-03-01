@@ -9,8 +9,30 @@ import GiftsList from '../components/GiftsList/GiftsList';
 
 class SingleGift extends Component {
 
+  state = {
+    savedGiftsList: []
+  }
   
+  addToFavoritesList = (gift) =>{
 
+  const newList = [...this.state.savedGiftsList, gift];
+  console.log(newList)
+// this.setState({sav})
+
+    // const addGift = state.find(gift => gift.id === action.gift.id);
+
+    // if (addGift) {
+    //   return state.map(gift => {
+    //     return gift.id === action.gift.id
+    //       ? Object.assign({}, action.gift)
+    //       : gift;
+    //   });
+    // } else {
+    //   return [...state, Object.assign({}, action.gift)];
+    // }
+    // return state;
+
+  }
 
   render() {
     
@@ -36,7 +58,7 @@ class SingleGift extends Component {
             
             {/* <button onClick={() => saveToLocalStorage(gift.id)}>SPARA</button> */}
             
-            <button onClick={() => this.props.addGiftToList(gift)}>SPARA</button> 
+            <button onClick={() => this.addToFavoritesList(gift)}>SPARA</button> 
             <div className="control-buttons">
               <a href={gift.href} target="_blank" className="button">
                 Gå till butik <ChevronsRight color="grey" size={24} />
@@ -79,23 +101,23 @@ const mapStateToProps = state => ({
   gifts: state.gifts
 });
 
-const mapDispatchToProps = dispatch => {
-  // onClick:
-  // // return {
-  // //   saveToLocalStorage: (id) => dispatch(saveToLocalStorage(id))
-  // // }
+// const mapDispatchToProps = dispatch => {
+//   // onClick:
+//   // // return {
+//   // //   addGiftToList: (gift) => dispatch(addGiftToList(gift))
+//   // // }
 
-  return {
-    addGiftToList: (gift) => dispatch(addGiftToList(gift))
-    // dispatch,
-    // onClick: (gift) => dispatch(addGiftToList(gift))
-    // onClick: (gift) => dispatch(addGiftToList({type: types.ADD_GIFT_TO_LIST, gift}))
-  };
-};
+//   return {
+//     addGiftToList: (gift) => dispatch(addGiftToList(gift))
+//     // dispatch,
+//     // onClick: (gift) => dispatch(addGiftToList(gift))
+//     // onClick: (gift) => dispatch(addGiftToList({type: types.ADD_GIFT_TO_LIST, gift}))
+//   };
+// };
 
   
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(SingleGift);
+export default connect(mapStateToProps)(SingleGift);
 
 

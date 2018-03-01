@@ -7,7 +7,10 @@ import GiftFormContainer from '../views/GiftFormContainer'
 import { connect } from 'react-redux';
 import SearchBar from './SearchBar/index';
 
-// }
+// componentDidMount
+// fetch
+// initalstate ska vara tomt 
+
 
 class Main extends Component {
 
