@@ -8,31 +8,6 @@ import * as types from "../../actions//actionTypes";
 
 class SingleGift extends Component {
 
-  state = {
-    savedGiftsList: []
-  }
-  
-  addToFavoritesList = (gift) =>{
-
-  const newList = [...this.state.savedGiftsList, gift];
-  console.log(newList)
-// this.setState({sav})
-
-    // const addGift = state.find(gift => gift.id === action.gift.id);
-
-    // if (addGift) {
-    //   return state.map(gift => {
-    //     return gift.id === action.gift.id
-    //       ? Object.assign({}, action.gift)
-    //       : gift;
-    //   });
-    // } else {
-    //   return [...state, Object.assign({}, action.gift)];
-    // }
-    // return state;
-
-  }
-
   render() {    
     const { giftId } = this.props.match.params;
     const gift = this.props.gifts.filter(gift => gift.id + "" === giftId);
@@ -97,19 +72,19 @@ const mapStateToProps = state => ({
   gifts: state.gifts
 });
 
-// const mapDispatchToProps = dispatch => {
-//   // onClick:
-//   // // return {
-//   // //   addGiftToList: (gift) => dispatch(addGiftToList(gift))
-//   // // }
+const mapDispatchToProps = dispatch => {
+  // onClick:
+  // // return {
+  // //   addGiftToList: (gift) => dispatch(addGiftToList(gift))
+  // // }
 
-//   return {
-//     addGiftToList: (gift) => dispatch(addGiftToList(gift))
-//     // dispatch,
-//     // onClick: (gift) => dispatch(addGiftToList(gift))
-//     // onClick: (gift) => dispatch(addGiftToList({type: types.ADD_GIFT_TO_LIST, gift}))
-//   };
-// };
+  return {
+    addGiftToList: (gift) => dispatch(addGiftToList(gift))
+    // dispatch,
+    // onClick: (gift) => dispatch(addGiftToList(gift))
+    // onClick: (gift) => dispatch(addGiftToList({type: types.ADD_GIFT_TO_LIST, gift}))
+  };
+};
 
   
 
