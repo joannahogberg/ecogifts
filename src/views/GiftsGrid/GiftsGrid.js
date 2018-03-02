@@ -1,23 +1,53 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom'
+import {bindActionCreators} from 'redux';
 import PropTypes from "prop-types";
 import Gift from "../../components/Gift/Gift";
 import ButtonGroup from "../../components/ButtonGroup/ButtonGroup";
+import GiftFormContainer from "../../components/GiftFormContainer/GiftFormContainer";
 import SearchBar from '../../components/SearchBar/SearchBar';
-// import { filterByCategory} from "../../actions/actionCreators";
+// import { fetchGifts, } from "../../actions/actionCreators";
+import * as giftsActions from '../../actions/actionCreators';
 import { connect } from "react-redux";
 import './giftsgrid.css';
 
 
 class GiftsGrid extends Component {
+
+  constructor () {
+    super();
+    this.state = {
+      showForm: false
+    }
+  }
+
+  componentWillMount() {
+    this.props.giftsActions.fetchGifts();
+}
+
+showForm = () =>{
+  if(!this.state.showForm){
+    this.setState({showForm: true})
+  }else{
+    this.setState({showForm: false})
+  }
+
+}
+
+
   render() {
+    console.log(this.props)
+    const { showForm } = this.state;
+    const btnText = showForm ? "DÖLJ FORMULÄR":"PRESENTTIPSGENERATOR";
     return (
       <div className="gifts-grid">
-      <div className="search-goup">
-        <Link to="/gift-form">PRESENTTIPSGENERATOR</Link>
+      <div className="search-goup">       
         <SearchBar />
         </div>
         <ButtonGroup />
+        <button onClick={() => this.showForm ()} className="filter-btn">{btnText}</button>
+   {showForm && (
+       <GiftFormContainer/>
+      )}
         <div className="gifts-grid">
           {this.props.gifts.map((gift, i) => (
             <Gift {...this.props} key={i} i={i} gift={gift} />
@@ -50,13 +80,13 @@ const mapStateToProps = state => ({
 });
 
 
-// function mapDispatchToProps(dispatch) {  
-//   return {
-//     filterByCategory: (category) => dispatch(filterByCategory(category))
-//   };
-// }
-
+function mapDispatchToProps(dispatch) {
+  return {
+     giftsActions: bindActionCreators(giftsActions, dispatch)
+  };
+}
   export default connect(
-    mapStateToProps
+    mapStateToProps,
+    mapDispatchToProps
   )(GiftsGrid)
 

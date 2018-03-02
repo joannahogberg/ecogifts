@@ -2,8 +2,15 @@ import initialState from "./initialState";
 import * as types from "../actions//actionTypes";
 
 export default function gifts(state = initialState.gifts, action) {
-
+let newState;
   switch (action.type) {
+    case types.FETCH_GIFTS:
+    return action;
+  case types.RECEIVE_GIFTS:
+    newState = action.gifts;
+
+    return newState;
+    
     case types.RENDER_RANDOM:
       state = initialState.gifts;
       
@@ -15,93 +22,22 @@ export default function gifts(state = initialState.gifts, action) {
       return randomGifts;
 
     case types.REQUESTED_GIFT:
-      return state.filter(i => i.id === action.gift.id);
+      newState = action.gift;
+      return newState;
 
     case types.FILTERED_BY_CATEGORY:
-      // reset state
-      state = initialState.gifts;
-
-      return state
-        .filter(gift =>
-          gift.interest.some(interest => interest === action.category)
-        )
-        .map(gift => {
-          return gift;
-        }, 0);
-
-    case types.FILTER_BY_FORM:
-      state = initialState.gifts;
-
-      let newState1;
-      // check array does not exist, is not an array, or is empty
-      if (action.valueArrs.interestsArr.length === 0) {
-        newState1 = state;
-      } else {
-        newState1 = state
-          .filter(gift =>
-            gift.interest.some(interest =>
-              action.valueArrs.interestsArr.includes(interest)
-            )
-          )
-          .map(gift => {
-            return gift;
-          }, 0);
-      }
-
-      let newState2;
-      if (action.valueArrs.personalityArr.length === 0) {
-        newState2 = newState1;
-      } else {
-        newState2 = newState1
-          .filter(gift =>
-            gift.personality.some(personality =>
-              action.valueArrs.personalityArr.includes(personality)
-            )
-          )
-          .map(gift => {
-            return gift;
-          }, 0);
-      }
-
-      let newState3;
-      if (action.valueArrs.materialArr.length === 0) {
-        newState3 = newState2;
-      } else {
-        newState3 = newState2
-          .filter(gift =>
-            gift.material.some(material =>
-              action.valueArrs.materialArr.includes(material)
-            )
-          )
-          .map(gift => {
-            return gift;
-          }, 0);
-      }
-
-      let newState4;
-      if (action.valueArrs.receiverArr.length === 0) {
-        newState4 = newState3;
-      } else {
-        newState4 = newState3
-          .filter(gift =>
-            gift.receiver.some(receiver =>
-              action.valueArrs.receiverArr.includes(receiver)
-            )
-          )
-          .map(gift => {
-            return gift;
-          }, 0);
-      }
-
-      return newState4;
+      newState = action.gifts;
+      return newState
 
     case types.SEARCH:
-      const { value } = action;
-      state = initialState.gifts;
-      const newVal = value.toLowerCase();
-      return state.filter(gift =>
-        gift.productName.toLowerCase().includes(newVal)
-      );
+      // const { value } = action;
+      // state = initialState.gifts;
+      // const newVal = value.toLowerCase();
+      // return state.filter(gift =>
+      //   gift.productName.toLowerCase().includes(newVal)
+      // );
+      newState = action.result;
+      return newState
 
     default:
       return state;

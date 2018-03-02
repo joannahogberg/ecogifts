@@ -1,19 +1,11 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import GiftForm from '../../components/GiftForm/GiftForm';
-import { Redirect } from 'react-router-dom'
+import GiftForm from '../GiftForm/GiftForm';
 import _ from 'lodash';
 
 import { renderGiftsByForm } from "../../actions/actionCreators";
 
 class GiftFormContainer extends Component {
-
-  constructor () {
-    super();
-    this.state = {
-      fireRedirect: false
-    }
-  }
 
   returnTrueChecked = (obj) =>{
     var trues = _(obj).reduce(function(trues, v, k) {
@@ -37,23 +29,14 @@ class GiftFormContainer extends Component {
     else{
       valueArrs = { interestsArr: [], personalityArr: [], materialArr: [], receiverArr: [] };
     }
-
-    this.setState({ fireRedirect: true },function(){
-      dispatch(renderGiftsByForm(valueArrs)); // dispatches an action
-  });
+    dispatch(renderGiftsByForm(valueArrs));
   }
 
   render() {
-    const { from } = this.props.location.state || '/'
-    const { fireRedirect } = this.state;
-
     return (
       <div className="form-container">
       <p>Här kan du göra ett avancerat sök av presenttips utifrån intressen, personlighet, material eller om presenten skall vara till en vuxen eller kanske ett husdjur :) </p>
       <GiftForm {...this.props} onSubmit={this.handleSubmit}/>
-      {fireRedirect && (
-        <Redirect to={from || '/'}/>
-      )}
       </div>
     )
   }

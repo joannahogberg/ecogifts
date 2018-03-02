@@ -7,13 +7,7 @@ import { Router, Route} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import store, {history} from './store/configureStore';
 
-// window.onbeforeunload = function(e) {
-//     const state = store.getState();
-//     localStorage.setItem(
-//       'local-storage-key',
-//       JSON.stringify(state.stateYouWantToPersist)
-//     );
-//   };
+
 
 const router = (
     <Provider store={store} >

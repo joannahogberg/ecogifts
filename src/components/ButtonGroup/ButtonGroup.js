@@ -4,6 +4,8 @@ import { filterByCategory} from "../../actions/actionCreators";
 import { connect } from "react-redux";
 import './buttongroup.css';
 
+// import * as giftsActions from '../../actions/actionCreators';
+
 class ButtonGroup extends Component {
   render() {
     return (
@@ -25,7 +27,7 @@ const mapStateToProps = state => ({
   gifts: state.gifts
 });
 
-function mapDispatchToProps(dispatch) {  
+function mapDispatchToProps(dispatch) { 
   return {
     filterByCategory: (category) => dispatch(filterByCategory(category))
   };

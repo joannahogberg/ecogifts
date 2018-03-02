@@ -3,13 +3,21 @@ import { routerMiddleware } from 'react-router-redux'
 import thunk from 'redux-thunk'
 import createHistory from 'history/createBrowserHistory'
 import rootReducer from '../reducers/index';
-import { renderRandom } from "../actions/actionCreators";
-// import { loadState, saveState } from './localStorage'
-import _ from 'lodash';
+import * as types from "../actions//actionTypes";
 
 export const history = createHistory()
 
-const initialState = {}
+// const initialState = {}
+
+// // TEST
+let initState = {}
+const persistedState = localStorage.getItem('reduxState')
+// console.log(persistedState)
+// if persistedState is not empty then assign parsed persistedState to initState
+if (persistedState) {
+  initState = JSON.parse(persistedState)
+}
+
 const enhancers = []
 const middleware = [
     thunk,
@@ -24,47 +32,29 @@ if (process.env.NODE_ENV === 'development') {
     }
 }
 
-// const persistedState = loadState();
+
 
 const composedEnhancers = compose(
     applyMiddleware(...middleware),
     ...enhancers
 )
 
+
+
 const store = createStore(
     rootReducer,
-    initialState,
+    // initialState,
+    initState,
     composedEnhancers)
 
-    // const configureStore = () => {
 
-    //     const persistedState = loadState();
-    //     const store = createStore(rootReducer,
-    //         initialState,
-    //         persistedState,
-    //         composeEnhancers(
-    //             applyMiddleware(...middleware),
-    //             ...enhancers
-    //           ))
+store.dispatch({
+    type: types.ADD_TO_LOCALSTORAGE,
+    initState
+})
 
-    //     store.subscribe(_.throttle(() => {
-    //       saveState({
-    //         gifts: store.getState().gifts
-    //       });
-    //     }, 1000));
-      
-    //     return store;
-    //   }
-    
-    // store.subscribe(_.throttle(() => {
-       
-    //     saveState({
-    //       gifts: store.getState().gifts
-    //     });
-    //   }, 1000));
-
-// const store = configureStore();
-
-store.dispatch(renderRandom())
+store.subscribe(()=>{
+     localStorage.setItem('reduxState', JSON.stringify(store.getState().favorites))
+})
 
 export default store

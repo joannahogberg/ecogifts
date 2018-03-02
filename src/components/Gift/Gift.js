@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 class Gift extends Component {
+
+
+
   render() {
     const { gift } = this.props;
     const price = gift.material.includes("giftcard") ? "Från " + gift.price : gift.price;
@@ -13,12 +16,12 @@ class Gift extends Component {
       <figure className="grid-figure">
         <div className="grid-photo-wrap">
           <Link to={`/view/${gift.id}`}>
-            {/* <img
+            <img
               src={gift.src}
               alt={gift.productName}
               className="grid-photo"
               style={{ width: "100px" }}
-            /> */}
+            />
           </Link>
         </div>
         <figcaption>

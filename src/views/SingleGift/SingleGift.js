@@ -3,19 +3,34 @@ import { ChevronsLeft, ChevronsRight } from "react-feather";
 import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { addGiftToList } from "../../actions/actionCreators";
-import * as types from "../../actions//actionTypes";
-
+import { fetchSingleGift } from "../../actions/actionCreators";
+import {bindActionCreators} from 'redux';
+import AddToFavoritesBtn from '../../components/AddToFavoritesBtn/AddToFavoritesBtn'
 
 class SingleGift extends Component {
-
-  render() {    
+  shouldComponentUpdate(nextProps) {
+    if (nextProps.gifts[0].id === this.props.match.params.giftId) {
+      return true;
+    }
+    return false;
+  }
+  componentWillMount() {
     const { giftId } = this.props.match.params;
-    const gift = this.props.gifts.filter(gift => gift.id + "" === giftId);
-    let giftToRender = gift.map(gift => {
-      const price = gift.material.includes("giftcard") ? "Från " + gift.price : gift.price;
-      return (
-        <figure key={gift.id} className="grid-figure">
+    this.props.fetchSingleGift(giftId);
+  }
+
+  render() {
+    const { gifts } = this.props;
+    const gift = gifts[0];
+    const price = gift.material.includes("giftcard")
+      ? "Från " + gift.price
+      : gift.price;
+    return (
+      <div className="single-gift">
+        <Link to={`/`} className="btn-link">
+          <ChevronsLeft color="grey" size={24} />
+        </Link>
+        <figure className="grid-figure">
           <div className="grid-photo-wrap">
             <img
               src={gift.src}
@@ -28,25 +43,14 @@ class SingleGift extends Component {
             <h2>{gift.productName}</h2>
             <p>{price}kr</p>
             <p>{gift.description}</p>
-            
-            {/* <button onClick={() => saveToLocalStorage(gift.id)}>SPARA</button> */}
-            
-            <button onClick={() => this.props.addGiftToList(gift)}>SPARA</button> 
             <div className="control-btns">
+              <AddToFavoritesBtn gift={gift} />
               <a href={gift.href} target="_blank" className="btn-link">
                 Gå till butik <ChevronsRight color="grey" size={24} />
               </a>
             </div>
           </figcaption>
         </figure>
-      );
-    });
-    return (
-      <div className="single-gift">
-        <Link to={`/`} className="btn-link">
-          <ChevronsLeft color="grey" size={24} />
-        </Link>
-        {giftToRender}
       </div>
     );
   }
@@ -73,22 +77,11 @@ const mapStateToProps = state => ({
   gifts: state.gifts
 });
 
-const mapDispatchToProps = dispatch => {
-  // onClick:
-  // // return {
-  // //   saveToLocalStorage: (id) => dispatch(saveToLocalStorage(id))
-  // // }
-
+function mapDispatchToProps(dispatch) {
   return {
-    addGiftToList: (gift) => dispatch(addGiftToList(gift))
-    // dispatch,
-    // onClick: (gift) => dispatch(addGiftToList(gift))
-    // onClick: (gift) => dispatch(addGiftToList({type: types.ADD_GIFT_TO_LIST, gift}))
+    fetchSingleGift: bindActionCreators(fetchSingleGift, dispatch)
   };
-};
-
-  
-
+}
 
 export default connect(mapStateToProps, mapDispatchToProps)(SingleGift);
 
