@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Bookmark } from "react-feather";
 import { addGiftToList } from "../../actions/actionCreators";
 import { connect } from "react-redux";
 
 class AddToFavoritesBtn extends Component {
   render() {
     return (
-        <button onClick={() => this.props.addGiftToList(this.props.gift)} className="filter-btn">Spara</button>
+        <Bookmark onClick={() => this.props.addGiftToList(this.props.gift)} size={24} color="grey"/>
 
     );
   }

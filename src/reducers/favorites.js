@@ -16,6 +16,9 @@ export default function favorites(state = initialState.favorites, action) {
       } else {
         return [...state, Object.assign({}, action.gift)];
       }
+      case types.REMOVE_GIFT_FROM_LIST: 
+      console.log(action.gift)
+      return state.filter( i => i.id !== action.gift.id);
       case types.ADD_TO_LOCALSTORAGE: 
       console.log(action.favorites)
       if(action.favorites){

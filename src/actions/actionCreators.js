@@ -232,6 +232,14 @@ export function renderGiftsByForm(valueArrs) {
 export function addGiftToList(gift) {
   return {
     type: types.ADD_GIFT_TO_LIST,
+    gift
+  };
+}
+
+export function removeGiftFromList(gift) {
+  console.log(gift)
+  return {
+    type: types.REMOVE_GIFT_FROM_LIST,
     gift: gift
   };
 }

@@ -5,14 +5,19 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import './giftslist.css';
-import {getFromLocalStorage} from '../../actions/actionCreators';
+
+import * as favoritesActions from '../../actions/actionCreators';
 
 class GiftsList extends Component {
 
-  componentWillMount() {
-    this.props.getFromLocalStorage();
+componentWillMount() {
+    this.props.favoritesActions.getFromLocalStorage();
 }
+removeFavorite=(id)=>{
+  this.props.favoritesActions.removeGiftFromList(id)
 
+
+}
 
   render() {
     const { gifts } = this.props;
@@ -21,6 +26,7 @@ console.log(gifts)
       return (
         <li key={gift.id}><Heart size={14} />
          <Link to={`/view/${gift.id}`} className="btn-link"> {gift.productName}</Link>
+         <button onClick={()=>this.removeFavorite(gift)}>remove</button>
         </li>
       );
     });
@@ -36,15 +42,10 @@ function mapStateToProps(state) {
     gifts: state.favorites
   };
 }
-// function mapDispatchToProps(dispatch) {
-//   return {
-//      giftsActions: bindActionCreators(giftsActions, dispatch)
-//   };
-// }
 
 function mapDispatchToProps(dispatch) {
   return {
-    getFromLocalStorage: bindActionCreators(getFromLocalStorage, dispatch)
+    favoritesActions: bindActionCreators(favoritesActions, dispatch)
   };
 }
 
