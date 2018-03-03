@@ -7,6 +7,7 @@ import GiftsList from './../GiftsList/GiftsList';
 import './main.css';
 
 class Main extends Component {
+
   render() {
     return (
       <div className="wrapper">
@@ -23,5 +24,12 @@ class Main extends Component {
     );
   }
 }
+
+// function mapStateToProps(state) {
+//   return {
+//     gifts: state.gifts
+//   };
+// }
+// export default connect(mapStateToProps)(Main);
 
 export default Main;

@@ -1,8 +1,8 @@
-export function saveGiftListToLocalStorage(array, listName) {
-    localStorage.setItem(listName, JSON.stringify(array));
+export function saveGiftListToLocalStorage(array, gift) {
+    localStorage.setItem(gift, JSON.stringify(array));
 }
 
-export function getItemListFromLocalStorage(listName) {
-    const storedToDoList = JSON.parse(localStorage.getItem(listName));
-    return storedGiftsList || [];
-}
+export function getItemListFromLocalStorage(gift) {
+    const savedGiftsList = JSON.parse(localStorage.getItem(gift));
+    return savedGiftsList || [];
+} 

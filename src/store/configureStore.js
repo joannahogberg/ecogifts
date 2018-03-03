@@ -12,10 +12,10 @@ export const history = createHistory()
 // // TEST
 let initState = {}
 const persistedState = localStorage.getItem('reduxState')
-// console.log(persistedState)
-// if persistedState is not empty then assign parsed persistedState to initState
+    // console.log(persistedState)
+    // if persistedState is not empty then assign parsed persistedState to initState
 if (persistedState) {
-  initState = JSON.parse(persistedState)
+    initState = JSON.parse(persistedState)
 }
 
 const enhancers = []
@@ -53,8 +53,8 @@ store.dispatch({
     initState
 })
 
-store.subscribe(()=>{
-     localStorage.setItem('reduxState', JSON.stringify(store.getState().favorites))
+store.subscribe(() => {
+    localStorage.setItem('reduxState', JSON.stringify(store.getState().favorites))
 })
 
 export default store

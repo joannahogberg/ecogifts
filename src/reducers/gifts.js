@@ -30,12 +30,6 @@ let newState;
       return newState
 
     case types.SEARCH:
-      // const { value } = action;
-      // state = initialState.gifts;
-      // const newVal = value.toLowerCase();
-      // return state.filter(gift =>
-      //   gift.productName.toLowerCase().includes(newVal)
-      // );
       newState = action.result;
       return newState
 
