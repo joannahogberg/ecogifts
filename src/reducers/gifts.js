@@ -2,6 +2,7 @@ import initialState from "./initialState";
 import * as types from "../actions//actionTypes";
 
 export default function gifts(state = initialState.gifts, action) {
+
 let newState;
   switch (action.type) {
     case types.FETCH_GIFTS:

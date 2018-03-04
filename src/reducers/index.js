@@ -4,7 +4,6 @@ import { reducer as formReducer } from 'redux-form'
 import gifts from './gifts';
 import favorites from './favorites';
 
-
 //put data in state
 const rootReducer = combineReducers({
     gifts,

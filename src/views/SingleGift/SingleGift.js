@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ChevronsLeft, ChevronsRight } from "react-feather";
-import PropTypes from 'prop-types'
+import {PropTypes} from 'prop-types'
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { fetchSingleGift } from "../../actions/actionCreators";
@@ -8,24 +8,32 @@ import {bindActionCreators} from 'redux';
 import AddToFavoritesBtn from '../../components/AddToFavoritesBtn/AddToFavoritesBtn'
 
 class SingleGift extends Component {
-  shouldComponentUpdate(nextProps) {
-    if (nextProps.gifts[0].id === this.props.match.params.giftId) {
-      return true;
-    }
-    return false;
-  }
+//   shouldComponentUpdate(nextProps) {
+//  console.log(nextProps)
+//     if (nextProps.history.location.pathname === nextProps.location.pathname) {
+//       return true;
+//     }
+//     return false;
+//   }
+
   componentWillMount() {
+    console.log(this.props)
     const { giftId } = this.props.match.params;
     this.props.fetchSingleGift(giftId);
+ 
   }
 
+
+
   render() {
+    console.log(this.props)
     const { gifts } = this.props;
     const gift = gifts[0];
     const price = gift.material.includes("giftcard")
       ? "Från " + gift.price
       : gift.price;
     return (
+      
       <div className="single-gift">
         <Link to={`/`} className="btn-link">
           <ChevronsLeft color="grey" size={24} />
@@ -56,6 +64,7 @@ class SingleGift extends Component {
   }
 }
 
+
 SingleGift.propTypes = {
   gifts: PropTypes.arrayOf(
     PropTypes.shape({
@@ -73,7 +82,7 @@ SingleGift.propTypes = {
   )
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   gifts: state.gifts
 });
 

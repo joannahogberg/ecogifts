@@ -35,7 +35,6 @@ showForm = () =>{
 
 
   render() {
-    console.log(this.props)
     const { showForm } = this.state;
     const btnText = showForm ? "DÖLJ FORMULÄR":"PRESENTTIPSGENERATOR";
     return (

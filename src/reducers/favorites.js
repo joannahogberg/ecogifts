@@ -2,7 +2,7 @@ import initialState from "./initialState";
 import * as types from "../actions//actionTypes";
 
 export default function favorites(state = initialState.favorites, action) {
-  console.log(state);
+
   let newState;
   switch (action.type) {
     case types.ADD_GIFT_TO_LIST:
@@ -17,10 +17,10 @@ export default function favorites(state = initialState.favorites, action) {
         return [...state, Object.assign({}, action.gift)];
       }
       case types.REMOVE_GIFT_FROM_LIST: 
-      console.log(action.gift)
+
       return state.filter( i => i.id !== action.gift.id);
       case types.ADD_TO_LOCALSTORAGE: 
-      console.log(action.favorites)
+
       if(action.favorites){
         newState = action.favorites
       }
