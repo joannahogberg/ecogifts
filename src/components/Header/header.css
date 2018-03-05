@@ -9,7 +9,6 @@
   font-weight: normal;
   font-style: normal; }
 
-.logo-link {
-  font-family: 'Mona-Free';
-  letter-spacing: 0.05em;
-  font-size: 2em; }
+.logo-link .logo {
+  height: 100px;
+  width: 100%; }

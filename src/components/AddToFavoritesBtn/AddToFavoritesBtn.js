@@ -7,8 +7,8 @@ import { connect } from "react-redux";
 class AddToFavoritesBtn extends Component {
   render() {
     return (
+ //<Bookmark onClick={() => this.props.addGiftToList(this.props.gift)} size={24} color="grey"/>
         <Bookmark onClick={() => this.props.addGiftToList(this.props.gift)} size={24} color="grey"/>
-
     );
   }
 }

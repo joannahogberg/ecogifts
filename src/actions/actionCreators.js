@@ -13,8 +13,7 @@ export function filterBySearch(result) {
   };
 }
 
-
-export function search(value){
+export function search(value) {
   return dispatch => {
     fetch("https://ecogifts.herokuapp.com/gifts")
       .then(response =>
@@ -26,7 +25,7 @@ export function search(value){
       .then(response => {
         if (response.status === 200) {
           const newVal = value.toLowerCase();
-         let result = response.data.filter(gift =>
+          let result = response.data.filter(gift =>
             gift.productName.toLowerCase().includes(newVal)
           );
 
@@ -43,9 +42,6 @@ export function search(value){
       });
   };
 }
-
-
-
 
 export function receiveGifts(data) {
   return { type: types.RECEIVE_GIFTS, gifts: data };
@@ -91,14 +87,24 @@ export const filterByCategory = category => {
       )
       .then(response => {
         if (response.status === 200) {
-          const filterArr = response.data
-            .filter(gift =>
-              gift.interest.some(interest => interest === category)
-            )
-            .map(gift => {
-              return gift;
-            }, 0);
-          dispatch(filteredGifts(filterArr));
+          const state = response.data;
+          console.log(category);
+          let newState1;
+          if (category === 200) {
+            console.log("yes");
+            newState1 = state.filter(gift => gift.price < 200);
+          } else {
+            newState1 = state
+              .filter(gift =>
+                gift.interest.some(interest => category.includes(interest))
+              )
+              .map(gift => {
+                return gift;
+              }, 0);
+          }
+
+          console.log(newState1);
+          dispatch(filteredGifts(newState1));
         } else {
           var flash = {
             type: "error",
@@ -228,7 +234,6 @@ export function renderGiftsByForm(valueArrs) {
   };
 }
 
-
 export function addGiftToList(gift) {
   return {
     type: types.ADD_GIFT_TO_LIST,
@@ -237,7 +242,7 @@ export function addGiftToList(gift) {
 }
 
 export function removeGiftFromList(gift) {
-  console.log(gift)
+  console.log(gift);
   return {
     type: types.REMOVE_GIFT_FROM_LIST,
     gift: gift
@@ -252,12 +257,12 @@ export function addToLocalStorage(favorites) {
 }
 
 export function getFromLocalStorage() {
-  let initState = {}
-  const persistedState = localStorage.getItem('reduxState')
+  let initState = {};
+  const persistedState = localStorage.getItem("reduxState");
   if (persistedState) {
-    initState = JSON.parse(persistedState)
+    initState = JSON.parse(persistedState);
   }
-  return (dispatch)=> {
+  return dispatch => {
     dispatch(addToLocalStorage(initState));
   };
 }
