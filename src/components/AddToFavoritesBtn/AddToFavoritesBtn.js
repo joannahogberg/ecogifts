@@ -3,12 +3,22 @@ import PropTypes from "prop-types";
 import { Bookmark } from "react-feather";
 import { addGiftToList } from "../../actions/actionCreators";
 import { connect } from "react-redux";
+import './AddToFavoritesBtn.css';
+
 
 class AddToFavoritesBtn extends Component {
+
+
   render() {
+    const logoSmall = require('../../media/logo/ecoLogo_leaf.png');
+
     return (
- //<Bookmark onClick={() => this.props.addGiftToList(this.props.gift)} size={24} color="grey"/>
-        <Bookmark onClick={() => this.props.addGiftToList(this.props.gift)} size={24} color="grey"/>
+
+      <div className="logo-wrapper">
+      <img src={logoSmall} className="favorites-logo" alt="save it" onClick={() => this.props.addGiftToList(this.props.gift)} />
+      <span> Spara som favorit</span>
+      </div>
+      //<Bookmark onClick={() => this.props.addGiftToList(this.props.gift)} size={24} color="grey"/>
     );
   }
 }
