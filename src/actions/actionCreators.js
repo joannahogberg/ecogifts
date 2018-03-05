@@ -53,7 +53,7 @@ export function receiveGifts(data) {
 
 export function fetchGifts() {
   return dispatch => {
-    fetch("https://ecogifts.herokuapp.com/gifts?_start=50&_limit=20")
+    fetch("https://ecogifts.herokuapp.com/gifts")
       .then(response =>
         response.json().then(data => ({
           data: data,

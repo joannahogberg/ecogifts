@@ -11,16 +11,24 @@ class Gift extends Component {
 
   render() {
     const { gift } = this.props;
+    const src = require('../../media/images/' + gift.id + '.png')
+    //const srcSet = require('../../media/thumbs/' + gift.id + '_tn.jpg') +' 320w,'+ require('../../media/thumbs/' + gift.id + '_tn.jpg') +' 480w,'+ require('../../media/images/' + gift.id + '.png') + ' 800w';
+    const srcSet = require('../../media/thumbs/id0_tn.jpg') +' 320w,'+ require('../../media/thumbs/id1_tn.jpg') +' 480w,'+ require('../../media/images/' + gift.id + '.png') + ' 800w';
+    
+    const sizes="(max-width: 320px) 280px,(max-width: 480px) 440px,800px";
     const price = gift.material.includes("giftcard") ? "Från " + gift.price : gift.price;
     return (
       <figure className="grid-figure">
         <div className="grid-photo-wrap">
           <Link to={`/view/${gift.id}`}>
             <img
-              src={gift.src}
+              // src={gift.src}
+              srcSet={srcSet}
+              sizes={sizes}
+              src={src}
               alt={gift.productName}
               className="grid-photo"
-              style={{ width: "100px" }}
+              style={{ width: "100%" }}
             />
           </Link>
         </div>
