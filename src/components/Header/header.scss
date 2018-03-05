@@ -7,7 +7,12 @@
 }
 
 .logo-link {
-    font-family: 'Mona-Free';
-    letter-spacing: 0.05em;
-    font-size: 2em;
+    svg {
+        height: 100px;
+        width: 100%;
+    }
+    .st1,
+    .leaf {
+        fill: $green;
+    }
 }

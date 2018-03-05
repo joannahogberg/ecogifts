@@ -9,7 +9,10 @@
   font-weight: normal;
   font-style: normal; }
 
-.logo-link {
-  font-family: 'Mona-Free';
-  letter-spacing: 0.05em;
-  font-size: 2em; }
+.logo-link svg {
+  height: 100px;
+  width: 100%; }
+
+.logo-link .st1,
+.logo-link .leaf {
+  fill: #7A712F; }
