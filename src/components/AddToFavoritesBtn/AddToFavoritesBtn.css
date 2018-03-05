@@ -1,0 +1,12 @@
+.favorites-logo {
+  height: 2em; }
+
+.logo-wrapper {
+  cursor: pointer; }
+  .logo-wrapper img {
+    display: inline;
+    vertical-align: middle;
+    margin: 0 0.2em 0 0; }
+  .logo-wrapper span {
+    display: inline;
+    vertical-align: middle; }

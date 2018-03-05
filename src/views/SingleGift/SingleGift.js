@@ -36,12 +36,12 @@ class SingleGift extends Component {
     const src = require('../../media/images/' + gift.id + '.png')  
     return (
       
-      <div className="single-gift">
+      <div className="single-gift-wrapper">
         <Link to={`/`} className="btn-link">
           <ChevronsLeft color="grey" size={24} />
         </Link>
-        <figure className="grid-figure">
-          <div className="grid-photo-wrap">
+        <section className="single-gift-inner">
+          <div className="single-gift-photo-wrap">
             <img
               src={src}
               alt={gift.productName}
@@ -49,7 +49,7 @@ class SingleGift extends Component {
               style={{ width: "100%" }}
             />
           </div>
-          <figcaption>
+          <div>
             <h2>{gift.productName}</h2>
             <p>{price}kr</p>
             <p>{gift.description}</p>
@@ -59,8 +59,8 @@ class SingleGift extends Component {
                 Gå till butik <ChevronsRight color="grey" size={24} />
               </a>
             </div>
-          </figcaption>
-        </figure>
+          </div>
+        </section>
       </div>
     );
   }

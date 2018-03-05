@@ -3,13 +3,20 @@
 /*------------- Breakpoints mixin*/
 /*------------- Flexbox mixins*/
 /*------------- Flexbox center mixin*/
-.wrapper {
+body {
   font-size: 62.5%;
   background: #fff;
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
   letter-spacing: 0.05em;
   font-family: "Open Sans Condensed", sans-serif;
+  width: -webkit-calc(100% - 4em);
+  width: -moz-calc(100% - 4em);
+  width: -o-calc(100% - 4em);
+  width: calc(100% - 4em);
   max-width: 1024px;
-  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -moz-box;
@@ -19,7 +26,8 @@
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 1em 2em 1em; }
 
 main {
   font-size: 1.6em;

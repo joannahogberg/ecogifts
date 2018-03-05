@@ -38,7 +38,7 @@ showForm = () =>{
     const { showForm } = this.state;
     const btnText = showForm ? "DÖLJ FORMULÄR":"PRESENTTIPSGENERATOR";
     return (
-      <div className="gifts-grid">
+      <div>
       <div className="search-goup">       
         <SearchBar />
         </div>
