@@ -11,21 +11,18 @@ class Gift extends Component {
 
   render() {
     const { gift } = this.props;
-    const src = require('../../media/images/' + gift.id + '.png')
-    //const srcSet = require('../../media/thumbs/' + gift.id + '_tn.jpg') +' 320w,'+ require('../../media/thumbs/' + gift.id + '_tn.jpg') +' 480w,'+ require('../../media/images/' + gift.id + '.png') + ' 800w';
-    const srcSet = require('../../media/thumbs/id0_tn.jpg') +' 320w,'+ require('../../media/thumbs/id1_tn.jpg') +' 480w,'+ require('../../media/images/' + gift.id + '.png') + ' 800w';
-    
-    const sizes="(max-width: 320px) 280px,(max-width: 480px) 440px,800px";
+    const small = require('../../media/thumbs/' + gift.id + '_tn.jpg');
+    // const medium = require('../../media/thumbs/' + gift.id + '_tn.jpg');
+    const large = require('../../media/images/' + gift.id + '.png')
     const price = gift.material.includes("giftcard") ? "Från " + gift.price : gift.price;
     return (
       <figure className="grid-figure">
         <div className="grid-photo-wrap">
           <Link to={`/view/${gift.id}`}>
             <img
-              // src={gift.src}
-              srcSet={srcSet}
-              sizes={sizes}
-              src={src}
+              // srcSet={`${small} 300w, ${medium} 700w, ${large} 1000w`}
+              srcSet={`${small} 300w, ${large} 700w`}
+              src={small}
               alt={gift.productName}
               className="grid-photo"
               style={{ width: "100%" }}

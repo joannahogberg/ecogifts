@@ -32,6 +32,8 @@ class SingleGift extends Component {
     const price = gift.material.includes("giftcard")
       ? "Från " + gift.price
       : gift.price;
+
+    const src = require('../../media/images/' + gift.id + '.png')  
     return (
       
       <div className="single-gift">
@@ -41,10 +43,10 @@ class SingleGift extends Component {
         <figure className="grid-figure">
           <div className="grid-photo-wrap">
             <img
-              src={gift.src}
+              src={src}
               alt={gift.productName}
               className="grid-photo"
-              style={{ width: "100px" }}
+              style={{ width: "100%" }}
             />
           </div>
           <figcaption>
