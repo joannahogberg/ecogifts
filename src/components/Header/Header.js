@@ -8,8 +8,8 @@ class Header extends Component {
 
 
     return (
-      <header>
-          <h1>
+      <header className="header-nav">
+         <h1>
           <Link to="/" className="logo-link">
           <Logo />
           </Link>
@@ -19,4 +19,8 @@ class Header extends Component {
     );
   }
 }
-export default Header;
+
+
+export default Header; 
+
+ 

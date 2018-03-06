@@ -55,11 +55,21 @@ showForm = () =>{
 
 }
 
+// dispatching an action based on state change
+componentWillUpdate(nextProps, nextState) {
+  console.log(nextProps)
+  console.log(nextState)
+  // if (nextState.open == true && this.state.open == false) {
+  //   this.props.onWillOpen();
+  // }
+}
 
   render() {
     const { showForm } = this.state;
 
     const btnText = showForm ? "DÖLJ FORMULÄR":"PRESENTTIPSGENERATOR";
+
+    console.log(this.props)
     return (
       <div>
       <div className="search-goup">       

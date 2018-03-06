@@ -99,6 +99,7 @@ export function search(value) {
 }
 
 export function receiveGifts(data) {
+  //dispatch data to reducer
   return { type: types.RECEIVE_GIFTS, gifts: data };
 }
 
@@ -114,6 +115,7 @@ export function fetchGifts() {
       .then(response => {
         if (response.status === 200) {
           dispatch(receiveGifts(response.data));
+          //response.data from heroku, calls receiveGifts function
         } else {
           var flash = {
             type: "error",

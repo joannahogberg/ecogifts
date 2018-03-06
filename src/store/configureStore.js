@@ -32,6 +32,7 @@ const store = createStore(
     composedEnhancers)
 
 store.subscribe(() => {
+    //set localstorage, namnge själva item, vad hämta state, endast favorites
     localStorage.setItem('reduxState', JSON.stringify(store.getState().favorites))
 })
 
