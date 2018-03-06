@@ -3,11 +3,21 @@
 /*------------- Breakpoints mixin*/
 /*------------- Flexbox mixins*/
 /*------------- Flexbox center mixin*/
+html,
+body,
+nav,
+main,
+footer,
+div,
+figure,
+ul,
+li {
+  margin: 0;
+  padding: 0; }
+
 body {
   font-size: 62.5%;
-  background: #fff;
-  padding: 0;
-  margin: 0; }
+  background: #fff; }
 
 .wrapper {
   letter-spacing: 0.05em;
@@ -16,7 +26,7 @@ body {
   width: -moz-calc(100% - 4em);
   width: -o-calc(100% - 4em);
   width: calc(100% - 4em);
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
   display: -webkit-box;
   display: -moz-box;
@@ -60,3 +70,13 @@ main {
       width: -moz-calc(100% - 150px);
       width: -o-calc(100% - 150px);
       width: calc(100% - 150px); } }
+
+a {
+  text-decoration: none;
+  color: #030303; }
+
+.btn-link {
+  color: #030303;
+  line-height: 2em; }
+  .btn-link:hover {
+    text-decoration: underline; }

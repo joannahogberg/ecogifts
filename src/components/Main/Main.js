@@ -19,7 +19,7 @@ class Main extends Component {
         <Route path="/view/:giftId" component={SingleGift} />
         <Route path="/header" component={About} />
         </div>
-        <GiftsList />
+        {/* <GiftsList /> */}
       </main>
       </div>
     );

@@ -1,16 +1,27 @@
 @import '../../styles/library';
+html,
+body,
+nav,
+main,
+footer,
+div,
+figure,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-size: 62.5%;
     background: $white;
-    padding: 0;
-    margin: 0;
 }
 
 .wrapper {
     letter-spacing: 0.05em;
     font-family: $textFont;
     @include calc( width, '100% - 4em');
-    max-width: 1024px;
+    max-width: 1200px;
     margin: 0 auto;
     @include flexbox;
     @include flex-direction(column);
@@ -31,5 +42,19 @@ main {
     width: 100%;
     @include breakpoint(medium) {
         @include calc( width, '100% - 150px')
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+.btn-link {
+    // text-decoration: none;
+    color: $black;
+    line-height: 2em;
+    &:hover {
+        text-decoration: underline;
     }
 }

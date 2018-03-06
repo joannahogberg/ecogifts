@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { fetchSingleGift } from "../../actions/actionCreators";
 import {bindActionCreators} from 'redux';
-import AddToFavoritesBtn from '../../components/AddToFavoritesBtn/AddToFavoritesBtn'
+import AddToFavoritesBtn from '../../components/AddToFavoritesBtn/AddToFavoritesBtn';
+import './singlegift.css';
 
 class SingleGift extends Component {
 //   shouldComponentUpdate(nextProps) {
@@ -40,7 +41,7 @@ class SingleGift extends Component {
         <Link to={`/`} className="btn-link">
           <ChevronsLeft color="grey" size={24} />
         </Link>
-        <section className="single-gift-inner">
+        <section className="single-gift-container">
           <div className="single-gift-photo-wrap">
             <img
               src={src}
@@ -49,7 +50,7 @@ class SingleGift extends Component {
               style={{ width: "100%" }}
             />
           </div>
-          <div>
+          <div className="single-gift-content">
             <h2>{gift.productName}</h2>
             <p>{price}kr</p>
             <p>{gift.description}</p>

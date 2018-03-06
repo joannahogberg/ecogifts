@@ -20,7 +20,6 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 margin: 0 0.5em;
-                line-height: 2.5em;
             }
             svg {
                 padding: 0 0.5em 0;
@@ -33,13 +32,13 @@
             .favorites-logo {
                 margin: 0 0.5em 0 0;
             }
-            .btn-link {
-                text-decoration: none;
-                color: $black;
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
+            // .btn-link {
+            //     text-decoration: none;
+            //     color: $black;
+            //     &:hover {
+            //         text-decoration: underline;
+            //     }
+            // }
         }
     }
 }
