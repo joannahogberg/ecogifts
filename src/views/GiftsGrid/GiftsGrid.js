@@ -49,7 +49,7 @@ componentWillUpdate(nextProps, nextState) {
 
     console.log(this.props)
     return (
-      <div className="gifts-grid">
+      <div>
       <div className="search-goup">       
         <SearchBar />
         </div>

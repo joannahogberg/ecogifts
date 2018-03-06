@@ -1,15 +1,17 @@
 .favorites-logo {
-  height: 2em;
-  cursor: pointer;
+    height: 2em;
+    // cursor: pointer;
 }
 
 .logo-wrapper {
-  img {
-    display: inline;
-    vertical-align: middle;
-  }
-  span {
-    display: inline;
-    vertical-align: middle;
-  }
+    cursor: pointer;
+    img {
+        display: inline;
+        vertical-align: middle;
+        margin: 0 0.2em 0 0;
+    }
+    span {
+        display: inline;
+        vertical-align: middle;
+    }
 }

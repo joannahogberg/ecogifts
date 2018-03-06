@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Heart } from "react-feather";
+import { X} from "react-feather";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
@@ -21,13 +21,16 @@ onClick=(giftId)=>{
 }
 
   render() {
-  const { gifts } = this.props;
-  console.log(this.props)
+    const logoSmall = require('../../media/logo/ecoLogo_leaf.png');
+    const { gifts } = this.props;
+console.log(this.props)
     let giftsToRender = gifts.map(gift => {
       return (
-        <li key={gift.id}><Heart size={14} />
+        <li key={gift.id}>
+        {/* <Heart size={14} /> */}
+        <img src={logoSmall} className="favorites-logo" alt="logo small" />
          <Link to={`/view/${gift.id}`} className="btn-link" id={gift.id} onClick={()=> this.onClick(gift.id)}> {gift.productName}</Link>
-         <button onClick={()=>this.removeFavorite(gift)}>remove</button>
+         <X onClick={()=>this.removeFavorite(gift)} size={20} />
         </li>
       );
     });

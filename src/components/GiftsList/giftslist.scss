@@ -1,22 +1,43 @@
 @import '../../styles/library';
 .side-bar {
+    @include flexbox;
+    @include justify-content(flex-end);
+    width: 15em;
     ul {
-        list-style: none;
-        font-size: 0.8em;
+        @include flexbox;
+        @include flex-direction(column);
+        padding: 0;
+        margin: 0;
         li {
-            display: block;
-            margin: 0 0 0.5em;
+            @include flexbox;
+            @include align-items(center);
+            margin: 0 0 1em;
+            font-size: 0.8em;
+            width: 100%;
+            a {
+                width: 8em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin: 0 0.5em;
+                line-height: 2.5em;
+            }
             svg {
-                display: inline;
-                vertical-align: middle;
+                padding: 0 0.5em 0;
+                stroke: $black;
+                &:hover {
+                    stroke: $red;
+                    cursor: pointer;
+                }
+            }
+            .favorites-logo {
                 margin: 0 0.5em 0 0;
-                stroke: $red;
             }
             .btn-link {
                 text-decoration: none;
                 color: $black;
                 &:hover {
-                    color: $red;
+                    text-decoration: underline;
                 }
             }
         }

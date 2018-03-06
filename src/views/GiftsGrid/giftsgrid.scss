@@ -4,3 +4,9 @@
     @include flex-direction(row);
     @include justify-content(space-between);
 }
+
+.gifts-grid {
+    @include flexbox;
+    @include flex-direction(row);
+    @include flex-wrap(wrap)
+}

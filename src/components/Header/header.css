@@ -9,6 +9,10 @@
   font-weight: normal;
   font-style: normal; }
 
-.logo-link .logo {
+.logo-link svg {
   height: 100px;
   width: 100%; }
+
+.logo-link .st1,
+.logo-link .leaf {
+  fill: #7A712F; }

@@ -7,8 +7,12 @@
 }
 
 .logo-link {
-    .logo{
+    svg {
         height: 100px;
         width: 100%;
+    }
+    .st1,
+    .leaf {
+        fill: $green;
     }
 }

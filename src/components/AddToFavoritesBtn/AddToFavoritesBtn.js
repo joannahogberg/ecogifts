@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Bookmark } from "react-feather";
+// import { Bookmark } from "react-feather";
 import { addGiftToList } from "../../actions/actionCreators";
 import { connect } from "react-redux";
 import './AddToFavoritesBtn.css';
@@ -14,8 +14,8 @@ class AddToFavoritesBtn extends Component {
 
     return (
 
-      <div className="logo-wrapper">
-      <img src={logoSmall} className="favorites-logo" alt="save it" onClick={() => this.props.addGiftToList(this.props.gift)} />
+      <div onClick={() => this.props.addGiftToList(this.props.gift)} className="logo-wrapper">
+      <img src={logoSmall} className="favorites-logo" alt="save it"  />
       <span> Spara som favorit</span>
       </div>
       //<Bookmark onClick={() => this.props.addGiftToList(this.props.gift)} size={24} color="grey"/>
