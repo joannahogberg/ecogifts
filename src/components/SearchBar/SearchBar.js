@@ -8,6 +8,7 @@ import './searchbar.css';
 class SearchBar extends Component {
   render() {
     const {search } = this.props;
+
     return (
         <input
           className="search-input"
@@ -17,6 +18,7 @@ class SearchBar extends Component {
     );
   }
 } 
+
 SearchBar.defaultsProps = {
     placeholder: "Sök present",
     search: () => {}
@@ -33,9 +35,13 @@ function mapStateToProps(state) {
     };
   }
   
-
+// function mapDispatchToProps(dispatch) {
+//   return bindActionCreators({search}, dispatch);
+// }
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({search}, dispatch);
+return {
+  search: bindActionCreators(search, dispatch)
+};
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);

@@ -8,7 +8,7 @@ import PropTypes from 'prop-types'
 class MultiCheckboxField extends Component {
 
   render() {
-
+console.log(this.props.name)
     const {options, name} = this.props;
     const checkboxes = options.map(option => {
       return (

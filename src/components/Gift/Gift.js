@@ -2,12 +2,8 @@ import React, { Component } from "react";
 import { ChevronsRight } from "react-feather";
 import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
-
 import { connect } from "react-redux";
-
 class Gift extends Component {
-
-
 
   render() {
     const { gift } = this.props;

@@ -21,8 +21,8 @@ onClick=(giftId)=>{
 }
 
   render() {
-    const { gifts } = this.props;
-console.log(this.props)
+  const { gifts } = this.props;
+  console.log(this.props)
     let giftsToRender = gifts.map(gift => {
       return (
         <li key={gift.id}><Heart size={14} />

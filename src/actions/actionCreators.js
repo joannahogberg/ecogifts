@@ -44,6 +44,7 @@ export function search(value) {
 }
 
 export function receiveGifts(data) {
+  //dispatch data to reducer
   return { type: types.RECEIVE_GIFTS, gifts: data };
 }
 
@@ -59,6 +60,7 @@ export function fetchGifts() {
       .then(response => {
         if (response.status === 200) {
           dispatch(receiveGifts(response.data));
+          //response.data from heroku, calls receiveGifts function
         } else {
           var flash = {
             type: "error",
@@ -265,4 +267,40 @@ export function getFromLocalStorage() {
   return dispatch => {
     dispatch(addToLocalStorage(initState));
   };
+}
+
+
+export function getSorted(gifts) {
+  return {
+    type: types.SORT_BY_ASC,
+    gifts
+  };
+}
+export function sortByAsc(value) {
+// return dispatch=>{
+
+//   dispatch({
+//     type: types.SORT_BY_ASC
+//   })
+// }
+ 
+  // return {
+  //   type: types.SORT_BY_ASC,
+  //   value
+  // };
+
+  return (dispatch, getState)=>{
+    //hämtat det nuvarande statet
+    const state = getState().gifts;
+    
+    const newState = state.sort(function(a,b) {return (a.productName > b.productName) ? 1 : ((b.productName > a.productName) ? -1 : 0);} );
+
+    console.log(newState)
+    dispatch(getSorted(newState));
+    // dispatch({
+    //   type: types.FILTERED_BY_CATEGORY,
+    //   gifts: state
+
+    // })
+  }
 }

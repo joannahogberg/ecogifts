@@ -7,6 +7,7 @@ import GiftFormContainer from "../../components/GiftFormContainer/GiftFormContai
 import SearchBar from '../../components/SearchBar/SearchBar';
 // import { fetchGifts, } from "../../actions/actionCreators";
 import * as giftsActions from '../../actions/actionCreators';
+import SelectOptionsForm from '../../components/GiftForm/SelectOptionsForm'
 import { connect } from "react-redux";
 import './giftsgrid.css';
 
@@ -33,10 +34,20 @@ showForm = () =>{
 
 }
 
+// dispatching an action based on state change
+componentWillUpdate(nextProps, nextState) {
+  console.log(nextProps)
+  console.log(nextState)
+  // if (nextState.open == true && this.state.open == false) {
+  //   this.props.onWillOpen();
+  // }
+}
 
   render() {
     const { showForm } = this.state;
     const btnText = showForm ? "DÖLJ FORMULÄR":"PRESENTTIPSGENERATOR";
+
+    console.log(this.props)
     return (
       <div className="gifts-grid">
       <div className="search-goup">       
@@ -47,6 +58,7 @@ showForm = () =>{
    {showForm && (
        <GiftFormContainer/>
       )}
+      <SelectOptionsForm />
         <div className="gifts-grid">
           {this.props.gifts.map((gift, i) => (
             <Gift {...this.props} key={i} i={i} gift={gift} />
