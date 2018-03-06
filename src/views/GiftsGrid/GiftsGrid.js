@@ -50,7 +50,7 @@ componentWillUpdate(nextProps, nextState) {
     console.log(this.props)
     return (
       <div>
-      <div className="search-goup">       
+      <div className="search-group">       
         <SearchBar />
         </div>
         <ButtonGroup />
@@ -58,8 +58,9 @@ componentWillUpdate(nextProps, nextState) {
    {showForm && (
        <GiftFormContainer/>
       )}
-      <SelectOptionsForm />
+        <div className="select-group"><SelectOptionsForm /></div>
         <div className="gifts-grid">
+
           {this.props.gifts.map((gift, i) => (
             <Gift {...this.props} key={i} i={i} gift={gift} />
           ))}

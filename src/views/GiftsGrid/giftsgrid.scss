@@ -1,5 +1,5 @@
 @import '../../styles/library';
-.search-goup {
+.search-group {
     @include flexbox;
     @include flex-direction(row);
     @include justify-content(space-between);
@@ -9,4 +9,7 @@
     @include flexbox;
     @include flex-direction(row);
     @include flex-wrap(wrap)
+}
+.select-group{
+    text-align:right;
 }
