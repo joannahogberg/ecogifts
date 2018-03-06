@@ -3,7 +3,7 @@
 /*------------- Breakpoints mixin*/
 /*------------- Flexbox mixins*/
 /*------------- Flexbox center mixin*/
-.btn-group {
+.checkbox-form {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -15,23 +15,15 @@
   flex-direction: column;
   margin: 1em 0; }
   @media (min-width: 650px) {
-    .btn-group {
-      -webkit-flex-direction: row;
-      -moz-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
+    .checkbox-form {
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
       -webkit-justify-content: space-between;
       -moz-justify-content: space-between;
       -ms-justify-content: space-between;
       justify-content: space-between;
       -ms-flex-pack: space-between; } }
-
-.filter-btn {
-  background: #CCA240;
-  margin: .2em;
-  padding: 0.3em 0.5em;
-  font-family: "Amatic SC", cursive;
-  font-size: 1.1em;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  width: 100%; }
+  .checkbox-form label:nth-child(1) {
+    margin-bottom: .5em; }

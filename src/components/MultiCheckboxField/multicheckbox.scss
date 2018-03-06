@@ -1,0 +1,17 @@
+@import "../../styles/library";
+
+.checkbox-field {
+  list-style-type: none;
+  width: 150px;
+
+  @include breakpoint(medium) {
+    width: 200px;
+  }
+
+}
+
+.form-group {
+  @include flexbox;
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+}

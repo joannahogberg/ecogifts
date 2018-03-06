@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import GiftForm from '../GiftForm/GiftForm';
 import _ from 'lodash';
+import './giftformcontainer.css';
 
 import { renderGiftsByForm } from "../../actions/actionCreators";
 

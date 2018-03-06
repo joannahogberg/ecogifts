@@ -2,6 +2,7 @@ import React from 'react';
 import { reduxForm } from 'redux-form'
 import MultiCheckboxField from '../MultiCheckboxField/MultiCheckboxField';
 import PropTypes from 'prop-types'
+import './giftform.css';
 
 
 const interestsOptions = [{id: 1, label: "Kropsvård", value: "health"}, {id: 2, label: "Inredning", value: "home"}, {id: 3, label: "Trädgårdsarbete", value:"gardening"}, {id: 4, label: "Spel", value: "games"}, {id: 6, label: "Resor", value:"travel"}, 
@@ -31,16 +32,26 @@ const GiftForm = ({
 }) => {
 console.log(handleSubmit)
 return <form onSubmit={handleSubmit(onSubmit)}>
-        <label htmlFor="interests">Intressen:</label>
+<div className="checkbox-form">
+        <label htmlFor="interests">Intressen</label>
        <MultiCheckboxField options={interestsOptions} name="interests" />
+       </div>
+       <div className="checkbox-form">
        <label htmlFor="personality">Personlighet</label>
        <MultiCheckboxField options={personalityOptions} name="personality" />
+       </div>
+       <div className="checkbox-form">
        <label htmlFor="material">Tillverkad av</label>
        <MultiCheckboxField options={materialOptions} name="material" />
-       <label htmlFor="receiver">Presenten skall vara till en:</label>
+       </div>
+       <div className="checkbox-form">
+       <label htmlFor="receiver">Presenten skall vara till en</label>
        <MultiCheckboxField options={receiverOptions} name="receiver" />
-      <button type="submit" className="submit-form-btn">
-        Submit
+       </div>
+
+
+      <button type="submit" className="filter-btn">
+        Klicka för att generera presenttips
       </button>
     </form>;
 };
