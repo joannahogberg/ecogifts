@@ -6,6 +6,8 @@ export function renderRandom() {
   };
 }
 
+
+
 export function filterBySearch(result) {
   return {
     type: types.SEARCH,
@@ -13,7 +15,60 @@ export function filterBySearch(result) {
   };
 }
 
+export function filterBySelect(result) {
+  console.log(result)
+  return {
+    type: types.SELECT,
+    result
+  };
+}
+
+export function select(value) {
+  console.log(value)
+  
+  return {
+    type: 'SET_VISIBILITY_FILTER',
+    filter: types.SHOW_SELECTED
+  };
+  
+  // return(dispatch, getState)=>{
+  //   const state = getState().gifts;
+  //   const newState = state.sort(function(a,b) {return (a.productName > b.productName) ? 1 : ((b.productName > a.productName) ? -1 : 0);} );
+  //   console.log(state)
+  //   dispatch(filterBySelect(newState));
+  // }
+
+  // return dispatch => {
+  //   fetch("https://ecogifts.herokuapp.com/gifts")
+  //     .then(response =>
+  //       response.json().then(data => ({
+  //         data: data,
+  //         status: response.status
+  //       }))
+  //     )
+  //     .then(response => {
+  //       if (response.status === 200) {
+  //         const newVal = value.toLowerCase();
+  //         let result = response.data.filter(gift =>
+  //           gift.productName.toLowerCase().includes(newVal)
+  //         );
+
+  //         dispatch(filterBySearch(result));
+  //       } else {
+  //         var flash = {
+  //           type: "error",
+  //           title: "Error getting gift list",
+  //           content:
+  //             "There was an error getting the gifts list. Please try again."
+  //         };
+  //         dispatch({ type: "DISPLAY_FLASH", data: flash });
+  //       }
+  //     });
+  // };
+}
+
 export function search(value) {
+  console.log(value)
   return dispatch => {
     fetch("https://ecogifts.herokuapp.com/gifts")
       .then(response =>
@@ -266,3 +321,17 @@ export function getFromLocalStorage() {
     dispatch(addToLocalStorage(initState));
   };
 }
+
+
+export const setVisibilityFilter = (filter) => ({
+  type: 'SET_VISIBILITY_FILTER',
+  filter
+})
+
+
+
+// export const VisibilityFilters = {
+//   SHOW_ALL: 'SHOW_ALL',
+//   SHOW_COMPLETED: 'SHOW_COMPLETED',
+//   SHOW_ACTIVE: 'SHOW_ACTIVE'
+// }

@@ -16,8 +16,8 @@ class Gift extends Component {
     const large = require('../../media/images/' + gift.id + '.png')
     const price = gift.material.includes("giftcard") ? "Från " + gift.price : gift.price;
     return (
-      <figure className="grid-figure">
-        <div className="grid-photo-wrap">
+      <div className="gift-wrapper">
+        <div className="gift-photo-wrap">
           <Link to={`/view/${gift.id}`}>
             <img
               srcSet={`${small} 300w, ${large} 700w`}
@@ -28,10 +28,14 @@ class Gift extends Component {
             />
           </Link>
         </div>
-        <figcaption>
-          <h2 className="grid-heading">{gift.productName}</h2>
+        <div className="gift-content-wrap">
+        <Link to={`/view/${gift.id}`}>
+          <h2 className="gift-heading">{gift.productName}</h2>
+           </Link>
           <p>{price}kr</p>
-          <div className="control-btns">
+       
+        </div>
+        <div className="control-btns">
             <Link to={`/view/${gift.id}`} className="btn-link" >
               Mer info
             </Link>
@@ -39,8 +43,7 @@ class Gift extends Component {
               Gå till butik <ChevronsRight color="grey" size={24} />
             </a>
           </div>
-        </figcaption>
-      </figure>
+      </div>
     );
   }
 }

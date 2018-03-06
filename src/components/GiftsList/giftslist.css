@@ -45,8 +45,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        margin: 0 0.5em;
-        line-height: 2.5em; }
+        margin: 0 0.5em; }
       .side-bar ul li svg {
         padding: 0 0.5em 0;
         stroke: #030303; }
@@ -55,8 +54,3 @@
           cursor: pointer; }
       .side-bar ul li .favorites-logo {
         margin: 0 0.5em 0 0; }
-      .side-bar ul li .btn-link {
-        text-decoration: none;
-        color: #030303; }
-        .side-bar ul li .btn-link:hover {
-          text-decoration: underline; }

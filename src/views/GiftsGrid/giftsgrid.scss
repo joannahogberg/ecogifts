@@ -7,6 +7,8 @@
 
 .gifts-grid {
     @include flexbox;
-    @include flex-direction(row);
-    @include flex-wrap(wrap)
+    // @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    @include align-content(flex-start);
 }

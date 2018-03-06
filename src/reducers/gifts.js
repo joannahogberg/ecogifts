@@ -2,6 +2,7 @@ import initialState from "./initialState";
 import * as types from "../actions//actionTypes";
 
 export default function gifts(state = initialState.gifts, action) {
+  console.log(action.type)
   let newState;
   switch (action.type) {
     case types.FETCH_GIFTS:
@@ -32,6 +33,11 @@ export default function gifts(state = initialState.gifts, action) {
     case types.SEARCH:
       newState = action.result;
       return newState;
+
+      case types.SELECT:
+      console.log(action.result)
+      newState = action.result;
+      return newState;  
 
     default:
       return state;
