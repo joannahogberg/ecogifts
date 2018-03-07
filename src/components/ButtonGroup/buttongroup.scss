@@ -10,12 +10,12 @@
 }
 
 .filter-btn {
-    background:#CCA240;
-    margin:.2em;
+    background: #CCA240;
+    margin: .2em;
     padding: 0.3em 0.5em;
     font-family: $linkFont;
     font-size: 1.1em;
     font-weight: 900;
     letter-spacing: 0.08em;
-    width: 100%;
+    @include calc( width, '100% - 1em')
 }

@@ -26,6 +26,13 @@ body {
     @include flexbox;
     @include flex-direction(column);
     padding: 1em 2em 1em;
+    // background: pink;
+}
+
+button,
+select,
+input {
+    outline: none;
 }
 
 main {
@@ -40,14 +47,19 @@ main {
 
 .container {
     width: 100%;
+    // background: black;
     @include breakpoint(medium) {
-        @include calc( width, '100% - 150px')
+        @include calc( width, '100% - 15em')
     }
 }
 
-a {
+a,
+button,
+select,
+input {
     text-decoration: none;
     color: $black;
+    cursor: pointer;
 }
 
 .btn-link {

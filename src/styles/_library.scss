@@ -76,7 +76,17 @@ $breakpoints: ( 'xxsmall': ( min-width: 360px), 'xsmall': ( min-width: 375px), '
     #{$prop}: calc(#{$val});
 }
 
-;
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
 @mixin placeholder {
     &::-webkit-input-placeholder {
         @content
@@ -202,4 +212,10 @@ $breakpoints: ( 'xxsmall': ( min-width: 360px), 'xsmall': ( min-width: 375px), '
     border-radius: $radius;
     background-clip: padding-box;
     /* stops bg color from leaking outside the border: */
+}
+
+@mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

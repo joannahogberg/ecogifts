@@ -34,4 +34,7 @@
   font-size: 1.1em;
   font-weight: 900;
   letter-spacing: 0.08em;
-  width: 100%; }
+  width: -webkit-calc(100% - 1em);
+  width: -moz-calc(100% - 1em);
+  width: -o-calc(100% - 1em);
+  width: calc(100% - 1em); }

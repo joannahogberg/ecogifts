@@ -39,6 +39,11 @@ body {
   flex-direction: column;
   padding: 1em 2em 1em; }
 
+button,
+select,
+input {
+  outline: none; }
+
 main {
   font-size: 1.6em;
   display: -webkit-box;
@@ -66,14 +71,18 @@ main {
   width: 100%; }
   @media (min-width: 650px) {
     .container {
-      width: -webkit-calc(100% - 150px);
-      width: -moz-calc(100% - 150px);
-      width: -o-calc(100% - 150px);
-      width: calc(100% - 150px); } }
+      width: -webkit-calc(100% - 15em);
+      width: -moz-calc(100% - 15em);
+      width: -o-calc(100% - 15em);
+      width: calc(100% - 15em); } }
 
-a {
+a,
+button,
+select,
+input {
   text-decoration: none;
-  color: #030303; }
+  color: #030303;
+  cursor: pointer; }
 
 .btn-link {
   color: #030303;

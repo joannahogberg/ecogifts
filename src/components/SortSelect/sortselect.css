@@ -1,0 +1,33 @@
+/* Sass variables*/
+/*------------- Heading mixins*/
+/*------------- Breakpoints mixin*/
+/*------------- Flexbox mixins*/
+/*------------- Flexbox center mixin*/
+.select-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  border-bottom: 1px solid #536676;
+  position: relative;
+  padding: 0 0 0.3em;
+  margin: 1em 0;
+  width: 4em; }
+  .select-wrapper svg {
+    stroke: #536676; }
+  .select-wrapper .sort-select {
+    position: absolute;
+    left: 0;
+    padding: 0 1.2em;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    font-family: "Amatic SC", cursive;
+    font-size: 1em; }

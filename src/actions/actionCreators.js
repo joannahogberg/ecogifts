@@ -1,10 +1,10 @@
 import * as types from "./actionTypes";
 
-export function renderRandom() {
-  return {
-    type: types.RENDER_RANDOM
-  };
-}
+// export function renderRandom() {
+//   return {
+//     type: types.RENDER_RANDOM
+//   };
+// }
 
 
 

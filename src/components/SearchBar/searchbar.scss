@@ -1,9 +1,22 @@
 @import '../../styles/library';
-.search-input {
-    outline: none;
-    padding: 0.3em 0.5em;
-    @include placeholder {
+.search-bar-wrapper {
+    @include flexbox;
+    border-bottom: 1px solid $blue;
+    padding: 0 0 0.3em;
+    @include align-items(center);
+    margin: 0 0 1em;
+    svg {
+        stroke: $blue;
+    }
+    .search-input {
+        padding: 0 0.5em 0;
+        // width: 20em;
+        border: none;
         font-family: $linkFont;
-        font-size: 1.2em;
+        font-size: 1em;
+        @include placeholder {
+            font-family: $linkFont;
+            // font-size: 1em;
+        }
     }
 }

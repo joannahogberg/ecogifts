@@ -16,9 +16,7 @@
             width: 100%;
             a {
                 width: 8em;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                @include text-truncate;
                 margin: 0 0.5em;
             }
             svg {
