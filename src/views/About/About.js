@@ -1,21 +1,18 @@
-import React, { Component } from "react";
- 
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
- 
- 
+import React, { Component } from 'react'
+
+// import { Link } from "react-router-dom"
+// import { connect } from "react-redux"
 
 class About extends Component {
 
-    render() {  
-return ( 
+  render () {
+    return (
 
-    <div> hej </div>
-)
-
-    }
+      <div>
+        hej
+      </div>
+    )
+  }
 }
 
- 
-  
-  export default About;
+export default About

@@ -23,14 +23,14 @@ export function filterBySelect(result) {
   };
 }
 
-export function select(value, gifts) {
-  console.log(value, gifts)
+// export function select(value, gifts) {
+//   console.log(value, gifts)
   
-  const newState = gifts.sort(function(a,b) {return (a.productName > b.productName) ? 1 : ((b.productName > a.productName) ? -1 : 0);} );
-  return {
-    type: types.SELECT
-  };
-}
+// return {
+//     type: types.SET_VISIBILITY_FILTER,
+//     filter: types.SHOW_BY_LOW_PRICE
+//   };
+// }
 
 export function search(value) {
   console.log(value)
@@ -141,6 +141,7 @@ export const filterByCategory = category => {
 };
 
 export function receiveSingleGift(data) {
+
   return { type: types.REQUESTED_GIFT, gift: data };
 }
 
@@ -155,6 +156,7 @@ export const fetchSingleGift = id => {
       )
       .then(response => {
         if (response.status === 200) {
+          console.log(response.data)
           dispatch(receiveSingleGift(response.data));
         } else {
           var flash = {
@@ -289,3 +291,8 @@ export function getFromLocalStorage() {
   };
 }
 
+
+export const setVisibilityFilter = (filter) => ({
+  type: types.SET_VISIBILITY_FILTER,
+  filter
+})
