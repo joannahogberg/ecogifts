@@ -6,7 +6,7 @@
 .checkbox-field {
   list-style-type: none;
   width: 150px; }
-  @media (min-width: 650px) {
+  @media (min-width: 768px) {
     .checkbox-field {
       width: 200px; } }
 

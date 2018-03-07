@@ -19,7 +19,7 @@ class SortSelect extends Component {
       }}
       className="sort-select"
       >
-        <option value={types.SHOW_ALL}>SORTERA</option>
+        <option value={types.SHOW_ALL}>SORTERA EFTER</option>
         <option value={types.SHOW_BY_ASC}>A-Ö</option>
         <option value={types.SHOW_BY_DESC}>Ö-A</option>
         <option value={types.SHOW_BY_LOW_PRICE}>LÄGSTA PRIS</option>

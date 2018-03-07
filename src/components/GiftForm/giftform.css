@@ -14,7 +14,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 1em 0; }
-  @media (min-width: 650px) {
+  @media (min-width: 768px) {
     .checkbox-form {
       -webkit-flex-direction: column;
       -moz-flex-direction: column;

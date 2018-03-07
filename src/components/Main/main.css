@@ -37,7 +37,8 @@ body {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 1em 2em 1em; }
+  padding: 1em 2em 1em;
+  font-size: 1.6em; }
 
 button,
 select,
@@ -45,7 +46,6 @@ input {
   outline: none; }
 
 main {
-  font-size: 1.6em;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -55,7 +55,7 @@ main {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
-  @media (min-width: 650px) {
+  @media (min-width: 800px) {
     main {
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
@@ -69,7 +69,7 @@ main {
 
 .container {
   width: 100%; }
-  @media (min-width: 650px) {
+  @media (min-width: 800px) {
     .container {
       width: -webkit-calc(100% - 15em);
       width: -moz-calc(100% - 15em);

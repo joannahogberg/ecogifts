@@ -16,7 +16,7 @@ class SearchBar extends Component {
       <Search size={14}/>
       <input
         className="search-input"
-        placeholder="Sök present"
+        placeholder="SÖK PRESENT..."
         onChange={(e) => search(e.target.value)}
       />
       </div>

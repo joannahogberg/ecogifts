@@ -26,6 +26,7 @@ body {
     @include flexbox;
     @include flex-direction(column);
     padding: 1em 2em 1em;
+    font-size: 1.6em;
     // background: pink;
 }
 
@@ -36,10 +37,9 @@ input {
 }
 
 main {
-    font-size: 1.6em;
     @include flexbox;
     @include flex-direction(column);
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
         @include flex-direction(row);
         @include justify-content(space-between);
     }
@@ -48,7 +48,7 @@ main {
 .container {
     width: 100%;
     // background: black;
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
         @include calc( width, '100% - 15em')
     }
 }

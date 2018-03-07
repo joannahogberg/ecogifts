@@ -23,6 +23,7 @@ onClick=(giftId)=>{
   render() {
     const logoSmall = require('../../media/logo/ecoLogo_leaf.png');
     const { gifts } = this.props;
+    const heading = gifts.length > 0 ? "MINA FAVORITER": "";
 console.log(this.props)
     let giftsToRender = gifts.map(gift => {
       return (
@@ -36,6 +37,7 @@ console.log(this.props)
     });
 
     return <aside className="side-bar">
+        <h2>{heading}</h2>
         <ul>{giftsToRender}</ul>
       </aside>;
   }
