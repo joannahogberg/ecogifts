@@ -1,5 +1,5 @@
 import initialState from "./initialState";
-import * as types from "../actions//actionTypes";
+import * as types from "../actions/actionTypes";
 
 export default function gifts(state = initialState.gifts, action) {
   console.log(action.type)
@@ -30,9 +30,10 @@ export default function gifts(state = initialState.gifts, action) {
       return newState;
 
       case types.SELECT:
-      console.log(action.result)
-      newState = action.result;
-      return newState;  
+      console.log(state)
+      // newState = action.result;
+      return state.sort(function(a,b) {return (a.productName > b.productName) ? 1 : ((b.productName > a.productName) ? -1 : 0);} );
+  
 
     default:
       return state;

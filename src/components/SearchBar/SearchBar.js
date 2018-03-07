@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {search} from '../../actions/actionCreators';
 import PropTypes from 'prop-types'
+
 import './searchbar.css';
 
 class SearchBar extends Component {
@@ -35,9 +36,6 @@ function mapStateToProps(state) {
     };
   }
   
-// function mapDispatchToProps(dispatch) {
-//   return bindActionCreators({search}, dispatch);
-// }
 function mapDispatchToProps(dispatch) {
 return {
   search: bindActionCreators(search, dispatch)

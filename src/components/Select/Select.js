@@ -1,50 +1,54 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-// import {select} from '../../actions/actionCreators';
-import {setVisibilityFilter} from '../../actions/actionCreators';
+import {select} from '../../actions/actionCreators';
+import { sortSelector } from '../../selectors/selectors';
+
 import PropTypes from 'prop-types'
 
 
 class Select extends Component {
-  render() {
-    const {onChange } = this.props;
-    return (
     
-        //   <select onChange={(e) => select(e.target.value)}>
-        <select onChange={e => {
-            e.preventDefault()
-            onChange(e.target.value)
-          }}>
-          <option value="SHOW_ALL"></option>
-<option value="SHOW_SELECTED">test</option>
-            </select>
-    );
+  render() {
+    // const {select, gifts } = this.props;
+ 
+      return (
+          <select  onChange={() => sortSelector()}>
+              <option value="ASC"></option>
+              <option value="DEC">test</option>
+          </select>
+         // <button onClick={()=> sortSelector() }>test</button>
+   
+      );
   }
 } 
 
-function mapStateToProps(state) {
-    return {
-        gifts: state.gifts
-    };
-  }
-  
-
-// function mapDispatchToProps(dispatch) {
-//   return bindActionCreators({select}, dispatch);
-// }
-// const mapStateToProps = (state, ownProps) => {
+// function mapStateToProps(state) {
 //     return {
-//       active: ownProps.filter === state.visibilityFilter
+//         gifts: state.gifts
+//     };
+//   }
+// const mapStateToProps = (state) => {
+//     return {
+//       gifts: sortSelector(state.gifts)
 //     }
 //   }
-const mapDispatchToProps = (dispatch) => {
 
-    return {
-      onChange: (filter) => {
-        dispatch(setVisibilityFilter(filter))
+  const makeMapStateToProps = () => {
+    const getBarState = sortSelector()
+    const mapStateToProps = (state, props) => {
+      return {
+         gifts: getBarState(state, props)
       }
-    }
-  }
+     }
+    return mapStateToProps
+   }
+  
 
-export default connect(mapStateToProps, mapDispatchToProps)(Select);
+//   function mapDispatchToProps(dispatch) {
+//     return {
+//       select: bindActionCreators(select, dispatch)
+//     };
+// }
+
+export default connect(makeMapStateToProps)(Select);
