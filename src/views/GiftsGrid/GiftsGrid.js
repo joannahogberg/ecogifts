@@ -5,24 +5,35 @@ import Gift from "../../components/Gift/Gift";
 import ButtonGroup from "../../components/ButtonGroup/ButtonGroup";
 import GiftFormContainer from "../../components/GiftFormContainer/GiftFormContainer";
 import SearchBar from '../../components/SearchBar/SearchBar';
-import Select from '../../components/Select/Select';
+import SortSelect from '../../components/SortSelect/SortSelect';
 // import { fetchGifts, } from "../../actions/actionCreators";
 import * as giftsActions from '../../actions/actionCreators';
-import * as types from "../../actions//actionTypes";
+import * as types from "../../actions/actionTypes";
 import { connect } from "react-redux";
 import './giftsgrid.css';
 
 
 const getVisibleGifts = (gifts, filter) => {
-
-  let newState
   switch (filter) {
     case types.SHOW_ALL:
-   newState = gifts.sort(function(a,b) {return (a.productName > b.productName) ? 1 : ((b.productName > a.productName) ? -1 : 0);} );
-      return newState
-    case types.SHOW_SELECTED:
-   newState = gifts.sort(function(a,b) {return (a.price > b.price) ? 1 : ((b.price > a.price) ? -1 : 0);} );
-    return newState
+      let showAll = [...gifts];
+     return showAll;
+    case types.SHOW_BY_ASC:
+      let byTitleASC = [...gifts];
+      byTitleASC.sort(function(a,b) {return (a.productName > b.productName) ? 1 : ((b.productName > a.productName) ? -1 : 0);} );
+      return byTitleASC;
+      case types.SHOW_BY_DESC:
+      let byTitleDESC = [...gifts];
+      byTitleDESC.sort(function(a,b) {return (a.productName < b.productName) ? 1 : ((b.productName < a.productName) ? -1 : 0);} );
+      return byTitleDESC;
+    case types.SHOW_BY_LOW_PRICE:
+      let priceSortLow = [...gifts];
+      priceSortLow.sort(function(a,b) {return (a.price > b.price) ? 1 : ((b.price > a.price) ? -1 : 0);} );
+      return priceSortLow;
+      case types.SHOW_BY_HIGH_PRICE:
+      let priceSortHigh = [...gifts];
+      priceSortHigh.sort(function(a,b) {return (a.price < b.price) ? 1 : ((b.price < a.price) ? -1 : 0);} );
+      return priceSortHigh;
     default:
       throw new Error('Unknown filter: ' + filter)
   }
@@ -80,7 +91,7 @@ componentWillUpdate(nextProps, nextState) {
    {showForm && (
        <GiftFormContainer/>
       )}
-      <Select />
+      <SortSelect />
         <div className="gifts-grid">
           {this.props.gifts.map((gift, i) => (
             <Gift {...this.props} key={i} i={i} gift={gift} />

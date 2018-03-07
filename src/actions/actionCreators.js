@@ -27,8 +27,8 @@ export function select(value) {
   console.log(value)
   
   return {
-    type: 'SET_VISIBILITY_FILTER',
-    filter: types.SHOW_SELECTED
+    type: types.SET_VISIBILITY_FILTER,
+    filter: types.SHOW_BY_LOW_PRICE
   };
   
   // return(dispatch, getState)=>{
@@ -176,6 +176,7 @@ export const filterByCategory = category => {
 };
 
 export function receiveSingleGift(data) {
+
   return { type: types.REQUESTED_GIFT, gift: data };
 }
 
@@ -190,6 +191,7 @@ export const fetchSingleGift = id => {
       )
       .then(response => {
         if (response.status === 200) {
+          console.log(response.data)
           dispatch(receiveSingleGift(response.data));
         } else {
           var flash = {
@@ -326,14 +328,6 @@ export function getFromLocalStorage() {
 
 
 export const setVisibilityFilter = (filter) => ({
-  type: 'SET_VISIBILITY_FILTER',
+  type: types.SET_VISIBILITY_FILTER,
   filter
 })
-
-
-
-// export const VisibilityFilters = {
-//   SHOW_ALL: 'SHOW_ALL',
-//   SHOW_COMPLETED: 'SHOW_COMPLETED',
-//   SHOW_ACTIVE: 'SHOW_ACTIVE'
-// }
