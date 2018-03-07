@@ -23,49 +23,14 @@ export function filterBySelect(result) {
   };
 }
 
-export function select(value) {
-  console.log(value)
+// export function select(value, gifts) {
+//   console.log(value, gifts)
   
-  return {
-    type: 'SET_VISIBILITY_FILTER',
-    filter: types.SHOW_SELECTED
-  };
-  
-  // return(dispatch, getState)=>{
-  //   const state = getState().gifts;
-  //   const newState = state.sort(function(a,b) {return (a.productName > b.productName) ? 1 : ((b.productName > a.productName) ? -1 : 0);} );
-  //   console.log(state)
-  //   dispatch(filterBySelect(newState));
-  // }
-
-  // return dispatch => {
-  //   fetch("https://ecogifts.herokuapp.com/gifts")
-  //     .then(response =>
-  //       response.json().then(data => ({
-  //         data: data,
-  //         status: response.status
-  //       }))
-  //     )
-  //     .then(response => {
-  //       if (response.status === 200) {
-  //         const newVal = value.toLowerCase();
-  //         let result = response.data.filter(gift =>
-  //           gift.productName.toLowerCase().includes(newVal)
-  //         );
-
-  //         dispatch(filterBySearch(result));
-  //       } else {
-  //         var flash = {
-  //           type: "error",
-  //           title: "Error getting gift list",
-  //           content:
-  //             "There was an error getting the gifts list. Please try again."
-  //         };
-  //         dispatch({ type: "DISPLAY_FLASH", data: flash });
-  //       }
-  //     });
-  // };
-}
+// return {
+//     type: types.SET_VISIBILITY_FILTER,
+//     filter: types.SHOW_BY_LOW_PRICE
+//   };
+// }
 
 export function search(value) {
   console.log(value)
@@ -176,6 +141,7 @@ export const filterByCategory = category => {
 };
 
 export function receiveSingleGift(data) {
+
   return { type: types.REQUESTED_GIFT, gift: data };
 }
 
@@ -190,6 +156,7 @@ export const fetchSingleGift = id => {
       )
       .then(response => {
         if (response.status === 200) {
+          console.log(response.data)
           dispatch(receiveSingleGift(response.data));
         } else {
           var flash = {
@@ -326,14 +293,6 @@ export function getFromLocalStorage() {
 
 
 export const setVisibilityFilter = (filter) => ({
-  type: 'SET_VISIBILITY_FILTER',
+  type: types.SET_VISIBILITY_FILTER,
   filter
 })
-
-
-
-// export const VisibilityFilters = {
-//   SHOW_ALL: 'SHOW_ALL',
-//   SHOW_COMPLETED: 'SHOW_COMPLETED',
-//   SHOW_ACTIVE: 'SHOW_ACTIVE'
-// }

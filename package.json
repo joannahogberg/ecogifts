@@ -17,9 +17,6 @@
         "react-scripts": "^1.1.1",
         "redux": "^3.7.2",
         "redux-form": "^7.2.3",
-        "redux-localstorage": "^1.0.0-rc5",
-        "redux-localstorage-simple": "^1.4.0",
-        "redux-persist": "^5.9.1",
         "redux-thunk": "^2.2.0"
     },
     "scripts": {

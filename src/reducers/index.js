@@ -5,7 +5,8 @@ import gifts from './gifts';
 import favorites from './favorites';
 import visibilityFilter from './visibilityFilter';
 
-//put data in state
+
+// put data in state
 const rootReducer = combineReducers({
     gifts,
     favorites,
