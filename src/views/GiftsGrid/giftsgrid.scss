@@ -7,8 +7,9 @@
   @include flex-center();
 }
 .border {
-border:1px solid $yellow;
-margin:6px;
+  border: 1px solid $yellow;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .gift-generator-btn {
@@ -33,5 +34,5 @@ margin:6px;
   font-weight: 900;
   letter-spacing: 0.08em;
   width: 60%;
-  height: 50px;
+  height: 60px;
 }

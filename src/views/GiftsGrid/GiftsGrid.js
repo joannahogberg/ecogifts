@@ -70,9 +70,9 @@ class GiftsGrid extends Component {
         <ButtonGroup />
 
         <div className={showBorder}>
-          <div className="gift-generator-btn" onClick={() => this.showForm()}>
+          <button className="gift-generator-btn" onClick={() => this.showForm()}>
             {btnText} <PresentIcon/>
-          </div>
+          </button>
 
         {showForm && <GiftFormContainer />}
         </div>

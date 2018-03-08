@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { filterByCategory} from "../../actions/actionCreators";
 import { connect } from "react-redux";
 import './buttongroup.css';
-import { Search, DollarSign, Filter, Headphones, Heart, Wind, Sun, Anchor } from "react-feather";
+import { DollarSign, Filter, Headphones, Heart, Sun, Anchor } from "react-feather";
 
 // import * as giftsActions from '../../actions/actionCreators';
 

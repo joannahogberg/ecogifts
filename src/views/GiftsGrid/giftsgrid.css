@@ -26,7 +26,8 @@
 
 .border {
   border: 1px solid #CCA240;
-  margin: 6px; }
+  margin-left: 6px;
+  margin-right: 6px; }
 
 .gift-generator-btn {
   border: 1px solid #CCA240;
@@ -53,7 +54,7 @@
   font-weight: 900;
   letter-spacing: 0.08em;
   width: 60%;
-  height: 50px; }
+  height: 60px; }
   .gift-generator-btn svg {
     margin-left: 0.2em; }
   .gift-generator-btn:hover {
