@@ -1,34 +1,72 @@
 @import "../../styles/library";
 .category-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  text-align: center;
-  justify-content: center;
-  @include breakpoint(medium) {
-    & .wide {
-      grid-column-end: span 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    text-align: center;
+    justify-content: center;
+    @include breakpoint(medium) {
+        & .wide {
+            grid-column-end: span 2;
+        }
     }
-<<<<<<< HEAD
 }
 
 .category-item {
+    @include flexbox;
+    flex-direction: column;
+    @include flex-center();
+    border: 6px solid $white;
+    border-bottom: 3px solid $white;
+    font-family: $linkFont;
+    @include category-btn;
+    height: 100px;
+    @include calc(width, ("100% - 12px"));
+    svg {
+        margin-bottom: 0.3em;
+    }
     &:nth-child(1) {
-        background: $green;
+        @include transparent-backgound($yellow, 1);
+        &:hover {
+            @include transparent-backgound($yellow, 0);
+            @include box-shadow(0, 0, 0, 1px, $yellow, true);
+            color: black;
+            svg {
+                stroke: black;
+            }
+        }
     }
     &:nth-child(2) {
-        background: $blue;
+        @include transparent-backgound($blue, 1);
+        &:hover {
+            @include transparent-backgound($blue, 0.5);
+            color: black;
+            svg {
+                stroke: black;
+            }
+        }
     }
     &:nth-child(3) {
-        background: $aqua;
+        @include transparent-backgound($aqua, 1);
+        &:hover {
+            @include transparent-backgound($aqua, 0.5);
+            color: black;
+            svg {
+                stroke: black;
+            }
+        }
     }
     &:nth-child(4) {
-        background: $red;
+        @include transparent-backgound($red, 1);
+        &:hover {
+            @include transparent-backgound($red, 0.5);
+            color: black;
+            svg {
+                stroke: black;
+            }
+        }
     }
     &:nth-child(5) {
-        // background: $white;
-        // border: 1px solid $gray;
         @include box-shadow(0, 0, 0, 1px, $gray, true);
-        // box-shadow:    inset 0 0 0 1px $gray;
         @include transparent-backgound($gray, 0);
         &:hover {
             @include transparent-backgound($gray, 1);
@@ -38,97 +76,15 @@
             }
         }
     }
+    &:nth-child(6) {
+        @include transparent-backgound($green, 1);
+        &:hover {
+            @include transparent-backgound($green, 0);
+            @include box-shadow(0, 0, 0, 1px, $green, true);
+            color: black;
+            svg {
+                stroke: black;
+            }
+        }
+    }
 }
-
-.category-item {
-    @include flexbox;
-    @include flex-center();
-    background: $yellow;
-    border: 6px solid $white;
-    border-bottom: none;
-    font-family: $linkFont;
-    @include category-btn;
-    height: 100px;
-    @include calc(width, ("100% - 8px"));
-}
-=======
-  }
-}
-.category-item {
-  @include flexbox;
-  flex-direction: column;
-  @include flex-center();
-  border: 6px solid $white;
-  border-bottom: 3px solid $white;
-  font-family: $linkFont;
-  @include category-btn;
-  height: 100px;
-  @include calc(width, ("100% - 12px"));
-  svg {
-    margin-bottom: 0.3em;
-  }
-  &:nth-child(1) {
-    @include transparent-backgound($yellow, 1);
-    &:hover {
-      @include transparent-backgound($yellow, 0);
-      @include box-shadow(0, 0, 0, 1px, $yellow, true);
-      color: black;
-      svg {
-        stroke: black;
-      }
-    }
-  }
-  &:nth-child(2) {
-    @include transparent-backgound($blue, 1);
-    &:hover {
-      @include transparent-backgound($blue, 0.5);
-      color: black;
-      svg {
-        stroke: black;
-      }
-    }
-  }
-  &:nth-child(3) {
-    @include transparent-backgound($aqua, 1);
-    &:hover {
-      @include transparent-backgound($aqua, 0.5);
-      color: black;
-      svg {
-        stroke: black;
-      }
-    }
-  }
-  &:nth-child(4) {
-    @include transparent-backgound($red, 1);
-    &:hover {
-      @include transparent-backgound($red, 0.5);
-      color: black;
-      svg {
-        stroke: black;
-      }
-    }
-  }
-  &:nth-child(5) {
-    @include box-shadow(0, 0, 0, 1px, $gray, true);
-    @include transparent-backgound($gray, 0);
-    &:hover {
-      @include transparent-backgound($gray, 1);
-      color: white;
-      svg {
-        stroke: white;
-      }
-    }
-  }
-  &:nth-child(6) {
-    @include transparent-backgound($green, 1);
-    &:hover {
-      @include transparent-backgound($green, 0);
-      @include box-shadow(0, 0, 0, 1px, $green, true);
-      color: black;
-      svg {
-        stroke: black;
-      }
-    }
-  }
-} 
->>>>>>> d0931e5a2a51ee82af3e63590daa8000e641276c

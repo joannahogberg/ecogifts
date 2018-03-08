@@ -21,13 +21,12 @@ onClick=(giftId)=>{
 
   render() {
     const logoSmall = require('../../media/logo/ecoLogo_leaf.png');
-    const { gifts } = this.props;
-    const heading = gifts.length > 0 ? "MINA FAVORITER": "";
-// console.log(this.props)
-    let giftsToRender = gifts.map(gift => {
+    const { favorites } = this.props;
+    const heading = favorites.length > 0 ? "MINA FAVORITER": "";
+console.log(this.props)
+    let giftsToRender = favorites.map(gift => {
       return (
         <li key={gift.id}>
-        {/* <Heart size={14} /> */}
         <img src={logoSmall} className="favorites-logo" alt="logo small" />
          <Link to={`/view/${gift.id}`} className="btn-link" id={gift.id} onClick={()=> this.onClick(gift.id)}> {gift.productName}</Link>
          <X onClick={()=>this.removeFavorite(gift)} size={20} />
@@ -44,7 +43,7 @@ onClick=(giftId)=>{
 
 function mapStateToProps(state) {
   return {
-    gifts: state.favorites
+    favorites: state.favorites
   };
 }
 
