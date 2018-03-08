@@ -1,31 +1,20 @@
 import React, { Component } from "react";
 import { ChevronsLeft, ChevronsRight } from "react-feather";
-import {PropTypes} from 'prop-types'
+import { PropTypes } from 'prop-types'
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { fetchSingleGift } from "../../actions/actionCreators";
-import {bindActionCreators} from 'redux';
+import { bindActionCreators } from 'redux';
 import AddToFavoritesBtn from '../../components/AddToFavoritesBtn/AddToFavoritesBtn';
 import './singlegift.css';
 
 class SingleGift extends Component {
-//   shouldComponentUpdate(nextProps) {
-//  console.log(nextProps)
-//     if (nextProps.history.location.pathname === nextProps.location.pathname) {
-//       return true;
-//     }
-//     return false;
-//   }
 
   componentWillMount() {
-    console.log(this.props)
     const { giftId } = this.props.match.params;
     this.props.fetchSingleGift(giftId);
- 
+
   }
-
-
-
   render() {
     console.log(this.props)
     const { gifts } = this.props;
@@ -34,9 +23,9 @@ class SingleGift extends Component {
       ? "Från " + gift.price
       : gift.price;
 
-    const src = require('../../media/images/' + gift.id + '.png')  
+    const src = require('../../media/images/' + gift.id + '.png')
     return (
-      
+
       <div className="single-gift-wrapper">
         <Link to={`/`} className="btn-link">
           <ChevronsLeft color="grey" size={24} />

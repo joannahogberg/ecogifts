@@ -1,9 +1,36 @@
 @import '../../styles/library';
-.search-input {
-    outline: none;
-    padding: 0.3em 0.5em;
-    @include placeholder {
+.search-bar-wrapper {
+    @include flexbox;
+    // border-bottom: 1px solid $blue;
+    padding: 0 0 0.3em;
+    @include align-items(center);
+    height: 2em;
+    svg {
+        stroke: $blue;
+    }
+    .search-input {
+        padding: 0 0 0.1em 0.2em;
+        width: 50%;
+        height: 1.3em;
+        margin: 0 0 0 0.3em;
+        border: none;
         font-family: $linkFont;
-        font-size: 1.2em;
+        font-size: 1em;
+        color: transparent;
+        text-shadow: 0 0 0 gray;
+        border-bottom: 1px solid $blue;
+        @include placeholder {
+            font-family: $linkFont;
+            // font-size: 1em;
+        }
+        &:focus,
+        &:hover {
+            border-bottom: 1px solid $blue;
+            padding: 0 0 0 0.2em;
+            font-weight: 900;
+        }
+        @include breakpoint(large) {
+            border-bottom: none;
+        }
     }
 }

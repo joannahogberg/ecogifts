@@ -9,13 +9,13 @@ import './buttongroup.css';
 class ButtonGroup extends Component {
   render() {
     return (
-      <div className="btn-group">
-        <button onClick={() => this.props.filterByCategory(["outdoor", "travel"])} className="filter-btn wide">ÄVENTYR & FRITIDSÄLSKAREN</button>
-        <button onClick={() => this.props.filterByCategory(["nature", "animals", "gardening"])} className="filter-btn">NATUR & DJURÄLSKAREN</button>
-        <button onClick={() => this.props.filterByCategory(["technology", "music"])} className="filter-btn">TEKNIKNÖRDEN</button>
-        <button onClick={() => this.props.filterByCategory("charity")} className="filter-btn wide">PRESENTER SOM GÖR SKILLNAD</button> 
-        <button onClick={() => this.props.filterByCategory(["food", "candy"])} className="filter-btn wide">FÖR MATENTUSIASTEN</button> 
-        <button onClick={() => this.props.filterByCategory(200)} className="filter-btn">PRESENTER UNDER 200</button> 
+      <div className="category-container">
+        <div onClick={() => this.props.filterByCategory(["outdoor", "travel"])} className="category-item wide">ÄVENTYR & FRITIDSÄLSKAREN</div>
+        <div onClick={() => this.props.filterByCategory(["nature", "animals", "gardening"])} className="category-item">NATUR & DJURÄLSKAREN</div>
+        <div onClick={() => this.props.filterByCategory(["technology", "music"])} className="category-item">TEKNIKNÖRDEN</div>
+        <div onClick={() => this.props.filterByCategory("charity")} className="category-item wide">PRESENTER SOM GÖR SKILLNAD</div> 
+        <div onClick={() => this.props.filterByCategory(["food", "candy"])} className="category-item wide">FÖR MATENTUSIASTEN</div> 
+        <div onClick={() => this.props.filterByCategory(200)} className="category-item">PRESENTER UNDER 200</div> 
       </div>
     );
   }

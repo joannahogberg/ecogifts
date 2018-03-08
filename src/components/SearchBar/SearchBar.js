@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { search } from '../../actions/actionCreators';
 import PropTypes from 'prop-types'
+import { Search } from "react-feather";
 
 import './searchbar.css';
 
@@ -11,11 +12,14 @@ class SearchBar extends Component {
     const { search } = this.props;
 
     return (
+      <div className="search-bar-wrapper">
+      <Search size={14}/>
       <input
         className="search-input"
-        placeholder="Sök present"
+        placeholder="SÖK PRESENT..."
         onChange={(e) => search(e.target.value)}
       />
+      </div>
     );
   }
 }

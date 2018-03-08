@@ -125,6 +125,3 @@ export default connect(
   mapDispatchToProps
 )(GiftsGrid)
 
-
-
-          {/* <div className="select-group"><SelectOptionsForm /></div> */}

@@ -55,7 +55,7 @@ cursive;
 
 /*------------- Breakpoints mixin*/
 
-$breakpoints: ( 'xxsmall': ( min-width: 360px), 'xsmall': ( min-width: 375px), 'small': ( min-width: 464px), 'medium': ( min-width: 650px), 'large': ( min-width: 800px), 'xlarge': ( min-width: 1200px));
+$breakpoints: ( 'xxsmall': ( min-width: 360px), 'xsmall': ( min-width: 375px), 'small': ( min-width: 464px), 'medium': ( min-width: 768px), 'large': ( min-width: 800px), 'xlarge': ( min-width: 1200px));
 @mixin breakpoint($name) {
     @if map-has-key($breakpoints, $name) {
         @media #{inspect(map-get($breakpoints, $name))} {
@@ -76,7 +76,17 @@ $breakpoints: ( 'xxsmall': ( min-width: 360px), 'xsmall': ( min-width: 375px), '
     #{$prop}: calc(#{$val});
 }
 
-;
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
 @mixin placeholder {
     &::-webkit-input-placeholder {
         @content
@@ -202,4 +212,10 @@ $breakpoints: ( 'xxsmall': ( min-width: 360px), 'xsmall': ( min-width: 375px), '
     border-radius: $radius;
     background-clip: padding-box;
     /* stops bg color from leaking outside the border: */
+}
+
+@mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
