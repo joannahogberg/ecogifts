@@ -1,36 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route } from 'react-router-dom'
 import GiftsGrid from '../../views/GiftsGrid/GiftsGrid'
 import SingleGift from '../../views/SingleGift/SingleGift'
 import About from '../../views/About/About'
 import Header from './../Header/Header';
-import GiftsList from './../GiftsList/GiftsList';
+import FavoritesList from './../FavoritesList/FavoritesList';
 import './main.css';
 
-class Main extends Component {
-
-  render() {
-    return (
-      <div className="wrapper">
-          <Header />
+function Main() {
+  return (
+    <div className="wrapper">
+      <Header />
       <main>
         <div className="container">
-        <Route exact path="/" component={GiftsGrid} />
-        <Route path="/view/:giftId" component={SingleGift} />
-        <Route path="/header" component={About} />
+          <Route exact path="/" component={GiftsGrid} />
+          <Route path="/view/:giftId" component={SingleGift} />
+          <Route path="/header" component={About} />
         </div>
-        <GiftsList />
+        <FavoritesList />
       </main>
-      </div>
-    );
-  }
+    </div>
+  );
 }
-
-// function mapStateToProps(state) {
-//   return {
-//     gifts: state.gifts
-//   };
-// }
-// export default connect(mapStateToProps)(Main);
 
 export default Main;
