@@ -3,6 +3,7 @@ import { reduxForm } from "redux-form";
 import MultiCheckboxField from "../MultiCheckboxField/MultiCheckboxField";
 import PropTypes from "prop-types";
 import "./giftform.css";
+import PresentIcon from '../../components/PresentIcon/PresentIcon'
 
 const interestsOptions = [
   { id: 1, label: "Kropsvård", value: "health" },
@@ -86,7 +87,7 @@ const GiftForm = ({ onSubmit, handleSubmit }) => {
 
       <div className="gift-generator-wrapper">
         <button type="submit" className="gift-generator-btn">
-          Generera presenttips
+          Generera presenttips <PresentIcon/>
         </button>
       </div>
     </form>

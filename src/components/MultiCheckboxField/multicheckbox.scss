@@ -4,13 +4,11 @@
   display: flex;
   list-style-type: none;
   width: 180px;
-  // background: pink;
 }
 
 .form-group {
   position: relative;
-  border-top: 1px solid $green;
-  background:$white;
+  border-top: 1px solid $yellow;
   padding: 0.4em;
   @include flexbox;
   @include flex-direction(row);

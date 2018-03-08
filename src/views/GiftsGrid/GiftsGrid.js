@@ -51,9 +51,10 @@ class GiftsGrid extends Component {
 
   showForm = () => {
     if (!this.state.showForm) {
-      this.setState({ showForm: true })
+      this.setState({ showForm: true
+       })
     } else {
-      this.setState({ showForm: false })
+      this.setState({ showForm: false})
     }
   }
 
@@ -62,17 +63,21 @@ class GiftsGrid extends Component {
     const {gifts}=this.props;
     const btnText = showForm ? "DÖLJ FORMULÄR" : "PRESENTTIPSGENERATOR";
     // console.log(this.props)
+    const showBorder = showForm ? "gift-generator-wrapper border" : "gift-generator-wrapper" ;
+
     return <div>
-      <ButtonGroup />
-      <div className="gift-generator-wrapper">
-        <div className="gift-generator-btn" onClick={() => this.showForm()}>
-          {btnText} <PresentIcon />
+        <ButtonGroup />
+
+        <div className={showBorder}>
+          <button className="gift-generator-btn" onClick={() => this.showForm()}>
+            {btnText} <PresentIcon/>
+          </button>
+
+        {showForm && <GiftFormContainer />}
         </div>
-      </div>
-      {showForm && <GiftFormContainer />}
-      <SearchSortSection />
-      <GiftsList gifts={gifts} />
-    </div>;
+        <SearchSortSection />
+        <GiftsList gifts={gifts} />
+      </div>;
   }
 }
 

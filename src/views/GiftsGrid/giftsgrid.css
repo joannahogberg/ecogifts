@@ -6,6 +6,9 @@
 /* box-shadow  
  @include box-shadow(0px, 0px, 0px, 2px, rgba(0, 0, 0, .5)), true; */
 .gift-generator-wrapper {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -21,10 +24,15 @@
   -ms-align-items: center;
   align-items: center; }
 
+.border {
+  border: 1px solid #CCA240;
+  margin-left: 6px;
+  margin-right: 6px; }
+
 .gift-generator-btn {
-  border: 1px solid #7A712F;
-  background: rgb(red(#7A712F), 113, 47 );
-  background: rgba(122, 113, 47, 0);
+  border: 1px solid #CCA240;
+  background: rgb(red(#CCA240), 162, 64 );
+  background: #cca240;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -46,13 +54,13 @@
   font-weight: 900;
   letter-spacing: 0.08em;
   width: 60%;
-  height: 50px; }
+  height: 60px; }
   .gift-generator-btn svg {
-    margin-left: .2em; }
+    margin-left: 0.2em; }
   .gift-generator-btn:hover {
-    background: rgb(red(#7A712F), 113, 47 );
-    background: #7a712f;
-    color: white; }
+    background: rgb(red(#CCA240), 162, 64 );
+    background: rgba(204, 162, 64, 0);
+    color: #030303; }
     .gift-generator-btn:hover svg {
-      stroke: white;
-      margin-left: .2em; }
+      stroke: #030303;
+      margin-left: 0.2em; }
