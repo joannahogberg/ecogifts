@@ -17,7 +17,7 @@ function Main(props) {
           <Route path="/view/:giftId" component={SingleGift} />
           <Route path="/header" component={About} />
         </div>
-        <FavoritesList />
+        {/* <FavoritesList /> */}
       </main>
     </div>
   );

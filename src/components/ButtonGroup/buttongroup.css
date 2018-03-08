@@ -48,7 +48,7 @@
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   font-size: 24px;
-  height: 100px;
+  height: 70px;
   width: -webkit-calc(100% - 12px);
   width: -moz-calc(100% - 12px);
   width: -o-calc(100% - 12px);
@@ -68,6 +68,9 @@
   @media (max-width: 320px) {
     .category-item {
       font-size: 18px; } }
+  @media (min-width: 768px) {
+    .category-item {
+      height: 100px; } }
   .category-item svg {
     margin-bottom: 0.3em; }
   .category-item:nth-child(1) {
@@ -79,36 +82,36 @@
       -webkit-box-shadow: inset 0 0 0 1px #CCA240;
       -moz-box-shadow: inset 0 0 0 1px #CCA240;
       box-shadow: inset 0 0 0 1px #CCA240;
-      color: black; }
+      color: #030303; }
       .category-item:nth-child(1):hover svg {
-        stroke: black; }
+        stroke: #030303; }
   .category-item:nth-child(2) {
     background: rgb(red(#536676), 102, 118 );
     background: #536676; }
     .category-item:nth-child(2):hover {
       background: rgb(red(#536676), 102, 118 );
       background: rgba(83, 102, 118, 0.5);
-      color: black; }
+      color: #030303; }
       .category-item:nth-child(2):hover svg {
-        stroke: black; }
+        stroke: #030303; }
   .category-item:nth-child(3) {
     background: rgb(red(#6B8B91), 139, 145 );
     background: #6b8b91; }
     .category-item:nth-child(3):hover {
       background: rgb(red(#6B8B91), 139, 145 );
       background: rgba(107, 139, 145, 0.5);
-      color: black; }
+      color: #030303; }
       .category-item:nth-child(3):hover svg {
-        stroke: black; }
+        stroke: #030303; }
   .category-item:nth-child(4) {
     background: rgb(red(#AB535B), 83, 91 );
     background: #ab535b; }
     .category-item:nth-child(4):hover {
       background: rgb(red(#AB535B), 83, 91 );
       background: rgba(171, 83, 91, 0.5);
-      color: black; }
+      color: #030303; }
       .category-item:nth-child(4):hover svg {
-        stroke: black; }
+        stroke: #030303; }
   .category-item:nth-child(5) {
     -webkit-box-shadow: inset 0 0 0 1px #646464;
     -moz-box-shadow: inset 0 0 0 1px #646464;
@@ -118,9 +121,9 @@
     .category-item:nth-child(5):hover {
       background: rgb(red(#646464), 100, 100 );
       background: #646464;
-      color: white; }
+      color: #fff; }
       .category-item:nth-child(5):hover svg {
-        stroke: white; }
+        stroke: #fff; }
   .category-item:nth-child(6) {
     background: rgb(red(#7A712F), 113, 47 );
     background: #7a712f; }
@@ -130,6 +133,6 @@
       -webkit-box-shadow: inset 0 0 0 1px #7A712F;
       -moz-box-shadow: inset 0 0 0 1px #7A712F;
       box-shadow: inset 0 0 0 1px #7A712F;
-      color: black; }
+      color: #030303; }
       .category-item:nth-child(6):hover svg {
-        stroke: black; }
+        stroke: #030303; }

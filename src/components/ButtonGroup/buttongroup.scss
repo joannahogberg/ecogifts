@@ -8,50 +8,6 @@
     & .wide {
       grid-column-end: span 2;
     }
-<<<<<<< HEAD
-}
-
-.category-item {
-    &:nth-child(1) {
-        background: $green;
-    }
-    &:nth-child(2) {
-        background: $blue;
-    }
-    &:nth-child(3) {
-        background: $aqua;
-    }
-    &:nth-child(4) {
-        background: $red;
-    }
-    &:nth-child(5) {
-        // background: $white;
-        // border: 1px solid $gray;
-        @include box-shadow(0, 0, 0, 1px, $gray, true);
-        // box-shadow:    inset 0 0 0 1px $gray;
-        @include transparent-backgound($gray, 0);
-        &:hover {
-            @include transparent-backgound($gray, 1);
-            color: white;
-            svg {
-                stroke: white;
-            }
-        }
-    }
-}
-
-.category-item {
-    @include flexbox;
-    @include flex-center();
-    background: $yellow;
-    border: 6px solid $white;
-    border-bottom: none;
-    font-family: $linkFont;
-    @include category-btn;
-    height: 100px;
-    @include calc(width, ("100% - 8px"));
-}
-=======
   }
 }
 .category-item {
@@ -62,7 +18,11 @@
   border-bottom: 3px solid $white;
   font-family: $linkFont;
   @include category-btn;
-  height: 100px;
+  height: 70px;
+  @include breakpoint(medium) {
+    height: 100px;
+}
+
   @include calc(width, ("100% - 12px"));
   svg {
     margin-bottom: 0.3em;
@@ -72,9 +32,9 @@
     &:hover {
       @include transparent-backgound($yellow, 0);
       @include box-shadow(0, 0, 0, 1px, $yellow, true);
-      color: black;
+      color: $black;
       svg {
-        stroke: black;
+        stroke: $black;
       }
     }
   }
@@ -82,9 +42,9 @@
     @include transparent-backgound($blue, 1);
     &:hover {
       @include transparent-backgound($blue, 0.5);
-      color: black;
+      color: $black;
       svg {
-        stroke: black;
+        stroke: $black;
       }
     }
   }
@@ -92,9 +52,9 @@
     @include transparent-backgound($aqua, 1);
     &:hover {
       @include transparent-backgound($aqua, 0.5);
-      color: black;
+      color: $black;
       svg {
-        stroke: black;
+        stroke: $black;
       }
     }
   }
@@ -102,9 +62,9 @@
     @include transparent-backgound($red, 1);
     &:hover {
       @include transparent-backgound($red, 0.5);
-      color: black;
+      color: $black;
       svg {
-        stroke: black;
+        stroke: $black;
       }
     }
   }
@@ -113,9 +73,9 @@
     @include transparent-backgound($gray, 0);
     &:hover {
       @include transparent-backgound($gray, 1);
-      color: white;
+      color: $white;
       svg {
-        stroke: white;
+        stroke: $white;
       }
     }
   }
@@ -124,11 +84,10 @@
     &:hover {
       @include transparent-backgound($green, 0);
       @include box-shadow(0, 0, 0, 1px, $green, true);
-      color: black;
+      color: $black;
       svg {
-        stroke: black;
+        stroke: $black;
       }
     }
   }
 } 
->>>>>>> d0931e5a2a51ee82af3e63590daa8000e641276c
