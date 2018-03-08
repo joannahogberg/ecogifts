@@ -1,15 +1,16 @@
 @import "../../styles/library";
 .category-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  text-align: center;
-  justify-content: center;
-  @include breakpoint(medium) {
-    & .wide {
-      grid-column-end: span 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    text-align: center;
+    justify-content: center;
+    @include breakpoint(medium) {
+        & .wide {
+            grid-column-end: span 2;
+        }
     }
   }
-}
+
 .category-item {
   @include flexbox;
   flex-direction: column;

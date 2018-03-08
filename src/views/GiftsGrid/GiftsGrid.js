@@ -62,7 +62,7 @@ class GiftsGrid extends Component {
     const { showForm } = this.state;
     const {gifts}=this.props;
     const btnText = showForm ? "DÖLJ FORMULÄR" : "PRESENTTIPSGENERATOR";
-    // console.log(this.props)
+    console.log(this.props)
     const showBorder = showForm ? "gift-generator-wrapper border" : "gift-generator-wrapper" ;
 
     return <div>
@@ -82,7 +82,8 @@ class GiftsGrid extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  gifts: getVisibleGifts(state.gifts, state.visibilityFilter)
+  gifts: getVisibleGifts(state.gifts, state.visibilityFilter),
+  favorites: state.favorites
 })
 
 function mapDispatchToProps(dispatch) {
