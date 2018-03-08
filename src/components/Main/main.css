@@ -1,6 +1,6 @@
 /* Sass variables*/
-/*------------- Heading mixins*/
 /*------------- Breakpoints mixin*/
+/*------------- Heading mixins*/
 /*------------- Flexbox mixins*/
 /*------------- Flexbox center mixin*/
 html,
@@ -55,7 +55,7 @@ main {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
-  @media (min-width: 800px) {
+  @media (min-width: 1024px) {
     main {
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
@@ -69,7 +69,7 @@ main {
 
 .container {
   width: 100%; }
-  @media (min-width: 800px) {
+  @media (min-width: 1024px) {
     .container {
       width: -webkit-calc(100% - 15em);
       width: -moz-calc(100% - 15em);

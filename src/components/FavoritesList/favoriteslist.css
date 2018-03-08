@@ -1,6 +1,6 @@
 /* Sass variables*/
-/*------------- Heading mixins*/
 /*------------- Breakpoints mixin*/
+/*------------- Heading mixins*/
 /*------------- Flexbox mixins*/
 /*------------- Flexbox center mixin*/
 .side-bar {
@@ -21,7 +21,7 @@
   width: 100%;
   margin: 2em 0;
   border-top: 1px solid #536676; }
-  @media (min-width: 800px) {
+  @media (min-width: 1024px) {
     .side-bar {
       width: 15em;
       border-top: none;
@@ -65,7 +65,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         margin: 0 0.5em; }
-        @media (min-width: 800px) {
+        @media (min-width: 1024px) {
           .side-bar ul li a {
             width: 8em; } }
       .side-bar ul li svg {

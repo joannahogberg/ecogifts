@@ -1,6 +1,6 @@
 /* Sass variables*/
-/*------------- Heading mixins*/
 /*------------- Breakpoints mixin*/
+/*------------- Heading mixins*/
 /*------------- Flexbox mixins*/
 /*------------- Flexbox center mixin*/
 .category-container {
@@ -36,9 +36,30 @@
   border: 4px solid #fff;
   border-bottom: none;
   padding: 0.3em 0.5em;
-  font-family: "Amatic SC", cursive;
-  font-size: 1.1em;
-  font-weight: 900;
-  letter-spacing: 0.08em;
   width: 100%;
-  height: 100px; }
+  height: 100px;
+  letter-spacing: 0.075em;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 24px; }
+  @media (max-width: 1200px) {
+    .category-item {
+      font-size: 24px; } }
+  @media (max-width: 1024px) {
+    .category-item {
+      font-size: 2.7vw; } }
+  @media (max-width: 768px) {
+    .category-item {
+      font-size: 3.2vw; } }
+  @media (max-width: 640px) {
+    .category-item {
+      font-size: 5vw; } }
+  @media (max-width: 320px) {
+    .category-item {
+      font-size: 18px; } }

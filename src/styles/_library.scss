@@ -12,50 +12,16 @@ $textFont: 'Open Sans Condensed',
 sans-serif;
 $linkFont: 'Amatic SC',
 cursive;
-
-/*------------- Heading mixins*/
-
-@mixin heading {
-    font-family: $linkFont;
-    line-height: 1;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-@mixin head-1 {
-    @include heading;
-    font-size: 2em;
-}
-
-@mixin head-2 {
-    @include heading;
-    font-size: 1.5em;
-}
-
-@mixin head-3 {
-    @include heading;
-    font-size: 1.2em;
-}
-
-@mixin head-4 {
-    @include heading;
-    font-size: 1em;
-}
-
-@mixin head-5 {
-    @include heading;
-    font-size: 0.75em;
-}
-
-@mixin head-6 {
-    @include heading;
-    font-size: 0.5em;
-}
-
+// breakpoint variables
+$xl: 1200px;
+$lg: 1024px;
+$md: 768px;
+$sm: 640px;
+$xs: 320px;
 
 /*------------- Breakpoints mixin*/
 
-$breakpoints: ( 'xxsmall': ( min-width: 360px), 'xsmall': ( min-width: 375px), 'small': ( min-width: 464px), 'medium': ( min-width: 768px), 'large': ( min-width: 800px), 'xlarge': ( min-width: 1200px));
+$breakpoints: ( 'xsmall': ( min-width: $xs), 'small': ( min-width: $sm), 'medium': ( min-width: $md), 'large': ( min-width: $lg), 'xlarge': ( min-width: $xl));
 @mixin breakpoint($name) {
     @if map-has-key($breakpoints, $name) {
         @media #{inspect(map-get($breakpoints, $name))} {
@@ -67,6 +33,80 @@ $breakpoints: ( 'xxsmall': ( min-width: 360px), 'xsmall': ( min-width: 375px), '
     }
 }
 
+// breakpoint mixin for typography
+@mixin bp($mq01: 0, $mq2: false, $maxmin: max-width) {
+    @if $mq2==false {
+        @media ($maxmin: $mq01) {
+            @content;
+        }
+    }
+    @else {
+        @media (min-width: $mq01) and (max-width: $mq2) {
+            @content;
+        }
+    }
+}
+
+// responsive font size mixin
+@mixin font-size-map($font-size-map) {
+    @each $breakpoint,
+    $font-size in $font-size-map {
+        @if $breakpoint==null {
+            font-size: $font-size;
+        }
+        @else {
+            @include bp($breakpoint) {
+                font-size: $font-size;
+            }
+        }
+    }
+}
+
+$h1-font-size: ($xl: 36px, $lg: 5vw, $md: 4.5vw, $sm: 16px, $xs: 32px);
+$category-btn-font-size: (null: 24px, $xl: 24px, $lg: 2.7vw, $md: 3.2vw, $sm: 5vw, $xs: 18px);
+
+/*------------- Heading mixins*/
+
+@mixin heading {
+    letter-spacing: 0.075em;
+    line-height: 1.25em;
+    font-weight: 400;
+    margin: 0;
+}
+
+@mixin category-btn {
+    @include heading;
+    @include transition(all .3s ease-in-out);
+    @include font-size-map($category-btn-font-size);
+}
+
+@mixin head-1 {
+    @include heading;
+    @include font-size-map($h1-font-size);
+}
+
+@mixin head-2 {
+    @include heading;
+}
+
+@mixin head-3 {
+    @include heading;
+}
+
+@mixin head-4 {
+    @include heading;
+}
+
+// @mixin head-5 {
+//     @include heading;
+//     font-size: $mod_1*$mod_1*$mod_1*$mod_1 *0.2em;
+//     @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+// }
+// @mixin head-6 {
+//     @include heading;
+//     font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1em;
+//     @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+// }
 @mixin calc($prop, $val) {
     @each $pre in -webkit-,
     -moz-,
@@ -218,4 +258,12 @@ $breakpoints: ( 'xxsmall': ( min-width: 360px), 'xsmall': ( min-width: 375px), '
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
 }
