@@ -52,6 +52,7 @@
     flex: 1 0 auto;
     padding: 0.5em; }
     .gift-wrapper .gift-content-wrap .gift-heading {
+      word-break: break-all;
       letter-spacing: 0.075em;
       line-height: 1.25em;
       font-weight: 400;

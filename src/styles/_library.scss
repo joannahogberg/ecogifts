@@ -68,6 +68,7 @@ $category-btn-font-size: (null: 24px, $xl: 24px, $lg: 2.7vw, $md: 3.2vw, $sm: 5v
 /*------------- Heading mixins*/
 
 @mixin heading {
+    word-break: break-all;
     letter-spacing: 0.075em;
     line-height: 1.25em;
     font-weight: 400;
