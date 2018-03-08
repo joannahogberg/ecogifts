@@ -1,19 +1,29 @@
 @import "../../styles/library";
-
-.checkbox-field {
-  display: flex;
-  list-style-type: none;
-  width: 180px;
-}
-
 .form-group {
-  position: relative;
-  border-top: 1px solid $yellow;
-  padding: 0.4em;
-  @include flexbox;
-  @include flex-direction(row);
-  @include flex-wrap(wrap);
+    position: relative;
+    border-top: 1px solid $yellow;
+    padding: 1em 0.4em 0.4em;
+    @include transition(all .3s ease-in-out);
+    @include flexbox;
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    .checkbox-field {
+        display: block;
+        list-style-type: none;
+        width: 30%;
+        @include breakpoint(medium) {
+            width: 20%;
+        }
+    }
+    .single-checkbox[type="checkbox"] {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0.3em 0.5em 0 0;
+        width: 1.8em;
+        height: 1.8em;
+    }
 }
+
 .checkbox-form-icon {
-  align-items: right;
+    align-items: right;
 }

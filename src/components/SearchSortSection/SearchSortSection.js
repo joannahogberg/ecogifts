@@ -4,12 +4,12 @@ import SortSelect from '../SortSelect/SortSelect';
 import './searchsortsection.css';
 
 function SearchSortSection() {
-  return (
-    <section className="search-sort-section">
-   <SearchBar />
-        <SortSelect />
-    </section>
-  );
+    return (
+        <section className="search-sort-section">
+            <SearchBar />
+            <SortSelect />
+        </section>
+    );
 }
 
 export default SearchSortSection;

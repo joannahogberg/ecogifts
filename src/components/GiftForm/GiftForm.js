@@ -51,9 +51,7 @@ const materialOptions = [
   { id: 13, label: "Glas", value: "glass" },
   { id: 14, label: "Övriga material", value: "other" },
   { id: 15, label: "Kork", value: "cork" },
-  { id: 16, label: "Gåvobevis & Presentkort", value: "giftcard" },
-  { id: 17, label: "Lakrits", value: "liquorice" },
-  { id: 18, label: "Choklad", value: "chocolate" }
+  { id: 16, label: "Gåvobevis & Presentkort", value: "giftcard" }
 ];
 
 const receiverOptions = [
@@ -68,19 +66,19 @@ const GiftForm = ({ onSubmit, handleSubmit }) => {
   console.log(handleSubmit);
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="checkbox-form">
+      <div className="checkbox-group">
         <label htmlFor="interests">Intressen</label>
         <MultiCheckboxField options={interestsOptions} name="interests" />
       </div>
-      <div className="checkbox-form">
+      <div className="checkbox-group">
         <label htmlFor="personality">Personlighet</label>
         <MultiCheckboxField options={personalityOptions} name="personality" />
       </div>
-      <div className="checkbox-form">
+      <div className="checkbox-group">
         <label htmlFor="material">Tillverkad av</label>
         <MultiCheckboxField options={materialOptions} name="material" />
       </div>
-      <div className="checkbox-form">
+      <div className="checkbox-group">
         <label htmlFor="receiver">Presenten skall vara till en</label>
         <MultiCheckboxField options={receiverOptions} name="receiver" />
       </div>

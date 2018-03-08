@@ -1,16 +1,18 @@
 @import '../../styles/library';
-.checkbox-form{
+.checkbox-group {
+    @include bread-link;
     @include flexbox;
     @include flex-direction(column);
     margin: 1em 0;
+    @include transition(all .3s ease-in-out);
     @include breakpoint(medium) {
         @include flex-direction(column);
         @include justify-content(space-between);
     }
-    label:nth-child(1){
-        margin-bottom:.5em;
+    label:nth-child(1) {
+        margin-bottom: .5em;
     }
-    label{
-        padding:.5em 0 0 0;
+    label {
+        padding: .5em 0 0 0;
     }
 }

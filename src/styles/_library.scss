@@ -63,8 +63,9 @@ $breakpoints: ( 'xsmall': ( min-width: $xs), 'small': ( min-width: $sm), 'medium
 }
 
 $h1-font-size: ($xl: 36px, $lg: 5vw, $md: 4.5vw, $sm: 16px, $xs: 32px);
-$category-btn-font-size: (null: 24px, $xl: 24px, $lg: 2.7vw, $md: 3.2vw, $sm: 5vw, $xs: 18px);
-$gift-heading-font-size: (null: 18px, $xl: 18px, $lg: 1.5vw, $md: 2vw, $sm: 2.5vw, $xs: 12px);
+$category-btn-font-size: (null: 24px, $xl: 24px, $lg: 2.7vw, $md: 3.2vw, $sm: 4.5vw, $xs: 18px);
+$gift-heading-font-size: (null:18px, $md: 18px, $sm: 16px, $xs: 14px);
+$bread-link-font-size: (null: 16px, $sm: 14px, $xs: 12px);
 
 /*------------- Heading mixins*/
 
@@ -77,6 +78,7 @@ $gift-heading-font-size: (null: 18px, $xl: 18px, $lg: 1.5vw, $md: 2vw, $sm: 2.5v
 }
 
 @mixin category-btn {
+    font-family: $linkFont;
     letter-spacing: 0.075em;
     line-height: 1.25em;
     font-weight: 900;
@@ -89,6 +91,16 @@ $gift-heading-font-size: (null: 18px, $xl: 18px, $lg: 1.5vw, $md: 2vw, $sm: 2.5v
     @include heading;
     @include transition(all .3s ease-in-out);
     @include font-size-map($gift-heading-font-size);
+}
+
+@mixin bread-link {
+    word-break: break-all;
+    letter-spacing: 0.075em;
+    line-height: 1.25em;
+    font-weight: 400;
+    font-family: $textFont;
+    @include transition(all .3s ease-in-out);
+    @include font-size-map($bread-link-font-size);
 }
 
 @mixin head-1 {
@@ -108,16 +120,6 @@ $gift-heading-font-size: (null: 18px, $xl: 18px, $lg: 1.5vw, $md: 2vw, $sm: 2.5v
     @include heading;
 }
 
-// @mixin head-5 {
-//     @include heading;
-//     font-size: $mod_1*$mod_1*$mod_1*$mod_1 *0.2em;
-//     @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
-// }
-// @mixin head-6 {
-//     @include heading;
-//     font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1em;
-//     @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
-// }
 @mixin calc($prop, $val) {
     @each $pre in -webkit-,
     -moz-,

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { setVisibilityFilter } from '../../actions/actionCreators';
 import * as types from "../../actions/actionTypes";
 import { Sliders } from "react-feather";
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import './sortselect.css';
 
 
@@ -29,6 +29,14 @@ class SortSelect extends Component {
     );
   }
 }
+
+SortSelect.defaultsProps = {
+  onChange: () => { }
+};
+
+SortSelect.propTypes = {
+  onChange: PropTypes.func.isRequired
+};
 
 function mapStateToProps(state) {
   return {

@@ -19,12 +19,49 @@
   -moz-align-content: flex-start;
   -ms-align-content: flex-start;
   align-content: flex-start;
-  border: 1px solid black;
-  width: 22%;
-  margin: 0.5em; }
+  border: 1px solid #6B8B91;
+  width: -webkit-calc(50% - 1.4em);
+  width: -moz-calc(50% - 1.4em);
+  width: -o-calc(50% - 1.4em);
+  width: calc(50% - 1.4em);
+  margin: 0.6em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  @media (min-width: 640px) {
+    .gift-wrapper {
+      width: -webkit-calc(33% - 1.4em);
+      width: -moz-calc(33% - 1.4em);
+      width: -o-calc(33% - 1.4em);
+      width: calc(33% - 1.4em); } }
+  @media (min-width: 768px) {
+    .gift-wrapper {
+      width: -webkit-calc(25% - 1.4em);
+      width: -moz-calc(25% - 1.4em);
+      width: -o-calc(25% - 1.4em);
+      width: calc(25% - 1.4em); } }
+  @media (min-width: 1024px) {
+    .gift-wrapper {
+      width: -webkit-calc(33% - 1.4em);
+      width: -moz-calc(33% - 1.4em);
+      width: -o-calc(33% - 1.4em);
+      width: calc(33% - 1.4em); } }
+  @media (min-width: 1200px) {
+    .gift-wrapper {
+      width: -webkit-calc(25% - 1.4em);
+      width: -moz-calc(25% - 1.4em);
+      width: -o-calc(25% - 1.4em);
+      width: calc(25% - 1.4em); } }
   .gift-wrapper .gift-photo-wrap {
     width: 100%;
-    height: 13em;
+    height: 15em;
+    margin: 1em;
+    width: -webkit-calc(100% - 2em);
+    width: -moz-calc(100% - 2em);
+    width: -o-calc(100% - 2em);
+    width: calc(100% - 2em);
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -40,6 +77,13 @@
     justify-content: center;
     -ms-flex-pack: center;
     overflow: hidden; }
+    @media (min-width: 768px) {
+      .gift-wrapper .gift-photo-wrap {
+        margin: 1em 2em;
+        width: -webkit-calc(100% - 4em);
+        width: -moz-calc(100% - 4em);
+        width: -o-calc(100% - 4em);
+        width: calc(100% - 4em); } }
   .gift-wrapper .gift-content-wrap {
     -webkit-box-flex: 1 0 auto;
     -moz-box-flex: 1 0 auto;
@@ -59,21 +103,15 @@
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       font-size: 18px; }
-      @media (max-width: 1200px) {
-        .gift-wrapper .gift-content-wrap .gift-heading {
-          font-size: 18px; } }
-      @media (max-width: 1024px) {
-        .gift-wrapper .gift-content-wrap .gift-heading {
-          font-size: 1.5vw; } }
       @media (max-width: 768px) {
         .gift-wrapper .gift-content-wrap .gift-heading {
-          font-size: 2vw; } }
+          font-size: 18px; } }
       @media (max-width: 640px) {
         .gift-wrapper .gift-content-wrap .gift-heading {
-          font-size: 2.5vw; } }
+          font-size: 16px; } }
       @media (max-width: 320px) {
         .gift-wrapper .gift-content-wrap .gift-heading {
-          font-size: 12px; } }
+          font-size: 14px; } }
   .gift-wrapper .control-btns {
     display: -webkit-box;
     display: -moz-box;
@@ -89,5 +127,35 @@
     -moz-align-items: flex-end;
     -ms-align-items: flex-end;
     align-items: flex-end;
-    background: #CCA240;
-    padding: 0.5em; }
+    word-break: break-all;
+    letter-spacing: 0.075em;
+    line-height: 1.25em;
+    font-weight: 400;
+    font-family: "Open Sans Condensed", sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    border-top: 1px solid #6B8B91; }
+    @media (max-width: 640px) {
+      .gift-wrapper .control-btns {
+        font-size: 14px; } }
+    @media (max-width: 320px) {
+      .gift-wrapper .control-btns {
+        font-size: 12px; } }
+    .gift-wrapper .control-btns .btn-link {
+      display: block;
+      padding: 0.5em;
+      width: -webkit-calc(100% - 1em);
+      width: -moz-calc(100% - 1em);
+      width: -o-calc(100% - 1em);
+      width: calc(100% - 1em); }
+      .gift-wrapper .control-btns .btn-link svg {
+        display: inline-block;
+        vertical-align: middle; }
+    .gift-wrapper .control-btns .btn-link:nth-child(2) {
+      text-align: right;
+      background: rgb(red(#6B8B91), 139, 145 );
+      background: rgba(107, 139, 145, 0.5); }

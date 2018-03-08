@@ -10,7 +10,6 @@ import './searchbar.css';
 class SearchBar extends Component {
   render() {
     const { search } = this.props;
-
     return (
       <div className="search-bar-wrapper">
       <Search size={16}/>
@@ -25,12 +24,10 @@ class SearchBar extends Component {
 }
 
 SearchBar.defaultsProps = {
-  placeholder: "Sök present",
   search: () => { }
 };
 
 SearchBar.propTypes = {
-  placeholder: PropTypes.string,
   search: PropTypes.func.isRequired
 };
 

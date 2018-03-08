@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ChevronsRight } from "react-feather";
+import { ChevronRight } from "react-feather";
 import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
@@ -35,9 +35,10 @@ class Gift extends Component {
         <div className="control-btns">
             <Link to={`/view/${gift.id}`} className="btn-link" >
               Mer info
+              <ChevronRight color="grey" size={16} />
             </Link>
             <a href={gift.href} target="_blank" className="btn-link">
-              Gå till butik <ChevronsRight color="grey" size={24} />
+              Gå till butik <ChevronRight color="grey" size={16} />
             </a>
           </div>
       </div>

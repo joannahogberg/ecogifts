@@ -19,7 +19,7 @@
         margin: 0 0 0 0.3em;
         border: none;
         font-family: $linkFont;
-        font-size: 1em;
+        @include bread-link;
         color: transparent;
         text-shadow: 0 0 0 gray;
         border-bottom: 1px solid $blue;
@@ -30,9 +30,6 @@
         &:hover {
             font-weight: 900;
             @include transition(all .3s ease-in-out);
-        }
-        @include breakpoint(medium) {
-            font-size: 1.2em;
         }
     }
 }

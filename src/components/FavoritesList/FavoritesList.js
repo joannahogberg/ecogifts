@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types'
 import { X } from "react-feather";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
@@ -23,7 +24,6 @@ onClick=(giftId)=>{
     const logoSmall = require('../../media/logo/ecoLogo_leaf.png');
     const { favorites } = this.props;
     const heading = favorites.length > 0 ? "MINA FAVORITER": "";
-console.log(this.props)
     let giftsToRender = favorites.map(gift => {
       return (
         <li key={gift.id}>
@@ -40,6 +40,28 @@ console.log(this.props)
       </aside>;
   }
 }
+
+FavoritesList.propTypes = {
+  favorites: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      productName: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+      description: PropTypes.string.isRequired,
+      src: PropTypes.string.isRequired,
+      href: PropTypes.string.isRequired,
+      interest: PropTypes.array.isRequired,
+      personality: PropTypes.array.isRequired,
+      material: PropTypes.array.isRequired,
+      receiver: PropTypes.array.isRequired
+    })
+  ),
+  favoritesActions: PropTypes.shape({
+    getFromLocalStorage: PropTypes.func.isRequired,
+    removeGiftFromList: PropTypes.func.isRequired,
+    fetchSingleGift: PropTypes.func.isRequired
+  }).isRequired
+};
 
 function mapStateToProps(state) {
   return {

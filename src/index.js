@@ -11,7 +11,7 @@ import store, {history} from './store/configureStore';
 
 const router = (
     <Provider store={store} >
-    <Router history={history}>
+    <Router history={history} onUpdate={() => window.scrollTo(0, 0)}>
     <Route path="/" component={App} />
     </Router>
     </Provider>

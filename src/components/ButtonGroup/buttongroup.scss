@@ -12,15 +12,16 @@
 }
 
 .category-item {
-    @include flexbox;
     flex-direction: column;
     @include flex-center();
     border: 6px solid $white;
     border-bottom: 3px solid $white;
-    font-family: $linkFont;
     @include category-btn;
-    height: 100px;
+    height: 4.1em;
     @include calc(width, ("100% - 12px"));
+    .anchor-link {
+        width: 100%;
+    }
     svg {
         margin-bottom: 0.3em;
     }

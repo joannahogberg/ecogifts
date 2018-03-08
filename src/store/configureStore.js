@@ -4,7 +4,7 @@ import thunk from 'redux-thunk'
 import createHistory from 'history/createBrowserHistory'
 import rootReducer from '../reducers/index'
 import * as types from '../actions/actionTypes'
-import * as giftsActions from '../actions/actionCreators'
+// import * as giftsActions from '../actions/actionCreators'
 
 export const history = createHistory()
 

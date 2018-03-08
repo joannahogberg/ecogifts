@@ -4,22 +4,25 @@
     @include align-items(center);
     border-bottom: 1px solid $blue;
     position: relative;
-    padding: 0 0 0.5em;
-    margin: 0 0 0.5em;
-    width: 5.5em;
+    padding: 0 0 0.7em;
+    margin: 1.5em 0;
+    width: 9em;
+    @include breakpoint(medium) {
+        margin: 0 0 0.2em;
+    }
     svg {
         stroke: $blue;
     }
     .sort-select {
         position: absolute;
         left: 0;
-        padding: 0 1.4em;
+        padding: 0 0 0 1.4em;
         border: none;
         box-shadow: none;
         background: transparent;
         background-image: none;
         -webkit-appearance: none;
+        @include bread-link;
         font-family: $linkFont;
-        font-size: 1em;
     }
 }
