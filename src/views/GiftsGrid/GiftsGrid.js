@@ -1,18 +1,15 @@
 import React, { Component } from "react";
 import {bindActionCreators} from 'redux';
-import PropTypes from "prop-types";
-import Gift from "../../components/Gift/Gift";
+// import PropTypes from "prop-types";
 import ButtonGroup from "../../components/ButtonGroup/ButtonGroup";
 import GiftFormContainer from "../../components/GiftFormContainer/GiftFormContainer";
+import GiftsList from "../../components/GiftsList/GiftsList";
 import SearchBar from '../../components/SearchBar/SearchBar';
 import SortSelect from '../../components/SortSelect/SortSelect';
-// import { fetchGifts, } from "../../actions/actionCreators";
 import * as giftsActions from '../../actions/actionCreators';
 import * as types from "../../actions/actionTypes";
 import { connect } from "react-redux";
 import './giftsgrid.css';
-
-
 
 const getVisibleGifts = (gifts, filter) => {
   switch (filter) {
@@ -40,7 +37,6 @@ const getVisibleGifts = (gifts, filter) => {
   }
 }
 
-
 class GiftsGrid extends Component {
 
   constructor() {
@@ -49,11 +45,9 @@ class GiftsGrid extends Component {
       showForm: false
     }
   }
-
   componentWillMount() {
     this.props.giftsActions.fetchGifts();
   }
-
 
   showForm = () => {
     if (!this.state.showForm) {
@@ -61,59 +55,31 @@ class GiftsGrid extends Component {
     } else {
       this.setState({ showForm: false })
     }
-
   }
-
 
   render() {
     const { showForm } = this.state;
-
+    const {gifts}=this.props;
     const btnText = showForm ? "DÖLJ FORMULÄR" : "PRESENTTIPSGENERATOR";
-
     console.log(this.props)
     return (
       <div>
-        <div className="search-group">
-          <SearchBar />
-        </div>
+        <SearchBar />
         <ButtonGroup />
         <button className="gift-generator-btn" onClick={() => this.showForm()} >{btnText}</button>
         {showForm && (
           <GiftFormContainer />
         )}
         <SortSelect />
-        <div className="gifts-grid">
-
-          {this.props.gifts.map((gift, i) => (
-            <Gift {...this.props} key={i} i={i} gift={gift} />
-          ))}
-        </div>
+        <GiftsList gifts={gifts}/>
       </div>
     );
   }
 }
 
-GiftsGrid.propTypes = {
-  gifts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      productName: PropTypes.string.isRequired,
-      price: PropTypes.number.isRequired,
-      description: PropTypes.string.isRequired,
-      src: PropTypes.string.isRequired,
-      href: PropTypes.string.isRequired,
-      interest: PropTypes.array.isRequired,
-      personality: PropTypes.array.isRequired,
-      material: PropTypes.array.isRequired,
-      receiver: PropTypes.array.isRequired
-    })
-  )
-};
-
 const mapStateToProps = (state) => ({
   gifts: getVisibleGifts(state.gifts, state.visibilityFilter)
 })
-
 
 function mapDispatchToProps(dispatch) {
   return {
