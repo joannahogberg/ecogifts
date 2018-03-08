@@ -10,6 +10,8 @@ import * as giftsActions from '../../actions/actionCreators';
 import * as types from "../../actions/actionTypes";
 import { connect } from "react-redux";
 import './giftsgrid.css';
+// import { gift } from "react-feather";
+import PresentIcon from '../../components/PresentIcon/PresentIcon'
 
 const getVisibleGifts = (gifts, filter) => {
   switch (filter) {
@@ -62,18 +64,18 @@ class GiftsGrid extends Component {
     const {gifts}=this.props;
     const btnText = showForm ? "DÖLJ FORMULÄR" : "PRESENTTIPSGENERATOR";
     console.log(this.props)
-    return (
-      <div>
+    return <div>
         <SearchBar />
         <ButtonGroup />
-        <button className="gift-generator-btn" onClick={() => this.showForm()} >{btnText}</button>
-        {showForm && (
-          <GiftFormContainer />
-        )}
+        <div className="gift-generator-wrapper">
+          <div className="gift-generator-btn" onClick={() => this.showForm()}>
+            {btnText} <PresentIcon/>
+          </div>
+        </div>
+        {showForm && <GiftFormContainer />}
         <SortSelect />
-        <GiftsList gifts={gifts}/>
-      </div>
-    );
+        <GiftsList gifts={gifts} />
+      </div>;
   }
 }
 

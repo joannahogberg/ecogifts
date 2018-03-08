@@ -1,1 +1,30 @@
-@import '../../styles/library';
+@import "../../styles/library";
+
+.gift-generator-wrapper {
+  @include flex-center();
+}
+.gift-generator-btn {
+    border: 1px solid $green;
+    @include transparent-backgound($green, 0);
+    svg{
+        margin-left:.2em;
+    }
+    &:hover{
+        @include transparent-backgound($green, 1);
+        color: white;
+
+        svg{
+            stroke: white;
+            margin-left:.2em;
+        }
+    }
+    @include flex-center();
+    padding: 0.3em 0.5em;
+    font-family: $linkFont;
+    margin-top: 1em;
+    font-size: 1.1em;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    width: 60%;
+    height: 50px;
+  }

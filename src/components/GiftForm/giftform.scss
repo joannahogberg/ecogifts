@@ -1,6 +1,7 @@
 @import '../../styles/library';
 .checkbox-form{
-    // background:pink;
+    // background:$green;
+    border: 1px solid $green;
     @include flexbox;
     @include flex-direction(column);
     margin: 1em 0;
@@ -10,5 +11,8 @@
     }
     label:nth-child(1){
         margin-bottom:.5em;
+    }
+    label{
+        padding:.5em 0 0 .8em;
     }
 }

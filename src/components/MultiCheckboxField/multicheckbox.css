@@ -3,15 +3,17 @@
 /*------------- Breakpoints mixin*/
 /*------------- Flexbox mixins*/
 /*------------- Flexbox center mixin*/
+/* box-shadow  
+ @include box-shadow(0px, 0px, 0px, 2px, rgba(0, 0, 0, .5)), true; */
 .checkbox-field {
   display: flex;
   list-style-type: none;
-  width: 180px;
-  background: pink; }
+  width: 180px; }
 
 .form-group {
   position: relative;
-  border: 1px solid #CCA240;
+  border-top: 1px solid #7A712F;
+  background: #fff;
   padding: 0.4em;
   display: -webkit-box;
   display: -moz-box;

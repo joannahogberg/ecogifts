@@ -3,6 +3,8 @@
 /*------------- Breakpoints mixin*/
 /*------------- Flexbox mixins*/
 /*------------- Flexbox center mixin*/
+/* box-shadow  
+ @include box-shadow(0px, 0px, 0px, 2px, rgba(0, 0, 0, .5)), true; */
 .category-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -11,6 +13,26 @@
   @media (min-width: 768px) {
     .category-container .wide {
       grid-column-end: span 2; } }
+  .category-container .category-item:nth-child(1) {
+    background: #7A712F; }
+  .category-container .category-item:nth-child(2) {
+    background: #536676; }
+  .category-container .category-item:nth-child(3) {
+    background: #6B8B91; }
+  .category-container .category-item:nth-child(4) {
+    background: #AB535B; }
+  .category-container .category-item:nth-child(5) {
+    -webkit-box-shadow: inset 0 0 0 1px #646464;
+    -moz-box-shadow: inset 0 0 0 1px #646464;
+    box-shadow: inset 0 0 0 1px #646464;
+    background: rgb(red(#646464), 100, 100 );
+    background: rgba(100, 100, 100, 0); }
+    .category-container .category-item:nth-child(5):hover {
+      background: rgb(red(#646464), 100, 100 );
+      background: #646464;
+      color: white; }
+      .category-container .category-item:nth-child(5):hover svg {
+        stroke: white; }
 
 .category-item {
   display: -webkit-box;
@@ -33,12 +55,15 @@
   -ms-align-items: center;
   align-items: center;
   background: #CCA240;
-  border: 4px solid #fff;
+  border: 6px solid #fff;
   border-bottom: none;
-  padding: 0.3em 0.5em;
   font-family: "Amatic SC", cursive;
   font-size: 1.1em;
   font-weight: 900;
   letter-spacing: 0.08em;
   width: 100%;
-  height: 100px; }
+  height: 100px;
+  width: -webkit-calc(100% - 8px);
+  width: -moz-calc(100% - 8px);
+  width: -o-calc(100% - 8px);
+  width: calc(100% - 8px); }
