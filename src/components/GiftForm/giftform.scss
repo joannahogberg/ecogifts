@@ -1,5 +1,6 @@
 @import '../../styles/library';
 .checkbox-form{
+    // background:pink;
     @include flexbox;
     @include flex-direction(column);
     margin: 1em 0;

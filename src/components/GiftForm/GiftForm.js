@@ -50,7 +50,7 @@ return <form onSubmit={handleSubmit(onSubmit)}>
        </div>
 
 
-      <button type="submit" className="filter-btn">
+      <button type="submit" className="gift-generator-btn">
         Klicka för att generera presenttips
       </button>
     </form>;

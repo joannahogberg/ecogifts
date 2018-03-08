@@ -38,3 +38,19 @@
   -moz-align-content: flex-start;
   -ms-align-content: flex-start;
   align-content: flex-start; }
+
+.gift-generator-btn {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.1em;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  height: 35px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background: rgb(red(#CCA240), 162, 64 );
+  background: #cca240; }
+  .gift-generator-btn:hover {
+    background: rgb(red(#CCA240), 162, 64 );
+    background: rgba(204, 162, 64, 0); }

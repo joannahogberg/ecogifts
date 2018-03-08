@@ -10,11 +10,11 @@ class ButtonGroup extends Component {
   render() {
     return (
       <div className="btn-group">
-        <button onClick={() => this.props.filterByCategory(["outdoor", "travel"])} className="filter-btn">ÄVENTYR & FRITIDSÄLSKAREN</button>
+        <button onClick={() => this.props.filterByCategory(["outdoor", "travel"])} className="filter-btn wide">ÄVENTYR & FRITIDSÄLSKAREN</button>
         <button onClick={() => this.props.filterByCategory(["nature", "animals", "gardening"])} className="filter-btn">NATUR & DJURÄLSKAREN</button>
         <button onClick={() => this.props.filterByCategory(["technology", "music"])} className="filter-btn">TEKNIKNÖRDEN</button>
-        <button onClick={() => this.props.filterByCategory("charity")} className="filter-btn">PRESENTER SOM GÖR SKILLNAD</button> 
-        <button onClick={() => this.props.filterByCategory(["food", "candy"])} className="filter-btn">FÖR MATENTUSIASTEN</button> 
+        <button onClick={() => this.props.filterByCategory("charity")} className="filter-btn wide">PRESENTER SOM GÖR SKILLNAD</button> 
+        <button onClick={() => this.props.filterByCategory(["food", "candy"])} className="filter-btn wide">FÖR MATENTUSIASTEN</button> 
         <button onClick={() => this.props.filterByCategory(200)} className="filter-btn">PRESENTER UNDER 200</button> 
       </div>
     );

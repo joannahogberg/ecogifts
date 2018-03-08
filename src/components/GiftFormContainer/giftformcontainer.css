@@ -1,2 +1,2 @@
-.form-container {
-  margin: .5em; }
+.form-container p:nth-child(1) {
+  text-align: center; }

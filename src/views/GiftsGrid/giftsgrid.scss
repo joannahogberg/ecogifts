@@ -1,14 +1,34 @@
-@import '../../styles/library';
+@import "../../styles/library";
+
 .search-group {
-    @include flexbox;
-    @include flex-direction(row);
-    @include justify-content(space-between);
+  @include flexbox;
+  @include flex-direction(row);
+  @include justify-content(space-between);
 }
 
 .gifts-grid {
-    @include flexbox;
-    // @include flex-direction(row);
-    @include flex-wrap(wrap);
-    @include justify-content(center);
-    @include align-content(flex-start);
+  @include flexbox;
+  // @include flex-direction(row);
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+  @include align-content(flex-start);
+}
+
+.gift-generator-btn {
+  font-family: $linkFont;
+  font-size: 1.1em;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  height: 35px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  
+  @include transparent-backgound($yellow, 1);
+
+  &:hover{
+    @include transparent-backgound($yellow, 0);
+
+  }
 }

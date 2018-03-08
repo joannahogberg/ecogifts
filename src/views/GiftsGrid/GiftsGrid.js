@@ -13,6 +13,7 @@ import { connect } from "react-redux";
 import './giftsgrid.css';
 
 
+
 const getVisibleGifts = (gifts, filter) => {
   switch (filter) {
     case types.SHOW_ALL:
@@ -72,11 +73,11 @@ class GiftsGrid extends Component {
     console.log(this.props)
     return (
       <div>
-        <div className="search-goup">
+        <div className="search-group">
           <SearchBar />
         </div>
         <ButtonGroup />
-        <button onClick={() => this.showForm()} className="filter-btn">{btnText}</button>
+        <button className="gift-generator-btn" onClick={() => this.showForm()} >{btnText}</button>
         {showForm && (
           <GiftFormContainer />
         )}

@@ -1,3 +1,6 @@
 .form-container{
-margin:.5em;
+// background:yellow;
+& p:nth-child(1){
+    text-align: center;
+}
 }

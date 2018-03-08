@@ -1,17 +1,20 @@
 @import "../../styles/library";
 
 .checkbox-field {
+  display: flex;
   list-style-type: none;
-  width: 150px;
-
-  @include breakpoint(medium) {
-    width: 200px;
-  }
-
+  width: 180px;
+  background: pink;
 }
 
 .form-group {
+  position: relative;
+  border: 1px solid $yellow;
+  padding: 0.4em;
   @include flexbox;
   @include flex-direction(row);
   @include flex-wrap(wrap);
+}
+.checkbox-form-icon {
+  align-items: right;
 }
