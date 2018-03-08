@@ -1,6 +1,6 @@
 /* Sass variables*/
-/*------------- Heading mixins*/
 /*------------- Breakpoints mixin*/
+/*------------- Heading mixins*/
 /*------------- Flexbox mixins*/
 /*------------- Flexbox center mixin*/
 /* box-shadow  
@@ -42,6 +42,6 @@
       border-bottom: 1px solid #536676;
       padding: 0 0 0 0.2em;
       font-weight: 900; }
-    @media (min-width: 800px) {
+    @media (min-width: 1024px) {
       .search-bar-wrapper .search-input {
         border-bottom: none; } }

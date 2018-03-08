@@ -1,6 +1,6 @@
 /* Sass variables*/
-/*------------- Heading mixins*/
 /*------------- Breakpoints mixin*/
+/*------------- Heading mixins*/
 /*------------- Flexbox mixins*/
 /*------------- Flexbox center mixin*/
 /* box-shadow  
@@ -54,7 +54,25 @@
     flex: 1 0 auto;
     padding: 0.5em; }
     .gift-wrapper .gift-content-wrap .gift-heading {
-      font-size: 1em; }
+      letter-spacing: 0.075em;
+      line-height: 1.25em;
+      font-weight: 400;
+      margin: 0; }
+      @media (max-width: 1200px) {
+        .gift-wrapper .gift-content-wrap .gift-heading {
+          font-size: 36px; } }
+      @media (max-width: 1024px) {
+        .gift-wrapper .gift-content-wrap .gift-heading {
+          font-size: 5vw; } }
+      @media (max-width: 768px) {
+        .gift-wrapper .gift-content-wrap .gift-heading {
+          font-size: 4.5vw; } }
+      @media (max-width: 640px) {
+        .gift-wrapper .gift-content-wrap .gift-heading {
+          font-size: 16px; } }
+      @media (max-width: 320px) {
+        .gift-wrapper .gift-content-wrap .gift-heading {
+          font-size: 32px; } }
   .gift-wrapper .control-btns {
     display: -webkit-box;
     display: -moz-box;
