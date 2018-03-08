@@ -20,14 +20,17 @@ body {
 .wrapper {
     letter-spacing: 0.05em;
     font-family: $textFont;
-    @include calc( width, '100% - 4em');
+    padding: 1em;
+    @include calc( width, '100% - 2em');
     max-width: 1200px;
     margin: 0 auto;
     @include flexbox;
     @include flex-direction(column);
-    padding: 1em 2em 1em;
     font-size: 1.6em;
-    // background: pink;
+    @include breakpoint(small) {
+        padding: 1em 2em 1em;
+        @include calc( width, '100% - 4em');
+    }
 }
 
 button,

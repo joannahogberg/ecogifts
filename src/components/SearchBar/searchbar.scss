@@ -1,17 +1,21 @@
 @import '../../styles/library';
 .search-bar-wrapper {
     @include flexbox;
-    // border-bottom: 1px solid $blue;
     padding: 0 0 0.3em;
     @include align-items(center);
-    height: 2em;
+    @include transition(all .3s ease-in-out);
+    height: 2.5em;
+    width: 100%;
+    @include breakpoint(medium) {
+        width: 15em;
+    }
     svg {
         stroke: $blue;
     }
     .search-input {
         padding: 0 0 0.1em 0.2em;
-        width: 50%;
-        height: 1.3em;
+        width: 100%;
+        height: 1.5em;
         margin: 0 0 0 0.3em;
         border: none;
         font-family: $linkFont;
@@ -21,16 +25,14 @@
         border-bottom: 1px solid $blue;
         @include placeholder {
             font-family: $linkFont;
-            // font-size: 1em;
         }
         &:focus,
         &:hover {
-            border-bottom: 1px solid $blue;
-            padding: 0 0 0 0.2em;
             font-weight: 900;
+            @include transition(all .3s ease-in-out);
         }
-        @include breakpoint(large) {
-            border-bottom: none;
+        @include breakpoint(medium) {
+            font-size: 1.2em;
         }
     }
 }

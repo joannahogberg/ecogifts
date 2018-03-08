@@ -1,18 +1,27 @@
 @import '../../styles/library';
-@font-face {
-    font-family: 'Mona-Free';
-    src: local('MyFont'), url('../../fonts/Mona-Free.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.logo-link {
-    svg {
-        height: 100px;
-        width: 100%;
+.header-wrapper {
+    margin: 0 0 1em;
+    @include breakpoint(medium) {
+        margin: 0 0 2em;
     }
-    .st1,
-    .leaf {
-        fill: $green;
+    .logo-link {
+        svg {
+            height: 100%;
+            width: 7em;
+            @include transition(all .3s ease-in-out);
+            @include breakpoint(small) {
+                width: 30vw;
+            }
+            @include breakpoint(medium) {
+                width: 25vw;
+            }
+            @include breakpoint(large) {
+                width: 20em;
+            }
+        }
+        .st1,
+        .leaf {
+            fill: $green;
+        }
     }
 }

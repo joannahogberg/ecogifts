@@ -13,7 +13,7 @@ class SearchBar extends Component {
 
     return (
       <div className="search-bar-wrapper">
-      <Search size={14}/>
+      <Search size={16}/>
       <input
         className="search-input"
         placeholder="SÖK PRESENT..."

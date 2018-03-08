@@ -1,0 +1,12 @@
+@import "../../styles/library";
+.search-sort-section {
+    @include flexbox;
+    @include flex-direction(column);
+    @include transition(all .3s ease-in-out);
+    margin: 1em 0;
+    @include breakpoint(medium) {
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        @include align-items(flex-end);
+    }
+}

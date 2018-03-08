@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import {bindActionCreators} from 'redux';
+import { connect } from "react-redux";
 // import PropTypes from "prop-types";
 import ButtonGroup from "../../components/ButtonGroup/ButtonGroup";
 import GiftFormContainer from "../../components/GiftFormContainer/GiftFormContainer";
 import GiftsList from "../../components/GiftsList/GiftsList";
-import SearchBar from '../../components/SearchBar/SearchBar';
-import SortSelect from '../../components/SortSelect/SortSelect';
+import SearchSortSection from '../../components/SearchSortSection/SearchSortSection';
 import * as giftsActions from '../../actions/actionCreators';
 import * as types from "../../actions/actionTypes";
-import { connect } from "react-redux";
 import './giftsgrid.css';
+import PresentIcon from '../../components/PresentIcon/PresentIcon'
 
 const getVisibleGifts = (gifts, filter) => {
   switch (filter) {
@@ -61,19 +61,18 @@ class GiftsGrid extends Component {
     const { showForm } = this.state;
     const {gifts}=this.props;
     const btnText = showForm ? "DÖLJ FORMULÄR" : "PRESENTTIPSGENERATOR";
-    console.log(this.props)
-    return (
-      <div>
-        <SearchBar />
-        <ButtonGroup />
-        <button className="gift-generator-btn" onClick={() => this.showForm()} >{btnText}</button>
-        {showForm && (
-          <GiftFormContainer />
-        )}
-        <SortSelect />
-        <GiftsList gifts={gifts}/>
+    // console.log(this.props)
+    return <div>
+      <ButtonGroup />
+      <div className="gift-generator-wrapper">
+        <div className="gift-generator-btn" onClick={() => this.showForm()}>
+          {btnText} <PresentIcon />
+        </div>
       </div>
-    );
+      {showForm && <GiftFormContainer />}
+      <SearchSortSection />
+      <GiftsList gifts={gifts} />
+    </div>;
   }
 }
 

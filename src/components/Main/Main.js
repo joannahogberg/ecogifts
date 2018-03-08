@@ -7,10 +7,10 @@ import Header from './../Header/Header';
 import FavoritesList from './../FavoritesList/FavoritesList';
 import './main.css';
 
-function Main() {
+function Main(props) {
   return (
     <div className="wrapper">
-      <Header />
+      <Header {...props}/>
       <main>
         <div className="container">
           <Route exact path="/" component={GiftsGrid} />

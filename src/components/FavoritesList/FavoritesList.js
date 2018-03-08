@@ -23,7 +23,7 @@ onClick=(giftId)=>{
     const logoSmall = require('../../media/logo/ecoLogo_leaf.png');
     const { gifts } = this.props;
     const heading = gifts.length > 0 ? "MINA FAVORITER": "";
-console.log(this.props)
+// console.log(this.props)
     let giftsToRender = gifts.map(gift => {
       return (
         <li key={gift.id}>

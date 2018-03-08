@@ -1,12 +1,5 @@
 import * as types from "./actionTypes";
 
-// export function renderRandom() {
-//   return {
-//     type: types.RENDER_RANDOM
-//   };
-// }
-
-
 
 export function filterBySearch(result) {
   return {
@@ -16,24 +9,16 @@ export function filterBySearch(result) {
 }
 
 export function filterBySelect(result) {
-  console.log(result)
+ 
   return {
     type: types.SELECT,
     result
   };
 }
 
-// export function select(value, gifts) {
-//   console.log(value, gifts)
-  
-// return {
-//     type: types.SET_VISIBILITY_FILTER,
-//     filter: types.SHOW_BY_LOW_PRICE
-//   };
-// }
 
 export function search(value) {
-  console.log(value)
+
   return dispatch => {
     fetch("https://ecogifts.herokuapp.com/gifts")
       .then(response =>
@@ -110,10 +95,10 @@ export const filterByCategory = category => {
       .then(response => {
         if (response.status === 200) {
           const state = response.data;
-          console.log(category);
+
           let newState1;
           if (category === 200) {
-            console.log("yes");
+     
             newState1 = state.filter(gift => gift.price < 200);
           } else {
             newState1 = state
@@ -125,7 +110,7 @@ export const filterByCategory = category => {
               }, 0);
           }
 
-          console.log(newState1);
+
           dispatch(filteredGifts(newState1));
         } else {
           var flash = {
@@ -156,7 +141,7 @@ export const fetchSingleGift = id => {
       )
       .then(response => {
         if (response.status === 200) {
-          console.log(response.data)
+
           dispatch(receiveSingleGift(response.data));
         } else {
           var flash = {
@@ -266,7 +251,7 @@ export function addGiftToList(gift) {
 }
 
 export function removeGiftFromList(gift) {
-  console.log(gift);
+
   return {
     type: types.REMOVE_GIFT_FROM_LIST,
     gift: gift

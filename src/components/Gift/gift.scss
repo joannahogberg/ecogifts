@@ -1,11 +1,4 @@
 @import '../../styles/library';
-@font-face {
-    font-family: 'Mona-Free';
-    src: local('MyFont'), url('../../fonts/Mona-Free.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .gift-wrapper {
     @include flexbox;
     @include flex-direction(column);
@@ -25,7 +18,7 @@
         @include flex(1 0 auto);
         padding: 0.5em;
         .gift-heading {
-            @include head-1;
+            @include gift-heading;
         }
     }
     .control-btns {

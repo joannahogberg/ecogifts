@@ -23,7 +23,7 @@ class MultiCheckboxField extends Component {
         <FormSection name={name} className="form-group">
 
           {checkboxes}
-          <div classname="checkbox-form-icon">hej</div>
+          {/* <div classname="checkbox-form-icon"></div> */}
         </FormSection>
       
     );
