@@ -43,19 +43,33 @@
     }
 }
 
-.intro-text{
+.intro-text {
+    position: relative;
     // @mixin transparent-backgound($color: #fff, $value:0.5)
     border: 1px solid $blue;
     @include flex-center;
     @include flex-direction(column);
     padding: 1.2em;
-    margin:0 auto;
+    margin: 0 auto;
     @include calc( width, '100% - 3.8em');
-    p{
-        width:100%;
-        max-width:40em;
+    p {
+        width: 100%;
+        max-width: 40em;
         @include bread-link;
         text-align: center;
-        margin:.6em 0;
+        margin: .6em 0;
+    }
+    .leaf-right {
+        width: 50px;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        left: 80%;
+    }
+    .leaf-left {
+        width: 50px;
+        position: absolute;
+        top: 40px;
+        left: 15%;
     }
 }

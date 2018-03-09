@@ -81,6 +81,8 @@ class GiftsGrid extends Component {
       ? "gift-generator-wrapper border"
       : "gift-generator-wrapper";
 
+      const logoSmallLeft = require('../../media/logo/leaf_left.png');
+      const logoSmallRight = require('../../media/logo/leaf_right.png');
     return (
       <div>
         <div className="intro-text">
@@ -89,9 +91,11 @@ class GiftsGrid extends Component {
             produkter som kommer till användning och samtidigt gör gott för
             andra och vår miljö!
           </p>
+          <img src={logoSmallLeft} className="leaf-left" alt="leaf-left-logo"  />
           <p>
             Genom de 6 kategorierna nedan går det filtrera presenter utifrån intresse.
           </p>
+          <img src={logoSmallRight} className="leaf-right" alt="leaf-right-logo"  />
           <p>
             Det finns även en presenttipsgenerator där det går att filtrerar
             presenttips utifrån olika intressen, personligheter, material, och

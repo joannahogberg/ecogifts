@@ -95,6 +95,7 @@
     stroke: #536676; }
 
 .intro-text {
+  position: relative;
   border: 1px solid #536676;
   display: -webkit-box;
   display: -moz-box;
@@ -142,3 +143,14 @@
     @media (max-width: 320px) {
       .intro-text p {
         font-size: 12px; } }
+  .intro-text .leaf-right {
+    width: 50px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    left: 80%; }
+  .intro-text .leaf-left {
+    width: 50px;
+    position: absolute;
+    top: 40px;
+    left: 15%; }
