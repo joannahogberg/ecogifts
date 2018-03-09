@@ -36,18 +36,6 @@
       width: -moz-calc(33% - 1.4em);
       width: -o-calc(33% - 1.4em);
       width: calc(33% - 1.4em); } }
-  @media (min-width: 768px) {
-    .gift-wrapper {
-      width: -webkit-calc(25% - 1.4em);
-      width: -moz-calc(25% - 1.4em);
-      width: -o-calc(25% - 1.4em);
-      width: calc(25% - 1.4em); } }
-  @media (min-width: 1024px) {
-    .gift-wrapper {
-      width: -webkit-calc(33% - 1.4em);
-      width: -moz-calc(33% - 1.4em);
-      width: -o-calc(33% - 1.4em);
-      width: calc(33% - 1.4em); } }
   @media (min-width: 1200px) {
     .gift-wrapper {
       width: -webkit-calc(25% - 1.4em);
@@ -92,11 +80,11 @@
     flex: 1 0 auto;
     padding: 0.5em; }
     .gift-wrapper .gift-content-wrap .gift-heading {
+      display: block;
       word-break: keep-all;
       letter-spacing: 0.075em;
       line-height: 1.25em;
       font-weight: 400;
-      margin: 0;
       -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
       -ms-transition: all 0.3s ease-in-out;
@@ -112,6 +100,12 @@
       @media (max-width: 320px) {
         .gift-wrapper .gift-content-wrap .gift-heading {
           font-size: 14px; } }
+      .gift-wrapper .gift-content-wrap .gift-heading svg {
+        display: inline-block;
+        vertical-align: middle; }
+        @media (min-width: 768px) {
+          .gift-wrapper .gift-content-wrap .gift-heading svg {
+            display: none; } }
   .gift-wrapper .control-btns {
     display: -webkit-box;
     display: -moz-box;
@@ -129,7 +123,7 @@
     align-items: flex-end;
     word-break: keep-all;
     letter-spacing: 0.075em;
-    line-height: 1.25em;
+    line-height: 1.5em;
     font-weight: 400;
     font-family: "Open Sans Condensed", sans-serif;
     -webkit-transition: all 0.3s ease-in-out;
@@ -137,7 +131,7 @@
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    font-size: 16px;
+    font-size: 14px;
     border-top: 1px solid #6B8B91; }
     @media (max-width: 640px) {
       .gift-wrapper .control-btns {
@@ -147,15 +141,20 @@
         font-size: 12px; } }
     .gift-wrapper .control-btns .btn-link {
       display: block;
-      padding: 0.5em;
-      width: -webkit-calc(100% - 1em);
-      width: -moz-calc(100% - 1em);
-      width: -o-calc(100% - 1em);
-      width: calc(100% - 1em); }
+      padding: 0.5em 0 0.5em 0.5em;
+      text-align: left;
+      width: -webkit-calc(100% - 0.5em);
+      width: -moz-calc(100% - 0.5em);
+      width: -o-calc(100% - 0.5em);
+      width: calc(100% - 0.5em); }
       .gift-wrapper .control-btns .btn-link svg {
         display: inline-block;
         vertical-align: middle; }
+    .gift-wrapper .control-btns .btn-link:nth-child(1) {
+      display: none; }
+      @media (min-width: 640px) {
+        .gift-wrapper .control-btns .btn-link:nth-child(1) {
+          display: block; } }
     .gift-wrapper .control-btns .btn-link:nth-child(2) {
-      text-align: right;
       background: rgb(red(#6B8B91), 139, 145 );
       background: rgba(107, 139, 145, 0.5); }

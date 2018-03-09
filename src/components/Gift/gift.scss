@@ -10,12 +10,6 @@
     @include breakpoint(small) {
         @include calc( width, '33% - 1.4em');
     }
-    @include breakpoint(medium) {
-        @include calc( width, '25% - 1.4em');
-    }
-    @include breakpoint(large) {
-        @include calc( width, '33% - 1.4em');
-    }
     @include breakpoint(xlarge) {
         @include calc( width, '25% - 1.4em');
     }
@@ -37,7 +31,15 @@
         @include flex(1 0 auto);
         padding: 0.5em;
         .gift-heading {
+            display: block;
             @include gift-heading;
+            svg {
+                display: inline-block;
+                vertical-align: middle;
+                @include breakpoint(medium) {
+                    display: none;
+                }
+            }
         }
     }
     .control-btns {
@@ -48,15 +50,21 @@
         border-top: 1px solid $aqua;
         .btn-link {
             display: block;
-            padding: 0.5em;
-            @include calc( width, '100% - 1em');
+            padding: 0.5em 0 0.5em 0.5em;
+            text-align: left;
+            @include calc( width, '100% - 0.5em');
             svg {
                 display: inline-block;
                 vertical-align: middle;
             }
         }
+        .btn-link:nth-child(1) {
+            display: none;
+            @include breakpoint(small) {
+                display: block;
+            }
+        }
         .btn-link:nth-child(2) {
-            text-align: right;
             @include transparent-backgound($aqua, 0.5);
         }
     }

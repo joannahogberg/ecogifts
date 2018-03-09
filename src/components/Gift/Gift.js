@@ -27,7 +27,7 @@ class Gift extends Component {
         </div>
         <div className="gift-content-wrap">
         <Link to={`/view/${gift.id}`}>
-          <h2 className="gift-heading">{gift.productName}</h2>
+          <h2 className="gift-heading">{gift.productName}<ChevronRight color="grey" size={18} /></h2>
            </Link>
           <p>{price}kr</p>
        
@@ -38,7 +38,7 @@ class Gift extends Component {
               <ChevronRight color="grey" size={16} />
             </Link>
             <a href={gift.href} target="_blank" className="btn-link">
-              Gå till butik <ChevronRight color="grey" size={16} />
+              Gå till butik<ChevronRight color="grey" size={16} />
             </a>
           </div>
       </div>

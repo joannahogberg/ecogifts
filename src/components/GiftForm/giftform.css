@@ -8,7 +8,7 @@
 .checkbox-group {
   word-break: keep-all;
   letter-spacing: 0.075em;
-  line-height: 1.25em;
+  line-height: 1.5em;
   font-weight: 400;
   font-family: "Open Sans Condensed", sans-serif;
   -webkit-transition: all 0.3s ease-in-out;
@@ -16,7 +16,7 @@
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  font-size: 16px;
+  font-size: 14px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;

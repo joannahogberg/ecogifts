@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { ChevronsLeft, ChevronsRight } from "react-feather";
-import { PropTypes } from 'prop-types';
+import { ChevronRight } from "react-feather";
+import { PropTypes } from 'prop-types'
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { fetchSingleGift } from "../../actions/actionCreators";
@@ -16,7 +16,6 @@ class SingleGift extends Component {
 
   }
   render() {
-    console.log("singleGifts -->", this.props)
     const { gifts } = this.props;
     const gift = gifts[0];
     const price = gift.material.includes("giftcard")
@@ -27,9 +26,9 @@ class SingleGift extends Component {
     return (
 
       <div className="single-gift-wrapper">
-        <Link to={`/`} className="btn-link">
-          <ChevronsLeft color="grey" size={24} />
-        </Link>
+        <div className="bread-crumbs"><Link to={`/`} className="btn-link">
+          <span>HEM</span><ChevronRight color="grey" size={18} />
+        </Link><span>{gift.productName}</span></div>
         <section className="single-gift-container">
           <div className="single-gift-photo-wrap">
             <img
@@ -46,7 +45,7 @@ class SingleGift extends Component {
             <div className="control-btns">
               <AddToFavoritesBtn gift={gift} />
               <a href={gift.href} target="_blank" className="btn-link">
-                Gå till butik <ChevronsRight color="grey" size={24} />
+                Gå till butik<ChevronRight color="grey" size={18} />
               </a>
             </div>
           </div>

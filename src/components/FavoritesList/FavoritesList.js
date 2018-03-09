@@ -29,7 +29,7 @@ onClick=(giftId)=>{
         <li key={gift.id}>
         <img src={logoSmall} className="favorites-logo" alt="logo small" />
          <Link to={`/view/${gift.id}`} className="btn-link" id={gift.id} onClick={()=> this.onClick(gift.id)}> {gift.productName}</Link>
-         <X onClick={()=>this.removeFavorite(gift)} size={20} />
+         <X onClick={()=>this.removeFavorite(gift)} size={18} />
         </li>
       );
     });
