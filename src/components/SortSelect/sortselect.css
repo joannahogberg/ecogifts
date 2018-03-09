@@ -34,17 +34,19 @@
     background: transparent;
     background-image: none;
     -webkit-appearance: none;
-    word-break: break-all;
+    word-break: keep-all;
     letter-spacing: 0.075em;
-    line-height: 1.25em;
+    line-height: 1.5em;
     font-weight: 400;
     font-family: "Open Sans Condensed", sans-serif;
+    width: 100%;
+    max-width: 35em;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Amatic SC", cursive; }
     @media (max-width: 640px) {
       .select-wrapper .sort-select {

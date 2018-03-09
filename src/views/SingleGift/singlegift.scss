@@ -1,4 +1,77 @@
 @import '../../styles/library';
 .single-gift-wrapper {
-    background: pink;
+    @include flexbox;
+    @include flex-direction(column);
+    .bread-crumbs {
+        display: block;
+        margin: 0 0 1.2em;
+        span {
+            font-size: 1.2em;
+            @include breakpoint(small) {
+                font-size: 1.4em;
+            }
+        }
+        a {
+            display: inline-block;
+            vertical-align: middle;
+            span,
+            svg {
+                display: inline-block;
+                vertical-align: middle;
+                stroke: $blue;
+                color: $blue;
+            }
+        }
+        span:nth-child(2) {
+            display: inline-block;
+            vertical-align: middle;
+            @include text-truncate;
+            width: 8em;
+        }
+    }
+    .single-gift-container {
+        @include flexbox;
+        @include flex-direction(column);
+        @include justify-content(flex-start);
+        border-top: 1px solid $blue;
+        padding: 1.2em 0 0;
+        @include breakpoint(small) {
+            @include flex-direction(row);
+            @include justify-content(space-between);
+            border-top: none;
+        }
+        .single-gift-photo-wrap {
+            @include flexbox;
+            @include align-items(center);
+            padding: 0.6em;
+            margin: 0 auto;
+            @include breakpoint(small) {
+                padding: 1.2em;
+                @include calc( width, '40% - 2.4em');
+            }
+        }
+        .single-gift-content {
+            padding: 0.6em;
+            @include breakpoint(small) {
+                padding: 1.2em;
+            }
+            h2 {
+                margin-top: 0;
+                @include head;
+            }
+            // p {
+            //     width: 100%;
+            //     max-width: 35em;
+            // }
+        }
+        .btn-link {
+            @include bread-link;
+            display: block;
+            margin: 1.2em 0 0;
+            svg {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
 }

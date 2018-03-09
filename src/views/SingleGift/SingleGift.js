@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ChevronsLeft, ChevronsRight } from "react-feather";
+import { ChevronRight } from "react-feather";
 import { PropTypes } from 'prop-types'
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
@@ -27,9 +27,9 @@ class SingleGift extends Component {
     return (
 
       <div className="single-gift-wrapper">
-        <Link to={`/`} className="btn-link">
-          <ChevronsLeft color="grey" size={24} />
-        </Link>
+        <div className="bread-crumbs"><Link to={`/`} className="btn-link">
+          <span>HEM</span><ChevronRight color="grey" size={18} />
+        </Link><span>{gift.productName}</span></div>
         <section className="single-gift-container">
           <div className="single-gift-photo-wrap">
             <img
@@ -46,7 +46,7 @@ class SingleGift extends Component {
             <div className="control-btns">
               <AddToFavoritesBtn gift={gift} />
               <a href={gift.href} target="_blank" className="btn-link">
-                Gå till butik <ChevronsRight color="grey" size={24} />
+                Gå till butik<ChevronRight color="grey" size={18} />
               </a>
             </div>
           </div>

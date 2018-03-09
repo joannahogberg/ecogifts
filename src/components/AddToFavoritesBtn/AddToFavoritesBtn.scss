@@ -1,3 +1,4 @@
+@import '../../styles/library';
 .favorites-logo {
     height: 2em;
     // cursor: pointer;
@@ -8,10 +9,11 @@
     img {
         display: inline;
         vertical-align: middle;
-        margin: 0 0.2em 0 0;
+        margin: 0.6em 0.2em 0.6em 0;
     }
     span {
         display: inline;
         vertical-align: middle;
+        @include bread-link;
     }
 }

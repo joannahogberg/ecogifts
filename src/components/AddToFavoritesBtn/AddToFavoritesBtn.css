@@ -1,3 +1,10 @@
+/* Sass variables*/
+/*------------- Breakpoints mixin*/
+/*------------- Heading mixins*/
+/*------------- Flexbox mixins*/
+/*------------- Flexbox center mixin*/
+/* box-shadow  
+ @include box-shadow(0px, 0px, 0px, 2px, rgba(0, 0, 0, .5)), true; */
 .favorites-logo {
   height: 2em; }
 
@@ -6,7 +13,26 @@
   .logo-wrapper img {
     display: inline;
     vertical-align: middle;
-    margin: 0 0.2em 0 0; }
+    margin: 0.6em 0.2em 0.6em 0; }
   .logo-wrapper span {
     display: inline;
-    vertical-align: middle; }
+    vertical-align: middle;
+    word-break: keep-all;
+    letter-spacing: 0.075em;
+    line-height: 1.5em;
+    font-weight: 400;
+    font-family: "Open Sans Condensed", sans-serif;
+    width: 100%;
+    max-width: 35em;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px; }
+    @media (max-width: 640px) {
+      .logo-wrapper span {
+        font-size: 14px; } }
+    @media (max-width: 320px) {
+      .logo-wrapper span {
+        font-size: 12px; } }

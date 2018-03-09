@@ -1,22 +1,22 @@
 @import '../../styles/library';
 .header-wrapper {
-    margin: 0 0 1em;
+    margin: 0.6em 0 1.2em;
     @include breakpoint(medium) {
-        margin: 0 0 2em;
+        margin: 1.2em 0 2.4em;
     }
     .logo-link {
         svg {
             height: 100%;
-            width: 7em;
+            width: 15em;
             @include transition(all .3s ease-in-out);
             @include breakpoint(small) {
-                width: 30vw;
+                width: 37vw;
             }
             @include breakpoint(medium) {
-                width: 25vw;
+                width: 35vw;
             }
             @include breakpoint(large) {
-                width: 20em;
+                width: 22em;
             }
         }
         .st1,

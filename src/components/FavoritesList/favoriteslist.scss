@@ -4,8 +4,10 @@
     @include justify-content(flex-start);
     @include flex-direction(column);
     width: 100%;
-    margin: 2em 0;
+    margin: 1.2em 0;
     border-top: 1px solid $blue;
+    padding: 0 0.6em;
+    @include calc( width, '100% - 1.2em');
     @include breakpoint(large) {
         border-top: none;
         padding: 0 0 0 2em;
@@ -14,8 +16,7 @@
     }
     h2 {
         text-align: left;
-        font-weight: 400;
-        font-size: 2.4em;
+        @include head;
         @include breakpoint(large) {
             margin-top: 0;
         }

@@ -5,15 +5,11 @@ import './header.css';
 import Logo from './../Logo/Logo'
 class Header extends Component {
   render() {
-// const location = this.props.location.pathname;
-// const showSearchBar = location === "/" ?  <SearchBar/>: "";
-
     return (
       <header className="header-wrapper">
           <Link to="/" className="logo-link">
           <Logo />
           </Link>
-          {/* {showSearchBar} */}
       </header>
     );
   }
