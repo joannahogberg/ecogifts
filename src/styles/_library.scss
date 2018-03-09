@@ -98,8 +98,6 @@ $bread-link-font-size: (null: 14px, $sm: 14px, $xs: 12px);
     line-height: 1.5em;
     font-weight: 400;
     font-family: $textFont;
-    width: 100%;
-    max-width: 35em;
     @include transition(all .3s ease-in-out);
     @include font-size-map($bread-link-font-size);
 }
