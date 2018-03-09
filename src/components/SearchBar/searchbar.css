@@ -35,10 +35,26 @@
     margin: 0 0 0 0.3em;
     border: none;
     font-family: "Amatic SC", cursive;
-    font-size: 1em;
+    word-break: break-all;
+    letter-spacing: 0.075em;
+    line-height: 1.25em;
+    font-weight: 400;
+    font-family: "Open Sans Condensed", sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
     color: transparent;
     text-shadow: 0 0 0 gray;
     border-bottom: 1px solid #536676; }
+    @media (max-width: 640px) {
+      .search-bar-wrapper .search-input {
+        font-size: 14px; } }
+    @media (max-width: 320px) {
+      .search-bar-wrapper .search-input {
+        font-size: 12px; } }
     .search-bar-wrapper .search-input::-webkit-input-placeholder {
       font-family: "Amatic SC", cursive; }
     .search-bar-wrapper .search-input:-moz-placeholder {
@@ -54,6 +70,3 @@
       -ms-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
-    @media (min-width: 768px) {
-      .search-bar-wrapper .search-input {
-        font-size: 1.2em; } }

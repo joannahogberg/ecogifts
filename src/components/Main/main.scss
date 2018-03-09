@@ -17,45 +17,6 @@ body {
     background: $white;
 }
 
-.wrapper {
-    letter-spacing: 0.05em;
-    font-family: $textFont;
-    padding: 1em;
-    @include calc( width, '100% - 2em');
-    max-width: 1200px;
-    margin: 0 auto;
-    @include flexbox;
-    @include flex-direction(column);
-    font-size: 1.6em;
-    @include breakpoint(small) {
-        padding: 1em 2em 1em;
-        @include calc( width, '100% - 4em');
-    }
-}
-
-button,
-select,
-input {
-    outline: none;
-}
-
-main {
-    @include flexbox;
-    @include flex-direction(column);
-    @include breakpoint(large) {
-        @include flex-direction(row);
-        @include justify-content(space-between);
-    }
-}
-
-.container {
-    width: 100%;
-    // background: black;
-    @include breakpoint(large) {
-        @include calc( width, '100% - 15em')
-    }
-}
-
 a,
 button,
 select,
@@ -65,8 +26,47 @@ input {
     cursor: pointer;
 }
 
+button,
+select,
+input {
+    outline: none;
+}
+
+p {
+    @include bread-link;
+}
+
+.wrapper {
+    letter-spacing: 0.075em;
+    font-family: $textFont;
+    padding: 1em;
+    @include calc( width, '100% - 2em');
+    max-width: 1200px;
+    margin: 0 auto;
+    @include flexbox;
+    @include flex-direction(column);
+    @include breakpoint(small) {
+        padding: 1em 2em 1em;
+        @include calc( width, '100% - 4em');
+    }
+}
+
+.main-container {
+    @include flexbox;
+    @include flex-direction(column);
+    @include breakpoint(large) {
+        @include flex-direction(row);
+        @include justify-content(space-between);
+    }
+    .views-container {
+        width: 100%;
+        @include breakpoint(large) {
+            @include calc( width, '100% - 20em')
+        }
+    }
+}
+
 .btn-link {
-    // text-decoration: none;
     color: $black;
     line-height: 2em;
     &:hover {

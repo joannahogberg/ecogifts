@@ -6,6 +6,7 @@ import './giftslist.css';
 function GiftsList(props) {
     return (
         <div className="gifts-list">
+        <div id="gifts"></div>
             {props.gifts.map((gift, i) => (
                 <Gift {...props} key={i} i={i} gift={gift} />
             ))}

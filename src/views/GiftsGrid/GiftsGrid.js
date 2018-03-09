@@ -2,14 +2,16 @@ import React, { Component } from "react";
 import {bindActionCreators} from 'redux';
 import { connect } from "react-redux";
 // import PropTypes from "prop-types";
+import { HashLink as Link } from 'react-router-hash-link';
+import { ChevronUp } from "react-feather";
 import ButtonGroup from "../../components/ButtonGroup/ButtonGroup";
 import GiftFormContainer from "../../components/GiftFormContainer/GiftFormContainer";
 import GiftsList from "../../components/GiftsList/GiftsList";
 import SearchSortSection from '../../components/SearchSortSection/SearchSortSection';
 import * as giftsActions from '../../actions/actionCreators';
 import * as types from "../../actions/actionTypes";
-import './giftsgrid.css';
 import PresentIcon from '../../components/PresentIcon/PresentIcon'
+import './giftsgrid.css';
 
 const getVisibleGifts = (gifts, filter) => {
   switch (filter) {
@@ -77,13 +79,13 @@ class GiftsGrid extends Component {
         </div>
         <SearchSortSection />
         <GiftsList gifts={gifts} />
+        <Link smooth to="#top" className="to-top-link"><ChevronUp /></Link>
       </div>;
   }
 }
 
 const mapStateToProps = (state) => ({
-  gifts: getVisibleGifts(state.gifts, state.visibilityFilter),
-  favorites: state.favorites
+  gifts: getVisibleGifts(state.gifts, state.visibilityFilter)
 })
 
 function mapDispatchToProps(dispatch) {

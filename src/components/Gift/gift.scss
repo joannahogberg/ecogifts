@@ -3,16 +3,35 @@
     @include flexbox;
     @include flex-direction(column);
     @include align-content(flex-start);
-    border: 1px solid black;
-    width: 22%;
-    margin: 0.5em;
+    border: 1px solid $aqua;
+    @include calc( width, '50% - 1.4em');
+    margin: 0.6em;
+    @include transition(all .3s ease-in-out);
+    @include breakpoint(small) {
+        @include calc( width, '33% - 1.4em');
+    }
+    @include breakpoint(medium) {
+        @include calc( width, '25% - 1.4em');
+    }
+    @include breakpoint(large) {
+        @include calc( width, '33% - 1.4em');
+    }
+    @include breakpoint(xlarge) {
+        @include calc( width, '25% - 1.4em');
+    }
     .gift-photo-wrap {
         width: 100%;
-        height: 13em;
+        height: 15em;
+        margin: 1em;
+        @include calc( width, '100% - 2em');
         @include flexbox;
         @include align-items(center);
         @include justify-content(center);
         overflow: hidden;
+        @include breakpoint(medium) {
+            margin: 1em 2em;
+            @include calc( width, '100% - 4em');
+        }
     }
     .gift-content-wrap {
         @include flex(1 0 auto);
@@ -25,7 +44,20 @@
         @include flexbox;
         @include justify-content(space-between);
         @include align-items(flex-end);
-        background: $yellow;
-        padding: 0.5em;
+        @include bread-link;
+        border-top: 1px solid $aqua;
+        .btn-link {
+            display: block;
+            padding: 0.5em;
+            @include calc( width, '100% - 1em');
+            svg {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        .btn-link:nth-child(2) {
+            text-align: right;
+            @include transparent-backgound($aqua, 0.5);
+        }
     }
 }

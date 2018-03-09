@@ -5,15 +5,15 @@
 /*------------- Flexbox center mixin*/
 /* box-shadow  
  @include box-shadow(0px, 0px, 0px, 2px, rgba(0, 0, 0, .5)), true; */
-.checkbox-field {
-  display: flex;
-  list-style-type: none;
-  width: 180px; }
-
 .form-group {
   position: relative;
   border-top: 1px solid #CCA240;
-  padding: 0.4em;
+  padding: 1em 0.4em 0.4em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -27,6 +27,19 @@
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
+  .form-group .checkbox-field {
+    display: block;
+    list-style-type: none;
+    width: 30%; }
+    @media (min-width: 768px) {
+      .form-group .checkbox-field {
+        width: 20%; } }
+  .form-group .single-checkbox[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.3em 0.5em 0 0;
+    width: 1.8em;
+    height: 1.8em; }
 
 .checkbox-form-icon {
   align-items: right; }

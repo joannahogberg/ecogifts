@@ -16,7 +16,6 @@ export function filterBySelect(result) {
   };
 }
 
-
 export function search(value) {
 
   return dispatch => {
@@ -49,7 +48,6 @@ export function search(value) {
 }
 
 export function receiveGifts(data) {
-  //dispatch data to reducer
   return { type: types.RECEIVE_GIFTS, gifts: data };
 }
 
@@ -266,16 +264,15 @@ export function addToLocalStorage(favorites) {
 }
 
 export function getFromLocalStorage() {
-  let initState = {};
-  const persistedState = localStorage.getItem("reduxState");
+  let favorites = {}
+  const persistedState = localStorage.getItem('reduxState')
   if (persistedState) {
-    initState = JSON.parse(persistedState);
+    favorites = JSON.parse(persistedState)
   }
   return dispatch => {
-    dispatch(addToLocalStorage(initState));
+    dispatch(addToLocalStorage(favorites));
   };
 }
-
 
 export const setVisibilityFilter = (filter) => ({
   type: types.SET_VISIBILITY_FILTER,

@@ -17,19 +17,38 @@
   align-items: center;
   border-bottom: 1px solid #536676;
   position: relative;
-  padding: 0 0 0.5em;
-  margin: 0 0 0.5em;
-  width: 5.5em; }
+  padding: 0 0 0.7em;
+  margin: 1.5em 0;
+  width: 9em; }
+  @media (min-width: 768px) {
+    .select-wrapper {
+      margin: 0 0 0.2em; } }
   .select-wrapper svg {
     stroke: #536676; }
   .select-wrapper .sort-select {
     position: absolute;
     left: 0;
-    padding: 0 1.4em;
+    padding: 0 0 0 1.4em;
     border: none;
     box-shadow: none;
     background: transparent;
     background-image: none;
     -webkit-appearance: none;
-    font-family: "Amatic SC", cursive;
-    font-size: 1em; }
+    word-break: break-all;
+    letter-spacing: 0.075em;
+    line-height: 1.25em;
+    font-weight: 400;
+    font-family: "Open Sans Condensed", sans-serif;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    font-family: "Amatic SC", cursive; }
+    @media (max-width: 640px) {
+      .select-wrapper .sort-select {
+        font-size: 14px; } }
+    @media (max-width: 320px) {
+      .select-wrapper .sort-select {
+        font-size: 12px; } }

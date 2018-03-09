@@ -1,38 +1,44 @@
 @import "../../styles/library";
-
 .gift-generator-wrapper {
-  margin-top: 1em;
-  display: flex;
-  flex-direction: column;
-  @include flex-center();
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    @include flex-center();
 }
+
 .border {
-  border: 1px solid $yellow;
-  margin-left: 6px;
-  margin-right: 6px;
+    border: 1px solid $yellow;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
 }
 
 .gift-generator-btn {
-  border: 1px solid $yellow;
-  @include transparent-backgound($yellow, 1);
-  svg {
-    margin-left: 0.2em;
-  }
-  &:hover {
-    @include transparent-backgound($yellow, 0);
-    color: $black;
+    border: 1px solid $yellow;
+    @include transparent-backgound($yellow, 1);
     svg {
-      stroke: $black;
-      margin-left: 0.2em;
+        margin-left: 0.2em;
     }
-  }
-  @include flex-center();
-  padding: 0.3em 0.5em;
-  font-family: $linkFont;
-  margin-top: 1em;
-  font-size: 1.1em;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  width: 60%;
-  height: 60px;
+    &:hover {
+        @include transparent-backgound($yellow, 0);
+        color: $black;
+        svg {
+            stroke: $black;
+            margin-left: 0.2em;
+        }
+    }
+    @include flex-center();
+    @include category-btn;
+    padding: 0.3em 0.5em;
+    margin-top: 1em;
+    width: 60%;
+    height: 60px;
+}
+
+.to-top-link {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    svg {
+        stroke: $blue;
+    }
 }
