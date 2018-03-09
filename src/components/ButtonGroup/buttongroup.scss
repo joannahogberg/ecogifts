@@ -9,7 +9,7 @@
             grid-column-end: span 2;
         }
     }
-}
+  }
 
 .category-item {
     flex-direction: column;
@@ -30,62 +30,63 @@
         &:hover {
             @include transparent-backgound($yellow, 0);
             @include box-shadow(0, 0, 0, 1px, $yellow, true);
-            color: black;
+            color: $black;
             svg {
-                stroke: black;
+                stroke: $black;
             }
         }
     }
-    &:nth-child(2) {
-        @include transparent-backgound($blue, 1);
-        &:hover {
-            @include transparent-backgound($blue, 0.5);
-            color: black;
-            svg {
-                stroke: black;
-            }
-        }
+  
+  &:nth-child(2) {
+    @include transparent-backgound($blue, 1);
+    &:hover {
+      @include transparent-backgound($blue, 0.5);
+      color: $black;
+      svg {
+        stroke: $black;
+      }
     }
-    &:nth-child(3) {
-        @include transparent-backgound($aqua, 1);
-        &:hover {
-            @include transparent-backgound($aqua, 0.5);
-            color: black;
-            svg {
-                stroke: black;
-            }
-        }
+  }
+  &:nth-child(3) {
+    @include transparent-backgound($aqua, 1);
+    &:hover {
+      @include transparent-backgound($aqua, 0.5);
+      color: $black;
+      svg {
+        stroke: $black;
+      }
     }
-    &:nth-child(4) {
-        @include transparent-backgound($red, 1);
-        &:hover {
-            @include transparent-backgound($red, 0.5);
-            color: black;
-            svg {
-                stroke: black;
-            }
-        }
+  }
+  &:nth-child(4) {
+    @include transparent-backgound($red, 1);
+    &:hover {
+      @include transparent-backgound($red, 0.5);
+      color: $black;
+      svg {
+        stroke: $black;
+      }
     }
-    &:nth-child(5) {
-        @include box-shadow(0, 0, 0, 1px, $gray, true);
-        @include transparent-backgound($gray, 0);
-        &:hover {
-            @include transparent-backgound($gray, 1);
-            color: white;
-            svg {
-                stroke: white;
-            }
-        }
+  }
+  &:nth-child(5) {
+    @include box-shadow(0, 0, 0, 1px, $gray, true);
+    @include transparent-backgound($gray, 0);
+    &:hover {
+      @include transparent-backgound($gray, 1);
+      color: $white;
+      svg {
+        stroke: $white;
+      }
     }
-    &:nth-child(6) {
-        @include transparent-backgound($green, 1);
-        &:hover {
-            @include transparent-backgound($green, 0);
-            @include box-shadow(0, 0, 0, 1px, $green, true);
-            color: black;
-            svg {
-                stroke: black;
-            }
-        }
+  }
+  &:nth-child(6) {
+    @include transparent-backgound($green, 1);
+    &:hover {
+      @include transparent-backgound($green, 0);
+      @include box-shadow(0, 0, 0, 1px, $green, true);
+      color: $black;
+      svg {
+        stroke: $black;
+      }
     }
+  }
 }

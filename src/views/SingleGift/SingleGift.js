@@ -16,7 +16,6 @@ class SingleGift extends Component {
 
   }
   render() {
-    console.log(this.props)
     const { gifts } = this.props;
     const gift = gifts[0];
     const price = gift.material.includes("giftcard")
@@ -71,8 +70,9 @@ SingleGift.propTypes = {
       material: PropTypes.array.isRequired,
       receiver: PropTypes.array.isRequired
     })
-  )
-};
+  ),
+    fetchSingleGift: PropTypes.func.isRequired
+  };
 
 const mapStateToProps = (state) => ({
   gifts: state.gifts

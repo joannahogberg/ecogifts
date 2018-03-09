@@ -7,7 +7,7 @@ import "./multicheckbox.css";
 
 class MultiCheckboxField extends Component {
   render() {
-    console.log(this.props.name);
+  console.log("multicheckboxfield", this.props);
     const { options, name } = this.props;
     const checkboxes = options.map(option => {
       return (
