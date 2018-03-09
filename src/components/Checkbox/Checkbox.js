@@ -6,7 +6,6 @@ class Checkbox extends Component {
  
    handleChange(event) {
         const {input} = this.props;
-        console.log(input)
         const {onChange} = input;
 
         if (event.target.checked) {

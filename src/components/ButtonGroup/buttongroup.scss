@@ -36,7 +36,7 @@
             }
         }
     }
-  }
+  
   &:nth-child(2) {
     @include transparent-backgound($blue, 1);
     &:hover {
@@ -89,4 +89,4 @@
       }
     }
   }
-} 
+}

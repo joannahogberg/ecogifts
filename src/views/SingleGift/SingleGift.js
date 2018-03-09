@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ChevronsLeft, ChevronsRight } from "react-feather";
-import { PropTypes } from 'prop-types'
+import { PropTypes } from 'prop-types';
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { fetchSingleGift } from "../../actions/actionCreators";
@@ -16,7 +16,7 @@ class SingleGift extends Component {
 
   }
   render() {
-    console.log(this.props)
+    console.log("singleGifts -->", this.props)
     const { gifts } = this.props;
     const gift = gifts[0];
     const price = gift.material.includes("giftcard")
@@ -71,8 +71,9 @@ SingleGift.propTypes = {
       material: PropTypes.array.isRequired,
       receiver: PropTypes.array.isRequired
     })
-  )
-};
+  ),
+    fetchSingleGift: PropTypes.func.isRequired
+  };
 
 const mapStateToProps = (state) => ({
   gifts: state.gifts
