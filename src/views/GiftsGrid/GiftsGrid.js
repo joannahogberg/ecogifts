@@ -85,6 +85,26 @@ class GiftsGrid extends Component {
       const logoSmallRight = require('../../media/logo/leaf_right.png');
     return (
       <div>
+
+   <div className="intro-text-outer">
+   <div className="intro-text-inner">
+          <p>
+            ECOGIFTS vill inspirera dig som ska köpa presenter att välja
+            produkter som kommer till användning och samtidigt gör gott för
+            andra och vår miljö!
+          </p>
+          <p>
+            Genom de 6 kategorierna nedan går det filtrera presenter utifrån intresse.
+          </p>
+          <p>
+            Det finns även en presenttipsgenerator där det går att filtrerar
+            presenttips utifrån olika intressen, personligheter, material, och
+            typ av mottagare.{" "}
+          </p>
+          </div>
+        </div>
+
+
         <div className="intro-text">
           <p>
             ECOGIFTS vill inspirera dig som ska köpa presenter att välja
