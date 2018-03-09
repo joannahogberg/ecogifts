@@ -61,7 +61,7 @@
       -ms-align-items: center;
       align-items: center;
       margin: 0 0 1em;
-      word-break: break-all;
+      word-break: keep-all;
       letter-spacing: 0.075em;
       line-height: 1.25em;
       font-weight: 400;

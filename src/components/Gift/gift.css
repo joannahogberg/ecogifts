@@ -127,7 +127,7 @@
     -moz-align-items: flex-end;
     -ms-align-items: flex-end;
     align-items: flex-end;
-    word-break: break-all;
+    word-break: keep-all;
     letter-spacing: 0.075em;
     line-height: 1.25em;
     font-weight: 400;

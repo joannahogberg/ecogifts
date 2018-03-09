@@ -8,6 +8,7 @@ import './buttongroup.css';
 class ButtonGroup extends Component {
   render() {
     return (
+      // <div className="intro-wrapper"><div className="intro-text"><p> HELLLLLO </p></div>
       <div className="category-container">
         <div onClick={() => this.props.filterByCategory(["outdoor", "travel"])} className="category-item wide"><Anchor size={20}/><Link smooth to="#gifts" className="anchor-link">ÄVENTYR & FRITIDSÄLSKAREN</Link></div>
         <div onClick={() => this.props.filterByCategory(["nature", "animals", "gardening"])} className="category-item "><Sun size={20}/><Link smooth to="#gifts" className="anchor-link">NATUR & DJURÄLSKAREN</Link> </div>
@@ -16,6 +17,7 @@ class ButtonGroup extends Component {
         <div onClick={() => this.props.filterByCategory(["food", "candy"])} className="category-item wide"><Filter size={20}/><Link smooth to="#gifts" className="anchor-link">FÖR MATENTUSIASTEN</Link></div> 
         <div onClick={() => this.props.filterByCategory(200)} className="category-item"><DollarSign size={20}/><Link smooth to="#gifts" className="anchor-link">PRESENTER UNDER 200</Link></div> 
       </div>
+      // </div>
     );
   }
 }

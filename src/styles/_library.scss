@@ -94,7 +94,7 @@ $bread-link-font-size: (null: 16px, $sm: 14px, $xs: 12px);
 }
 
 @mixin bread-link {
-    word-break: break-all;
+    word-break: keep-all;
     letter-spacing: 0.075em;
     line-height: 1.25em;
     font-weight: 400;

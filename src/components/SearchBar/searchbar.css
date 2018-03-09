@@ -35,7 +35,7 @@
     margin: 0 0 0 0.3em;
     border: none;
     font-family: "Amatic SC", cursive;
-    word-break: break-all;
+    word-break: keep-all;
     letter-spacing: 0.075em;
     line-height: 1.25em;
     font-weight: 400;

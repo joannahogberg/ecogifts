@@ -1,5 +1,6 @@
 @import "../../styles/library";
 .category-container {
+  margin-top:2.4em;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     text-align: center;
@@ -90,3 +91,4 @@
     }
   }
 }
+
