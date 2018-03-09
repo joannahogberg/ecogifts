@@ -22,6 +22,7 @@ onClick=(giftId)=>{
 
   render() {
     const logoSmall = require('../../media/logo/ecogifts_logo_small.png');
+    console.log(this.props)
     const { favorites } = this.props;
     const heading = favorites.length > 0 ? "MINA FAVORITER": "";
     let giftsToRender = favorites.map(gift => {
