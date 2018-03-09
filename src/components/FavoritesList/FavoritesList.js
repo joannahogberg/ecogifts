@@ -40,6 +40,13 @@ onClick=(giftId)=>{
       </aside>;
   }
 }
+FavoritesList.defaultProps = {
+ favorites: [
+   {id: "id0",
+    productName: ""
+  }
+ ]
+};
 
 FavoritesList.propTypes = {
   favorites: PropTypes.arrayOf(
