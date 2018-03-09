@@ -10,9 +10,9 @@ import * as favoritesActions from '../../actions/actionCreators';
 
 class FavoritesList extends Component {
 
-componentWillMount() {
-    this.props.favoritesActions.getFromLocalStorage();
-}
+// componentWillMount() {
+//     this.props.favoritesActions.getFromLocalStorage();
+// }
 removeFavorite=(id)=>{
   this.props.favoritesActions.removeGiftFromList(id)
 }
