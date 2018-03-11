@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { addGiftToList } from "../../actions/actionCreators";
 import { connect } from "react-redux";
+import { addGiftToList } from "../../actions/actionCreators";
 import './AddToFavoritesBtn.css';
 
 class AddToFavoritesBtn extends Component {
@@ -11,15 +11,15 @@ class AddToFavoritesBtn extends Component {
 
     return (
       <div onClick={() => this.props.addGiftToList(this.props.gift)} className="logo-wrapper">
-      <img src={logoSmall} className="favorites-logo" alt="save it"  />
-      <span> Spara som favorit</span>
+        <img src={logoSmall} className="favorites-logo" alt="save it" />
+        <span> Spara som favorit</span>
       </div>
-   );
+    );
   }
 }
 
 AddToFavoritesBtn.propTypes = {
-    addGiftToList: PropTypes.func.isRequired
+  addGiftToList: PropTypes.func.isRequired
 };
 
 const mapStateToProps = state => ({
@@ -32,7 +32,7 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-  export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-  )(AddToFavoritesBtn)
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(AddToFavoritesBtn)
