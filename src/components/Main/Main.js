@@ -9,6 +9,7 @@ import FavoritesList from './../FavoritesList/FavoritesList';
 import './main.css';
 
 function Main(props) {
+  console.log(props)
   return (
     <div className="wrapper">
     <div id="top"></div>
@@ -19,7 +20,7 @@ function Main(props) {
           <Route path="/view/:giftId" component={SingleGift} />
           <Route path="/header" component={About} />
         </div>
-        {/* <FavoritesList {...props}/> */}
+        <FavoritesList {...props}/>
       </main>
      
     </div>

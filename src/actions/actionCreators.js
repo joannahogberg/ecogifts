@@ -129,6 +129,7 @@ export function receiveSingleGift(data) {
 }
 
 export const fetchSingleGift = id => {
+  console.log(id)
   return dispatch => {
     fetch("https://ecogifts.herokuapp.com/gifts?id=" + id)
       .then(response =>
@@ -249,7 +250,7 @@ export function addGiftToList(gift) {
 }
 
 export function removeGiftFromList(gift) {
-
+console.log(gift)
   return {
     type: types.REMOVE_GIFT_FROM_LIST,
     gift: gift
