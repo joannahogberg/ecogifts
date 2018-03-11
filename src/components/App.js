@@ -50,12 +50,13 @@ import Main from './Main/Main';
 
 class App extends Component {
     render() {
+        console.log(this.props)
       return (
         <div className="wrapper">
         <div id="top"></div>
           <Header />
-          <Main>
-              <Route exact path="/" component={GiftsGrid}/>
+          <Main {...this.props}>
+              <Route exact path="/" component={GiftsGrid} />
               <Route path="/view/:giftId" component={SingleGift}/>
          </Main>
         </div>
