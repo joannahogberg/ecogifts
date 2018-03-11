@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import './gift.css';
 
+import { fetchSingleGift  } from '../../actions/actionCreators';
+
 class Gift extends Component {
+
 
   render() {
     const { gift } = this.props;
@@ -15,7 +18,7 @@ class Gift extends Component {
     return (
       <div className="gift-wrapper">
         <div className="gift-photo-wrap">
-          <Link to={`/view/${gift.id}`}>
+          <Link to={`/view/${gift.id}`} onClick={()=> this.props.changeId(gift.id)} >
             <img
               srcSet={`${small} 300w, ${large} 700w`}
               src={small}
@@ -26,14 +29,14 @@ class Gift extends Component {
           </Link>
         </div>
         <div className="gift-content-wrap">
-        <Link to={`/view/${gift.id}`}>
+        <Link to={`/view/${gift.id}`} onClick={()=> this.props.changeId(gift.id)}>
           <h2 className="gift-heading">{gift.productName}<ChevronRight color="grey" size={18} /></h2>
            </Link>
           <p>{price}kr</p>
        
         </div>
         <div className="control-btns">
-            <Link to={`/view/${gift.id}`} className="btn-link" >
+            <Link to={`/view/${gift.id}`} className="btn-link" onClick={()=> this.props.changeId(gift.id)}>
               Mer info
               <ChevronRight color="grey" size={16} />
             </Link>
@@ -70,4 +73,12 @@ function mapStateToProps(state, props) {
   };
 }
 
-export default connect(mapStateToProps)(Gift);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    changeId: (giftId) => {
+      dispatch(fetchSingleGift(giftId))
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Gift);

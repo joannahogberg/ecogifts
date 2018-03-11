@@ -18,7 +18,7 @@
 // export default App;
 
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom'
+import { Route} from 'react-router-dom'
 import{ bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import GiftsGrid from '../views/GiftsGrid/GiftsGrid'
@@ -56,8 +56,14 @@ class App extends Component {
         <div id="top"></div>
           <Header />
           <Main {...this.props}>
-              <Route exact path="/" component={GiftsGrid} />
-              <Route path="/view/:giftId" component={SingleGift}/>
+             
+              {/* <Switch> */}
+              <Route exact path="/ecogifts" component={GiftsGrid} />
+              <Route path="/view/:giftId" 
+            //   component={SingleGift}  
+              render={(props) => <SingleGift {...this.props} gifts={this.props.gifts} />}
+              />
+{/* </Switch> */}
          </Main>
         </div>
 

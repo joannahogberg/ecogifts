@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ChevronRight } from "react-feather";
-import { PropTypes } from 'prop-types'
+// import { PropTypes } from 'prop-types'
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { fetchSingleGift } from "../../actions/actionCreators";
@@ -10,12 +10,8 @@ import './singlegift.css';
 
 class SingleGift extends Component {
 
-  componentWillMount() {
-    const { giftId } = this.props.match.params;
-    this.props.fetchSingleGift(giftId);
-
-  }
   render() {
+    console.log(this.props)
     const { gifts } = this.props;
     const gift = gifts[0];
     const price = gift.material.includes("giftcard")
@@ -26,7 +22,7 @@ class SingleGift extends Component {
     return (
 
       <div className="single-gift-wrapper">
-        <div className="bread-crumbs"><Link to={`/`} className="btn-link">
+        <div className="bread-crumbs"><Link to={`/ecogifts`} className="btn-link">
           <span>HEM</span><ChevronRight color="grey" size={18} />
         </Link><span>{gift.productName}</span></div>
         <section className="single-gift-container">
@@ -56,23 +52,23 @@ class SingleGift extends Component {
 }
 
 
-SingleGift.propTypes = {
-  gifts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      productName: PropTypes.string.isRequired,
-      price: PropTypes.number.isRequired,
-      description: PropTypes.string.isRequired,
-      src: PropTypes.string.isRequired,
-      href: PropTypes.string.isRequired,
-      interest: PropTypes.array.isRequired,
-      personality: PropTypes.array.isRequired,
-      material: PropTypes.array.isRequired,
-      receiver: PropTypes.array.isRequired
-    })
-  ),
-    fetchSingleGift: PropTypes.func.isRequired
-  };
+// SingleGift.propTypes = {
+//   gifts: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.string.isRequired,
+//       productName: PropTypes.string.isRequired,
+//       price: PropTypes.number.isRequired,
+//       description: PropTypes.string.isRequired,
+//       src: PropTypes.string.isRequired,
+//       href: PropTypes.string.isRequired,
+//       interest: PropTypes.array.isRequired,
+//       personality: PropTypes.array.isRequired,
+//       material: PropTypes.array.isRequired,
+//       receiver: PropTypes.array.isRequired
+//     })
+//   ),
+//     fetchSingleGift: PropTypes.func.isRequired
+//   };
 
 const mapStateToProps = (state) => ({
   gifts: state.gifts
@@ -85,5 +81,6 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(SingleGift);
+// export default SingleGift;
 
 
