@@ -98,7 +98,7 @@ import { fetchSingleGift,removeGiftFromList  } from '../../actions/actionCreator
 import './favoriteslist.css';
 
 function FavoritesList(props) {
-
+console.log(props)
   const logoSmall = require('../../media/logo/ecogifts_logo_small.png');
   const { favorites, changeId, remove } = props;
   const heading = favorites.length > 0 ? "MINA FAVORITER": "";

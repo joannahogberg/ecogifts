@@ -10,6 +10,7 @@ class Header extends Component {
           <Link to="/" className="logo-link">
           <Logo />
           </Link>
+
       </header>
     );
   }

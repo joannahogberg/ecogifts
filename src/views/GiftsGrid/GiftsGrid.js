@@ -75,8 +75,8 @@ class GiftsGrid extends Component {
   render() {
     const { showForm } = this.state;
     const { gifts } = this.props;
+    console.log(this.props)
     const btnText = showForm ? "DÖLJ FORMULÄR" : "PRESENTTIPSGENERATOR";
-    console.log("--->", this.props);
     const showBorder = showForm
       ? "gift-generator-wrapper border"
       : "gift-generator-wrapper";
