@@ -5,7 +5,7 @@ import React from 'react';
 // import SingleGift from '../../views/SingleGift/SingleGift'
 // import About from '../../views/About/About'
 // import Header from './../Header/Header';
-import FavoritesList from './../FavoritesList/FavoritesList';
+// import FavoritesList from './../FavoritesList/FavoritesList';
 import './main.css';
 
 function Main(props) {
@@ -21,7 +21,7 @@ function Main(props) {
           <Route path="/header" component={About} /> */}
           {props.children}
         </div>
-        <FavoritesList {...props}/>
+        {/* <FavoritesList favorites={props.favorites}/> */}
       </main>
      
     // </div>
