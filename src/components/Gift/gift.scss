@@ -48,6 +48,7 @@
         @include align-items(flex-end);
         @include bread-link;
         border-top: 1px solid $aqua;
+        margin: 0.6em 0 0;
         .btn-link {
             display: block;
             padding: 0.5em 0 0.5em 0.5em;
@@ -60,7 +61,7 @@
         }
         .btn-link:nth-child(1) {
             display: none;
-            @include breakpoint(small) {
+            @include breakpoint(medium) {
                 display: block;
             }
         }

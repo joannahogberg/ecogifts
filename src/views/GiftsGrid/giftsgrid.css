@@ -59,7 +59,7 @@
   transition: all 0.3s ease-in-out;
   font-size: 24px;
   padding: 0.3em 0.5em;
-  margin-top: 1em;
+  margin-top: 0.6em;
   width: 60%;
   height: 60px; }
   .gift-generator-btn svg {
@@ -134,15 +134,12 @@
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     margin: .6em 0; }
-    @media (max-width: 640px) {
-      .intro-text p {
-        font-size: 14px; } }
     @media (max-width: 320px) {
       .intro-text p {
-        font-size: 12px; } }
+        font-size: 14px; } }
   .intro-text .leaf-right {
     width: 50px;
     position: absolute;
@@ -204,12 +201,9 @@
       -ms-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
-      font-size: 14px;
+      font-size: 16px;
       text-align: center;
       margin: .6em 0; }
-      @media (max-width: 640px) {
-        .intro-text-outer .intro-text-inner p {
-          font-size: 14px; } }
       @media (max-width: 320px) {
         .intro-text-outer .intro-text-inner p {
-          font-size: 12px; } }
+          font-size: 14px; } }

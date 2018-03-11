@@ -30,10 +30,31 @@
   .form-group .checkbox-field {
     display: block;
     list-style-type: none;
-    width: 30%; }
+    margin: 0 0.5em 0 0; }
+    @media (min-width: 320px) {
+      .form-group .checkbox-field {
+        width: -webkit-calc(50% - 0.5em);
+        width: -moz-calc(50% - 0.5em);
+        width: -o-calc(50% - 0.5em);
+        width: calc(50% - 0.5em); } }
+    @media (min-width: 640px) {
+      .form-group .checkbox-field {
+        width: -webkit-calc(30% - 0.5em);
+        width: -moz-calc(30% - 0.5em);
+        width: -o-calc(30% - 0.5em);
+        width: calc(30% - 0.5em); } }
     @media (min-width: 768px) {
       .form-group .checkbox-field {
-        width: 20%; } }
+        width: -webkit-calc(25% - 0.5em);
+        width: -moz-calc(25% - 0.5em);
+        width: -o-calc(25% - 0.5em);
+        width: calc(25% - 0.5em); } }
+    @media (min-width: 1200px) {
+      .form-group .checkbox-field {
+        width: -webkit-calc(20% - 0.5em);
+        width: -moz-calc(20% - 0.5em);
+        width: -o-calc(20% - 0.5em);
+        width: calc(20% - 0.5em); } }
   .form-group .single-checkbox[type="checkbox"] {
     display: inline-block;
     vertical-align: middle;

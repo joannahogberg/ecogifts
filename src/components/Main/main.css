@@ -46,13 +46,10 @@ p {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  font-size: 14px; }
-  @media (max-width: 640px) {
-    p {
-      font-size: 14px; } }
+  font-size: 16px; }
   @media (max-width: 320px) {
     p {
-      font-size: 12px; } }
+      font-size: 14px; } }
 
 .wrapper {
   letter-spacing: 0.075em;
