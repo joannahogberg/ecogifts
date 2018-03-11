@@ -60,6 +60,7 @@ class GiftsGrid extends Component {
   }
   componentWillMount() {
     this.props.giftsActions.fetchGifts();
+    this.props.giftsActions.getFromLocalStorage();
   }
 
   showForm = () => {
