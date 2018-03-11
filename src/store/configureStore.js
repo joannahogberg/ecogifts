@@ -35,8 +35,8 @@ let favorites;
 const persistedState = localStorage.getItem('reduxState')
 if (persistedState) {
     favorites = JSON.parse(persistedState)
-}else{
-    favorites= [];
+} else {
+    favorites = [];
 }
 
 store.dispatch({
