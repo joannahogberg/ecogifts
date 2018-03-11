@@ -250,7 +250,7 @@ export function addGiftToList(gift) {
 }
 
 export function removeGiftFromList(gift) {
-console.log(gift)
+
   return {
     type: types.REMOVE_GIFT_FROM_LIST,
     gift: gift

@@ -28,7 +28,7 @@ import * as actionCreators from '../actions/actionCreators.js';
 // import About from '../../views/About/About'
 import Header from './Header/Header';
 // import FavoritesList from './../FavoritesList/FavoritesList';
-import Main from './Main/Main';
+// import Main from './Main/Main';
 
 // function App(props) {
 //   console.log(props)
@@ -55,16 +55,16 @@ class App extends Component {
         <div className="wrapper">
         <div id="top"></div>
           <Header />
-          <Main {...this.props}>
+          {/* <Main {...this.props}> */}
              
               {/* <Switch> */}
               <Route exact path="/ecogifts" component={GiftsGrid} />
               <Route path="/view/:giftId" 
-            //   component={SingleGift}  
-              render={(props) => <SingleGift {...this.props} gifts={this.props.gifts} />}
+              component={SingleGift}  
+            //   render={(props) => <SingleGift {...this.props} />}
               />
 {/* </Switch> */}
-         </Main>
+         {/* </Main> */}
         </div>
 
       );

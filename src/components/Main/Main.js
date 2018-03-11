@@ -5,23 +5,23 @@ import React from 'react';
 // import SingleGift from '../../views/SingleGift/SingleGift'
 // import About from '../../views/About/About'
 // import Header from './../Header/Header';
-import FavoritesList from './../FavoritesList/FavoritesList';
+// import FavoritesList from './../FavoritesList/FavoritesList';
 import './main.css';
 
 function Main(props) {
-  console.log(props)
+
   return (
     // <div className="wrapper">
     // <div id="top"></div>
     //   <Header {...props}/>
       <main className="main-container">
-        <div className="views-container">
+        {/* <div className="views-container"> */}
           {/* <Route exact path="/" component={GiftsGrid} />
           <Route path="/view/:giftId" component={SingleGift} />
           <Route path="/header" component={About} /> */}
           {props.children}
-        </div>
-        <FavoritesList favorites={props.favorites}/>
+        {/* </div> */}
+        {/* <FavoritesList favorites={props.favorites}/> */}
       </main>
      
     // </div>

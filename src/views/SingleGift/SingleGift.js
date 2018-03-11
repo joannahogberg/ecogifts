@@ -6,6 +6,8 @@ import { connect } from "react-redux";
 import { fetchSingleGift } from "../../actions/actionCreators";
 import { bindActionCreators } from 'redux';
 import AddToFavoritesBtn from '../../components/AddToFavoritesBtn/AddToFavoritesBtn';
+import FavoritesList from '../../components/FavoritesList/FavoritesList';
+import Main from '../../components/Main/Main';
 import './singlegift.css';
 
 class SingleGift extends Component {
@@ -20,7 +22,8 @@ class SingleGift extends Component {
 
     const src = require('../../media/images/' + gift.id + '.png')
     return (
-
+      <div className="container">
+      <Main>
       <div className="single-gift-wrapper">
         <div className="bread-crumbs"><Link to={`/ecogifts`} className="btn-link">
           <span>HEM</span><ChevronRight color="grey" size={18} />
@@ -47,6 +50,9 @@ class SingleGift extends Component {
           </div>
         </section>
       </div>
+      </Main>
+      <FavoritesList favorites={this.props.favorites}/>
+      </div>
     );
   }
 }
@@ -71,7 +77,8 @@ class SingleGift extends Component {
 //   };
 
 const mapStateToProps = (state) => ({
-  gifts: state.gifts
+  gifts: state.gifts,
+  favorites: state.favorites
 });
 
 function mapDispatchToProps(dispatch) {

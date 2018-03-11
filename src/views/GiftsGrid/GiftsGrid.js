@@ -11,6 +11,8 @@ import SearchSortSection from "../../components/SearchSortSection/SearchSortSect
 import * as giftsActions from "../../actions/actionCreators";
 import * as types from "../../actions/actionTypes";
 import PresentIcon from "../../components/PresentIcon/PresentIcon";
+import FavoritesList from '../../components/FavoritesList/FavoritesList';
+import Main from '../../components/Main/Main';
 import "./giftsgrid.css";
 
 const getVisibleGifts = (gifts, filter) => {
@@ -84,7 +86,8 @@ class GiftsGrid extends Component {
       const logoSmallLeft = require('../../media/logo/leaf_left.png');
       const logoSmallRight = require('../../media/logo/leaf_right.png');
     return (
-      <div>
+      <div className="container">
+      <Main>
 
    <div className="intro-text-outer">
    <div className="intro-text-inner">
@@ -136,9 +139,11 @@ class GiftsGrid extends Component {
         </div>
         <SearchSortSection />
         <GiftsList gifts={gifts} />
+</Main>
         <Link smooth to="#top" className="to-top-link">
           <ChevronUp />
         </Link>
+        <FavoritesList favorites={this.props.favorites}/>
       </div>
     );
   }
@@ -165,7 +170,8 @@ GiftsGrid.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  gifts: getVisibleGifts(state.gifts, state.visibilityFilter)
+  gifts: getVisibleGifts(state.gifts, state.visibilityFilter),
+  favorites: state.favorites
 });
 
 function mapDispatchToProps(dispatch) {

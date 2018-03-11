@@ -52,14 +52,14 @@ p {
     }
 }
 
-.main-container {
+.container {
     @include flexbox;
     @include flex-direction(column);
     @include breakpoint(large) {
         @include flex-direction(row);
         @include justify-content(space-between);
     }
-    .views-container {
+    .main-container {
         width: 100%;
         @include breakpoint(large) {
             @include calc( width, '100% - 20em')
