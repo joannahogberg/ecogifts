@@ -101,6 +101,7 @@ function FavoritesList(props) {
 console.log(props)
   const logoSmall = require('../../media/logo/ecogifts_logo_small.png');
   const { favorites, changeId, remove } = props;
+  console.log(favorites)
   const heading = favorites.length > 0 ? "MINA FAVORITER": "";
   let giftsToRender = favorites.map(gift => {
     return (
