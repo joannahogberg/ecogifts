@@ -5,7 +5,7 @@ import GiftsGrid from '../../views/GiftsGrid/GiftsGrid'
 import SingleGift from '../../views/SingleGift/SingleGift'
 import About from '../../views/About/About'
 import Header from './../Header/Header';
-import FavoritesList from './../FavoritesList/FavoritesList';
+// import FavoritesList from './../FavoritesList/FavoritesList';
 import './main.css';
 
 function Main(props) {
@@ -20,7 +20,7 @@ function Main(props) {
           <Route path="/view/:giftId" component={SingleGift} />
           <Route path="/header" component={About} />
         </div>
-        <FavoritesList {...props}/>
+        {/* <FavoritesList {...props}/> */}
       </main>
      
     </div>
