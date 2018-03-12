@@ -90,7 +90,8 @@
 .to-top-link {
   position: fixed;
   bottom: 1em;
-  right: 1em; }
+  right: 1em;
+  z-index: 999; }
   .to-top-link svg {
     stroke: #536676; }
 

@@ -86,12 +86,9 @@ class GiftsGrid extends Component {
       ? "gift-generator-wrapper border"
       : "gift-generator-wrapper";
 
-    const logoSmallLeft = require('../../media/logo/leaf_left.png');
-    const logoSmallRight = require('../../media/logo/leaf_right.png');
     return (
       <div className="container">
         <Main>
-
           <div className="intro-text-outer">
             <div className="intro-text-inner">
               <p>
@@ -118,14 +115,13 @@ class GiftsGrid extends Component {
             >
               {btnText} <PresentIcon />
             </button>
-
             {showForm && <GiftFormContainer showForm={this.showForm}/>}
           </div>
           <SearchSortSection />
           <GiftsList gifts={gifts} />
         </Main>
-        <Link smooth to="#top" className="to-top-link">
-          <ChevronUp />
+        <Link smooth to="#top" className="to-top-link" >
+          <ChevronUp size={30} />
         </Link>
         <FavoritesList favorites={this.props.favorites} />
       </div>
