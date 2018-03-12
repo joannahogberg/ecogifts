@@ -43,36 +43,6 @@
     }
 }
 
-.intro-text {
-    position: relative;
-    border: 1px solid $blue;
-    @include flex-center;
-    @include flex-direction(column);
-    padding: 1.2em;
-    margin: 0 auto;
-    @include calc( width, '100% - 3.8em');
-    p {
-        width: 100%;
-        max-width: 40em;
-        @include bread-link;
-        text-align: center;
-        margin: .6em 0;
-    }
-    .leaf-right {
-        width: 50px;
-        position: absolute;
-        top: 40px;
-        right: 0;
-        left: 80%;
-    }
-    .leaf-left {
-        width: 50px;
-        position: absolute;
-        top: 40px;
-        left: 15%;
-    }
-}
-
 .intro-text-outer {
     background-image: url("../../media/logo/leafBackground_1.png");
     background-repeat: no-repeat;
