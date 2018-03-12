@@ -80,7 +80,6 @@ class GiftsGrid extends Component {
 
   render() {
     const { showForm } = this.state;
-    const { gifts } = this.props;
     const btnText = showForm ? "DÖLJ FORMULÄR" : "PRESENTTIPSGENERATOR";
     const showBorder = showForm
       ? "gift-generator-wrapper border"
@@ -120,12 +119,12 @@ class GiftsGrid extends Component {
             {showForm && <GiftFormContainer showForm={this.showForm}/>}
           </div>
           <SearchSortSection />
-          <GiftsList gifts={gifts} {...this.props}/>
+          <GiftsList {...this.props}/>
         </Main>
         <Link smooth to="#top" className="to-top-link" >
           <ChevronUp size={30} />
         </Link>
-        <FavoritesList favorites={this.props.favorites} />
+        <FavoritesList {...this.props} />
       </div>
     );
   }

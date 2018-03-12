@@ -1,15 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-import { connect } from "react-redux";
-import { X } from "react-feather";
 import { Link } from "react-router-dom";
-import { fetchSingleGift, removeGiftFromList } from '../../actions/actionCreators';
+
+import { X } from "react-feather";
+
 import './favoriteslist.css';
 
 function FavoritesList(props) {
   const logoSmall = require('../../media/logo/ecogifts_logo_small.png');
-  const { favorites, changeId, remove } = props;
-  const heading = props.favorites.length > 0 ? "MINA FAVORITER" : "";
+  const favorites  = props.favorites;
+  const {removeGiftFromList, fetchSingleGift } = props.giftsActions;
+  const heading = favorites.length > 0 ? "MINA FAVORITER" : "";
   return (
     <aside className="side-bar">
       <h2>{heading}</h2>
@@ -18,8 +19,8 @@ function FavoritesList(props) {
           return (
             <li key={gift.id}>
               <img src={logoSmall} className="favorites-logo" alt="logo small" />
-              <Link to={`/view/${gift.id}`} className="btn-link" id={gift.id} onClick={() => changeId(gift.id)}> {gift.productName}</Link>
-              <X onClick={() => remove(gift)} size={18} />
+              <Link to={`/view/${gift.id}`} className="btn-link" id={gift.id} onClick={() => fetchSingleGift(gift.id)}> {gift.productName}</Link>
+              <X onClick={() => removeGiftFromList(gift)} size={18} />
             </li>
           );
         })}
@@ -30,30 +31,14 @@ function FavoritesList(props) {
 
 FavoritesList.propTypes = {
   favorites: PropTypes.array.isRequired,
-  changeId: PropTypes.func.isRequired,
-  remove: PropTypes.func.isRequired
+  giftsActions: PropTypes.shape({
+    removeGiftFromList: PropTypes.func.isRequired,
+    fetchSingleGift: PropTypes.func.isRequired
+  }),
 
 };
 
-function mapStateToProps(state) {
-  return {
-    favorites: state.favorites
-  };
-}
+export default FavoritesList
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    remove: (giftId) => {
-      dispatch(removeGiftFromList(giftId))
-    },
-    changeId: (giftId) => {
-      dispatch(fetchSingleGift(giftId))
-    }
-  }
-}
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(FavoritesList);
 

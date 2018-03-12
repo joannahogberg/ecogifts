@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { PropTypes } from 'prop-types'
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from 'redux';
@@ -7,13 +6,12 @@ import { ChevronRight } from "react-feather";
 import AddToFavoritesBtn from '../../components/AddToFavoritesBtn/AddToFavoritesBtn';
 import FavoritesList from '../../components/FavoritesList/FavoritesList';
 import Main from '../../components/Main/Main';
-import { fetchSingleGift } from "../../actions/actionCreators";
+import * as giftsActions from "../../actions/actionCreators";
 import './singlegift.css';
 
 class SingleGift extends Component {
 
   render() {
-    console.log(this.props)
     const { gifts } = this.props;
     const gift = gifts[0];
     const price = gift.material.includes("giftcard")
@@ -51,30 +49,11 @@ class SingleGift extends Component {
             </section>
           </div>
         </Main>
-        <FavoritesList favorites={this.props.favorites} />
+        <FavoritesList {...this.props} />
       </div>
     );
   }
 }
-
-
-SingleGift.propTypes = {
-  gifts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      productName: PropTypes.string.isRequired,
-      price: PropTypes.number.isRequired,
-      description: PropTypes.string.isRequired,
-      src: PropTypes.string.isRequired,
-      href: PropTypes.string.isRequired,
-      interest: PropTypes.array.isRequired,
-      personality: PropTypes.array.isRequired,
-      material: PropTypes.array.isRequired,
-      receiver: PropTypes.array.isRequired
-    })
-  ),
-  fetchSingleGift: PropTypes.func.isRequired
-};
 
 const mapStateToProps = (state) => ({
   gifts: state.gifts,
@@ -83,7 +62,7 @@ const mapStateToProps = (state) => ({
 
 function mapDispatchToProps(dispatch) {
   return {
-    fetchSingleGift: bindActionCreators(fetchSingleGift, dispatch)
+    giftsActions: bindActionCreators(giftsActions, dispatch)
   };
 }
 
