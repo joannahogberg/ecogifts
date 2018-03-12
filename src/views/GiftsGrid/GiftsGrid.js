@@ -119,7 +119,7 @@ class GiftsGrid extends Component {
             </button>
             {showForm && <GiftFormContainer showForm={this.showForm}/>}
           </div>
-          <SearchSortSection />
+          <SearchSortSection {...this.props} />
           <GiftsList gifts={gifts} {...this.props}/>
         </Main>
         <Link smooth to="#top" className="to-top-link" >

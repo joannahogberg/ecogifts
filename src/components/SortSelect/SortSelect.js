@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { setVisibilityFilter } from '../../actions/actionCreators';
 import * as types from "../../actions/actionTypes";
 import { Sliders } from "react-feather";
 import PropTypes from 'prop-types'
 import './sortselect.css';
 
-
 class SortSelect extends Component {
   render() {
-    const { onChange } = this.props;
+    const { setVisibilityFilter } = this.props.giftsActions;
     return (
       <div className="select-wrapper">
       <Sliders size={14}/>
       <select onChange={e => {
         e.preventDefault()
-        onChange(e.target.value)
+        setVisibilityFilter(e.target.value)
       }}
       className="sort-select"
       >
@@ -30,26 +27,4 @@ class SortSelect extends Component {
   }
 }
 
-SortSelect.defaultsProps = {
-  onChange: () => { }
-};
-
-SortSelect.propTypes = {
-  onChange: PropTypes.func.isRequired
-};
-
-function mapStateToProps(state) {
-  return {
-    gifts: state.gifts
-  };
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onChange: (filter) => {
-      dispatch(setVisibilityFilter(filter))
-    }
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(SortSelect);
+export default SortSelect;
