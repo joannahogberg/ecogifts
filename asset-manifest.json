@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.1d3f08aa.css",
-  "main.css.map": "static/css/main.1d3f08aa.css.map",
-  "main.js": "static/js/main.56252993.js",
-  "main.js.map": "static/js/main.56252993.js.map",
+  "main.css": "static/css/main.49566ed3.css",
+  "main.css.map": "static/css/main.49566ed3.css.map",
+  "main.js": "static/js/main.c3d7cb7f.js",
+  "main.js.map": "static/js/main.c3d7cb7f.js.map",
   "static/media/id0.png": "static/media/id0.7298d99e.png",
   "static/media/id1.png": "static/media/id1.23f15b4b.png",
   "static/media/id10.png": "static/media/id10.b628f180.png",
@@ -242,7 +242,5 @@
   "static/media/id98.png": "static/media/id98.c27de67c.png",
   "static/media/id99.png": "static/media/id99.233f199f.png",
   "static/media/leafBackground_1.png": "static/media/leafBackground_1.b2d0dec7.png",
-  "static/media/leafBackground_2.png": "static/media/leafBackground_2.524fab12.png",
-  "static/media/leaf_left.png": "static/media/leaf_left.421b7e3e.png",
-  "static/media/leaf_right.png": "static/media/leaf_right.16bae323.png"
+  "static/media/leafBackground_2.png": "static/media/leafBackground_2.524fab12.png"
 }
