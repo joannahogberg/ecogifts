@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 //import components
-import App from './components/App';
+import App from './components/App/App';
 //import react router deps
 import { Router, Route} from 'react-router-dom';
 import {Provider} from 'react-redux';

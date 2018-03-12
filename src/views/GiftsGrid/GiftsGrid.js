@@ -138,7 +138,7 @@ class GiftsGrid extends Component {
               {btnText} <PresentIcon />
             </button>
 
-            {showForm && <GiftFormContainer />}
+            {showForm && <GiftFormContainer showForm={this.showForm}/>}
           </div>
           <SearchSortSection />
           <GiftsList gifts={gifts} />

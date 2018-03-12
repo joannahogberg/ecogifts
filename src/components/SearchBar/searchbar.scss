@@ -30,6 +30,7 @@
         &:hover {
             font-weight: 900;
             @include transition(all .3s ease-in-out);
+            font-family: $linkFont;
         }
     }
 }

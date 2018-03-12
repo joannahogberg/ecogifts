@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from "prop-types";
 import { connect } from 'react-redux';
 import GiftForm from '../GiftForm/GiftForm';
 import _ from 'lodash';
@@ -31,6 +32,7 @@ class GiftFormContainer extends Component {
       valueArrs = { interestsArr: [], personalityArr: [], materialArr: [], receiverArr: [] };
     }
     dispatch(renderGiftsByForm(valueArrs));
+    // this.props.showForm()
   }
 
   render() {
@@ -42,6 +44,10 @@ class GiftFormContainer extends Component {
     )
   }
 }
+
+GiftFormContainer.propTypes = {
+  showForm: PropTypes.func.isRequired
+};
 
 export default connect(
 

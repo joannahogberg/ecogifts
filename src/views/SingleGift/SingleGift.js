@@ -25,7 +25,7 @@ class SingleGift extends Component {
       <div className="container">
         <Main>
           <div className="single-gift-wrapper">
-            <div className="bread-crumbs"><Link to={`/ecogifts`} className="btn-link">
+            <div className="bread-crumbs"><Link to={`/ecoGifts`} className="btn-link">
               <span>HEM</span><ChevronRight color="grey" size={18} />
             </Link><span>{gift.productName}</span></div>
             <section className="single-gift-container">

@@ -8,7 +8,7 @@ class Header extends Component {
   render() {
     return (
       <header className="header-wrapper">
-        <Link to="/ecogifts" className="logo-link">
+        <Link to="/ecoGifts" className="logo-link">
           <Logo />
         </Link>
       </header>

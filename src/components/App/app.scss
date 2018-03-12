@@ -1,0 +1,76 @@
+@import '../../styles/library';
+html,
+body,
+nav,
+main,
+footer,
+div,
+figure,
+ul,
+p,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+    background: $white;
+}
+
+a,
+button,
+select,
+input {
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+}
+
+button,
+select,
+input {
+    outline: none;
+}
+
+p {
+    @include bread-link;
+}
+
+.wrapper {
+    letter-spacing: 0.075em;
+    font-family: $textFont;
+    padding: 1em;
+    @include calc( width, '100% - 2em');
+    max-width: 1200px;
+    margin: 0 auto;
+    @include flexbox;
+    @include flex-direction(column);
+    @include breakpoint(small) {
+        padding: 1em 2em 1em;
+        @include calc( width, '100% - 4em');
+    }
+}
+
+.container {
+    @include flexbox;
+    @include flex-direction(column);
+    @include breakpoint(large) {
+        @include flex-direction(row);
+        @include justify-content(space-between);
+    }
+    .main-container {
+        width: 100%;
+        @include breakpoint(large) {
+            @include calc( width, '100% - 20em')
+        }
+    }
+}
+
+.btn-link {
+    color: $black;
+    line-height: 2em;
+    &:hover {
+        text-decoration: underline;
+    }
+}
