@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 import Gift from "../Gift/Gift";
+
 import './giftslist.css';
 
 function GiftsList(props) {
-    console.log(props)
     return (
         <div className="gifts-list">
         <div id="gifts"></div>

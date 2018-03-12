@@ -1,8 +1,10 @@
 import React from 'react';
 import { Route} from 'react-router-dom'
+
 import GiftsGrid from '../../views/GiftsGrid/GiftsGrid'
 import SingleGift from '../../views/SingleGift/SingleGift'
 import Header from '../Header/Header';
+
 import './app.css';
 
 function App() {

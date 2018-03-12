@@ -3,11 +3,11 @@ import SearchBar from '../SearchBar/SearchBar';
 import SortSelect from '../SortSelect/SortSelect';
 import './searchsortsection.css';
 
-function SearchSortSection() {
+function SearchSortSection(props) {
     return (
         <section className="search-sort-section">
-            <SearchBar />
-            <SortSelect />
+            <SearchBar {...props} />
+            <SortSelect {...props} />
         </section>
     );
 }
