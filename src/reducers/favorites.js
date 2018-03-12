@@ -2,7 +2,7 @@ import initialState from "./initialState";
 import * as types from "../actions//actionTypes";
 // Reducer for gift favorites added by user to localstorage
 export default function favorites(state = initialState.favorites, action) {
-  let newState;
+
   switch (action.type) {
     case types.ADD_GIFT_TO_LIST:
       const addGift = state.find(gift => gift.id === action.gift.id);
@@ -16,15 +16,22 @@ export default function favorites(state = initialState.favorites, action) {
         return [...state, Object.assign({}, action.gift)];
       }
     case types.REMOVE_GIFT_FROM_LIST:
+    console.log(action.gift.id)
       return state.filter(i => i.id !== action.gift.id);
 
     case types.ADD_TO_LOCALSTORAGE:
-      if (action.favorites) {
-        newState = action.favorites;
+    console.log(state)
+      if (action.favorites.length > 0) {
+        console.log(action.favorites.length)
+        return action.favorites;
       } else {
-        newState = initialState.favorites;
+ 
+        // favorites = initialState.favorites;
+        return state
       }
-      return newState;
+      // console.log(favorites)
+      // return favorites;
+ 
     default:
       return state;
   }

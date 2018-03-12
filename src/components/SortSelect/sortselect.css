@@ -19,7 +19,7 @@
   position: relative;
   padding: 0 0 0.7em;
   margin: 1.5em 0;
-  width: 9em; }
+  width: 10em; }
   @media (min-width: 768px) {
     .select-wrapper {
       margin: 0 0 0.2em; } }
@@ -44,11 +44,8 @@
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "Amatic SC", cursive; }
-    @media (max-width: 640px) {
-      .select-wrapper .sort-select {
-        font-size: 14px; } }
     @media (max-width: 320px) {
       .select-wrapper .sort-select {
-        font-size: 12px; } }
+        font-size: 14px; } }

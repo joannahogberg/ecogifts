@@ -10,9 +10,18 @@
     .checkbox-field {
         display: block;
         list-style-type: none;
-        width: 30%;
+        margin: 0 0.5em 0 0;
+        @include breakpoint(xsmall) {
+            @include calc( width, '50% - 0.5em');
+        }
+        @include breakpoint(small) {
+            @include calc( width, '30% - 0.5em');
+        }
         @include breakpoint(medium) {
-            width: 20%;
+            @include calc( width, '25% - 0.5em');
+        }
+        @include breakpoint(xlarge) {
+            @include calc( width, '20% - 0.5em');
         }
     }
     .single-checkbox[type="checkbox"] {

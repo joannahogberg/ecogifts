@@ -129,6 +129,7 @@ export function receiveSingleGift(data) {
 }
 
 export const fetchSingleGift = id => {
+  console.log(id)
   return dispatch => {
     fetch("https://ecogifts.herokuapp.com/gifts?id=" + id)
       .then(response =>
@@ -264,7 +265,7 @@ export function addToLocalStorage(favorites) {
 }
 
 export function getFromLocalStorage() {
-  let favorites = {}
+  let favorites = [];
   const persistedState = localStorage.getItem('reduxState')
   if (persistedState) {
     favorites = JSON.parse(persistedState)

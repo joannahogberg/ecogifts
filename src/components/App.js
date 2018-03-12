@@ -1,17 +1,18 @@
-import{ bindActionCreators} from 'redux';
-import {connect} from 'react-redux';
-import * as actionCreators from '../actions/actionCreators.js';
-import Main from './Main/Main';
+import React from 'react';
+import { Route} from 'react-router-dom'
+import GiftsGrid from '../views/GiftsGrid/GiftsGrid'
+import SingleGift from '../views/SingleGift/SingleGift'
+import Header from './Header/Header';
 
-function mapStateToProps(state){
-    return{
-        gifts: state.gifts
-    }
+function App() {
+    return (
+        <div className="wrapper">
+            <div id="top"></div>
+            <Header />
+            <Route exact path="/ecogifts" component={GiftsGrid} />
+            <Route path="/view/:giftId" component={SingleGift} />
+        </div>
+    );
 }
-function mapDispachToProps(dispatch){
-    return bindActionCreators(actionCreators, dispatch)
-}
-
-const App = connect(mapStateToProps, mapDispachToProps)(Main);
 
 export default App;

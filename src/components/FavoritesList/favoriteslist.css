@@ -90,14 +90,11 @@
       -ms-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
-      font-size: 14px;
+      font-size: 16px;
       width: 100%; }
-      @media (max-width: 640px) {
-        .side-bar ul li {
-          font-size: 14px; } }
       @media (max-width: 320px) {
         .side-bar ul li {
-          font-size: 12px; } }
+          font-size: 14px; } }
       .side-bar ul li a {
         width: 100%;
         max-width: 15em;
