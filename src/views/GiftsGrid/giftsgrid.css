@@ -94,64 +94,6 @@
   .to-top-link svg {
     stroke: #536676; }
 
-.intro-text {
-  position: relative;
-  border: 1px solid #536676;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 1.2em;
-  margin: 0 auto;
-  width: -webkit-calc(100% - 3.8em);
-  width: -moz-calc(100% - 3.8em);
-  width: -o-calc(100% - 3.8em);
-  width: calc(100% - 3.8em); }
-  .intro-text p {
-    width: 100%;
-    max-width: 40em;
-    word-break: keep-all;
-    letter-spacing: 0.075em;
-    line-height: 1.5em;
-    font-weight: 400;
-    font-family: "Open Sans Condensed", sans-serif;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    font-size: 16px;
-    text-align: center;
-    margin: .6em 0; }
-    @media (max-width: 320px) {
-      .intro-text p {
-        font-size: 14px; } }
-  .intro-text .leaf-right {
-    width: 50px;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    left: 80%; }
-  .intro-text .leaf-left {
-    width: 50px;
-    position: absolute;
-    top: 40px;
-    left: 15%; }
-
 .intro-text-outer {
   background-image: url("../../media/logo/leafBackground_1.png");
   background-repeat: no-repeat;
