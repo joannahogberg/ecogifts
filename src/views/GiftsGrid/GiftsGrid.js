@@ -92,17 +92,19 @@ class GiftsGrid extends Component {
           <div className="intro-text-outer">
             <div className="intro-text-inner">
               <p>
-                ECOGIFTS vill inspirera dig som ska köpa presenter att välja
+                EcoGifts vill inspirera dig som ska köpa presenter att välja
                 produkter som kommer till användning och samtidigt gör gott för
                 andra och vår miljö!
           </p>
               <p>
-                Genom de 6 kategorierna nedan går det filtrera presenter utifrån intresse.
+                Genom de 6 kategorierna nedan går det att filtrera presenter utifrån intresse.
           </p>
               <p>
                 Det finns även en presenttipsgenerator där det går att filtrerar
                 presenttips utifrån olika intressen, personligheter, material, och
-            typ av mottagare.{" "}
+            typ av mottagare. 
+              </p>              <p>
+                Välkommen till EcoGifts! 
               </p>
             </div>
           </div>
