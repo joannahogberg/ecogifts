@@ -8,18 +8,11 @@ export function filterBySearch(result) {
   };
 }
 
-export function filterBySelect(result) {
- 
-  return {
-    type: types.SELECT,
-    result
-  };
-}
-
 export function search(value) {
 
   return dispatch => {
-    fetch("https://ecogifts.herokuapp.com/gifts")
+    dispatch(fetchGiftsBegin());
+    return fetch("https://ecogifts.herokuapp.com/gifts")
       .then(response =>
         response.json().then(data => ({
           data: data,
@@ -51,9 +44,15 @@ export function receiveGifts(data) {
   return { type: types.RECEIVE_GIFTS, gifts: data };
 }
 
+export const fetchGiftsBegin = () => ({
+  type: types.FETCH_GIFTS_BEGIN
+});
+
 export function fetchGifts() {
+  
   return dispatch => {
-    fetch("https://ecogifts.herokuapp.com/gifts")
+    dispatch(fetchGiftsBegin());
+    return fetch("https://ecogifts.herokuapp.com/gifts")
       .then(response =>
         response.json().then(data => ({
           data: data,
@@ -66,13 +65,15 @@ export function fetchGifts() {
           dispatch(receiveGifts(response.data));
           //response.data from heroku, calls receiveGifts function
         } else {
+          
           var flash = {
             type: "error",
             title: "Error getting gift list",
             content:
               "There was an error getting the gifts list. Please try again."
           };
-          dispatch({ type: "DISPLAY_FLASH", data: flash });
+          dispatch({ type: "TEST", data: flash });
+         
         }
       });
   };
@@ -84,12 +85,14 @@ export function filteredGifts(data) {
 
 export const filterByCategory = category => {
   return dispatch => {
-    fetch("https://ecogifts.herokuapp.com/gifts")
+    dispatch(fetchGiftsBegin());
+    return fetch("https://ecogifts.herokuapp.com/gifts")
       .then(response =>
         response.json().then(data => ({
           data: data,
           status: response.status
         }))
+        
       )
       .then(response => {
         if (response.status === 200) {
@@ -132,7 +135,8 @@ export function receiveSingleGift(data) {
 export const fetchSingleGift = id => {
 
   return dispatch => {
-    fetch("https://ecogifts.herokuapp.com/gifts?id=" + id)
+    dispatch(fetchGiftsBegin());
+    return fetch("https://ecogifts.herokuapp.com/gifts?id=" + id)
       .then(response =>
         response.json().then(data => ({
           data: data,
@@ -150,6 +154,7 @@ export const fetchSingleGift = id => {
             content: "There was an error getting the gift. Please try again."
           };
           dispatch({ type: "DISPLAY_FLASH", data: flash });
+          
         }
       });
   };

@@ -49,7 +49,7 @@
     color: transparent;
     text-shadow: 0 0 0 gray;
     border-bottom: 1px solid #536676; }
-    @media (max-width: 320px) {
+    @media (max-width: 380px) {
       .search-bar-wrapper .search-input {
         font-size: 14px; } }
     .search-bar-wrapper .search-input::-webkit-input-placeholder {

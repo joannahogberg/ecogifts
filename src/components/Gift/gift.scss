@@ -4,10 +4,13 @@
     @include flex-direction(column);
     @include align-content(flex-start);
     border: 1px solid $aqua;
-    @include calc( width, '50% - 1.4em');
+    @include calc( width, '100% - 1.4em');
     margin: 0.6em;
     @include transition(all .3s ease-in-out);
-    @include breakpoint(small) {
+    @include breakpoint(xsmall) {
+        @include calc( width, '50% - 1.4em');
+    }
+    @include breakpoint(medium) {
         @include calc( width, '33% - 1.4em');
     }
     @include breakpoint(xlarge) {

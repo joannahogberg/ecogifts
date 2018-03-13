@@ -42,7 +42,7 @@ p {
     font-family: $textFont;
     padding: 1em;
     @include calc( width, '100% - 2em');
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     @include flexbox;
     @include flex-direction(column);
@@ -62,7 +62,7 @@ p {
     .main-container {
         width: 100%;
         @include breakpoint(large) {
-            @include calc( width, '100% - 20em')
+            @include calc( width, '100% - 25em')
         }
     }
 }
