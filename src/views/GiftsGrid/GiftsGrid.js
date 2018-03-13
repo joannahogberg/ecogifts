@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { HashLink as Link } from "react-router-hash-link";
+import _ from 'lodash';
 
 import { ChevronUp } from "react-feather";
 
@@ -13,6 +14,8 @@ import SearchSortSection from "../../components/SearchSortSection/SearchSortSect
 import PresentIcon from "../../components/PresentIcon/PresentIcon";
 import FavoritesList from '../../components/FavoritesList/FavoritesList';
 import Main from '../../components/Main/Main';
+import Banner from '../../components/Banner/Banner';
+import Loader from '../../components/Loader/Loader';
 
 import * as giftsActions from "../../actions/actionCreators";
 import * as types from "../../actions/actionTypes";
@@ -61,11 +64,31 @@ class GiftsGrid extends Component {
   constructor() {
     super();
     this.state = {
-      showForm: false
+      showForm: false,
+      showLoader: false
     };
   }
   componentWillMount() {
     this.props.giftsActions.fetchGifts();
+    setTimeout(function () { this.setState({ showLoader: true }); }.bind(this), 1000);
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    const prevState = this.props.gifts;
+    const newState = nextProps.gifts;
+
+    if (_.isEqual(prevState, newState)) {
+      return
+    } else {
+      this.setState({ showLoader: false });
+    }
+  }
+
+
+  componentDidUpdate() {
+    if (!this.state.showLoader) {
+      setTimeout(function () { this.setState({ showLoader: true }); }.bind(this), 2000);
+    }
   }
 
   showForm = () => {
@@ -80,36 +103,18 @@ class GiftsGrid extends Component {
 
   render() {
     const { showForm } = this.state;
-    const { gifts } = this.props;
     const btnText = showForm ? "DÖLJ FORMULÄR" : "PRESENTTIPSGENERATOR";
     const showBorder = showForm
       ? "gift-generator-wrapper border"
       : "gift-generator-wrapper";
 
+    const renderGifts = this.state.showLoader ? <GiftsList {...this.props} /> : <Loader />;
+
     return (
       <div className="container">
         <Main>
-          <div className="intro-text-outer">
-            <div className="intro-text-inner">
-              <p>
-                EcoGifts vill inspirera dig som ska köpa presenter att välja
-                produkter som kommer till användning och samtidigt gör gott för
-                andra och vår miljö!
-          </p>
-              <p>
-                Genom de 6 kategorierna nedan går det att filtrera presenter utifrån intresse.
-          </p>
-              <p>
-                Det finns även en presenttipsgenerator där det går att filtrerar
-                presenttips utifrån olika intressen, personligheter, material, och
-            typ av mottagare. 
-              </p>              <p>
-                Välkommen till EcoGifts! 
-              </p>
-            </div>
-          </div>
-          <ButtonGroup {...this.props}/>
-
+          <Banner />
+          <ButtonGroup {...this.props} />
           <div className={showBorder}>
             <button
               className="gift-generator-btn"
@@ -117,15 +122,15 @@ class GiftsGrid extends Component {
             >
               {btnText} <PresentIcon />
             </button>
-            {showForm && <GiftFormContainer showForm={this.showForm}/>}
+            {showForm && <GiftFormContainer showForm={this.showForm} />}
           </div>
           <SearchSortSection {...this.props} />
-          <GiftsList gifts={gifts} {...this.props}/>
+          {renderGifts}
         </Main>
         <Link smooth to="#top" className="to-top-link" >
           <ChevronUp size={30} />
         </Link>
-        <FavoritesList favorites={this.props.favorites} />
+        <FavoritesList {...this.props} />
       </div>
     );
   }
@@ -146,7 +151,7 @@ GiftsGrid.propTypes = {
       receiver: PropTypes.array.isRequired
     })
   ),
-  favoritesActions: PropTypes.shape({
+  giftsActions: PropTypes.shape({
     fetchGifts: PropTypes.func.isRequired
   })
 };

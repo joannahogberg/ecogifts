@@ -14,3 +14,4 @@ export const SHOW_BY_DESC = 'SHOW_BY_DESC';
 export const SHOW_BY_LOW_PRICE = 'SHOW_BY_LOW_PRICE';
 export const SHOW_BY_HIGH_PRICE = 'SHOW_BY_HIGH_PRICE';
 export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER';
+export const LOADING = 'LOADING';

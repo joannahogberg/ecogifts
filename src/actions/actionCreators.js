@@ -59,6 +59,7 @@ export function fetchGifts() {
           data: data,
           status: response.status
         }))
+        
       )
       .then(response => {
         if (response.status === 200) {
@@ -129,7 +130,7 @@ export function receiveSingleGift(data) {
 }
 
 export const fetchSingleGift = id => {
-  console.log(id)
+
   return dispatch => {
     fetch("https://ecogifts.herokuapp.com/gifts?id=" + id)
       .then(response =>
