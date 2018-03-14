@@ -32,7 +32,7 @@
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
-  @media (max-width: 320px) {
+  @media (max-width: 380px) {
     .checkbox-group {
       font-size: 14px; } }
   @media (min-width: 768px) {

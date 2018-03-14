@@ -12,7 +12,7 @@
         border-top: none;
         padding: 0 0 0 2em;
         margin: 0;
-        @include calc( width, '20em - 2em');
+        @include calc( width, '25em - 2em');
     }
     h2 {
         text-align: left;

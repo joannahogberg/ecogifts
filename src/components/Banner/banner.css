@@ -57,6 +57,6 @@
       font-size: 16px;
       text-align: center;
       margin: .6em 0; }
-      @media (max-width: 320px) {
+      @media (max-width: 380px) {
         .banner-wrapper-outer .banner-wrapper-inner p {
           font-size: 14px; } }

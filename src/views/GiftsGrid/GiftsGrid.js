@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { HashLink as Link } from "react-router-hash-link";
-import _ from 'lodash';
 
 import { ChevronUp } from "react-feather";
 
@@ -22,7 +21,7 @@ import * as types from "../../actions/actionTypes";
 
 import "./giftsgrid.css";
 
-const getVisibleGifts = (gifts, filter) => {
+const getVisibleGifts = (gifts = [], filter) => {
   switch (filter) {
     case types.SHOW_ALL:
       let showAll = [...gifts];
@@ -64,31 +63,11 @@ class GiftsGrid extends Component {
   constructor() {
     super();
     this.state = {
-      showForm: false,
-      showLoader: false
+      showForm: false
     };
   }
   componentWillMount() {
     this.props.giftsActions.fetchGifts();
-    setTimeout(function () { this.setState({ showLoader: true }); }.bind(this), 1000);
-  }
-
-  componentWillUpdate(nextProps, nextState) {
-    const prevState = this.props.gifts;
-    const newState = nextProps.gifts;
-
-    if (_.isEqual(prevState, newState)) {
-      return
-    } else {
-      this.setState({ showLoader: false });
-    }
-  }
-
-
-  componentDidUpdate() {
-    if (!this.state.showLoader) {
-      setTimeout(function () { this.setState({ showLoader: true }); }.bind(this), 2000);
-    }
   }
 
   showForm = () => {
@@ -102,13 +81,15 @@ class GiftsGrid extends Component {
   };
 
   render() {
+    
     const { showForm } = this.state;
+    const {loading}= this.props;
     const btnText = showForm ? "DÖLJ FORMULÄR" : "PRESENTTIPSGENERATOR";
     const showBorder = showForm
       ? "gift-generator-wrapper border"
       : "gift-generator-wrapper";
 
-    const renderGifts = this.state.showLoader ? <GiftsList {...this.props} /> : <Loader />;
+    const renderGifts = loading ? <Loader /> : <GiftsList {...this.props} />;
 
     return (
       <div className="container">
@@ -157,8 +138,10 @@ GiftsGrid.propTypes = {
 };
 
 const mapStateToProps = state => ({
-  gifts: getVisibleGifts(state.gifts, state.visibilityFilter),
-  favorites: state.favorites
+  gifts: getVisibleGifts(state.gifts.gifts, state.visibilityFilter),
+
+  favorites: state.favorites,
+  loading: state.gifts.loading
 });
 
 function mapDispatchToProps(dispatch) {

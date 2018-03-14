@@ -56,7 +56,7 @@ class SingleGift extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  gifts: state.gifts,
+  gifts: state.gifts.gifts,
   favorites: state.favorites
 });
 

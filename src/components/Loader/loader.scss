@@ -1,5 +1,23 @@
 @import "../../styles/library";
 .loader-heading {
-    padding: 2em 0;
+    padding: 2.4em 0;
     @include category-btn;
+    color: white;
+}
+
+.loader-heading:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 10em;
+    white-space: nowrap;
+    color: $black;
+    animation: loading 2.5s linear;
+}
+
+@keyframes loading {
+    0% {
+        max-width: 1em;
+        color: $green;
+    }
 }

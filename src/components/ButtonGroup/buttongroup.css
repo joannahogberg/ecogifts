@@ -64,7 +64,7 @@
   @media (max-width: 640px) {
     .category-item {
       font-size: 4.5vw; } }
-  @media (max-width: 320px) {
+  @media (max-width: 380px) {
     .category-item {
       font-size: 18px; } }
   .category-item .anchor-link {
