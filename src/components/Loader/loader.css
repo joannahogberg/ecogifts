@@ -35,6 +35,9 @@
     .loader-heading {
       font-size: 18px; } }
 
+.loader-heading.error {
+  color: #030303; }
+
 .loader-heading:before {
   content: attr(data-text);
   position: absolute;

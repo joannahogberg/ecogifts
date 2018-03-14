@@ -29,7 +29,7 @@ export function search(value) {
         } else {
           var error = {
             content:
-              "There was an error getting the gifts list. Please try again."
+            "Något blev fel vid laddningen. Vänligen försök igen."
           };
           dispatch(fetchGiftsError(error));
         }
@@ -65,7 +65,7 @@ export function fetchGifts() {
         } else {
           var error = {
             content:
-              "There was an error getting the gifts list. Please try again."
+            "Något blev fel vid laddningen. Vänligen försök igen."
           };
           dispatch(fetchGiftsError(error));
         }
@@ -116,7 +116,7 @@ export const filterByCategory = category => {
         } else {
           var error = {
             content:
-              "There was an error getting the gifts list. Please try again."
+              "Något blev fel vid laddningen. Vänligen försök igen."
           };
           dispatch(fetchGiftsError(error));
         }
@@ -144,7 +144,7 @@ export const fetchSingleGift = id => {
         } else {
           var error = {
             content:
-              "There was an error getting the gifts list. Please try again."
+              "Något blev fel... Vänligen försök igen."
           };
           dispatch(fetchGiftsError(error));
         }
@@ -233,7 +233,7 @@ export function renderGiftsByForm(valueArrs) {
         } else {
           var error = {
             content:
-              "There was an error getting the gifts list. Please try again."
+            "Något blev fel vid laddningen. Vänligen försök igen."
           };
           dispatch(fetchGiftsError(error));
         }

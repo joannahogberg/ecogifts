@@ -5,6 +5,10 @@
     color: white;
 }
 
+.loader-heading.error {
+    color: $black;
+}
+
 .loader-heading:before {
     content: attr(data-text);
     position: absolute;

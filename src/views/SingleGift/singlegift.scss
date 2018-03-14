@@ -29,49 +29,4 @@
             width: 8em;
         }
     }
-    .single-gift-container {
-        @include flexbox;
-        @include flex-direction(column);
-        @include justify-content(flex-start);
-        border-top: 1px solid $blue;
-        padding: 1.2em 0 0;
-        @include breakpoint(small) {
-            @include flex-direction(row);
-            @include justify-content(space-between);
-            border-top: none;
-        }
-        .single-gift-photo-wrap {
-            @include flexbox;
-            @include align-items(center);
-            padding: 0.6em;
-            margin: 0 auto;
-            @include breakpoint(small) {
-                padding: 1.2em;
-                @include calc( width, '40% - 2.4em');
-            }
-        }
-        .single-gift-content {
-            padding: 0.6em;
-            @include breakpoint(small) {
-                padding: 1.2em;
-            }
-            h2 {
-                margin-top: 0;
-                @include head;
-            }
-            // p {
-            //     width: 100%;
-            //     max-width: 35em;
-            // }
-        }
-        .btn-link {
-            @include bread-link;
-            display: block;
-            margin: 1.2em 0 0;
-            svg {
-                display: inline-block;
-                vertical-align: middle;
-            }
-        }
-    }
 }

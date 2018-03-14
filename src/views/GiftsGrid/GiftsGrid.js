@@ -88,12 +88,12 @@ class GiftsGrid extends Component {
       ? "gift-generator-wrapper border"
       : "gift-generator-wrapper";
 
-    const showError = error ? (
-      <div className="error-message"> {error.content}</div>
+    const contentToShow = error ? (
+      <Loader heading={error.content} error={true}/>
     ) : (
       <GiftsList {...this.props} />
     );
-    const renderGifts = loading ? <Loader /> : showError;
+    const renderGifts = loading ? <Loader error={false} /> : contentToShow;
 
     return (
       <div className="container">
