@@ -1,6 +1,5 @@
 import * as types from "./actionTypes";
 
-
 export function filterBySearch(result) {
   return {
     type: types.SEARCH,
@@ -9,7 +8,6 @@ export function filterBySearch(result) {
 }
 
 export function search(value) {
-
   return dispatch => {
     dispatch(fetchGiftsBegin());
     return fetch("https://ecogifts.herokuapp.com/gifts")
@@ -28,13 +26,11 @@ export function search(value) {
 
           dispatch(filterBySearch(result));
         } else {
-          var flash = {
-            type: "error",
-            title: "Error getting gift list",
+          var error = {
             content:
               "There was an error getting the gifts list. Please try again."
           };
-          dispatch({ type: "DISPLAY_FLASH", data: flash });
+          dispatch(fetchGiftsError(error));
         }
       });
   };
@@ -49,7 +45,6 @@ export const fetchGiftsBegin = () => ({
 });
 
 export function fetchGifts() {
-  
   return dispatch => {
     dispatch(fetchGiftsBegin());
     return fetch("https://ecogifts.herokuapp.com/gifts")
@@ -58,23 +53,20 @@ export function fetchGifts() {
           data: data,
           status: response.status
         }))
-        
       )
       .then(response => {
         if (response.status === 200) {
           // dispatch(receiveGifts(response.data));
-          setTimeout(function () { dispatch(receiveGifts(response.data)) }, 1500);
+          setTimeout(function() {
+            dispatch(receiveGifts(response.data));
+          }, 1500);
           //response.data from heroku, calls receiveGifts function
         } else {
-          
-          var flash = {
-            type: "error",
-            title: "Error getting gift list",
+          var error = {
             content:
               "There was an error getting the gifts list. Please try again."
           };
-          dispatch({ type: "TEST", data: flash });
-         
+          dispatch(fetchGiftsError(error));
         }
       });
   };
@@ -93,7 +85,6 @@ export const filterByCategory = category => {
           data: data,
           status: response.status
         }))
-        
       )
       .then(response => {
         if (response.status === 200) {
@@ -101,7 +92,6 @@ export const filterByCategory = category => {
 
           let newState1;
           if (category === 200) {
-     
             newState1 = state.filter(gift => gift.price < 200);
           } else {
             newState1 = state
@@ -113,29 +103,26 @@ export const filterByCategory = category => {
               }, 0);
           }
 
-
           // dispatch(filteredGifts(newState1));
-          setTimeout(function () { dispatch(filteredGifts(newState1)) }, 1500);
+          setTimeout(function() {
+            dispatch(filteredGifts(newState1));
+          }, 1500);
         } else {
-          var flash = {
-            type: "error",
-            title: "Error getting gift list",
+          var error = {
             content:
               "There was an error getting the gifts list. Please try again."
           };
-          dispatch({ type: "DISPLAY_FLASH", data: flash });
+          dispatch(fetchGiftsError(error));
         }
       });
   };
 };
 
 export function receiveSingleGift(data) {
-
   return { type: types.REQUESTED_GIFT, gift: data };
 }
 
 export const fetchSingleGift = id => {
-
   return dispatch => {
     dispatch(fetchGiftsBegin());
     return fetch("https://ecogifts.herokuapp.com/gifts?id=" + id)
@@ -147,16 +134,13 @@ export const fetchSingleGift = id => {
       )
       .then(response => {
         if (response.status === 200) {
-
           dispatch(receiveSingleGift(response.data));
         } else {
-          var flash = {
-            type: "error",
-            title: "Error getting gift",
-            content: "There was an error getting the gift. Please try again."
+          var error = {
+            content:
+              "There was an error getting the gifts list. Please try again."
           };
-          dispatch({ type: "DISPLAY_FLASH", data: flash });
-          
+          dispatch(fetchGiftsError(error));
         }
       });
   };
@@ -237,15 +221,15 @@ export function renderGiftsByForm(valueArrs) {
           }
 
           // dispatch(filteredGifts(newState4));
-          setTimeout(function () { dispatch(filteredGifts(newState4)) }, 1500);
+          setTimeout(function() {
+            dispatch(filteredGifts(newState4));
+          }, 1500);
         } else {
-          var flash = {
-            type: "error",
-            title: "Error getting gift list",
+          var error = {
             content:
               "There was an error getting the gifts list. Please try again."
           };
-          dispatch({ type: "DISPLAY_FLASH", data: flash });
+          dispatch(fetchGiftsError(error));
         }
       });
   };
@@ -259,7 +243,6 @@ export function addGiftToList(gift) {
 }
 
 export function removeGiftFromList(gift) {
-
   return {
     type: types.REMOVE_GIFT_FROM_LIST,
     gift: gift
@@ -275,21 +258,21 @@ export function addToLocalStorage(favorites) {
 
 export function getFromLocalStorage() {
   let favorites = [];
-  const persistedState = localStorage.getItem('reduxState')
+  const persistedState = localStorage.getItem("reduxState");
   if (persistedState) {
-    favorites = JSON.parse(persistedState)
+    favorites = JSON.parse(persistedState);
   }
   return dispatch => {
     dispatch(addToLocalStorage(favorites));
   };
 }
 
-export const setVisibilityFilter = (filter) => ({
+export const setVisibilityFilter = filter => ({
   type: types.SET_VISIBILITY_FILTER,
   filter
-})
+});
 
 export const fetchGiftsError = error => ({
-  type: types.FETCH_GIFTS_FAILURE,
-  payload: { error }
+  type: types.FETCH_ERROR,
+  payload: error
 });

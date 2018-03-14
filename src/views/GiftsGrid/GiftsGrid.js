@@ -11,10 +11,10 @@ import GiftFormContainer from "../../components/GiftFormContainer/GiftFormContai
 import GiftsList from "../../components/GiftsList/GiftsList";
 import SearchSortSection from "../../components/SearchSortSection/SearchSortSection";
 import PresentIcon from "../../components/PresentIcon/PresentIcon";
-import FavoritesList from '../../components/FavoritesList/FavoritesList';
-import Main from '../../components/Main/Main';
-import Banner from '../../components/Banner/Banner';
-import Loader from '../../components/Loader/Loader';
+import FavoritesList from "../../components/FavoritesList/FavoritesList";
+import Main from "../../components/Main/Main";
+import Banner from "../../components/Banner/Banner";
+import Loader from "../../components/Loader/Loader";
 
 import * as giftsActions from "../../actions/actionCreators";
 import * as types from "../../actions/actionTypes";
@@ -28,7 +28,7 @@ const getVisibleGifts = (gifts = [], filter) => {
       return showAll;
     case types.SHOW_BY_ASC:
       let byTitleASC = [...gifts];
-      byTitleASC.sort(function (a, b) {
+      byTitleASC.sort(function(a, b) {
         return a.productName > b.productName
           ? 1
           : b.productName > a.productName ? -1 : 0;
@@ -36,7 +36,7 @@ const getVisibleGifts = (gifts = [], filter) => {
       return byTitleASC;
     case types.SHOW_BY_DESC:
       let byTitleDESC = [...gifts];
-      byTitleDESC.sort(function (a, b) {
+      byTitleDESC.sort(function(a, b) {
         return a.productName < b.productName
           ? 1
           : b.productName < a.productName ? -1 : 0;
@@ -44,13 +44,13 @@ const getVisibleGifts = (gifts = [], filter) => {
       return byTitleDESC;
     case types.SHOW_BY_LOW_PRICE:
       let priceSortLow = [...gifts];
-      priceSortLow.sort(function (a, b) {
+      priceSortLow.sort(function(a, b) {
         return a.price > b.price ? 1 : b.price > a.price ? -1 : 0;
       });
       return priceSortLow;
     case types.SHOW_BY_HIGH_PRICE:
       let priceSortHigh = [...gifts];
-      priceSortHigh.sort(function (a, b) {
+      priceSortHigh.sort(function(a, b) {
         return a.price < b.price ? 1 : b.price < a.price ? -1 : 0;
       });
       return priceSortHigh;
@@ -81,15 +81,20 @@ class GiftsGrid extends Component {
   };
 
   render() {
-    
+    const { error } = this.props;
     const { showForm } = this.state;
-    const {loading}= this.props;
+    const { loading } = this.props;
     const btnText = showForm ? "DÖLJ FORMULÄR" : "PRESENTTIPSGENERATOR";
     const showBorder = showForm
       ? "gift-generator-wrapper border"
       : "gift-generator-wrapper";
 
-    const renderGifts = loading ? <Loader /> : <GiftsList {...this.props} />;
+    const showError = error ? (
+      <div className="error-message"> {error.content}</div>
+    ) : (
+      <GiftsList {...this.props} />
+    );
+    const renderGifts = loading ? <Loader /> : showError;
 
     return (
       <div className="container">
@@ -108,7 +113,7 @@ class GiftsGrid extends Component {
           <SearchSortSection {...this.props} />
           {renderGifts}
         </Main>
-        <Link smooth to="#top" className="to-top-link" >
+        <Link smooth to="#top" className="to-top-link">
           <ChevronUp size={30} />
         </Link>
         <FavoritesList {...this.props} />
@@ -141,7 +146,8 @@ const mapStateToProps = state => ({
   gifts: getVisibleGifts(state.gifts.gifts, state.visibilityFilter),
 
   favorites: state.favorites,
-  loading: state.gifts.loading
+  loading: state.gifts.loading,
+  error: state.gifts.error
 });
 
 function mapDispatchToProps(dispatch) {
