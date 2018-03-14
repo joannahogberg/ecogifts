@@ -62,7 +62,8 @@ export function fetchGifts() {
       )
       .then(response => {
         if (response.status === 200) {
-          dispatch(receiveGifts(response.data));
+          // dispatch(receiveGifts(response.data));
+          setTimeout(function () { dispatch(receiveGifts(response.data)) }, 1500);
           //response.data from heroku, calls receiveGifts function
         } else {
           
@@ -113,7 +114,8 @@ export const filterByCategory = category => {
           }
 
 
-          dispatch(filteredGifts(newState1));
+          // dispatch(filteredGifts(newState1));
+          setTimeout(function () { dispatch(filteredGifts(newState1)) }, 1500);
         } else {
           var flash = {
             type: "error",
@@ -234,7 +236,8 @@ export function renderGiftsByForm(valueArrs) {
               }, 0);
           }
 
-          dispatch(filteredGifts(newState4));
+          // dispatch(filteredGifts(newState4));
+          setTimeout(function () { dispatch(filteredGifts(newState4)) }, 1500);
         } else {
           var flash = {
             type: "error",
@@ -285,3 +288,8 @@ export const setVisibilityFilter = (filter) => ({
   type: types.SET_VISIBILITY_FILTER,
   filter
 })
+
+export const fetchGiftsError = error => ({
+  type: types.FETCH_GIFTS_FAILURE,
+  payload: { error }
+});

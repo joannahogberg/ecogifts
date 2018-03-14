@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { HashLink as Link } from "react-router-hash-link";
-import _ from 'lodash';
 
 import { ChevronUp } from "react-feather";
 
@@ -70,7 +69,6 @@ class GiftsGrid extends Component {
   componentWillMount() {
     this.props.giftsActions.fetchGifts();
   }
-
 
   showForm = () => {
     if (!this.state.showForm) {
