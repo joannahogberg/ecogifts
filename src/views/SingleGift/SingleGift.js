@@ -3,12 +3,16 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { ChevronRight } from "react-feather";
+
 import AddToFavoritesBtn from "../../components/AddToFavoritesBtn/AddToFavoritesBtn";
 import FavoritesList from "../../components/FavoritesList/FavoritesList";
 import Main from "../../components/Main/Main";
-import * as giftsActions from "../../actions/actionCreators";
-import "./singlegift.css";
 import Loader from "../../components/Loader/Loader";
+
+import * as giftsActions from "../../actions/actionCreators";
+
+import "./singlegift.css";
+
 
 class SingleGift extends Component {
   render() {

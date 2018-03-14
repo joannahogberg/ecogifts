@@ -59,7 +59,7 @@ export function fetchGifts() {
           // dispatch(receiveGifts(response.data));
           setTimeout(function() {
             dispatch(receiveGifts(response.data));
-          }, 1500);
+          }, 700);
           //response.data from heroku, calls receiveGifts function
         } else {
           var error = {
@@ -106,7 +106,7 @@ export const filterByCategory = category => {
           // dispatch(filteredGifts(newState1));
           setTimeout(function() {
             dispatch(filteredGifts(newState1));
-          }, 1500);
+          }, 700);
         } else {
           var error = {
             content:
@@ -220,10 +220,10 @@ export function renderGiftsByForm(valueArrs) {
               }, 0);
           }
 
-          // dispatch(filteredGifts(newState4));
-          setTimeout(function() {
-            dispatch(filteredGifts(newState4));
-          }, 1500);
+          dispatch(filteredGifts(newState4));
+          // setTimeout(function() {
+          //   dispatch(filteredGifts(newState4));
+          // }, 1500);
         } else {
           var error = {
             content:
