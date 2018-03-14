@@ -7,7 +7,7 @@ import "./multicheckbox.css";
 
 class MultiCheckboxField extends Component {
   render() {
-  console.log("multicheckboxfield", this.props);
+
     const { options, name } = this.props;
     const checkboxes = options.map(option => {
       return (
@@ -21,9 +21,7 @@ class MultiCheckboxField extends Component {
     return (
        
         <FormSection name={name} className="form-group">
-
           {checkboxes}
-          {/* <div classname="checkbox-form-icon"></div> */}
         </FormSection>
       
     );

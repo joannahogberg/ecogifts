@@ -6,7 +6,7 @@ import "./giftform.css";
 import PresentIcon from '../../components/PresentIcon/PresentIcon'
 
 const interestsOptions = [
-  { id: 1, label: "Kroppsvård", value: "health" },
+  { id: 1, label: "Hälsa & Kroppsvård", value: "health" },
   { id: 2, label: "Inredning", value: "home" },
   { id: 3, label: "Trädgårdsarbete", value: "gardening" },
   { id: 4, label: "Spel", value: "games" },

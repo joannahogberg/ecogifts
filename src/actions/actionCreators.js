@@ -9,7 +9,7 @@ export function filterBySearch(result) {
 
 export function search(value) {
   return dispatch => {
-    dispatch(fetchGiftsBegin());
+    // dispatch(fetchGiftsBegin());
     return fetch("https://ecogifts.herokuapp.com/gifts")
       .then(response =>
         response.json().then(data => ({
@@ -19,6 +19,7 @@ export function search(value) {
       )
       .then(response => {
         if (response.status === 200) {
+          
           const newVal = value.toLowerCase();
           let result = response.data.filter(gift =>
             gift.productName.toLowerCase().includes(newVal)
@@ -94,16 +95,21 @@ export const filterByCategory = category => {
           if (category === 200) {
             newState1 = state.filter(gift => gift.price < 200);
           } else {
+            //Array.prototype.filter() method to create a new array with all elements that
+            //pass the test implemented by the Object.prototype.some() method.
+            
+            //The array.prototype.map() method then creates a new array with the results of calling a provided
+            //function on every element in this array.
             newState1 = state
               .filter(gift =>
+                //Object.prototype.some() method to test whether
+                //some element in the array match the category value that is implemented by the provided function.      
                 gift.interest.some(interest => category.includes(interest))
               )
               .map(gift => {
                 return gift;
               }, 0);
           }
-
-          // dispatch(filteredGifts(newState1));
           setTimeout(function() {
             dispatch(filteredGifts(newState1));
           }, 700);
