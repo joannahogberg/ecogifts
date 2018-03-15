@@ -23,7 +23,8 @@ class SingleGift extends Component {
       : <SingleGiftItem {...this.props} />
 
     const renderSingleGift = loading ? <Loader error={false} /> : contentToShow;
-    const productName = gifts ? gifts[0].productName : "";
+    
+    const productName = gifts && !error ? gifts[0].productName : "";
 
     return (
       <div className="container">

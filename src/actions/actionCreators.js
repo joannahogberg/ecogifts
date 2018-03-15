@@ -9,7 +9,6 @@ export function filterBySearch(result) {
 
 export function search(value) {
   return dispatch => {
-    // dispatch(fetchGiftsBegin());
     return fetch("https://ecogifts.herokuapp.com/gifts")
       .then(response =>
         response.json().then(data => ({
@@ -19,7 +18,6 @@ export function search(value) {
       )
       .then(response => {
         if (response.status === 200) {
-          
           const newVal = value.toLowerCase();
           let result = response.data.filter(gift =>
             gift.productName.toLowerCase().includes(newVal)
@@ -37,13 +35,13 @@ export function search(value) {
   };
 }
 
-export function receiveGifts(data) {
-  return { type: types.RECEIVE_GIFTS, gifts: data };
-}
-
 export const fetchGiftsBegin = () => ({
   type: types.FETCH_GIFTS_BEGIN
 });
+
+export function receiveGifts(data) {
+  return { type: types.RECEIVE_GIFTS, gifts: data };
+}
 
 export function fetchGifts() {
   return dispatch => {
@@ -57,10 +55,9 @@ export function fetchGifts() {
       )
       .then(response => {
         if (response.status === 200) {
-          // dispatch(receiveGifts(response.data));
           setTimeout(function() {
             dispatch(receiveGifts(response.data));
-          }, 700);
+          }, 1200);
           //response.data from heroku, calls receiveGifts function
         } else {
           var error = {
@@ -110,41 +107,12 @@ export const filterByCategory = category => {
                 return gift;
               }, 0);
           }
-          setTimeout(function() {
             dispatch(filteredGifts(newState1));
-          }, 700);
+       
         } else {
           var error = {
             content:
               "Något blev fel vid laddningen. Vänligen försök igen."
-          };
-          dispatch(fetchGiftsError(error));
-        }
-      });
-  };
-};
-
-export function receiveSingleGift(data) {
-  return { type: types.REQUESTED_GIFT, gift: data };
-}
-
-export const fetchSingleGift = id => {
-  return dispatch => {
-    dispatch(fetchGiftsBegin());
-    return fetch("https://ecogifts.herokuapp.com/gifts?id=" + id)
-      .then(response =>
-        response.json().then(data => ({
-          data: data,
-          status: response.status
-        }))
-      )
-      .then(response => {
-        if (response.status === 200) {
-          dispatch(receiveSingleGift(response.data));
-        } else {
-          var error = {
-            content:
-              "Något blev fel... Vänligen försök igen."
           };
           dispatch(fetchGiftsError(error));
         }
@@ -227,9 +195,6 @@ export function renderGiftsByForm(valueArrs) {
           }
 
           dispatch(filteredGifts(newState4));
-          // setTimeout(function() {
-          //   dispatch(filteredGifts(newState4));
-          // }, 1500);
         } else {
           var error = {
             content:
@@ -240,6 +205,36 @@ export function renderGiftsByForm(valueArrs) {
       });
   };
 }
+
+export function receiveSingleGift(data) {
+  return { type: types.REQUESTED_GIFT, gift: data };
+}
+
+export const fetchSingleGift = id => {
+  return dispatch => {
+    dispatch(fetchGiftsBegin());
+    return fetch("https://ecogifts.herokuapp.com/gifts?id=" + id)
+      .then(response =>
+        response.json().then(data => ({
+          data: data,
+          status: response.status
+        }))
+      )
+      .then(response => {
+        if (response.status === 200) {
+          setTimeout(function() {
+            dispatch(receiveSingleGift(response.data));
+          }, 1000);
+        } else {
+          var error = {
+            content:
+              "Något blev fel... Vänligen försök igen."
+          };
+          dispatch(fetchGiftsError(error));
+        }
+      });
+  };
+};
 
 export function addGiftToList(gift) {
   return {
