@@ -17,17 +17,22 @@
         margin: 0 auto;
         @include breakpoint(small) {
             padding: 1.2em;
-            @include calc( width, '40% - 2.4em');
+            @include calc( width, '30% - 2.4em');
         }
     }
     .single-gift-content {
         padding: 0.6em;
         @include breakpoint(small) {
             padding: 1.2em;
+            @include calc( width, '70% - 2.4em');
         }
         h2 {
             margin-top: 0;
             @include head;
+        }
+        p {
+            max-width: 30em;
+            margin: 0 0 1.2em;
         }
     }
     .btn-link {
